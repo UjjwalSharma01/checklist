@@ -13,12 +13,12 @@
   </div>
 
   <header>
-    <h1><a href="index.html">Checklist App</a></h1>
+    <h1><a href="index.html" class="clicked-glow">Checklist App</a></h1>
   </header>
   <nav>
     <ul>
-      <li><a href="checklist1.html">Checklist 1</a></li>
-      <li><a href="checklist2.html">Checklist 2</a></li>
+      <li><a href="checklist1.html" class="clicked-glow">Checklist 1</a></li>
+      <li><a href="checklist2.html" class="clicked-glow">Checklist 2</a></li>
       <!-- Add more checklists here -->
     </ul>
   </nav>
@@ -35,6 +35,17 @@
     window.addEventListener("load", function () {
       const loadingOverlay = document.querySelector(".loading-overlay");
       loadingOverlay.style.display = "none";
+    });
+
+    // Add click event listener to clicked-glow elements
+    const clickedGlowElements = document.querySelectorAll(".clicked-glow");
+    clickedGlowElements.forEach((element) => {
+      element.addEventListener("click", () => {
+        element.classList.add("clicked-glow");
+        setTimeout(() => {
+          element.classList.remove("clicked-glow");
+        }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
+      });
     });
   </script>
   <script src="script.js"></script>
