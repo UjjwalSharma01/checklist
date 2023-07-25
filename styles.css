@@ -458,9 +458,6 @@ nav li {
 }
 
 /* ADDED FOOTER */
-
-
-/* Footer Styles */
 footer {
   background-color: #333;
   color: #fff;
@@ -469,6 +466,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  left: 0;
 }
 
 footer p {
@@ -480,4 +478,4 @@ footer span {
   color: #ff4136; /* Red color for heart symbol */
 }
 
-
+/* ... Your existing CSS code ... */
