@@ -155,6 +155,47 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
+
+
+
+/* Hover Animation for Navigation Links */
+nav li a {
+  /* Existing styles ... */
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+  background-color: #444; /* Darker background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Hover Animation for Checklist Items */
+.checklist li label:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Hover Animation for Motivational Quote */
+.quote blockquote:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* Glow Animation for Clicked Links */
+.clicked-glow {
+  animation: glow 0.5s ease-in-out;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Light glow color on click */
+  }
+  100% {
+    box-shadow: none; /* Remove the glow effect after animation */
+  }
+}
+
+/* ... Your existing CSS code ... */
+
 }
 
 /* ... Your existing CSS code ... */
