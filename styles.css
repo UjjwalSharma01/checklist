@@ -131,3 +131,31 @@ cite {
     transform: rotate(360deg);
   }
 }
+
+
+/* hover animation */
+
+/* Hover Animation for Navigation Links */
+nav li a {
+  /* Existing styles ... */
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+  background-color: #444; /* Darker background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Hover Animation for Checklist Items */
+.checklist li label:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Hover Animation for Motivational Quote */
+.quote blockquote:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+/* ... Your existing CSS code ... */
+
