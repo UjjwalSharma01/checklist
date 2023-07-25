@@ -194,9 +194,65 @@ nav li a:hover {
   }
 }
 
-/* ... Your existing CSS code ... */
 
 }
 
+
+/* RESPONSIVENESS ADDTIN  */
+
+/* Header */
+header h1 {
+  font-size: 24px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  align-items: center; /* Center the links vertically */
+  gap: 10px; /* Add some spacing between the links */
+}
+
+nav li {
+  width: 100%; /* Make the links take full width */
+  text-align: center;
+}
+
+/* Motivational Quote Section */
+.quote blockquote {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Media Query for screens between 601px to 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Navigation */
+  nav ul {
+    flex-direction: row; /* Align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+  }
+}
+
+/* Media Query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+  /* Header */
+  header h1 {
+    font-size: 32px;
+  }
+
+  /* Navigation */
+  nav ul {
+    flex-direction: row; /* Align the links horizontally */
+    justify-content: flex-end; /* Align the links to the right */
+  }
+
+  /* Motivational Quote Section */
+  .quote blockquote {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+
 /* ... Your existing CSS code ... */
+
 
