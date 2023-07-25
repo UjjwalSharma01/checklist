@@ -252,3 +252,142 @@ nav li {
     padding: 20px;
   }
 }
+
+
+
+/* checklist one and two from contact us to below the quote*/
+
+/* Checklist Styles */
+.checklists ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.checklists li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.checklists a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checklists a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Hover Animation for Checklist Items */
+.checklists li a:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Glow Animation for Clicked Links */
+.checklists .clicked-glow {
+  animation: glow 0.5s ease-in-out;
+}
+
+
+
+/* change the alignment */
+
+
+
+/* ******************************************************************************************************************** */
+
+
+/* ... Your existing CSS code ... */
+
+/* Checklist Styles */
+.checklists ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.checklists li {
+  margin: 10px;
+}
+
+.checklists a {
+  display: block; /* Display the checklist items in a block (vertical) */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checklists a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Hover Animation for Checklist Items */
+.checklists li a:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Glow Animation for Clicked Links */
+.checklists .clicked-glow {
+  animation: glow 0.5s ease-in-out;
+}
+
+
+
+/* applying gap between both the checklists */
+
+
+
+
+/* ... Your existing CSS code ... */
+
+/* Checklist Styles */
+.checklists div {
+  margin-bottom: 10px; /* Add margin at the bottom to create a gap between checklists */
+}
+
+.checklists a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checklists a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Hover Animation for Checklist Items */
+.checklists li a:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Glow Animation for Clicked Links */
+.checklists .clicked-glow {
+  animation: glow 0.5s ease-in-out;
+}
+
+/* ... Your existing CSS code ... */
+
