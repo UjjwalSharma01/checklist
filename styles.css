@@ -457,5 +457,27 @@ nav li {
   }
 }
 
-/* ... Your existing CSS code ... */
+/* ADDED FOOTER */
+
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer span {
+  color: #ff4136; /* Red color for heart symbol */
+}
+
 
