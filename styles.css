@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5; /* Light gray background */
+  background-color: #f8f8f8; /* Light gray background */
 }
 
 header {
@@ -11,6 +11,14 @@ header {
   color: #fff;
   padding: 10px;
   text-align: center;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 nav {
@@ -69,4 +77,25 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + .checkmark {
   background-color: #333;
   border-color: #333;
+}
+
+/* Motivational Quote Section */
+.quote {
+  text-align: center;
+  margin-top: 30px;
+}
+
+blockquote {
+  font-size: 24px;
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  padding: 20px;
+  border-left: 5px solid #333; /* Darker gray border on the left */
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
 }
