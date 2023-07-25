@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.checklist {
+  margin-bottom: 20px;
+}
+
+/* Customize checkbox styles (optional) */
+input[type="checkbox"] {
+  /* Add your custom checkbox styles here */
+  display: none;
+}
+
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + .checkmark {
+  background-color: #333;
+  border-color: #333;
+}
