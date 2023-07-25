@@ -354,7 +354,6 @@ nav li {
 
 
 
-/* ... Your existing CSS code ... */
 
 /* Checklist Styles */
 .checklists div {
@@ -387,6 +386,75 @@ nav li {
 /* Glow Animation for Clicked Links */
 .checklists .clicked-glow {
   animation: glow 0.5s ease-in-out;
+}
+
+/* style for the contact us form */
+/* ... Your existing CSS code ... */
+
+/* Form Styles */
+.contact-section form {
+  max-width: 400px; /* Set a maximum width for the form to prevent it from stretching too wide */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-section form label {
+  display: block; /* Display labels as blocks (vertical) */
+  margin-bottom: 5px; /* Add some spacing between labels */
+  font-weight: bold;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Add some spacing between form elements */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-section form textarea {
+  resize: vertical; /* Allow the textarea to be vertically resizable */
+}
+
+.contact-section form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-section form button:hover {
+  background-color: #444;
+}
+
+/* Media Query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .contact-section form {
+    display: flex; /* Display the form elements in a row on larger screens */
+    flex-wrap: wrap; /* Allow the form elements to wrap to the next row if needed */
+  }
+
+  .contact-section form label {
+    flex: 1 0 100%; /* Make labels take full width on larger screens */
+    margin-right: 10px; /* Add some spacing between labels and form elements */
+  }
+
+  .contact-section form input,
+  .contact-section form textarea {
+    flex: 2 0 calc(50% - 15px); /* Make form elements take half width on larger screens */
+  }
+
+  .contact-section form textarea {
+    resize: none; /* Disable textarea resizing on larger screens */
+  }
+
+  .contact-section form button {
+    flex: 1 0 100%; /* Make button take full width on larger screens */
+  }
 }
 
 /* ... Your existing CSS code ... */

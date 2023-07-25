@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Checklist App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <header>
+    <h1><a href="index.html" class="clicked-glow">Checklist App</a></h1>
+  </header>
+  <nav>
+    <ul>
+      <!-- We'll add an ID to the "Contact Us" link for easier removal -->
+      <li><a href="contact.html" id="contact-link" class="clicked-glow">Contact Us</a></li>
+      <!-- Add more checklists here -->
+    </ul>
+  </nav>
+  <main>
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>If you have any questions, feedback, or suggestions, feel free to reach out to us using the contact form below:</p>
+      
+      <!-- Contact Form -->
+      <form action="contact_form_handler.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> <!-- Mark as required -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <!-- Mark as required -->
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea> <!-- Mark as required -->
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Loading Animation Script -->
+  <script>
+    // Hide the loading overlay when the page is fully loaded
+    window.addEventListener("load", function () {
+      const loadingOverlay = document.querySelector(".loading-overlay");
+      loadingOverlay.style.display = "none";
+
+      // Remove the "Contact Us" link from the navigation after the page loads
+      const contactLink = document.getElementById("contact-link");
+      if (contactLink) {
+        contactLink.parentElement.remove();
+      }
+    });
+
+    // Add click event listener to clicked-glow elements
+    const clickedGlowElements = document.querySelectorAll(".clicked-glow");
+    clickedGlowElements.forEach((element) => {
+      element.addEventListener("click", () => {
+        element.classList.add("clicked-glow");
+        setTimeout(() => {
+          element.classList.remove("clicked-glow");
+        }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
