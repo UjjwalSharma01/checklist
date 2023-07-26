@@ -389,9 +389,7 @@ nav li {
 }
 
 /* style for the contact us form */
-/* ... Your existing CSS code ... */
 
-/* Form Styles */
 .contact-section form {
   max-width: 400px; /* Set a maximum width for the form to prevent it from stretching too wide */
   margin: 0 auto; /* Center the form horizontally */
@@ -405,7 +403,7 @@ nav li {
 
 .contact-section form input,
 .contact-section form textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 10px; /* Add some spacing between form elements */
   border: 1px solid #ccc;
@@ -478,4 +476,51 @@ footer span {
   color: #ff4136; /* Red color for heart symbol */
 }
 
-/* ... Your existing CSS code ... */
+/* resolving footer overlapping in mobile screen mode */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed; /* Change to "fixed" */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add some padding to the main content section to prevent overlapping */
+main {
+  padding-bottom: 70px; /* Adjust the value as needed */
+}
+
+
+/* adding github profile link to the footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .heart {
+  color: #ff4136; /* Red color for heart symbol */
+}
+
+/* Styling for the link in the footer */
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Set link color to white */
+}
+
+/* Hover effect for the link */
+.footer-link:hover {
+  text-decoration: underline; /* Add underline on hover (optional) */
+}
