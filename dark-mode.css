@@ -1,0 +1,187 @@
+/* BUTTON */
+
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #444;
+}
+
+
+
+/* DARK MODE STYLES */
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #444;
+}
+
+.dark-mode header h1 a {
+  color: #fff;
+}
+
+.dark-mode nav {
+  background-color: #444;
+}
+
+.dark-mode nav li a {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode nav li a:hover {
+  background-color: #555;
+}
+
+.dark-mode .checklists a {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .checklists a:hover {
+  background-color: #333;
+}
+
+.dark-mode .quote blockquote {
+  background-color: #444;
+  color: #eee;
+}
+
+.dark-mode .contact-section form label {
+  color: #fff;
+}
+
+.dark-mode .contact-section form input,
+.dark-mode .contact-section form textarea {
+  background-color: #444;
+  color: #eee;
+  border: 1px solid #666;
+}
+
+.dark-mode .contact-section form button {
+  background-color: #444;
+}
+
+.dark-mode .contact-section form button:hover {
+  background-color: #555;
+}
+
+/* Dark mode styles for the footer */
+.dark-mode footer {
+  background-color: #222;
+}
+
+.dark-mode footer p {
+  color: #fff;
+}
+
+.dark-mode .heart {
+  color: #ff4136;
+}
+
+/* Dark mode styles for the link in the footer */
+.dark-mode .footer-link {
+  color: #fff;
+}
+
+.dark-mode .footer-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* dark mode animations */
+/* DARK MODE STYLES */
+/* ... (Other dark mode styles) ... */
+
+/* Animation for the toggle button */
+@keyframes sunToMoonAnimation {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes moonToSunAnimation {
+  0% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  transition: background-color 0.3s ease-in-out;
+  animation-duration: 0.5s; /* Duration of the animation */
+  animation-timing-function: linear; /* Linear timing function for consistent speed */
+}
+
+/* Flipping animation for sun to moon */
+.dark-mode-toggle.flipping {
+  animation-name: sunToMoonAnimation;
+}
+
+/* Flipping animation for moon to sun */
+.dark-mode-toggle.flipping-back {
+  animation-name: moonToSunAnimation;
+}
+
+/* Sun icon */
+.dark-mode-toggle::before {
+  content: '☀️';
+}
+
+/* Moon icon */
+.dark-mode-toggle::after {
+  content: '🌙';
+  position: absolute;
+  opacity: 0; /* Hide the moon initially */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Show the moon icon when in dark mode */
+body.dark-mode .dark-mode-toggle::after {
+  opacity: 1;
+}
+
+.dark-mode-toggle:hover {
+  background-color: #444;
+}

@@ -5,8 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checklist App</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark-mode.css"> <!-- Add the dark mode CSS file -->
+  <!-- Font Awesome CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
 </head>
 <body>
+
+<!-- dark mode, feature - added here because i was finding it difficult to search it in the entire codebase -->
+<button class="dark-mode-toggle">
+  <i class="fas fa-sun"></i>
+  <i class="fas fa-moon"></i>
+</button>
+
+
   <!-- Loading Animation -->
   <div class="loading-overlay">
     <div class="loading-spinner"></div>
@@ -57,6 +69,7 @@
     });
   </script>
   <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
   <footer>
     <p>Made with <span class="heart">&hearts;</span> by <a href="https://github.com/UjjwalSharma01" class="footer-link">Ujjwal Sharma</a></p>
   </footer>

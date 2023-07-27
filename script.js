@@ -19,3 +19,7 @@ checkboxes.forEach((checkbox) => {
     checkbox.checked = true;
   }
 });
+
+
+// dark mode JS
+
