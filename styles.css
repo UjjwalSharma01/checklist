@@ -1,4 +1,4 @@
-/* styles.css */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -59,11 +59,7 @@ main {
   margin-bottom: 20px;
 }
 
-/* Customize checkbox styles (optional) */
-input[type="checkbox"] {
-  /* Add your custom checkbox styles here */
-  display: none;
-}
+
 
 .checkmark {
   display: inline-block;
@@ -137,7 +133,6 @@ cite {
 
 /* Hover Animation for Navigation Links */
 nav li a {
-  /* Existing styles ... */
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -306,7 +301,6 @@ nav li {
 /* ******************************************************************************************************************** */
 
 
-/* ... Your existing CSS code ... */
 
 /* Checklist Styles */
 .checklists ul {
@@ -537,7 +531,6 @@ footer .heart {
 
 
 /* styles.css */
-/* ... Your existing CSS code ... */
 
 /* Additional styles for Checklist 2 */
 .checklist h2 {

@@ -144,11 +144,6 @@ body.dark-mode {
 
 
 
-
-/* dark mode animations */
-/* DARK MODE STYLES */
-/* ... (Other dark mode styles) ... */
-
 /* Animation for the toggle button */
 @keyframes sunToMoonAnimation {
   0% {
