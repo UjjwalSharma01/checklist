@@ -526,12 +526,79 @@ footer .heart {
 }
 
 
+.checklist ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
 
 
 
 
 
+/* styles.css */
+/* ... Your existing CSS code ... */
 
-/* DARK MODE */
+/* Additional styles for Checklist 2 */
+.checklist h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
 
+.checklist ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.checklist li {
+  margin: 10px;
+}
+
+.checklist label {
+  position: relative; /* Add position relative for proper stacking */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Style the checkbox and checkmark */
+.checklist .checkbox {
+  display: none;
+}
+
+.checklist .checkmark {
+  position: relative; /* Add position relative for proper stacking */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  margin-right: 5px;
+}
+
+/* Style the block-style tick mark inside the checkbox */
+.checklist .checkmark::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  opacity: 0; /* Hide the tick mark by default */
+}
+
+/* Show the block-style tick mark when checkbox is checked */
+.checklist .checkbox:checked + .checkmark::after {
+  opacity: 1;
+}
+
+/* Added hover effect for checklist items */
+.checklist label:hover .checkmark {
+  background-color: #eee; /* Light gray background on hover */
+}
 

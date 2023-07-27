@@ -105,6 +105,44 @@ body.dark-mode {
 }
 
 
+/* Dark mode styles for the checkboxes */
+.dark-mode .checklist .checkbox {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Create a custom checkbox appearance */
+.dark-mode .checklist .checkbox + .checkmark {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  margin-right: 8px; /* Adjust the gap between the checkbox and the text */
+  cursor: pointer;
+}
+
+/* Show the block-style tick mark when the checkbox is checked */
+.dark-mode .checklist .checkbox:checked + .checkmark:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+}
+
+/* Remove the dot in front of the items */
+.dark-mode .checklist ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
 
 
 /* dark mode animations */
