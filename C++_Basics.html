@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C++ Basics - Checklist App</title>
+  <title>C++ Basics - The Checklist</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="dark-mode.css">
 </head>
 <body>
   <header>
-    <h1><a href="index.html">The Checklist</h1>
+    <h1><a href="index.html">The Checklist</a></h1>
   </header>
   <nav>
     <!-- may use this thing later -->
     <!-- <ul>
       <li><a href="checklist1.html">Checklist 1</a></li>
-      <li><a href="checklist2.html">Checklist 2</a></li> -->
-      <!-- Add more checklists here -->
-    <!-- </ul> -->
+      <li><a href="checklist2.html">Checklist 2</a></li>
+    </ul> -->
+    <!-- Add more checklists here -->
+
+    <!-- dark mode elements -->
     <button class="dark-mode-toggle">
       <i class="sun-icon"></i>
       <i class="moon-icon"></i>
@@ -29,67 +31,61 @@
       <ul>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+            Introduction to C++
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
             Variables and Data Types
           </label>
         </li>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
             Input and Output (cin, cout)
           </label>
         </li>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
-            Conditional Statements (if, else, switch)
+            Control Statements (if, else, for, while)
           </label>
         </li>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
-            Loops (for, while, do-while)
+            Functions and Scope
           </label>
         </li>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
-            Functions (defining and calling)
+            Arrays and Strings
           </label>
         </li>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
-            Types of Functions 
+            Pointers and References
           </label>
         </li>
         <li>
           <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
             <span class="checkmark"></span>
-            Arrays
+            Object-Oriented Programming Concepts (briefly)
           </label>
         </li>
-        <li>
-          <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
-            <span class="checkmark"></span>
-            Pointers
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" class="checkbox" data-checklist="checklist1">
-            <span class="checkmark"></span>
-            Basic File I/O
-          </label>
-        </li>
+        <!-- Add more C++ basics topics here -->
       </ul>
     </section>
   </main>
@@ -98,10 +94,5 @@
   <footer>
     <p>Made with <span class="heart">&hearts;</span> by <a href="https://github.com/UjjwalSharma01" class="footer-link">Ujjwal Sharma</a></p>
   </footer>
-  <div id="stage"></div>
-
-<canvas id="text" width="700" height="200"></canvas>
-
-<input id="input" type="text" value="EDIT ME"/>
 </body>
 </html>
