@@ -1,0 +1,57 @@
+/* contribute.css */
+
+/* Add some styling to the header */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  header a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Style the contribute section */
+  .contribute-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the buttons */
+  .contribute-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .contribute-button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+  
+  /* Add a scroll-to-top button */
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+  

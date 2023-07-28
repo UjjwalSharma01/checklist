@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribute - The Checklist</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark-mode.css">
+  <link rel="stylesheet" href="contribute.css"> 
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+  <button class="dark-mode-toggle">
+    <i class="sun-icon"></i>
+    <i class="moon-icon"></i>
+  </button>
+
+  <header>
+    <h1><a href="index.html" class="clicked-glow">The Checklist</a></h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="contact.html" class="clicked-glow">Contact Us</a></li>
+      <li><a href="Contribute.html" class="clicked-glow">Contribute</a></li>  
+    </ul>
+  </nav>
+  <main>
+    <section class="contribute-section">
+      <h2>Contribute to The Checklist</h2>
+      <p>Thank you for your interest in contributing to The Checklist project!</p>
+      
+      <h3>About The Checklist</h3>
+      <p>The Checklist is a web application that serves as a comprehensive collection of topics from different technologies. It is designed to help users with last-minute revisions and ensure they have completed all the necessary topics in their study or work areas.</p>
+
+      <h3>How to Contribute</h3>
+      <p>We welcome contributions from all developers and tech enthusiasts. If you want to be part of this project and appreciate its value, you can contribute in the following ways:</p>
+      <ul>
+        <li>Adding new topics to existing checklists</li>
+        <li>Creating new checklists for different technologies</li>
+        <li>Improving the user interface and user experience</li>
+        <li>Fixing bugs and issues</li>
+        <li>Translating the app into different languages</li>
+        <li>Providing feedback and suggestions</li>
+      </ul>
+
+      <h3>Getting Started</h3>
+      <p>If you are new to contributing to open-source projects, don't worry! We have a friendly and supportive community ready to help you get started. Here's how you can begin:</p>
+      <ol>
+        <li>Clone the project repository from GitHub</li>
+        <li>Set up the development environment</li>
+        <li>Make the necessary changes and additions</li>
+        <li>Create a pull request with your changes</li>
+        <li>Wait for review and feedback from maintainers</li>
+        <li>Once approved, your contributions will be merged</li>
+      </ol>
+
+      <h3>Ready to Contribute?</h3>
+      <p>Start contributing to The Checklist today! Together, we can make this app even more valuable for developers and learners worldwide.</p>
+      <a href="https://github.com/UjjwalSharma01/The-Checklist" target="_blank" class="contribute-button">Contribute on GitHub</a>
+    </section>
+  </main>
+
+  <!-- Loading Animation Script -->
+  <script>
+    // Hide the loading overlay when the page is fully loaded
+    window.addEventListener("load", function () {
+      const loadingOverlay = document.querySelector(".loading-overlay");
+      loadingOverlay.style.display = "none";
+
+      // Remove the "Contribute" link from the navigation after the page loads
+      const contributeLink = document.querySelector("a[href='Contribute.html']");
+      if (contributeLink) {
+        contributeLink.parentElement.remove();
+      }
+    });
+
+    // Add click event listener to clicked-glow elements
+    const clickedGlowElements = document.querySelectorAll(".clicked-glow");
+    clickedGlowElements.forEach((element) => {
+      element.addEventListener("click", () => {
+        element.classList.add("clicked-glow");
+        setTimeout(() => {
+          element.classList.remove("clicked-glow");
+        }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+  <footer>
+    <p>Made with <span class="heart">&hearts;</span> by <a href="https://github.com/UjjwalSharma01" class="footer-link">Ujjwal Sharma</a></p>
+  </footer>
+</body>
+</html>
