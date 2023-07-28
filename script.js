@@ -39,7 +39,7 @@ clickedGlowElements.forEach((element) => {
 
 
 
-
+// drop down arrow
 
 
 const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
@@ -53,3 +53,27 @@ dropdownArrows.forEach((arrow) => {
   });
 });
 
+
+
+
+
+// shifting of checklist item when arrow is activated
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
+  dropdownArrows.forEach(function (arrow) {
+    arrow.addEventListener("click", function () {
+      const checklistItem = arrow.closest(".checklist-item");
+      const hiddenText = checklistItem.querySelector(".hidden-text");
+      const checkbox = checklistItem.querySelector(".checkbox");
+      if (checkbox.checked) {
+        hiddenText.style.display = "block";
+        const hiddenTextHeight = hiddenText.clientHeight;
+        checklistItem.style.marginBottom = hiddenTextHeight + "px";
+      } else {
+        hiddenText.style.display = "none";
+        checklistItem.style.marginBottom = "0";
+      }
+    });
+  });
+});
