@@ -6,6 +6,34 @@
   <title>OOP Basics - The Checklist</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="dark-mode.css">
+  <style>
+    /* Add a class for the hidden text */
+    .hidden-text {
+      display: none;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    /* Add a class for the drop-down arrow */
+    .dropdown-arrow::after {
+      content: "▼";
+      margin-left: 5px;
+    }
+    /* Add a class for the checked drop-down arrow */
+    .dropdown-arrow.checked::after {
+      content: "▲";
+    }
+    /* Add a class to position the drop-down arrow on the right */
+    .checklist li {
+      position: relative;
+    }
+    .dropdown-arrow {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -34,6 +62,10 @@
             <input type="checkbox" class="checkbox" data-checklist="oop-basics">
             <span class="checkmark"></span>
             What is OOP and its principles
+            <!-- Add the drop-down arrow -->
+            <span class="dropdown-arrow"></span>
+            <!-- Add the hidden text -->
+            <span class="hidden-text">I'm the text that appears when you click the arrow for 'What is OOP and its principles'.</span>
           </label>
         </li>
         <li>
@@ -41,42 +73,53 @@
             <input type="checkbox" class="checkbox" data-checklist="oop-basics">
             <span class="checkmark"></span>
             Classes and Objects
+            <!-- Add the drop-down arrow -->
+            <span class="dropdown-arrow"></span>
+            <!-- Add the hidden text -->
+            <span class="hidden-text">I'm the text that appears when you click the arrow for 'Classes and Objects'.</span>
           </label>
         </li>
-        <li>
-          <label>
-            <input type="checkbox" class="checkbox" data-checklist="oop-basics">
-            <span class="checkmark"></span>
-            Constructors and Destructors
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" class="checkbox" data-checklist="oop-basics">
-            <span class="checkmark"></span>
-            Encapsulation and Data Hiding
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" class="checkbox" data-checklist="oop-basics">
-            <span class="checkmark"></span>
-            Inheritance and Polymorphism
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" class="checkbox" data-checklist="oop-basics">
-            <span class="checkmark"></span>
-            Abstraction
-          </label>
-        </li>
-        <!-- Add more OOP topics here -->
+        <!-- Add more items with hidden text -->
       </ul>
     </section>
   </main>
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
+  <!-- Existing HTML code with the drop-down arrows -->
+...
+
+<script>
+  // Function to toggle the visibility of the hidden text
+  function toggleHiddenText(event) {
+    const hiddenText = event.target.nextElementSibling;
+    hiddenText.style.display = hiddenText.style.display === "block" ? "none" : "block";
+  }
+
+  // Function to toggle the checked state of the drop-down arrow
+  function toggleDropdownArrow(event) {
+    const dropdownArrow = event.target;
+    dropdownArrow.classList.toggle("checked");
+  }
+
+  // Add click event listener to all arrow elements
+  const arrows = document.querySelectorAll(".checklist .dropdown-arrow");
+  arrows.forEach((arrow) => {
+    arrow.addEventListener("click", (event) => {
+      event.stopPropagation(); // Prevent checkbox from being triggered when clicking the arrow
+      toggleHiddenText(event); // Toggle the hidden text
+      toggleDropdownArrow(event); // Toggle the checked state of the arrow
+    });
+  });
+
+  // Prevent checkbox from being triggered when clicking the label
+  const labels = document.querySelectorAll(".checklist label");
+  labels.forEach((label) => {
+    label.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+  });
+</script>
+
   <footer>
     <p>Made with <span class="heart">&hearts;</span> by <a href="https://github.com/UjjwalSharma01" class="footer-link">Ujjwal Sharma</a></p>
   </footer>

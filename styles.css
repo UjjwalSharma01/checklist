@@ -174,12 +174,6 @@ nav li a:hover {
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
 }
-
-/* Glow Animation for Clicked Links */
-.clicked-glow {
-  animation: glow 0.5s ease-in-out;
-}
-
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Light glow color on click */
@@ -247,7 +241,6 @@ nav li {
     padding: 20px;
   }
 }
-
 
 
 /* checklist one and two from contact us to below the quote*/
@@ -336,13 +329,6 @@ nav li {
   background-color: #eee; /* Light gray background on hover */
 }
 
-/* Glow Animation for Clicked Links */
-.checklists .clicked-glow {
-  animation: glow 0.5s ease-in-out;
-}
-
-
-
 /* applying gap between both the checklists */
 
 
@@ -375,11 +361,6 @@ nav li {
 .checklists li a:hover {
   cursor: pointer;
   background-color: #eee; /* Light gray background on hover */
-}
-
-/* Glow Animation for Clicked Links */
-.checklists .clicked-glow {
-  animation: glow 0.5s ease-in-out;
 }
 
 /* style for the contact us form */
@@ -593,5 +574,54 @@ footer .heart {
 /* Added hover effect for checklist items */
 .checklist label:hover .checkmark {
   background-color: #eee; /* Light gray background on hover */
+}
+
+
+
+/* drop down menu */
+
+
+
+
+/* Add a class to wrap the checklist text and drop-down arrow */
+.checklist-label {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the checklist text */
+.checklist-text {
+  margin-right: 10px; /* Add spacing between checklist text and drop-down arrow */
+}
+
+/* Add a class for the hidden text */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Add a class for the drop-down arrow */
+.dropdown-arrow::after {
+  content: "▼";
+  margin-left: 5px;
+}
+
+/* Add a class for the checked drop-down arrow */
+.dropdown-arrow.checked::after {
+  content: "▲";
+}
+
+/* Add a class to position the drop-down arrow on the right */
+.checklist li {
+  position: relative;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 0;
+  top: 0; /* Adjust the top position */
+  transform: translateY(50%); /* Adjust the vertical alignment */
 }
 
