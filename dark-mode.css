@@ -218,3 +218,11 @@ body.dark-mode .dark-mode-toggle::after {
 .dark-mode-toggle:hover {
   background-color: #444;
 }
+
+
+
+/* hover effect on checklist items */
+.checklist .checklist-item:hover label {
+  background-color: #666;
+}
+

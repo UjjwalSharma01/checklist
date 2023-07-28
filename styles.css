@@ -704,7 +704,6 @@ footer .heart {
 /* dropdown functionality */
 
 
-/* ... (existing styles) */
 
 /* Add styles for the hidden text in the drop-down */
 .hidden-text {
@@ -713,7 +712,7 @@ footer .heart {
   font-size: 14px;
   color: #333;
   background-color: #f0f0f0;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
   position: absolute;
   width: calc(100% - 40px);
@@ -730,5 +729,3 @@ input[type="checkbox"].checkbox:checked ~ .checkmark ~ .hidden-text {
   position: relative;
   z-index: 0; /* Set the z-index to 0 to stack the checklist items below the hidden text */
 }
-
-/* ... (existing styles) */
