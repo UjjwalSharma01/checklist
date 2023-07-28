@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checklist App</title>
+  <title>The checklist</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="dark-mode.css"> <!-- Add the dark mode CSS file -->
   <!-- Font Awesome CSS -->
@@ -49,25 +49,6 @@
       </div>
     </section>
   </main>
-
-  <script>
-    // Hide the loading overlay when the page is fully loaded
-    window.addEventListener("load", function () {
-      const loadingOverlay = document.querySelector(".loading-overlay");
-      loadingOverlay.style.display = "none";
-    });
-
-    // Add click event listener to clicked-glow elements
-    const clickedGlowElements = document.querySelectorAll(".clicked-glow");
-    clickedGlowElements.forEach((element) => {
-      element.addEventListener("click", () => {
-        element.classList.add("clicked-glow");
-        setTimeout(() => {
-          element.classList.remove("clicked-glow");
-        }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
-      });
-    });
-  </script>
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
   <footer>

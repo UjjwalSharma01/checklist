@@ -20,3 +20,19 @@ checkboxes.forEach((checkbox) => {
   }
 });
 
+// Hide the loading overlay when the page is fully loaded
+window.addEventListener("load", function () {
+  const loadingOverlay = document.querySelector(".loading-overlay");
+  loadingOverlay.style.display = "none";
+});
+
+// Add click event listener to clicked-glow elements
+const clickedGlowElements = document.querySelectorAll(".clicked-glow");
+clickedGlowElements.forEach((element) => {
+  element.addEventListener("click", () => {
+    element.classList.add("clicked-glow");
+    setTimeout(() => {
+      element.classList.remove("clicked-glow");
+    }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
+  });
+});
