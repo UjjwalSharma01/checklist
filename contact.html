@@ -33,7 +33,7 @@
       <p>If you have any questions, feedback, or suggestions, feel free to reach out to us using the contact form below:</p>
       
       <!-- Contact Form -->
-      <form action="contact_form_handler.php" method="post">
+      <form id="contact-form" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required> <!-- Mark as required -->
 
@@ -46,7 +46,8 @@
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="4" required></textarea> <!-- Mark as required -->
 
-        <button type="submit">Submit</button>
+        <!-- Use the action attribute to specify the Formspree endpoint -->
+        <button type="submit" formaction="https://formspree.io/f/xwkdveyv">Submit</button>
       </form>
     </section>
   </main>
