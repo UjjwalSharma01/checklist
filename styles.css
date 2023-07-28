@@ -331,11 +331,6 @@ nav li {
 
 /* applying gap between both the checklists */
 
-
-
-
-
-/* Checklist Styles */
 .checklists div {
   margin-bottom: 10px; /* Add margin at the bottom to create a gap between checklists */
 }
@@ -580,9 +575,6 @@ footer .heart {
 
 /* drop down menu */
 
-
-
-
 /* Add a class to wrap the checklist text and drop-down arrow */
 .checklist-label {
   display: flex;
@@ -625,3 +617,87 @@ footer .heart {
   transform: translateY(50%); /* Adjust the vertical alignment */
 }
 
+/* Drop-down menu styles */
+.checklist-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  content: "▼"; /* Drop-down arrow icon */
+  margin-left: 5px;
+}
+
+/* Hidden content for the drop-down menu */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Show the hidden content when the drop-down arrow is clicked */
+.show {
+  display: block;
+}
+
+
+
+/* Hide the hidden text by default */
+.hidden-text {
+  display: none;
+}
+
+/* Style the drop-down arrow icon */
+.dropdown-arrow {
+  position: absolute;
+  right: 0;
+  top: 0; /* Adjust the top position */
+  transform: translateY(50%); /* Adjust the vertical alignment */
+  cursor: pointer; /* Add pointer cursor to indicate clickability */
+}
+
+/* Style the checked drop-down arrow icon */
+.dropdown-arrow.checked::after {
+  content: "▲";
+}
+.hidden-text.show {
+  display: block;
+}
+
+
+
+/* DROP-DOWN TEXT */
+
+/* ... (existing styles) */
+
+/* Add styles for the hidden text in the drop-down */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Add styles for the dropdown toggle */
+.dropdown-toggle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Show the hidden text when dropdown is toggled */
+.checkbox:checked ~ .hidden-text.show {
+  display: block;
+}

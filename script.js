@@ -36,3 +36,20 @@ clickedGlowElements.forEach((element) => {
     }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
   });
 });
+
+
+
+
+
+
+const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
+
+dropdownArrows.forEach((arrow) => {
+  arrow.addEventListener("click", () => {
+    const listItem = arrow.closest("li");
+    const hiddenText = listItem.querySelector(".hidden-text");
+    hiddenText.classList.toggle("show");
+    arrow.classList.toggle("checked");
+  });
+});
+
