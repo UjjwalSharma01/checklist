@@ -1,6 +1,5 @@
 # Checklist
-
-
+<img src="Images/hacktoberfest2023.png">
 Checklist is a website designed for engineering students and tech enthusiasts. We provide concise and easy-to-understand notes on various tech concepts, making it ideal for last-minute revisions, interview preparations, and exam studies.
 
 ## Features
