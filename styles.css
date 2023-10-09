@@ -155,7 +155,6 @@ nav li a:hover {
 
 /* Hover Animation for Navigation Links */
 nav li a {
-  /* Existing styles ... */
   transition: background-color 0.3s ease-in-out;
 }
 
