@@ -76,7 +76,7 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Encapsulation is the concept of hiding the internal implementation details of a class and providing a public interface. Learn how to use access specifiers (public, private, protected) to control access to class members.
+            Encapsulation in C++ is the process of bundling data and code together into a single unit called a class. This allows us to hide the implementation details of the class from the outside world, and only expose public methods that allow users to interact with the data in a controlled way.   
           </div>
         </li>
         <li class="checklist-item">
@@ -87,7 +87,25 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Operator overloading allows you to define custom behaviors for C++ operators such as +, -, *, and /. Learn how to create operator overloads for user-defined classes.
+            Operator overloading is a feature of C++ that allows programmers to define their own behavior for built-in operators. This can be useful for working with user-defined data types, such as complex numbers or fractions.
+            To overload an operator, you must define a member function whose name is operator followed by the symbol for the operator you are overloading. The function must have the same return type and parameter list as the built-in operator.   
+          <pre class="code-snippet">
+            <p>Example Code:</p>
+            <code>
+            class ComplexNumber {
+              public:
+                ComplexNumber(double real, double imaginary) : real_(real), imaginary_(imaginary) {}
+              
+                ComplexNumber operator+(const ComplexNumber& other) const {
+                  return ComplexNumber(real_ + other.real_, imaginary_ + other.imaginary_);
+                }
+              
+              private:
+                double real_;
+                double imaginary_;
+              };
+            </code>
+            </pre>
           </div>
         </li>
         <li class="checklist-item">
@@ -98,7 +116,8 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Templates enable you to write generic code that works with different data types. Explore function templates and class templates in C++.
+            A template in C++ is a blueprint or formula for creating a generic class or function. Generic programming is a technique where generic types are used as parameters in algorithms so that they can work for a variety of data types.
+            Templates can be used to create generic classes that can work with different data types, or to create generic functions that can be used to perform operations on different data types.        
           </div>
         </li>
         <li class="checklist-item">
@@ -109,7 +128,31 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Exception handling allows you to handle runtime errors gracefully. Learn about try, catch, and throw to manage exceptions in your C++ programs.
+            Exception handling in C++ is a way to handle errors that occur during program execution. It is based on three keywords: try, catch, and throw.
+            try: The try block contains the code that may throw an exception.
+            catch: The catch blocks follow the try block and contain code to handle different types of exceptions.
+            throw: The throw keyword is used to throw an exception.
+            When an exception is thrown, the program execution jumps to the first catch block that matches the type of the exception. If there is no matching catch block, the program terminates.     
+            <pre class="code-snippet">
+              <p>Example Code:</p>
+              <code>
+                #include <iostream>
+
+                  using namespace std;
+                  
+                  int main() {
+                    try {
+                      // This code may throw an exception.
+                      int x = 10 / 0;
+                    } catch (const exception& e) {
+                      // Handle the exception here.
+                      cout << "An exception occurred: " << e.what() << endl;
+                    }
+                  
+                    return 0;
+                  }                  
+              </code>
+              </pre>     
           </div>
         </li>
         <li class="checklist-item">
@@ -120,7 +163,11 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            The STL provides a collection of reusable C++ templates for common data structures (e.g., vectors, queues) and algorithms (e.g., sorting, searching).
+            The Standard Template Library (STL) is a software library that provides a set of generic data structures and algorithms. It is part of the C++ Standard Library and is widely used in C++ programming.
+            The STL is divided into three main components:
+            Containers: Containers are objects that store collections of data. Some common STL containers include vectors, lists, maps, and sets.
+            Algorithms: Algorithms are functions that operate on containers. Some common STL algorithms include sort(), search(), and count().
+            Iterators: Iterators are objects that allow you to step through the elements of a container in a sequential order.          
           </div>
         </li>
         <li class="checklist-item">
@@ -131,7 +178,7 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            RAII is a C++ programming technique that ties the lifetime of resources (e.g., memory, file handles) to the lifetime of objects. Learn how to implement RAII for resource management.
+            RAII, or Resource Acquisition Is Initialization, is a programming idiom used in C++ to ensure that resources are automatically released when they are no longer needed. This is done by binding the lifetime of a resource to the lifetime of an object.
           </div>
         </li>
         <li class="checklist-item">
@@ -142,7 +189,35 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Friend functions and classes can access the private and protected members of a class. Understand how to declare and use friend functions and classes in C++.
+            A friend function is a function that is not a member of a class but can access the private and protected members of the class. A friend class is a class that can access the private and protected members of another class. Friend functions and classes are useful for situations where you need to allow a function or class to access the private and protected members of another class. For example, you might want to use a friend function to implement a global function that operates on objects of a particular class, or you might want to use a friend class to implement a helper class that works closely with another class.
+            <pre class="code-snippet">
+              <p>Example Code:</p>
+              <code>
+                class MyClass {
+                  private:
+                    int my_private_member;
+                  
+                  public:
+                    MyClass() : my_private_member(0) {}
+                  
+                    friend int GetMyPrivateMember(MyClass& my_class) {
+                      return my_class.my_private_member;
+                    }
+                  };
+                  
+                  int main() {
+                    MyClass my_class;
+                  
+                    // Access the private member of MyClass using the friend function.
+                    int my_private_member = GetMyPrivateMember(my_class);
+                  
+                    // Do something with the private member.
+                  
+                    return 0;
+                  }
+                           
+              </code>
+              </pre>   
           </div>
         </li>
         <li class="checklist-item">
@@ -153,7 +228,42 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Multiple inheritance allows a class to inherit from more than one base class. Learn how to handle potential ambiguities and complexities in multiple inheritance scenarios.
+            Multiple inheritance in C++ is a feature that allows a class to inherit from more than one base class. This can be useful for modeling real-world situations where a class may have multiple different types of behavior. For example, a class representing a car could inherit from a Vehicle class and an Automobile class. The Vehicle class could provide the car with the basic functionality of being able to move and steer, while the Automobile class could provide it with more specific functionality such as having an engine and transmission.
+            <pre class="code-snippet">
+              <p>Example Code:</p>
+              <code>
+                class Vehicle {
+                  public:
+                    virtual void Move() {
+                     cout << "The vehicle is moving." << endl;
+                    }
+                  };
+                  
+                  class Automobile {
+                  public:
+                    virtual void Move() {
+                      cout << "The automobile is driving." << endl;
+                    }
+                  };
+                  
+                  class Car : public Vehicle, public Automobile {
+                  public:
+                    // Override the Move() function from the Vehicle class.
+                    void Move() override {
+                      Automobile::Move();
+                    }
+                  };
+                  
+                  int main() {
+                    Car car;
+                  
+                    // Call the Move() function on the car object.
+                    car.Move();
+                  
+                    return 0;
+                  }   
+              </code>
+              </pre>   
           </div>
         </li>
         <li class="checklist-item">
@@ -164,7 +274,22 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Smart pointers (e.g., std::shared_ptr, std::unique_ptr) provide automatic memory management in C++. Explore their usage for safe and efficient memory handling.
+            Smart pointers are a type of pointer in C++ that automatically manage the lifetime of the object they point to. This means that the programmer does not need to worry about manually deleting the object when it is no longer needed, which can help to prevent memory leaks.
+            <p>The three types of small pointers are:</p>
+            <ul>
+              <li>
+                <strong>unique_ptr:</strong> A unique_ptr can only have one owner at a time.
+                When the unique_ptr goes out of scope, it will automatically delete the object it points to.
+              </li>
+              <li>
+                <strong>shared_ptr:</strong> A shared_ptr can have multiple owners at the same time.
+                The object it points to will be deleted when the last shared_ptr goes out of scope.
+              </li>
+              <li>
+                <strong>weak_ptr:</strong> A weak_ptr does not own the object it points to.
+                It can be used to observe a shared_ptr without preventing it from being deleted.
+              </li>
+            </ul>
           </div>
         </li>
         <li class="checklist-item">
@@ -175,10 +300,62 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Abstraction is a fundamental OOP concept that involves simplifying complex systems by focusing on the essential features. Learn how to use abstract classes and pure virtual functions for abstraction in C++.
+            Abstraction in C++ is the process of hiding the internal implementation of a class or function from the outside world, while still exposing the necessary functionality. This makes the code easier to understand and maintain, and it also allows for greater flexibility.
+            <p>Abstraction can be achieved in C++ using a variety of techniques, including:            </p>
+            <ul>
+              <li>
+                <strong>Classes:</strong> Classes can be used to group related data and functions together, and to hide the internal implementation of the class from the outside world.
+              </li>
+              <li>
+                <strong>Header files:</strong> Header files can be used to declare public interfaces for classes and functions, while hiding the private implementation details.
+              </li>
+              <li>
+                <strong>Access specifiers:</strong> Access specifiers (public, private, and protected) can be used to control which parts of a class are accessible to the outside world.
+              </li>
+            </ul>
+            <pre class="code-snippet">
+              <p>Example Code:</p>
+              <code>
+                class Car {
+                  private:
+                    int engine_size;
+                    int fuel_level;
+                  
+                  public:
+                    // Public interface for the Car class.
+                    void StartEngine() {
+                      // ...
+                    }
+                  
+                    void Accelerate() {
+                      // ...
+                    }
+                  
+                    void Brake() {
+                      // ...
+                    }
+                  };
+                  
+                  int main() {
+                    // Create a Car object.
+                    Car my_car;
+                  
+                    // Start the car engine.
+                    my_car.StartEngine();
+                  
+                    // Accelerate the car.
+                    my_car.Accelerate();
+                  
+                    // Brake the car.
+                    my_car.Brake();
+                  
+                    return 0;
+                  }                  
+              </code>
+              </pre>   
           </div>
         </li>
-        <!-- Add more OOP topics here -->
+
         <li class="checklist-item">
           <label>
             <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
@@ -188,6 +365,14 @@
           </label>
           <div class="hidden-text">
             Composition and aggregation are ways to create relationships between objects. Understand the differences between these two approaches and when to use them in your C++ programs.
+            <ul>
+              <li>
+                <strong>Composition:</strong> Composition is a strong relationship where the parent class owns the child class. This means that the child class cannot exist independently of the parent class. When the parent class is destroyed, the child class is also destroyed.
+              </li>
+              <li>
+                <strong>Aggregation:</strong> Aggregation is a weaker relationship where the parent class has a reference to the child class. This means that the child class can exist independently of the parent class. When the parent class is destroyed, the child class is not automatically destroyed.
+              </li>
+            </ul>
           </div>
         </li>
         <li class="checklist-item">
@@ -198,7 +383,7 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Virtual base classes resolve the "diamond problem" in multiple inheritance scenarios. Learn how to use virtual inheritance to avoid ambiguities in C++.
+            Virtual base classes in C++ are used to avoid multiple instances of a given class from appearing in an inheritance hierarchy when using multiple inheritances.
           </div>
         </li>
         <li class="checklist-item">
@@ -209,7 +394,7 @@
             <span class="dropdown-arrow"></span>
           </label>
           <div class="hidden-text">
-            Object serialization involves converting objects into a format that can be stored or transmitted. Explore how to serialize and deserialize objects in C++ for data persistence and communication.
+            Object serialization is the process of converting an object into a sequence of bytes that can be stored or transmitted. This can be useful for storing data to a file, sending data over a network, or persisting data between program executions. There are many different ways to serialize objects in C++. One common approach is to use the Boost serialization library. Boost serialization provides a generic framework for serializing and deserializing objects of any type.
           </div>
         </li>
         <li class="checklist-item">
