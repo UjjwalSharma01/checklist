@@ -199,6 +199,7 @@ body.dark-mode {
 /* Sun icon */
 .dark-mode-toggle::before {
   content: '☀️';
+  z-index: 998;
 }
 
 /* Moon icon */
@@ -208,13 +209,16 @@ body.dark-mode {
   opacity: 0; /* Hide the moon initially */
   left: 50%;
   transform: translateX(-50%);
+  z-index: 999;
 }
 
 /* Show the moon icon when in dark mode */
 body.dark-mode .dark-mode-toggle::after {
   opacity: 1;
 }
-
+body.dark-mode .dark-mode-toggle::before {
+  opacity: 0;
+}
 .dark-mode-toggle:hover {
   background-color: #444;
 }

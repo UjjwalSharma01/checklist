@@ -1,142 +1,501 @@
-/* BUTTON */
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Light gray background */
+}
 
-.dark-mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
+header {
   background-color: #333;
   color: #fff;
-  border: none;
   padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
+  text-align: center;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0; /* Light gray button background */
+}
+
+nav li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+.checklist {
+  margin-bottom: 20px;
+}
+
+
+
+.checkmark {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked + .checkmark {
+  background-color: #333;
+  border-color: #333;
+}
+
+/* Motivational Quote Section */
+.quote {
+  text-align: center;
+  margin-top: 30px;
+}
+
+blockquote {
   font-size: 24px;
+  font-style: italic;
+  color: #555;
+  margin: 0;
+  padding: 20px;
+  border-left: 5px solid #333; /* Darker gray border on the left */
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Loading Animation */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loading-spinner {
+  border: 5px solid #333;
+  border-top: 5px solid transparent; /* Hide the top border to create a spinner */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Apply the rotation animation */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* hover animation */
+
+/* Hover Animation for Navigation Links */
+nav li a {
   transition: background-color 0.3s ease-in-out;
 }
 
-.dark-mode-toggle:hover {
+nav li a:hover {
+  background-color: #444; /* Darker background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Hover Animation for Checklist Items */
+.checklist li label:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Hover Animation for Motivational Quote */
+.quote blockquote:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+
+
+
+/* Hover Animation for Navigation Links */
+nav li a {
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav li a:hover {
+  background-color: #444; /* Darker background on hover */
+  color: #fff; /* Text color on hover */
+}
+
+/* Hover Animation for Checklist Items */
+.checklist li label:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Hover Animation for Motivational Quote */
+.quote blockquote:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Light glow color on click */
+  }
+  100% {
+    box-shadow: none; /* Remove the glow effect after animation */
+  }
+}
+
+
+}
+
+
+/* RESPONSIVENESS ADDTIN  */
+
+/* Header */
+header h1 {
+  font-size: 24px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-direction: column; /* Stack the links vertically */
+  align-items: center; /* Center the links vertically */
+  gap: 10px; /* Add some spacing between the links */
+}
+
+nav li {
+  width: 100%; /* Make the links take full width */
+  text-align: center;
+}
+
+/* Motivational Quote Section */
+.quote blockquote {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* Media Query for screens between 601px to 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Navigation */
+  nav ul {
+    flex-direction: row; /* Align the links horizontally */
+    justify-content: center; /* Center the links horizontally */
+  }
+}
+
+/* Media Query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+  /* Header */
+  header h1 {
+    font-size: 32px;
+  }
+
+  /* Navigation */
+  nav ul {
+    flex-direction: row; /* Align the links horizontally */
+    justify-content: flex-end; /* Align the links to the right */
+  }
+
+  /* Motivational Quote Section */
+  .quote blockquote {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+
+
+/* checklist one and two from contact us to below the quote*/
+
+/* Checklist Styles */
+.checklists ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.checklists li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.checklists a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checklists a:hover {
   background-color: #444;
+  color: #fff;
+}
+
+/* Hover Animation for Checklist Items */
+.checklists li a:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* Glow Animation for Clicked Links */
+.checklists .clicked-glow {
+  animation: glow 0.5s ease-in-out;
 }
 
 
 
-/* DARK MODE STYLES */
-body.dark-mode {
+/* change the alignment */
+
+
+
+/* ******************************************************************************************************************** */
+
+
+
+/* Checklist Styles */
+.checklists ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.checklists li {
+  margin: 10px;
+}
+
+.checklists a {
+  display: block; /* Display the checklist items in a block (vertical) */
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checklists a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Hover Animation for Checklist Items */
+.checklists li a:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* applying gap between both the checklists */
+
+.checklists div {
+  margin-bottom: 10px; /* Add margin at the bottom to create a gap between checklists */
+}
+
+.checklists a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.checklists a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Hover Animation for Checklist Items */
+.checklists li a:hover {
+  cursor: pointer;
+  background-color: #eee; /* Light gray background on hover */
+}
+
+/* style for the contact us form */
+
+.contact-section form {
+  max-width: 400px; /* Set a maximum width for the form to prevent it from stretching too wide */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.contact-section form label {
+  display: block; /* Display labels as blocks (vertical) */
+  margin-bottom: 5px; /* Add some spacing between labels */
+  font-weight: bold;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px; /* Add some spacing between form elements */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-section form textarea {
+  resize: vertical; /* Allow the textarea to be vertically resizable */
+}
+
+.contact-section form button {
+  padding: 10px 20px;
   background-color: #333;
   color: #fff;
-}
-
-.dark-mode header {
-  background-color: #444;
-}
-
-.dark-mode header h1 a {
-  color: #fff;
-}
-
-.dark-mode nav {
-  background-color: #444;
-}
-
-.dark-mode nav li a {
-  background-color: #333;
-  color: #fff;
-}
-
-.dark-mode nav li a:hover {
-  background-color: #555;
-}
-
-.dark-mode .checklists a {
-  background-color: #222;
-  color: #fff;
-}
-
-.dark-mode .checklists a:hover {
-  background-color: #333;
-}
-
-.dark-mode .quote blockquote {
-  background-color: #444;
-  color: #eee;
-}
-
-.dark-mode .contact-section form label {
-  color: #fff;
-}
-
-.dark-mode .contact-section form input,
-.dark-mode .contact-section form textarea {
-  background-color: #444;
-  color: #eee;
-  border: 1px solid #666;
-}
-
-.dark-mode .contact-section form button {
-  background-color: #444;
-}
-
-.dark-mode .contact-section form button:hover {
-  background-color: #555;
-}
-
-/* Dark mode styles for the footer */
-.dark-mode footer {
-  background-color: #222;
-}
-
-.dark-mode footer p {
-  color: #fff;
-}
-
-.dark-mode .heart {
-  color: #ff4136;
-}
-
-/* Dark mode styles for the link in the footer */
-.dark-mode .footer-link {
-  color: #fff;
-}
-
-.dark-mode .footer-link:hover {
-  text-decoration: underline;
-}
-
-
-/* Dark mode styles for the checkboxes */
-.dark-mode .checklist .checkbox {
-  display: none; /* Hide the default checkbox */
-}
-
-/* Create a custom checkbox appearance */
-.dark-mode .checklist .checkbox + .checkmark {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #fff;
-  border-radius: 4px;
-  margin-right: 8px; /* Adjust the gap between the checkbox and the text */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-/* Show the block-style tick mark when the checkbox is checked */
-.dark-mode .checklist .checkbox:checked + .checkmark:after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 10px;
-  height: 5px;
-  border: 2px solid #fff;
-  border-top: none;
-  border-right: none;
-  transform: rotate(-45deg);
+.contact-section form button:hover {
+  background-color: #444;
 }
 
-/* Remove the dot in front of the items */
-.dark-mode .checklist ul {
+/* Media Query for screens larger than 768px */
+@media screen and (min-width: 768px) {
+  .contact-section form {
+    display: flex; /* Display the form elements in a row on larger screens */
+    flex-wrap: wrap; /* Allow the form elements to wrap to the next row if needed */
+  }
+
+  .contact-section form label {
+    flex: 1 0 100%; /* Make labels take full width on larger screens */
+    margin-right: 10px; /* Add some spacing between labels and form elements */
+  }
+
+  .contact-section form input,
+  .contact-section form textarea {
+    flex: 2 0 calc(50% - 15px); /* Make form elements take half width on larger screens */
+  }
+
+  .contact-section form textarea {
+    resize: none; /* Disable textarea resizing on larger screens */
+  }
+
+  .contact-section form button {
+    flex: 1 0 100%; /* Make button take full width on larger screens */
+  }
+}
+
+/* ADDED FOOTER */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer span {
+  color: #ff4136; /* Red color for heart symbol */
+}
+
+/* resolving footer overlapping in mobile screen mode */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed; /* Change to "fixed" */
+  bottom: 0;
+  width: 100%;
+}
+
+/* Add some padding to the main content section to prevent overlapping */
+main {
+  padding-bottom: 70px; /* Adjust the value as needed */
+}
+
+
+/* adding github profile link to the footer */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer .heart {
+  color: #ff4136; /* Red color for heart symbol */
+}
+
+/* Styling for the link in the footer */
+.footer-link {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Set link color to white */
+}
+
+/* Hover effect for the link */
+.footer-link:hover {
+  text-decoration: underline; /* Add underline on hover (optional) */
+}
+
+
+.checklist ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
@@ -144,89 +503,228 @@ body.dark-mode {
 
 
 
-/* Animation for the toggle button */
-@keyframes sunToMoonAnimation {
-  0% {
-    transform: rotateY(0);
-  }
-  50% {
-    transform: rotateY(90deg);
-  }
-  100% {
-    transform: rotateY(180deg);
-  }
-}
 
-@keyframes moonToSunAnimation {
-  0% {
-    transform: rotateY(180deg);
-  }
-  50% {
-    transform: rotateY(90deg);
-  }
-  100% {
-    transform: rotateY(0);
-  }
-}
 
-.dark-mode-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
+/* styles.css */
+
+/* Additional styles for Checklist 2 */
+.checklist h2 {
+  text-align: center;
+  margin-bottom: 20px;
   font-size: 24px;
-  transition: background-color 0.3s ease-in-out;
-  animation-duration: 0.5s; /* Duration of the animation */
-  animation-timing-function: linear; /* Linear timing function for consistent speed */
+  font-weight: bold;
 }
 
-/* Flipping animation for sun to moon */
-.dark-mode-toggle.flipping {
-  animation-name: sunToMoonAnimation;
+.checklist ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-/* Flipping animation for moon to sun */
-.dark-mode-toggle.flipping-back {
-  animation-name: moonToSunAnimation;
+.checklist li {
+  margin: 10px;
 }
 
-/* Sun icon */
-.dark-mode-toggle::before {
-  content: '☀️';
-  z-index: 998;
+.checklist label {
+  position: relative; /* Add position relative for proper stacking */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-/* Moon icon */
-.dark-mode-toggle::after {
-  content: '🌙';
+/* Style the checkbox and checkmark */
+.checklist .checkbox {
+  display: none;
+}
+
+.checklist .checkmark {
+  position: relative; /* Add position relative for proper stacking */
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  margin-right: 5px;
+}
+
+/* Style the block-style tick mark inside the checkbox */
+.checklist .checkmark::after {
+  content: "";
   position: absolute;
-  opacity: 0; /* Hide the moon initially */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 999;
+  top: 2px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  opacity: 0; /* Hide the tick mark by default */
 }
 
-/* Show the moon icon when in dark mode */
-body.dark-mode .dark-mode-toggle::after {
+/* Show the block-style tick mark when checkbox is checked */
+.checklist .checkbox:checked + .checkmark::after {
   opacity: 1;
 }
-body.dark-mode .dark-mode-toggle::before {
-  opacity: 0;
-}
-.dark-mode-toggle:hover {
-  background-color: #444;
-}
 
-
-
-/* hover effect on checklist items */
-.checklist .checklist-item:hover label {
-  background-color: #666;
+/* Added hover effect for checklist items */
+.checklist label:hover .checkmark {
+  background-color: #eee; /* Light gray background on hover */
 }
 
+
+
+/* drop down menu */
+
+/* Add a class to wrap the checklist text and drop-down arrow */
+.checklist-label {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the checklist text */
+.checklist-text {
+  margin-right: 10px; /* Add spacing between checklist text and drop-down arrow */
+}
+
+/* Add a class for the hidden text */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Add a class for the drop-down arrow */
+.dropdown-arrow::after {
+  content: "▼";
+  margin-left: 5px;
+}
+
+/* Add a class for the checked drop-down arrow */
+.dropdown-arrow.checked::after {
+  content: "▲";
+}
+
+/* Add a class to position the drop-down arrow on the right */
+.checklist li {
+  position: relative;
+}
+
+.dropdown-arrow {
+  position: absolute;
+  right: 0;
+  top: 0; /* Adjust the top position */
+  transform: translateY(50%); /* Adjust the vertical alignment */
+}
+
+/* Drop-down menu styles */
+.checklist-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown-arrow {
+  content: "▼"; /* Drop-down arrow icon */
+  margin-left: 5px;
+}
+
+/* Hidden content for the drop-down menu */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Show the hidden content when the drop-down arrow is clicked */
+.show {
+  display: block;
+}
+
+
+
+/* Hide the hidden text by default */
+.hidden-text {
+  display: none;
+}
+
+/* Style the drop-down arrow icon */
+.dropdown-arrow {
+  position: absolute;
+  right: 0;
+  top: 0; /* Adjust the top position */
+  transform: translateY(50%); /* Adjust the vertical alignment */
+  cursor: pointer; /* Add pointer cursor to indicate clickability */
+}
+
+/* Style the checked drop-down arrow icon */
+.dropdown-arrow.checked::after {
+  content: "▲";
+}
+.hidden-text.show {
+  display: block;
+}
+
+
+
+/* DROP-DOWN TEXT */
+
+/* Add styles for the hidden text in the drop-down */
+.hidden-text {
+  display: none;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Add styles for the dropdown toggle */
+.dropdown-toggle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 18px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  border-radius: 5px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Show the hidden text when dropdown is toggled */
+.checkbox:checked ~ .hidden-text.show {
+  display: block;
+}
+
+
+/* dropdown functionality */
+
+
+
+/* Add styles for the hidden text in the drop-down */
+.hidden-text {
+  display: none;
+  margin-top: 5px; /* Adjust the margin to create some spacing */
+  font-size: 14px;
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  width: calc(100% - 40px);
+  z-index: 1; /* Set the z-index to 1 to stack the hidden text above the checklist items */
+}
+
+/* Show the hidden text when dropdown is toggled */
+input[type="checkbox"].checkbox:checked ~ .checkmark ~ .hidden-text {
+  display: block;
+}
+
+/* Adjust the positioning of the hidden text and shift checklist items downward */
+.checklist-item {
+  position: relative;
+  z-index: 0; /* Set the z-index to 0 to stack the checklist items below the hidden text */
+}
