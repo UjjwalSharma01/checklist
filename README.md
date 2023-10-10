@@ -54,6 +54,4 @@ Checklist is open-source and available under the [MIT License](LICENSE).
 ---
 
 We hope Checklist helps you in your tech learning journey! If you have any questions or suggestions, feel free to reach out to us.
-0 comments on commit bee920d
-@UjjwalSharma01
  
