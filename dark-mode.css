@@ -3,8 +3,8 @@
 
 .dark-mode-toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
+ top: 5%;
+  right: 3%;;
   z-index: 999;
   background-color: #333;
   color: #fff;
@@ -12,7 +12,7 @@
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 35px;
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -25,7 +25,7 @@
 /* DARK MODE STYLES */
 body.dark-mode {
   background-color: #333;
-  color: #fff;
+  color: #eabb95;
 }
 
 .dark-mode header {
@@ -33,20 +33,22 @@ body.dark-mode {
 }
 
 .dark-mode header h1 a {
-  color: #fff;
+  color: #eabb95!important;
 }
 
 .dark-mode nav {
-  background-color: #444;
+  background-color: #3a3a3a;
 }
 
 .dark-mode nav li a {
-  background-color: #333;
-  color: #fff;
+  background-color: #444;
+  color: #eabb95 !important;
 }
 
 .dark-mode nav li a:hover {
-  background-color: #555;
+  /* background-color: #555;   */
+  color: #444 !important;
+  background-color: #eabb95 !important;
 }
 
 .dark-mode .checklists a {
@@ -61,25 +63,31 @@ body.dark-mode {
 .dark-mode .quote blockquote {
   background-color: #444;
   color: #eee;
+  background-color: #eabb95 !important;
+
 }
 
 .dark-mode .contact-section form label {
-  color: #fff;
+  color: #eabb95;
 }
 
 .dark-mode .contact-section form input,
 .dark-mode .contact-section form textarea {
   background-color: #444;
-  color: #eee;
+  color: #eabb95 !important;
   border: 1px solid #666;
 }
 
 .dark-mode .contact-section form button {
-  background-color: #444;
+  /* background-color: #444; */
+    background-color: #444;
+  color: #eabb95;
 }
 
 .dark-mode .contact-section form button:hover {
-  background-color: #555;
+  /* background-color: #555; */
+    color: #444;
+ background-color: #eabb95;
 }
 
 /* Dark mode styles for the footer */
@@ -171,16 +179,17 @@ body.dark-mode {
 
 .dark-mode-toggle {
   position: fixed;
-  top: 20px;
-  right: 20px;
+ top: 5%;
+  right: 3%;
   z-index: 999;
-  background-color: #333;
+  background-color: #333333d0;
   color: #fff;
+  backdrop-filter: blur(6px);
   border: none;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 35px;
   transition: background-color 0.3s ease-in-out;
   animation-duration: 0.5s; /* Duration of the animation */
   animation-timing-function: linear; /* Linear timing function for consistent speed */
@@ -206,8 +215,18 @@ body.dark-mode {
   content: '🌙';
   position: absolute;
   opacity: 0; /* Hide the moon initially */
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  /* background: #fff !important; */
+  top: 5%;
+  right: 3%;;
+   background-color: #eabb95;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 35px;
 }
 
 /* Show the moon icon when in dark mode */

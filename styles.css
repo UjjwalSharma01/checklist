@@ -4,26 +4,41 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f8f8; /* Light gray background */
+    background-color: #ffeddb;
+
 }
 
 header {
   background-color: #333;
-  color: #fff;
+    background: #eabb95;
+ 
+  /* color: #fff; */
+    color: #2c2f34d3 !important;
+
   padding: 10px;
   text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  /* border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px; */
 }
 
 header h1 a {
   text-decoration: none;
   color: #fff;
-  font-size: 28px;
+    color: #2c2f34da !important;
+
+  font-size: 64px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 
 nav {
   background-color: #fff;
-  padding: 10px;
+    background: #e9aa77;
+
+  padding:20px 10px;
+   border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   text-align: center;
 }
 
@@ -44,11 +59,19 @@ nav li a {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #f0f0f0; /* Light gray button background */
+   background: #eabb95;
+    color: #2c2f34da !important;
+    font-family: 'Bebas Neue', sans-serif;
+letter-spacing: 4px;
+    
+    font-size: 20px;
+  
 }
 
 nav li a:hover {
-  background-color: #333;
-  color: #fff;
+  background-color: #33333340;
+  color: #eabb95 !important;
+  
 }
 
 main {
@@ -79,6 +102,7 @@ input[type="checkbox"]:checked + .checkmark {
 .quote {
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 blockquote {
@@ -88,6 +112,15 @@ blockquote {
   margin: 0;
   padding: 20px;
   border-left: 5px solid #333; /* Darker gray border on the left */
+     background: #eabb95;
+ 
+  /* color: #fff; */
+    color: #2c2f34d3 !important;
+
+  padding: 10px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  transition-duration: 300ms;
 }
 
 cite {
@@ -150,8 +183,10 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
+     background: #e6a976;
 
 
+}
 
 /* Hover Animation for Navigation Links */
 nav li a {
@@ -161,6 +196,7 @@ nav li a {
 nav li a:hover {
   background-color: #444; /* Darker background on hover */
   color: #fff; /* Text color on hover */
+
 }
 
 /* Hover Animation for Checklist Items */
@@ -172,6 +208,8 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
+     background: #eabb95;
+
 }
 @keyframes glow {
   0% {
@@ -266,11 +304,21 @@ nav li {
   font-weight: bold;
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
+   background: #eabb95 !important;
+    color: #2c2f34da !important;
+    font-family: 'Bebas Neue', sans-serif;
+    
+letter-spacing: 2px !important;
+    
+    font-size: 30px;
 }
 
 .checklists a:hover {
-  background-color: #444;
-  color: #fff;
+  /* background-color: #444;
+  color: #fff; */
+    background-color: #333333c6 !important;
+  color: #eabb95 !important;
+  
 }
 
 /* Hover Animation for Checklist Items */
@@ -358,6 +406,22 @@ nav li {
 }
 
 /* style for the contact us form */
+.contact-section h2{
+    font-family: 'Bebas Neue', sans-serif;
+letter-spacing: 4px;
+    
+    font-size: 40px;
+    margin-bottom: 0px !important;
+}
+.contact-section p{
+  font-family: 'Nunito', sans-serif;
+font-weight: bold;
+letter-spacing: 2px;
+    
+    font-size: 15px;
+    margin-top: 0px !important;
+}
+
 
 .contact-section form {
   max-width: 400px; /* Set a maximum width for the form to prevent it from stretching too wide */
@@ -368,16 +432,26 @@ nav li {
   display: block; /* Display labels as blocks (vertical) */
   margin-bottom: 5px; /* Add some spacing between labels */
   font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+letter-spacing: 2px;
+    
+    font-size: 25px;
 }
 
 .contact-section form input,
 .contact-section form textarea {
   width: 95%;
-  padding: 10px;
+  padding: 10px 20px;
   margin-bottom: 10px; /* Add some spacing between form elements */
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 35px;
   font-size: 16px;
+ background: #eabb95;
+  font-family: 'Nunito', sans-serif;
+font-weight: bold;
+    color: #2c2f34dc !important;
+    letter-spacing: 1px;
+
 }
 
 .contact-section form textarea {
@@ -386,16 +460,22 @@ nav li {
 
 .contact-section form button {
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
+  /* background-color: #333;
+  color: #eabb95; */
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  font-size: 26px;
   cursor: pointer;
+  border-radius: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+ color: #444;
+  background-color: #eabb95;
+  transition-duration: 300ms;
 }
 
 .contact-section form button:hover {
+  /* background-color: #333; */
   background-color: #444;
+  color: #eabb95;
 }
 
 /* Media Query for screens larger than 768px */
@@ -504,15 +584,16 @@ footer .heart {
 
 
 
-
 /* styles.css */
 
 /* Additional styles for Checklist 2 */
 .checklist h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: bold;
+    font-family: 'Bebas Neue', sans-serif;
+letter-spacing: 3px;
 }
 
 .checklist ul {
@@ -588,9 +669,11 @@ footer .heart {
 /* Add a class for the hidden text */
 .hidden-text {
   display: none;
-  margin-top: 8px;
-  font-size: 14px;
-  color: #333;
+  margin:10px !important;
+  font-size: 24px !important;
+  background-color: #eabb95 !important;
+
+  color: #444;
 }
 
 /* Add a class for the drop-down arrow */
@@ -613,7 +696,9 @@ footer .heart {
   position: absolute;
   right: 0;
   top: 0; /* Adjust the top position */
-  transform: translateY(50%); /* Adjust the vertical alignment */
+  /* transform: translateY(50%); Adjust the vertical alignment */
+  transform: translateY(0px) !important;
+
 }
 
 /* Drop-down menu styles */
@@ -727,4 +812,10 @@ input[type="checkbox"].checkbox:checked ~ .checkmark ~ .hidden-text {
 .checklist-item {
   position: relative;
   z-index: 0; /* Set the z-index to 0 to stack the checklist items below the hidden text */
+    font-family: 'Bebas Neue', sans-serif;
+font-size: 30px;
+letter-spacing: 1px;
+}
+.checklist-item label{
+ padding-top: 20px;
 }
