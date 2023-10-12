@@ -2,7 +2,7 @@
 
 
 .dark-mode-toggle {
-  position: fixed;
+  position: absolute;
  top: 5%;
   right: 3%;;
   z-index: 999;
@@ -178,7 +178,7 @@ body.dark-mode {
 }
 
 .dark-mode-toggle {
-  position: fixed;
+  position: absolute;
  top: 5%;
   right: 3%;
   z-index: 999;
