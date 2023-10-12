@@ -51,7 +51,12 @@ We welcome contributions to Checklist. Please refer to our [Contributing Guideli
 
 Checklist is open-source and available under the [MIT License](LICENSE).
 
+## Contributors
+
+<a href="https://github.com/UjjwalSharma01/checklist/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=UjjwalSharma01/checklist" />
+</a>
+
 ---
 
 We hope Checklist helps you in your tech learning journey! If you have any questions or suggestions, feel free to reach out to us.
- 
