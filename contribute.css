@@ -1,11 +1,11 @@
 /* contribute.css */
 
-header {
+/* header {
     background-color: #222;
     color: #fff;
     padding: 10px;
     text-align: center;
-  }
+  } */
   
   header a {
     color: #fff;
@@ -18,6 +18,18 @@ header {
     margin: 0 auto;
     padding: 20px;
   }
+  .contribute-section h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  }
+  .contribute-section h3{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+  }
+  .contribute-section p{
+    font-family: 'Nunito', sans-serif;
+    
+  }
   
   /* Style the buttons */
   .contribute-button {
@@ -29,10 +41,17 @@ header {
     border-radius: 4px;
     text-decoration: none;
     margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+font-size: 30px;
+  background-color: #eabb95 !important;
+  color: #444 !important;
+  transition-duration: 300ms;
+
   }
   
   .contribute-button:hover {
-    background-color: #0056b3;
+    color: #eabb95 !important;
+  background-color: #444 !important;
     cursor: pointer;
   }
   
