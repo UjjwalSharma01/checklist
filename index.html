@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Checklist</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">   
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="dark-mode.css"> <!-- Add the dark mode CSS file -->
 </head>
+
 <body>
 
-<!-- dark mode, feature - added here because I was finding it difficult to search it in the entire codebase -->
-<button class="dark-mode-toggle">
-  <i class="fas fa-sun"></i>
-  <i class="fas fa-moon"></i>
-</button>
+  <!-- dark mode, feature - added here because I was finding it difficult to search it in the entire codebase -->
+  <button class="dark-mode-toggle">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </button>
 
 
   <!-- Loading Animation -->
@@ -28,15 +30,46 @@
   <nav>
     <ul class="contact-contribute">
       <li><a href="contact.html" class="clicked-glow contact">Contact Us</a></li>
-      <li><a href="Contribute.html" class="clicked-glow contribute">Contribute</a></li>  
+      <li><a href="Contribute.html" class="clicked-glow contribute">Contribute</a></li>
     </ul>
-  </nav>  
+  </nav>
   <main>
-    <section class="quote">
-      <blockquote>
-        "The only limit to our realization of tomorrow will be our doubts of today."
-        <cite>— Franklin D. Roosevelt</cite>
-      </blockquote>
+    <section>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <blockquote style="width:100%">
+            "The only limit to our realization of tomorrow will be our doubts of today."
+            <br>
+            <div class="text">— Franklin D. Roosevelt</div>
+          </blockquote>
+        </div>
+
+        <div class="mySlides fade">
+          <blockquote style="width:100%">
+            "Believe you can and you're halfway there."
+            <br>
+            <div class="text">— Theodore Roosevelt</div>
+          </blockquote>
+        </div>
+
+        <div class="mySlides fade">
+
+          <blockquote style="width:100%">
+            "Winning isn't everything, but wanting to win is."
+            <br>
+            <div class="text">— Vince Lombardi</div>
+          </blockquote>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
     </section>
     <section class="checklists">
       <div>
@@ -55,5 +88,7 @@
   </main>
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
+  <script src="carousel.js"></script>
 </body>
+
 </html>
