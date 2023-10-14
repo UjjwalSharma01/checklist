@@ -593,6 +593,7 @@ footer .heart {
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 7px;
 }
 
 /* Style the checkbox and checkmark */
@@ -628,8 +629,11 @@ footer .heart {
 }
 
 /* Added hover effect for checklist items */
-.checklist label:hover .checkmark {
-  background-color: #eee; /* Light gray background on hover */
+.checklist label:hover .checkmark,
+.checklist label:hover {
+  transition: all 0.5s;
+  background-color: #eee;
+  border-radius: 5px;
 }
 
 /* drop down menu */
