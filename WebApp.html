@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Application Fundamentals - The Checklist</title>
+   <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">   
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">The Checklist</a></h1>
+  </header>
+  <nav>
+    <!-- may use this thing later -->
+    <!-- <ul>
+      <li><a href="checklist1.html">Checklist 1</a></li>
+      <li><a href="checklist2.html">Checklist 2</a></li>
+    </ul> -->
+    <!-- Add more checklists here -->
+
+    <!-- dark mode elements -->
+    <button class="dark-mode-toggle">
+      <i class="sun-icon"></i>
+      <i class="moon-icon"></i>
+    </button>
+  </nav>
+  <main>
+    <section class="checklist">
+      <h2>Web Application Fundamentals</h2>
+      <ul>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+            <span class="checkmark"></span>
+            What is a Web Application?
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            A web application is software that runs in your web browser. Businesses have to exchange information and deliver services remotely. They use web applications to connect with customers conveniently and securely.
+          </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+            <span class="checkmark"></span>
+            Components of a Web Application
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            <ul>
+            In the web application, structural components are the one that includes the functionalities that determine the interaction of users. Along with this, the database storage and control are also listed in it. In this, the architecture is mainly for the three parts:
+
+            <li> Web Application Server works as the central hub for the multi-layer and business logic of the application. It is developed with the help of PHP, Python integrations, Node.JS, Ruby, .NET, and Java.
+            The Client or Web Browser is the one in which the users can interact with the web apps. It is developed with JavaScript, CSS, and HTML.
+            The Database Server is the one that includes relevant information and business logic that is managed by the server. It provides, retrieves, and stores information for the users.</li>
+        </ul>
+        </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+            <span class="checkmark"></span>
+            How does the Web Application work?
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Typically, the two sets of programs are the code in the browser that works with the user's inputs and the code in the server that deals with protocol requests, such as HTTPS.
+            In other words, web developers must be able to decide on the functions of server-side code and browser-side code, as well as how the two will interact.
+          </div>
+        </li>
+        <li class="checklist-item">
+            <label>
+              <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+              <span class="checkmark"></span>
+                Types of Web Application Architecture
+              <span class="dropdown-arrow"></span>
+              <!-- Add the drop-down arrow icon -->
+            </label>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              There are several types of web application architectures to consider, including monolithic, microservices, serverless, and three-tier. Each has its own set of benefits and drawbacks. A well-designed web application architecture is essential for the performance, scalability, and maintainability of a web application.
+            </div>
+          </li>
+        <li class="checklist-item">
+            <label>
+              <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+              <span class="checkmark"></span>
+                N-Tier Architecture
+              <span class="dropdown-arrow"></span>
+              <!-- Add the drop-down arrow icon -->
+            </label>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              N-tier data applications are data applications that are separated into multiple tiers. Also called "distributed applications" and "multitier applications", n-tier applications separate processing into discrete tiers that are distributed between the client and the server.
+            </div>
+          </li>
+          <li class="checklist-item">
+            <label>
+              <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+              <span class="checkmark"></span>
+                Monolith vs Microservices
+              <span class="dropdown-arrow"></span>
+              <!-- Add the drop-down arrow icon -->
+            </label>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              A monolithic architecture refers to a software development pattern where all components of an application are combined into a single, tightly-coupled unit. This means the entire application, including its user interface, business logic, and data access layers, are developed and maintained within one cohesive codebase whereas a microservices architecture is a software development approach that divides an application into small, independent services. Each service focuses on a specific business function and communicates with other services through APIs or messaging systems. This architectural style promotes the creation of modular, scalable, and adaptable software.
+            </div>
+          </li>
+          <li class="checklist-item">
+            <label>
+              <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+              <span class="checkmark"></span>
+                Application Programming Interface(API)
+              <span class="dropdown-arrow"></span>
+              <!-- Add the drop-down arrow icon -->
+            </label>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+            APIs allow developers to sync data between multiple platforms and can facilitate communication among the various microservices in web applications. API integration is what does the work when, for example, you enter a new contact in Salesforce and it auto-populates to Marketo as well.
+            APIs work by sharing data between applications, systems, and devices. This happens through a request and response cycle. A user initiates a request for data by interacting with an application. The request is sent to the API, which retrieves the data and returns it to the user.
+            </div>
+          </li>
+          <li class="checklist-item">
+            <label>
+              <input type="checkbox" class="checkbox" data-checklist="oop-cpp">
+              <span class="checkmark"></span>
+                What is MVC?
+              <span class="dropdown-arrow"></span>
+              <!-- Add the drop-down arrow icon -->
+            </label>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              Model–view–controller (MVC) is a software design pattern commonly used for developing user interfaces that divides the related program logic into three interconnected elements. This is done to separate internal representations of information from the ways information is presented to and accepted from the user.
+            </div>
+          </li>
+          
+        <!-- Add more Web Development here -->
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+</body>
+</html>
