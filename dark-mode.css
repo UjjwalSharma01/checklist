@@ -245,3 +245,25 @@ body.dark-mode .dark-mode-toggle::after {
   background-color: #666;
 }
 
+@media screen and (max-width: 505px){
+.dark-mode-toggle{
+font-size: 25px;
+padding: 5px;
+}
+.dark-mode-toggle::after {
+font-size: 25px;
+padding: 5px;
+}
+}
+@media screen and (max-width: 405px){
+.dark-mode-toggle{
+font-size: 15px;
+padding: 2.5px;
+top: 4.3%;
+}
+.dark-mode-toggle::after {
+font-size: 15px;
+padding: 2.5px;
+top: 4.3%;
+}
+}

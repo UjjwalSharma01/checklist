@@ -73,3 +73,30 @@ font-size: 30px;
     background-color: #0056b3;
   }
   
+  @media screen and (max-width: 405px){
+.contribute-section h2{
+font-size: 20px;
+margin: 0px;
+}
+.contribute-section p{
+font-size: 10px;
+margin: 0px;
+}
+.contribute-section h3{
+font-size: 20px;
+margin: 14px 0 0 0;
+}
+.contribute-section ul li{
+font-size: 10px;
+/* margin: 14px 0 0 0; */
+}
+.contribute-section ol li{
+font-size: 10px;
+/* margin: 14px 0 0 0; */
+}
+.contribute-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+}
