@@ -77,3 +77,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+// New Quote on refresh
+var category = 'happiness'
+document.addEventListener('DOMContentLoaded', function(){
+  $.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
+    headers: { 'X-Api-Key': 'gv414CStL2w22HtsC4pp8A==fHW82xPwAxJPaUjU'},
+    contentType: 'application/json',
+    success: function(result) {
+        document.getElementsByClassName("quoteContent")[0].textContent = result[0].quote;
+        document.getElementsByClassName("quoteContent")[1].textContent = '- ' + result[0].author;
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+});

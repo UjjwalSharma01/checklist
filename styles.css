@@ -102,6 +102,7 @@ input[type="checkbox"]:checked + .checkmark {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  background: #eabb95;
 }
 
 blockquote {
@@ -126,6 +127,7 @@ cite {
   display: block;
   margin-top: 10px;
   font-size: 16px;
+  padding-bottom: 15px;
 }
 
 /* Loading Animation */
