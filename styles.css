@@ -794,3 +794,22 @@ input[type="checkbox"].checkbox:checked ~ .checkmark ~ .hidden-text {
 .checklist-item label {
   padding-top: 20px;
 }
+
+/* Used to line up the checkbox next to the section title since the checklist's
+checkbox and section title are now separate */
+.section {
+  overflow: hidden;
+}
+.section-box {
+  float: left;
+}
+.section-box-label {
+  height: 40px;
+}
+.section-title {
+  overflow: hidden;
+}
+.section-title-label {
+  overflow: hidden;
+  height: 40px;
+}
