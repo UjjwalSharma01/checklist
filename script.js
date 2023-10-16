@@ -38,42 +38,71 @@ clickedGlowElements.forEach((element) => {
 });
 
 
-
+// Code no longer user since clicking the section title does this action
+// and section title encompasses the arrow
 // drop down arrow
 
 
-const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
+// const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
 
-dropdownArrows.forEach((arrow) => {
-  arrow.addEventListener("click", () => {
-    const listItem = arrow.closest("li");
-    const hiddenText = listItem.querySelector(".hidden-text");
-    hiddenText.classList.toggle("show");
-    arrow.classList.toggle("checked");
-  });
-});
-
-
+// dropdownArrows.forEach((arrow) => {
+//   arrow.addEventListener("click", () => {
+//     const listItem = arrow.closest("li");
+//     const hiddenText = listItem.querySelector(".hidden-text");
+//     hiddenText.classList.toggle("show");
+//     arrow.classList.toggle("checked");
+//   });
+// });
 
 
 
+
+// Code no longer user since clicking the section title does this action
+// and section title encompasses the arrow
 // shifting of checklist item when arrow is activated
 
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
-  dropdownArrows.forEach(function (arrow) {
-    arrow.addEventListener("click", function () {
-      const checklistItem = arrow.closest(".checklist-item");
-      const hiddenText = checklistItem.querySelector(".hidden-text");
-      const checkbox = checklistItem.querySelector(".checkbox");
-      if (checkbox.checked) {
-        hiddenText.style.display = "block";
-        const hiddenTextHeight = hiddenText.clientHeight;
-        checklistItem.style.marginBottom = hiddenTextHeight + "px";
-      } else {
-        hiddenText.style.display = "none";
-        checklistItem.style.marginBottom = "0";
-      }
-    });
-  });
+// document.addEventListener("DOMContentLoaded", function () {
+//   const dropdownArrows = document.querySelectorAll(".dropdown-arrow");
+//   dropdownArrows.forEach(function (arrow) {
+//     arrow.addEventListener("click", function () {
+//       const checklistItem = arrow.closest(".checklist-item");
+//       const hiddenText = checklistItem.querySelector(".hidden-text");
+//       const checkbox = checklistItem.querySelector(".checkbox");
+//       if (checkbox.checked) {
+//         hiddenText.style.display = "block";
+//         const hiddenTextHeight = hiddenText.clientHeight;
+//         checklistItem.style.marginBottom = hiddenTextHeight + "px";
+//       } else {
+//         hiddenText.style.display = "none";
+//         checklistItem.style.marginBottom = "0";
+//       }
+//     });
+//   });
+// });
+
+// Add click event listener to checklist section titles
+const sectionTitles = document.querySelectorAll('.section-title-label');
+sectionTitles.forEach((label) => {
+  label.addEventListener('click', (e) => {
+    // prevent the label from triggering default behavior of toggling the checkbox
+    e.preventDefault();
+
+    // Expand section and change the arrow icon
+    const arrow = label.querySelector('[class*="dropdown-arrow"]');
+    const listItem = arrow.closest("li");
+    arrow.classList.toggle("checked");
+
+    const hiddenText = listItem.querySelector(".hidden-text");
+    hiddenText.classList.toggle("show");  // show hidden text
+
+    const checklistItem = arrow.closest(".checklist-item");
+    if (arrow.className === "dropdown-arrow checked") {
+      hiddenText.style.display = "block";
+      const hiddenTextHeight = hiddenText.clientHeight;
+      checklistItem.style.marginBottom = hiddenTextHeight + "px";
+    } else {
+      hiddenText.style.display = "none";
+      checklistItem.style.marginBottom = "0";
+    }
+  }, false);
 });
