@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Design Techniques - The Checklist</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-mode.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html">The Checklist</a>
+      </h1>
+    </header>
+    <nav>
+      <!-- may use this thing later -->
+      <!-- <ul><li><a href="checklist1.html">Checklist 1</a></li><li><a href="checklist2.html">Checklist 2</a></li></ul> -->
+      <!-- Add more checklists here -->
+      <!-- dark mode elements -->
+      <button class="dark-mode-toggle">
+        <i class="sun-icon"></i>
+        <i class="moon-icon"></i>
+      </button>
+    </nav>
+    <main>
+      <section class="checklist">
+        <h2>Algorithm Design Techniques</h2>
+        <ul>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <!-- section start  -->
+              <div class="section-title">
+                <label class="section-title-label"> What are the various algorithm design techniques? <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <ul>
+                <li>Brute Force</li>
+                <li>Greedy Algorithms</li>
+                <li>Divide-and-Conquer, Decrease-and-Conquer</li>
+                <li>Dynamic Programming</li>
+                <li>Reduction / Transform-and-Conquer</li>
+                <li>Backtracking and Branch-and-Bounding</li>
+              </ul>
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Brute Force Algorithm <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu --> The brute force algorithm is an approach that comes directly to our minds after viewing a problem. This is usually a straightforward approach based on the problem statement. We could use this approach to solve problems with small-sized datasets. Let me give you an example. Let's say you want to find the shortest path from your home to your school. The brute force solution in this case would be to consider every possible combination of roads and intersections to reach your destination. However, this method is highly inefficient, especially if there are a lot of roads.
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Examples of Brute force algorithms <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <ul>
+                <li>Bubble-Sort</li>
+                <li>Selection-Sort</li>
+                <li>Sequential search in an array</li>
+                <li>Computing pow(a, n) by multiplying a, n times</li>
+                <li>Convex hull problem</li>
+                <li>String matching</li>
+                <li>Exhaustive search: Travelling salesman, Knapsack</li>
+              </ul>
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Greedy Algorithm <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu --> Greedy algorithms are used to solve optimization problems. These problems usually involve finding the maximum or minimum of something from the given data. In a greedy algorithm, we find the solution through a sequence of steps. At each step, a choice is made that is locally optimal. What does "locally optimal" mean? First, we take a small part of the provided data, and then we find the optimal solution within that data. After that, we'll again take some data and repeat the process. Finding the optimal solution within the data we've considered is called locally optimal.
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Some examples of greedy algorithms <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <ul>
+                <li>Minimal spanning tree: Prim's algorithm, Kruskal's algorithm</li>
+                <li>Dijkstra's algorithm for the single-source shortest path problem</li>
+                <li>Greedy algorithm for the Knapsack problem</li>
+                <li>The coin exchange problem</li>
+                <li>Huffman trees for optimal encoding</li>
+              </ul>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Divide-and-Conquer, Decrease-and-Conquer <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p>
+                <strong>Divide-and-Conquer Algorithms:</strong>
+              </p>
+              <ol>
+                <li> First, we divide the problem into similar subproblems. </li>
+                <li> Then, we solve each one of these subproblems individually. </li>
+                <li> Finally, we combine the results of the subproblems to produce the desired result. </li>
+              </ol>
+              <p>
+                <strong>Divide-and-Conquer vs. Decrease-and-Conquer:</strong>
+              </p>
+              <p> In divide and conquer, the size of the problem is reduced by a factor (half, one third, etc.), while in decrease and conquer, the size of the problem is reduced by a constant. </p>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Some examples of divide-and-conquer algorithms <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <ol>
+                <li>Merge-Sort algorithm (using recursion)</li>
+                <li>Quick Sort algorithm (using recursion)</li>
+                <li>Computing the length of the longest path in a binary tree (using recursion)</li>
+                <li>Computing Fibonacci numbers (using recursion)</li>
+                <li>Quick-Hull</li>
+              </ol>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Some examples of decrease-and-conquer algorithms <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text"> JavaScript is a programming language that adds interact <ol>
+                <li>Computing pow(a, n) by calculating pow(a, n/2) using recursion.</li>
+                <li>Binary search in a sorted list (using recursion)</li>
+                <li>Searching in BST</li>
+                <li>Insertion-Sort</li>
+                <li>Graph traversal algorithms (DFS and BFS)</li>
+                <li>Topological sort</li>
+                <li>Warshall’s algorithm (using recursion)</li>
+                <li>Permutations (Minimal change approach, Johnson-Trotter algorithm)</li>
+                <li>Computing a median</li>
+                <li>Topological sorting</li>
+                <li>Fake-coin problem (Ternary search)</li>
+              </ol>ivity and functionality to web pages, enabling features like forms and animations. </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Dynamic Programming <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p>
+                <strong>Divide and Conquer:</strong>
+              </p>
+              <p> In divide and conquer, many times the recursively solved subproblems can result in the same computation being performed multiple times. This problem arises when identical problems occur repeatedly in a recursion. </p>
+              <p>
+                <strong>Dynamic Programming:</strong>
+              </p>
+              <p> Dynamic programming is used to avoid this issue by storing the results of subproblems in a table and referring to that table to check if we have already calculated the solution to a subproblem before computing it again. </p>
+              <p> Dynamic programming is a bottom-up technique in which the smaller subproblems are solved first, and the results of these are used to find the solution for larger subproblems. </p>
+          </li>
+          <!-- Add more Web Development here -->
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Some examples of Dynamic programming are: <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <ol>
+                <li>Fibonacci numbers computed by iteration.</li>
+                <li>Warshall's algorithm for transitive closure implemented by iterations.</li>
+                <li>Floyd's algorithm for all-pairs shortest paths.</li>
+              </ol>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Reduction / Transform-and-Conquer <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p> These methods work as a two-step process. First, the problem is transformed into a different problem that is already known to us, i.e., a problem for which we already know the optimal solution. Then the problem is solved. </p>
+              <p> The most common type of transformation is the sorting of an array. </p>
+              <p> For example, in a given list of numbers, find the two closest numbers. In the brute-force solution, we would find the distance between each element in the array and keep track of the pair with the minimum distance. In this approach, the total time complexity is O(n^2). In the Transform and Conquer solution, we first sort the array in O(n log n) time and then find the closest numbers by scanning the array in another single pass with time complexity O(n). Thus, the total time complexity is O(n log n). </p>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Some examples of Transform and Conquer <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <ol>
+                <li>Gaussian elimination</li>
+                <li>Heaps and Heapsort</li>
+              </ol>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Backtracking <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p> Have you seen the modern lock with a 3-digit password, where the numbers range from 1 to 9? If you don't have the exact password for the lock, you need to test every combination until you find the right one. You would go from something like "111" to "112" and so on until you reach "999". In this case, what you are doing is called backtracking. </p>
+              <p> Suppose the lock produces a click sound anytime you come across a correct digit. If we can listen to this sound, it will help you reach the goal much faster. These functions are called Pruning functions or Bounding functions. </p>
+              <p> Backtracking is a method in which a solution is found by searching through a large but finite number of states. With some pruning or bounding functions, we can narrow down our search. </p>
+              <p> For all problems (like NP-hard problems) for which there does not exist any other efficient algorithm, we use the backtracking algorithm. </p>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Components of backtracking problems <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p>
+                <strong>Key Components of the Algorithm:</strong>
+              </p>
+              <ul>
+                <li>Initial state</li>
+                <li>Target/Goal state</li>
+                <li>Intermediate states</li>
+                <li>Path from the initial state to the target/goal state</li>
+                <li>Operators to get from one state to another</li>
+                <li>Pruning function (optional)</li>
+              </ul>
+              <p> The algorithm starts with the construction of a state tree, whose nodes represent the states. The root node is the initial state, and one or more leaf nodes will be our target state. Each edge of the tree represents some operation. The solution is obtained by searching the tree until a target is found. </p>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Some real-life problems where you could use the backtracking approach <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p>
+                <strong>Three Monks and Three Demons:</strong>
+              </p>
+              <p> There are three monks and three demons on one side of a river. You want to move all of them to the other side using a small boat. The boat can carry only two persons at a time. If, on any shore, the number of demons is more than the number of monks, the demons will eat the monks. How can we move all of these people to the other side of the river safely? </p>
+              <p>
+                <strong>The Farmer's Dilemma:</strong>
+              </p>
+              <p> There is a farmer who has a goat, a cabbage, and a wolf. If the farmer leaves the goat with the cabbage, the goat will eat the cabbage. If the farmer leaves the wolf alone with the goat, the wolf will kill the goat. How can the farmer move all his belongings to the other side of the river? </p>
+              <p>
+                <strong>Jug Problem:</strong>
+              </p>
+              <p> You are given two jugs, a 4-gallon one and a 3-gallon one. There are no measuring markers on the jugs. A tap can be used to fill the jugs with water. How can you get 2 gallons of water in the 4-gallon jug? </p>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> Branch-and-bound <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <p> The branch and bound method is used when we can evaluate the cost of visiting each node using a utility function. At each step, we choose the node with the lowest cost to proceed further. Branch-and-bound algorithms are implemented using a priority queue. In branch and bound, we traverse the nodes in a breadth-first manner. </p>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label"> A* Algorithm <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              <p> A* is an extension of the branch and bound approach. In A*, we select the path with the shortest length from the start to the goal. The total length is estimated as the length traversed so far plus a heuristic estimate of the remaining distance from the goal. </p>
+              <p> Branch-and-bound will always find an optimal solution, which is the shortest path. A* will also find an optimal solution if the heuristic is accurate. Choosing a good heuristic is the most crucial aspect of the A* algorithm. </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+  </body>
+</html>
