@@ -814,3 +814,26 @@ checkbox and section title are now separate */
   overflow: hidden;
   height: 40px;
 }
+
+/* CSS for code snippets */
+.code-block {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.copy-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.copy-button:hover {
+  background-color: #444;
+}
