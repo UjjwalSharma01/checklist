@@ -1,0 +1,74 @@
+html_code = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Basics</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="dark-mode.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">The Checklist</a></h1>
+  </header>
+  <nav>
+    <button class="dark-mode-toggle">
+      <i class="sun-icon"></i>
+      <i class="moon-icon"></i>
+    </button>
+  </nav>
+  <main>
+    <section class="checklist">
+      <h2>C++ Basics</h2>
+      <ul>
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="py-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Introduction to Pyhton
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+           Python is a high-level, interpreted, and general-purpose programming language. Python is known for its simplicity and readability, which makes it an excellent choice for beginners and experienced and programmers alike.
+          </div>
+        </li>
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="py-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class "section-title">
+              <label class="section-title-label">
+                Variables and Data Types
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            Learn about variables and different data types in python. Variables are used to store values in memory. Understanding data types is essential for efficient memory management and creating robust programs.
+          </div>
+        </li>
+        <!-- Add more python basics topics here -->
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+</body>
+</html>
+"""
+
+
