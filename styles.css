@@ -837,3 +837,16 @@ checkbox and section title are now separate */
 .copy-button:hover {
   background-color: #444;
 }
+
+/* Responsive:Home Page */
+
+@media only screen and (max-width: 600px) {
+  header h1 a {
+   font-size: 40px;
+    }
+
+    nav li{
+     padding-bottom:10px;
+    }
+
+}
