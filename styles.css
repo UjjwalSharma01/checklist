@@ -79,8 +79,9 @@ main {
   padding: 20px;
 }
 
-.checklist {
+.checklists {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .checkmark {
