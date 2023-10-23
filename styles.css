@@ -2,18 +2,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; /* Light gray background */
-  background-color: #ffeddb;
+  background-color: #c7e3dcf9; /* Light gray background */
+  background-color: #CDF5FD;
 }
 
 ::selection {
-  background-color: rgb(119, 229, 233)
+  background-color: #e9aa77;
   color: #fff;
 }
 
 header {
   background-color: #333;
-  background: #eabb95;
+  background: #A0E9FF;
 
   /* color: #fff; */
   color: #2c2f34d3 !important;
@@ -28,7 +28,7 @@ header {
 header h1 a {
   text-decoration: none;
   color: #fff;
-  color: #2c2f34da !important;
+  color: #1D5B79 !important;
 
   font-size: 64px;
   font-weight: bold;
@@ -37,7 +37,7 @@ header h1 a {
 
 nav {
   background-color: #fff;
-  background: #e9aa77;
+  background: #77cbe9;
 
   padding: 20px 10px;
   border-bottom-left-radius: 20px;
