@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Fundamentals - The Checklist</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-mode.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">The Checklist</a></h1>
+    </header>
+    <nav>
+        <!-- may use this thing later -->
+        <!-- <ul>
+      <li><a href="checklist1.html">Checklist 1</a></li>
+      <li><a href="checklist2.html">Checklist 2</a></li>
+    </ul> -->
+        <!-- Add more checklists here -->
+
+        <!-- dark mode elements -->
+        <button class="dark-mode-toggle">
+            <i class="sun-icon"></i>
+            <i class="moon-icon"></i>
+        </button>
+    </nav>
+    <main>
+        <section class="checklist">
+            <h2>C Programming</h2>
+            <ul>
+                <h3>Chapter 1: Introduction to C Programming</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.1 What is C Programming?
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>C is a versatile, high-level programming language that finds its application in a wide array
+                            of software and application development, system programming, game development, web
+                            programming, and more. It was in 1972 when Dennis M. Ritchie, working at the Bell Telephone
+                            Laboratories, birthed this programming gem. Originally intended for programming the UNIX
+                            operating system, C has grown to become one of the most widely used and influential
+                            programming languages out there.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.2 History of C Programming
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <!-- Hidden content for the drop-down menu -->
+                        <p>1. Genesis of C: C had its beginnings in the early 1970s at Bell Telephone Laboratories.
+                            Dennis
+                            Ritchie was the brain behind this creation.</p>
+
+                        <p>2. B Language Predecessor: Before C, there was a programming language called B, which Ken
+                            Thompson
+                            developed. B was influenced by BCPL and was primarily used for the Multics operating system.
+                        </p>
+
+                        <p>3. Birth of C: Ritchie and his team wanted to enhance the capabilities and efficiency of B.
+                            Their
+                            efforts resulted in the birth of C, originally referred to as "NB" (New B). The work on C
+                            started in 1972 and continued into 1973.</p>
+
+                        <p>4. C for Unix: One of the primary goals of C was to provide a more efficient and versatile
+                            language
+                            for developing the Unix operating system. At the time, Unix was primarily written in
+                            assembly
+                            language, making it less portable across different computer architectures. C changed that.
+                        </p>
+
+                        <p>5. Portability: C's design for system programming allowed Unix to be easily ported to various
+                            hardware platforms. This portability became one of the key factors in Unix's widespread
+                            adoption.</p>
+
+                        <p>6. The C Book: In 1973, Dennis Ritchie and Brian Kernighan published "The C Programming
+                            Language,"
+                            often referred to as "K&R C." This book became the definitive reference for the language and
+                            played a significant role in popularizing C among programmers and institutions.</p>
+
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.3 Why Learn C Programming?
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <!-- Hidden content for the drop-down menu -->
+                        <p>1. Fundamental Understanding: C is often considered the "mother" of all programming
+                            languages. Learning C gives you a strong foundation in programming concepts, which can be
+                            applied to other languages.</p>
+
+                        <p>2. Efficiency: C is known for its efficiency. It allows you to write fast and optimized
+                            code, making it suitable for system programming and applications where speed and resource
+                            usage
+                            are critical.</p>
+
+                        <p>3. Portability: C code is highly portable across different platforms and operating systems.
+                            Programs written in C can run on various hardware and software environments with minimal
+                            modification.</p>
+
+                        <p>4. Versatility: C is a versatile language used in a wide range of applications, from
+                            embedded systems and game development to operating systems and high-performance computing.
+                        </p>
+
+                        <p>5. Low-Level Programming: Learning C allows you to work at a lower level of abstraction,
+                            enabling you to understand how the computer's memory and processor work. This knowledge is
+                            invaluable for system programming and debugging.</p>
+
+                        <p>6. Problem-Solving Skills: C challenges you to manage memory, pointers, and other low-level
+                            details. This hones your problem-solving skills and teaches you to write efficient code.</p>
+
+                        <p>7. Career Opportunities: Proficiency in C programming is highly sought after by employers,
+                            especially in industries like embedded systems, robotics, and game development.</p>
+
+                        <p>8. Open Source and Legacy Code: Many open-source projects and legacy systems are written in
+                            C. Learning C allows you to contribute to open-source software and maintain or modernize
+                            older
+                            codebases.</p>
+
+                        <p>9. C++ and Embedded Systems: C is a precursor to C++, and learning C makes it easier to
+                            transition to C++ for object-oriented programming. Additionally, C is commonly used in
+                            embedded
+                            systems, a growing field.</p>
+
+                        <p>10. Security Knowledge: C requires careful memory management. Learning C can help you
+                            understand and mitigate security vulnerabilities like buffer overflows and memory leaks.</p>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.4 Setting up the Development Environment
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <P>1. Choose an Operating System:
+
+                        You can develop C programs on various operating systems, including Windows, Linux, and macOS.
+                        Your choice depends on your preferences and the platform you intend to target.</P>
+
+                        <P>2. Select a Text Editor or Integrated Development Environment (IDE):
+
+                        You have several options for writing C code. You can choose a simple text editor or a
+                        specialized C programming IDE. Some popular choices include:
+
+                        - Text Editors:
+                        - Notepad (Windows)
+                        - Visual Studio Code
+                        - Sublime Text
+                        - Atom
+
+                        - C-Specific IDEs:
+                        - Code::Blocks
+                        - Dev-C++
+                        - CLion
+                        - Eclipse C/C++ IDE
+
+                        - Linux Development Tools:
+                        - On Linux, you can use text editors like Vim or Emacs along with GCC (GNU Compiler Collection)
+                        for compiling.</P>
+
+                        <P>3. Install a C Compiler:
+
+                        You need a C compiler to compile and execute your C programs. The most commonly used C compiler
+                        is GCC (GNU Compiler Collection). Here's how to install GCC on different platforms:
+
+                        - Linux: Most Linux distributions come with GCC pre-installed. If not, you can use your
+                        package manager to install it. For example, on Ubuntu, run `sudo apt-get install
+                        build-essential`.
+
+                        - Windows: You can use MinGW (Minimalist GNU for Windows) to install GCC on Windows.
+                        Download the MinGW installer and follow the installation instructions.
+
+                        - macOS: On macOS, you can use the Xcode Command Line Tools, which include GCC. Open a
+                        terminal and run `xcode-select --install` to install these tools.</P>
+
+                        <P>4. Write and Compile Your First C Program:
+
+                        Now that you have a text editor, C compiler, and development environment set up, you can write
+                        your first C program. Here's a simple "Hello, World!" example:
+
+                        ```c
+                        #include <stdio.h>
+
+                            int main() {
+                            printf("Hello, World!\n");
+                            return 0;
+                            }
+                            ```
+
+                            Save this code in a file with a `.c` extension, such as `hello.c`.</P>
+
+                            <P>5. Compile and Run Your Program:
+
+                            - On the command line, navigate to the directory where you saved your C file.
+                            - Compile the program using the C compiler. For GCC, you can use the following command: `gcc
+                            -o hello hello.c` (This compiles `hello.c` and produces an executable named `hello`.)
+                            - Run the program by entering `./hello` (on Linux/macOS) or `hello.exe` (on Windows).</P>
+
+                            <P>6. Debugging Tools (Optional):
+
+                            For debugging your C programs, consider using a debugger like GDB (GNU Debugger) or the
+                            built-in debugging tools provided by your chosen IDE.
+
+                            That's a basic overview of setting up a C programming development environment. As you gain
+                            more experience, you can explore additional tools and libraries to enhance your development
+                            process.</P>
+                    </div>
+                </li>
+                <h3>Chapter 2: Getting Started with C</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.1 Your First C Program
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.2 Basic Structure of a C Program
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.3 Variables and Data Types
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.4 Input and Output in C
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.5 Comments and Formatting
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+
+                <h3>Chapter 3: Control Structures</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.1 Conditional Statements (if, else if, switch)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.2 Loops (for, while, do-while)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.3 Control Statements (break, continue, goto)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.4 Conditional Expressions (Ternary Operator)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p></p>
+                </li>
+                
+
+                <!-- Add more Web Development here -->
+
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+
+</html>
