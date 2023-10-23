@@ -25,7 +25,7 @@
 /* DARK MODE STYLES */
 body.dark-mode {
   background-color: #333;
-  color: #1D5B79;
+  color: #d9ed92;
 }
 
 .dark-mode header {
@@ -33,7 +33,7 @@ body.dark-mode {
 }
 
 .dark-mode header h1 a {
-  color: #1D5B79!important;
+  color: #d9ed92!important;
 }
 
 .dark-mode nav {

@@ -187,7 +187,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-  background: #B6FFFA;
+  background: #e6a976;
 }
 
 /* Hover Animation for Navigation Links */
@@ -209,7 +209,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-  background: #B6FFFA;
+  background: #eabb95;
 }
 @keyframes glow {
   0% {
@@ -837,3 +837,4 @@ checkbox and section title are now separate */
 .copy-button:hover {
   background-color: #444;
 }
+
