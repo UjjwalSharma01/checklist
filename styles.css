@@ -499,6 +499,9 @@ footer {
   padding: 20px 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 footer p {
@@ -513,11 +516,35 @@ footer .heart {
 /* Add styling for the social icons */
 .footer {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: start;
+  margin-bottom: 8px;
+  gap: 20px;
+}
+
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.newsletter-form{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.social-icons-grp {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.footer .social-icon {
+.social-icon {
   text-decoration: none;
   color: #fff;
   font-size: 24px;
@@ -525,13 +552,13 @@ footer .heart {
   transition: color 0.3s ease-in-out;
 }
 
-.footer .social-icon:hover {
-  color: #222; /* Change color on hover */
+.social-icon:hover {
+  color: #e9aa77; 
 }
 
 /* Back to Top Button Styles */
 .back-to-top-button {
-  background-color: #e9aa77;
+  background-color: #fcbe8b;
   color: #333;
   padding: 10px 20px;
   border: none;
@@ -549,6 +576,10 @@ footer .heart {
 .back-to-top-button:hover {
   background-color: #333;
   color: #eabb95;
+}
+
+.copyright {
+  text-align: center;
 }
 
 .checklist ul {
