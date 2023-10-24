@@ -62,7 +62,7 @@ nav li a {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #f0f0f0; /* Light gray button background */
-  background: #eabb95;
+  background: #1D5B79;
   color: #2c2f34da !important;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 4px;
@@ -81,6 +81,7 @@ main {
 
 .checklist {
   margin-bottom: 20px;
+  
 }
 
 .checkmark {
@@ -187,7 +188,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-  background: #e6a976;
+  background: #1D5B79;
 }
 
 /* Hover Animation for Navigation Links */
@@ -299,7 +300,7 @@ nav li {
   font-weight: bold;
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
-  background: #eabb95 !important;
+  background: #1D5B79 !important;
   color: #2c2f34da !important;
   font-family: "Bebas Neue", sans-serif;
 
@@ -312,7 +313,7 @@ nav li {
   /* background-color: #444;
   color: #fff; */
   background-color: #333333c6 !important;
-  color: #eabb95 !important;
+  color: #1D5B79 !important;
 }
 
 /* Hover Animation for Checklist Items */
@@ -455,14 +456,14 @@ nav li {
   border-radius: 18px;
   font-family: "Bebas Neue", sans-serif;
   color: #444;
-  background-color: #eabb95;
+  background-color: #1D5B79;
   transition-duration: 300ms;
 }
 
 .contact-section form button:hover {
   /* background-color: #333; */
   background-color: #444;
-  color: #eabb95;
+  color: #1D5B79;
 }
 
 /* Media Query for screens larger than 768px */
@@ -576,6 +577,8 @@ footer .heart {
   font-weight: bold;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 3px;
+  color:#1D5B79;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .checklist ul {
@@ -654,16 +657,18 @@ footer .heart {
 .hidden-text {
   display: none;
   margin: 10px !important;
-  font-size: 24px !important;
-  background-color: #eabb95 !important;
-
+  font-size: 18px !important;
+  background-color: #0096c7 !important;
   color: #444;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5rem;
+  
 }
 
 /* Add a class for the drop-down arrow */
 .dropdown-arrow::after {
   content: "▼";
-  margin-left: 5px;
+  margin-left: 3rem;
 }
 
 /* Add a class for the checked drop-down arrow */
@@ -770,7 +775,7 @@ footer .heart {
   display: none;
   margin-top: 5px; /* Adjust the margin to create some spacing */
   font-size: 14px;
-  color: #333;
+  color: #d9ed92;
   background-color: #f0f0f0;
   padding: 5px;
   border-radius: 5px;
