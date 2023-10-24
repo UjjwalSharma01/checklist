@@ -33,7 +33,7 @@ body.dark-mode {
 }
 
 .dark-mode header h1 a {
-  color: #d9ed92!important;
+  color: #d9ed92 !important;
 }
 
 .dark-mode nav {
@@ -42,13 +42,13 @@ body.dark-mode {
 
 .dark-mode nav li a {
   background-color: #444;
-  color: #1D5B79 !important;
+  color: #d9ed92 !important;
 }
 
 .dark-mode nav li a:hover {
   /* background-color: #555;   */
   color: #444 !important;
-  background-color: #1D5B79 !important;
+  background-color: #d9ed92 !important;
 }
 
 .dark-mode .checklists a {
@@ -63,31 +63,34 @@ body.dark-mode {
 .dark-mode .quote blockquote {
   background-color: #444;
   color: #eee;
-  background-color: #1D5B79 !important;
+  background-color: #d9ed92 !important;
 
+}
+.dark-mode .contribute-button{
+  background-color: #d9ed92;
 }
 
 .dark-mode .contact-section form label {
-  color: #1D5B79;
+  color: #d9ed92;
 }
 
 .dark-mode .contact-section form input,
 .dark-mode .contact-section form textarea {
   background-color: #444;
-  color: #1D5B79 !important;
+  color: #d9ed92 !important;
   border: 1px solid #666;
 }
 
 .dark-mode .contact-section form button {
   /* background-color: #444; */
     background-color: #444;
-  color: #1D5B79;
+  color: #d9ed92;
 }
 
 .dark-mode .contact-section form button:hover {
   /* background-color: #555; */
     color: #444;
- background-color: #1D5B79;
+ background-color: #d9ed92;
 }
 
 /* Dark mode styles for the footer */
