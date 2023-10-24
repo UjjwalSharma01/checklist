@@ -37,6 +37,10 @@ clickedGlowElements.forEach((element) => {
   });
 });
 
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
 
 // Code no longer user since clicking the section title does this action
 // and section title encompasses the arrow

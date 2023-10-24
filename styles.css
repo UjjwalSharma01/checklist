@@ -492,53 +492,13 @@ nav li {
   }
 }
 
-/* ADDED FOOTER */
 footer {
-  background-color: #333;
+  background-color: #e9aa77;;
   color: #fff;
   text-align: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  left: 0;
-}
-
-footer p {
-  margin: 0;
-  font-size: 14px;
-}
-
-footer span {
-  color: #ff4136; /* Red color for heart symbol */
-}
-
-/* resolving footer overlapping in mobile screen mode */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed; /* Change to "fixed" */
-  bottom: 0;
-  width: 100%;
-}
-
-/* Add some padding to the main content section to prevent overlapping */
-main {
-  padding-bottom: 70px; /* Adjust the value as needed */
-}
-
-/* adding github profile link to the footer */
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding: 20px 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 footer p {
@@ -550,15 +510,45 @@ footer .heart {
   color: #ff4136; /* Red color for heart symbol */
 }
 
-/* Styling for the link in the footer */
-.footer-link {
-  text-decoration: none; /* Remove underline */
-  color: #fff; /* Set link color to white */
+/* Add styling for the social icons */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-/* Hover effect for the link */
-.footer-link:hover {
-  text-decoration: underline; /* Add underline on hover (optional) */
+.footer .social-icon {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer .social-icon:hover {
+  color: #222; /* Change color on hover */
+}
+
+/* Back to Top Button Styles */
+.back-to-top-button {
+  background-color: #e9aa77;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 18px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: background-color 0.3s ease-in-out;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  border: #000 2px solid;
+}
+
+.back-to-top-button:hover {
+  background-color: #333;
+  color: #eabb95;
 }
 
 .checklist ul {
