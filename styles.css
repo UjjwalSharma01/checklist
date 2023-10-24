@@ -72,7 +72,7 @@ nav li a {
 
 nav li a:hover {
   background-color: #33333340;
-  color: #eabb95 !important;
+  color: #1D5B79 !important;
 }
 
 main {
@@ -434,7 +434,7 @@ nav li {
   border: 1px solid #ccc;
   border-radius: 13px;
   font-size: 16px;
-  background: #eabb95;
+  background: #90e0ef;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: #2c2f34dc !important;
@@ -456,13 +456,13 @@ nav li {
   border-radius: 18px;
   font-family: "Bebas Neue", sans-serif;
   color: #444;
-  background-color: #1D5B79;
+  background-color: #90e0ef;
   transition-duration: 300ms;
 }
 
 .contact-section form button:hover {
   /* background-color: #333; */
-  background-color: #444;
+  background-color: #90e0ef;
   color: #1D5B79;
 }
 

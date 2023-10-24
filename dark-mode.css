@@ -93,6 +93,12 @@ body.dark-mode {
  background-color: #d9ed92;
 }
 
+.dark-mode .contribute-section a:hover{
+  /* background-color: #555; */
+    color: #444;
+    background-color: #d9ed92;
+}
+
 /* Dark mode styles for the footer */
 .dark-mode footer {
   background-color: #222;

@@ -34,7 +34,7 @@
   /* Style the buttons */
   .contribute-button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #1D5B79;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -42,15 +42,15 @@
     text-decoration: none;
     margin-top: 20px;
     font-family: 'Bebas Neue', sans-serif;
-font-size: 30px;
-  background-color: #1d5b79 !important;
+    font-size: 30px;
+    background-color: # !important;
   color: #444 !important;
   transition-duration: 300ms;
 
   }
   
   .contribute-button:hover {
-    color: #d9ed92 !important;
+    color: #1D5B79 !important;
   background-color: #444 !important;
     cursor: pointer;
   }
@@ -60,7 +60,7 @@ font-size: 30px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #007bff;
+    background-color: #1D5B79;
     color: #fff;
     padding: 10px;
     border: none;
@@ -70,6 +70,6 @@ font-size: 30px;
   }
   
   .scroll-to-top:hover {
-    background-color: #0056b3;
+    background-color: #1D5B79;
   }
   

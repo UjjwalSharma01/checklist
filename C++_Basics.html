@@ -55,7 +55,7 @@
         </div>
       </li>
 
-      <!-- Example 2: Variables and Data Types in Java -->
+      <!-- Example 2: Variables and Data Types in C++-->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -85,7 +85,7 @@ String name = "Amit Aryan";
         </div>
       </li>
 
-      <!-- Example 3: Operators in Java -->
+      <!-- Example 3: Operators in C++-->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -116,7 +116,7 @@ int result = 6 * 2;
         </div>
       </li>
 
-      <!-- Example 4: Control Structures in Java -->
+      <!-- Example 4: Control Structures in C++-->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -127,7 +127,7 @@ int result = 6 * 2;
           </div>
           <div class="section-title">
             <label class="section-title-label">
-              Control Structures in Java
+              Control Structures
               <span class="dropdown-arrow"></span>
             </label>
           </div>
@@ -147,7 +147,7 @@ if (condition) {
         </div>
       </li>
 
-      <!-- Example 5: Functions (Methods) in Java -->
+      <!-- Example 5: Functions (Methods)-->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -158,7 +158,7 @@ if (condition) {
           </div>
           <div class="section-title">
             <label class="section-title-label">
-              Functions (Methods) in Java
+              Functions (Methods) 
               <span class="dropdown-arrow"></span>
             </label>
           </div>
@@ -168,15 +168,15 @@ if (condition) {
             Functions (methods) are reusable blocks of code that perform specific tasks. They improve code organization and make it easier to maintain and understand.
           </p>
           <pre class="code-block">
-public int add(int a, int b) {
-  return a + b;
-}
+            void myFunction() {
+              // code to be executed
+            }
 </pre>
           <button class="copy-button" onclick="copyToClipboard(5)">Copy</button>
         </div>
       </li>
 
-      <!-- Example 6: Arrays in Java -->
+      <!-- Example 6: Arrays in C++ -->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -187,14 +187,14 @@ public int add(int a, int b) {
           </div>
           <div class="section-title">
             <label class="section-title-label">
-              Arrays in Java
+              Arrays 
               <span class="dropdown-arrow"></span>
             </label>
           </div>
         </div>
         <div class="hidden-text code-snippet" data-example="6">
           <p>
-            Arrays are used to store multiple values of the same type in Java. They are fundamental for working with collections of data.
+            Arrays are used to store multiple values of the same type in C++. They are fundamental for working with collections of data.
           </p>
           <pre class="code-block">
 int[] numbers = {1, 2, 3, 4, 5};
@@ -202,7 +202,7 @@ int[] numbers = {1, 2, 3, 4, 5};
           <button class="copy-button" onclick="copyToClipboard(6)">Copy</button>
         </div>
       </li>
-      <!-- Example 7: Object-Oriented Programming (OOP) in Java -->
+      <!-- Example 7: Object-Oriented Programming (OOP) -->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -213,7 +213,7 @@ int[] numbers = {1, 2, 3, 4, 5};
           </div>
           <div class="section-title">
             <label class="section-title-label">
-              Object-Oriented Programming (OOP) in Java
+              Object-Oriented Programming (OOP) 
               <span class="dropdown-arrow"></span>
             </label>
           </div>
@@ -223,21 +223,17 @@ int[] numbers = {1, 2, 3, 4, 5};
             Object-Oriented Programming (OOP) is a paradigm in Java that focuses on creating objects and classes. This concept helps in organizing and modeling real-world entities.
           </p>
           <pre class="code-block">
-class Person {
-  String name;
-  int age;
-
-  public Person(String name, int age) {
-      this.name = name;
-      this.age = age;
-  }
-}
+            class MyClass {       
+              public:             
+                int myNum;       
+                string myString;  
+            };
 </pre>
           <button class="copy-button" onclick="copyToClipboard(7)">Copy</button>
         </div>
       </li>
 
-      <!-- Example 8: Inheritance in Java -->
+      <!-- Example 8: Inheritance  -->
       <li class="checklist-item">
         <div class="section">
           <div class="section-box">
@@ -248,7 +244,7 @@ class Person {
           </div>
           <div class="section-title">
             <label class="section-title-label">
-              Inheritance in Java
+              Inheritance 
               <span class="dropdown-arrow"></span>
             </label>
           </div>
@@ -258,22 +254,27 @@ class Person {
             Inheritance allows one class (subclass or derived class) to inherit attributes and methods from another class (superclass or base class). It facilitates code reuse and extensibility.
           </p>
           <pre class="code-block">
-class Vehicle {
-  String brand;
-
-  public Vehicle(String brand) {
-      this.brand = brand;
-  }
-}
-
-class Car extends Vehicle {
-  int speed;
-
-  public Car(String brand, int speed) {
-      super(brand);
-      this.speed = speed;
-  }
-}
+            // Base class
+            class Vehicle {
+              public:
+                string brand = "Ford";
+                void honk() {
+                  cout << "Tuut, tuut! \n" ;
+                }
+            };
+            
+            // Derived class
+            class Car: public Vehicle {
+              public:
+                string model = "Mustang";
+            };
+            
+            int main() {
+              Car myCar;
+              myCar.honk();
+              cout << myCar.brand + " " + myCar.model;
+              return 0;
+            }
 </pre>
           <button class="copy-button" onclick="copyToClipboard(8)">Copy</button>
         </div>
@@ -290,7 +291,7 @@ class Car extends Vehicle {
           </div>
           <div class="section-title">
             <label class="section-title-label">
-              Polymorphism in Java
+              Polymorphism 
               <span class="dropdown-arrow"></span>
             </label>
           </div>
@@ -300,22 +301,29 @@ class Car extends Vehicle {
             Polymorphism enables objects of different classes to be treated as objects of a common superclass. This promotes flexibility and dynamic method invocation in Java programs.
           </p>
           <pre class="code-block">
-class Animal {
-  public void sound() {
-      System.out.println("Animal makes a sound");
-  }
-}
-
-class Dog extends Animal {
-  public void sound() {
-      System.out.println("Dog barks");
-  }
-}
-
-class Cat extends Animal {
-  public void sound() {
-      System.out.println("Cat meows");
-  }
+            // Base class
+            class Animal {
+              public:
+                void animalSound() {
+                  cout << "The animal makes a sound \n";
+                }
+            };
+            
+            // Derived class
+            class Pig : public Animal {
+              public:
+                void animalSound() {
+                  cout << "The pig says: wee wee \n";
+                }
+            };
+            
+            // Derived class
+            class Dog : public Animal {
+              public:
+                void animalSound() {
+                  cout << "The dog says: bow wow \n";
+                }
+            };
 </pre>
           <button class="copy-button" onclick="copyToClipboard(9)">Copy</button>
         </div>
