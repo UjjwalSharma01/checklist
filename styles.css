@@ -1,23 +1,26 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f8f8f8; /* Light gray background */
-    background-color: #ffeddb;
+  background-color: #ffeddb;
+}
 
+::selection {
+  background-color: #e9aa77;
+  color: #fff;
 }
 
 header {
   background-color: #333;
-    background: #eabb95;
- 
+  background: #eabb95;
+
   /* color: #fff; */
-    color: #2c2f34d3 !important;
+  color: #2c2f34d3 !important;
 
   padding: 10px;
   text-align: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   /* border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px; */
 }
@@ -25,7 +28,7 @@ header {
 header h1 a {
   text-decoration: none;
   color: #fff;
-    color: #2c2f34da !important;
+  color: #2c2f34da !important;
 
   font-size: 64px;
   font-weight: bold;
@@ -34,10 +37,10 @@ header h1 a {
 
 nav {
   background-color: #fff;
-    background: #e9aa77;
+  background: #e9aa77;
 
-  padding:20px 10px;
-   border-bottom-left-radius: 20px;
+  padding: 20px 10px;
+  border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   text-align: center;
 }
@@ -59,30 +62,27 @@ nav li a {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #f0f0f0; /* Light gray button background */
-   background: #eabb95;
-    color: #2c2f34da !important;
-    font-family: 'Bebas Neue', sans-serif;
-letter-spacing: 4px;
-    
-    font-size: 20px;
-  
+  background: #eabb95;
+  color: #2c2f34da !important;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
+
+  font-size: 20px;
 }
 
 nav li a:hover {
   background-color: #33333340;
   color: #eabb95 !important;
-  
 }
 
 main {
   padding: 20px;
 }
 
-.checklist {
+.checklists {
   margin-bottom: 20px;
+  text-align: center;
 }
-
-
 
 .checkmark {
   display: inline-block;
@@ -103,6 +103,7 @@ input[type="checkbox"]:checked + .checkmark {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  background: #eabb95;
 }
 
 blockquote {
@@ -112,14 +113,14 @@ blockquote {
   margin: 0;
   padding: 20px;
   border-left: 5px solid #333; /* Darker gray border on the left */
-     background: #eabb95;
- 
+  background: #eabb95;
+
   /* color: #fff; */
-    color: #2c2f34d3 !important;
+  color: #2c2f34d3 !important;
 
   padding: 10px;
   text-align: center;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   transition-duration: 300ms;
 }
 
@@ -136,7 +137,12 @@ cite {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Semi-transparent white background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +167,6 @@ cite {
   }
 }
 
-
 /* hover animation */
 
 /* Hover Animation for Navigation Links */
@@ -183,9 +188,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-     background: #e6a976;
-
-
+  background: #e6a976;
 }
 
 /* Hover Animation for Navigation Links */
@@ -196,7 +199,6 @@ nav li a {
 nav li a:hover {
   background-color: #444; /* Darker background on hover */
   color: #fff; /* Text color on hover */
-
 }
 
 /* Hover Animation for Checklist Items */
@@ -208,8 +210,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-     background: #eabb95;
-
+  background: #eabb95;
 }
 @keyframes glow {
   0% {
@@ -219,10 +220,6 @@ nav li a:hover {
     box-shadow: none; /* Remove the glow effect after animation */
   }
 }
-
-
-}
-
 
 /* RESPONSIVENESS ADDTIN  */
 
@@ -279,7 +276,6 @@ nav li {
   }
 }
 
-
 /* checklist one and two from contact us to below the quote*/
 
 /* Checklist Styles */
@@ -304,21 +300,20 @@ nav li {
   font-weight: bold;
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
-   background: #eabb95 !important;
-    color: #2c2f34da !important;
-    font-family: 'Bebas Neue', sans-serif;
-    
-letter-spacing: 2px !important;
-    
-    font-size: 30px;
+  background: #eabb95 !important;
+  color: #2c2f34da !important;
+  font-family: "Bebas Neue", sans-serif;
+
+  letter-spacing: 2px !important;
+
+  font-size: 30px;
 }
 
 .checklists a:hover {
   /* background-color: #444;
   color: #fff; */
-    background-color: #333333c6 !important;
+  background-color: #333333c6 !important;
   color: #eabb95 !important;
-  
 }
 
 /* Hover Animation for Checklist Items */
@@ -332,15 +327,9 @@ letter-spacing: 2px !important;
   animation: glow 0.5s ease-in-out;
 }
 
-
-
 /* change the alignment */
 
-
-
 /* ******************************************************************************************************************** */
-
-
 
 /* Checklist Styles */
 .checklists ul {
@@ -406,22 +395,21 @@ letter-spacing: 2px !important;
 }
 
 /* style for the contact us form */
-.contact-section h2{
-    font-family: 'Bebas Neue', sans-serif;
-letter-spacing: 4px;
-    
-    font-size: 40px;
-    margin-bottom: 0px !important;
-}
-.contact-section p{
-  font-family: 'Nunito', sans-serif;
-font-weight: bold;
-letter-spacing: 2px;
-    
-    font-size: 15px;
-    margin-top: 0px !important;
-}
+.contact-section h2 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 4px;
 
+  font-size: 40px;
+  margin-bottom: 0px !important;
+}
+.contact-section p {
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  font-size: 15px;
+  margin-top: 0px !important;
+}
 
 .contact-section form {
   max-width: 400px; /* Set a maximum width for the form to prevent it from stretching too wide */
@@ -432,10 +420,10 @@ letter-spacing: 2px;
   display: block; /* Display labels as blocks (vertical) */
   margin-bottom: 5px; /* Add some spacing between labels */
   font-weight: bold;
-    font-family: 'Bebas Neue', sans-serif;
-letter-spacing: 2px;
-    
-    font-size: 25px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+
+  font-size: 25px;
 }
 
 .contact-section form input,
@@ -444,14 +432,14 @@ letter-spacing: 2px;
   padding: 10px 20px;
   margin-bottom: 10px; /* Add some spacing between form elements */
   border: 1px solid #ccc;
-  border-radius: 35px;
+  border-radius: 13px;
   font-size: 16px;
- background: #eabb95;
-  font-family: 'Nunito', sans-serif;
-font-weight: bold;
-    color: #2c2f34dc !important;
-    letter-spacing: 1px;
-
+  background: #eabb95;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: #2c2f34dc !important;
+  letter-spacing: 1px;
+  outline: none;
 }
 
 .contact-section form textarea {
@@ -465,9 +453,9 @@ font-weight: bold;
   border: none;
   font-size: 26px;
   cursor: pointer;
-  border-radius: 35px;
-    font-family: 'Bebas Neue', sans-serif;
- color: #444;
+  border-radius: 18px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #444;
   background-color: #eabb95;
   transition-duration: 300ms;
 }
@@ -541,7 +529,6 @@ main {
   padding-bottom: 70px; /* Adjust the value as needed */
 }
 
-
 /* adding github profile link to the footer */
 
 footer {
@@ -574,15 +561,11 @@ footer .heart {
   text-decoration: underline; /* Add underline on hover (optional) */
 }
 
-
 .checklist ul {
   list-style-type: none;
   padding-left: 0;
   margin: 0;
 }
-
-
-
 
 /* styles.css */
 
@@ -592,8 +575,8 @@ footer .heart {
   margin-bottom: 20px;
   font-size: 48px;
   font-weight: bold;
-    font-family: 'Bebas Neue', sans-serif;
-letter-spacing: 3px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 3px;
 }
 
 .checklist ul {
@@ -612,6 +595,7 @@ letter-spacing: 3px;
   display: flex;
   align-items: center;
   cursor: pointer;
+  padding: 7px;
 }
 
 /* Style the checkbox and checkmark */
@@ -647,11 +631,12 @@ letter-spacing: 3px;
 }
 
 /* Added hover effect for checklist items */
-.checklist label:hover .checkmark {
-  background-color: #eee; /* Light gray background on hover */
+.checklist label:hover .checkmark,
+.checklist label:hover {
+  transition: all 0.5s;
+  background-color: #eee;
+  border-radius: 5px;
 }
-
-
 
 /* drop down menu */
 
@@ -669,7 +654,7 @@ letter-spacing: 3px;
 /* Add a class for the hidden text */
 .hidden-text {
   display: none;
-  margin:10px !important;
+  margin: 10px !important;
   font-size: 24px !important;
   background-color: #eabb95 !important;
 
@@ -698,7 +683,6 @@ letter-spacing: 3px;
   top: 0; /* Adjust the top position */
   /* transform: translateY(50%); Adjust the vertical alignment */
   transform: translateY(0px) !important;
-
 }
 
 /* Drop-down menu styles */
@@ -726,8 +710,6 @@ letter-spacing: 3px;
   display: block;
 }
 
-
-
 /* Hide the hidden text by default */
 .hidden-text {
   display: none;
@@ -749,8 +731,6 @@ letter-spacing: 3px;
 .hidden-text.show {
   display: block;
 }
-
-
 
 /* DROP-DOWN TEXT */
 
@@ -784,10 +764,7 @@ letter-spacing: 3px;
   display: block;
 }
 
-
 /* dropdown functionality */
-
-
 
 /* Add styles for the hidden text in the drop-down */
 .hidden-text {
@@ -812,10 +789,65 @@ input[type="checkbox"].checkbox:checked ~ .checkmark ~ .hidden-text {
 .checklist-item {
   position: relative;
   z-index: 0; /* Set the z-index to 0 to stack the checklist items below the hidden text */
-    font-family: 'Bebas Neue', sans-serif;
-font-size: 30px;
-letter-spacing: 1px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
-.checklist-item label{
- padding-top: 20px;
+.checklist-item label {
+  padding-top: 20px;
+}
+
+/* Used to line up the checkbox next to the section title since the checklist's
+checkbox and section title are now separate */
+.section {
+  overflow: hidden;
+}
+.section-box {
+  float: left;
+}
+.section-box-label {
+  height: 40px;
+}
+.section-title {
+  overflow: hidden;
+}
+.section-title-label {
+  overflow: hidden;
+  height: 40px;
+}
+
+/* CSS for code snippets */
+.code-block {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.copy-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.copy-button:hover {
+  background-color: #444;
+}
+
+/* Responsive:Home Page */
+
+@media only screen and (max-width: 600px) {
+  header h1 a {
+   font-size: 40px;
+    }
+
+    nav li{
+     padding-bottom:10px;
+    }
+
 }
