@@ -79,10 +79,8 @@ main {
   padding: 20px;
 }
 
-.checklist {
-  margin-bottom: 20px;
-  
-}
+
+
 
 .checkmark {
   display: inline-block;
@@ -842,4 +840,5 @@ checkbox and section title are now separate */
 .copy-button:hover {
   background-color: #444;
 }
+
 
