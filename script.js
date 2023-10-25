@@ -1,4 +1,8 @@
 // script.js
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
 const checkboxes = document.querySelectorAll('.checkbox');
 
 // Add event listeners to checkboxes

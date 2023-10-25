@@ -77,6 +77,7 @@ nav li a:hover {
 
 main {
   padding: 20px;
+  margin-bottom: 230px;
 }
 
 .checklists {
@@ -498,11 +499,14 @@ footer {
   background-color: #e9aa77;;
   color: #fff;
   text-align: center;
-  padding: 20px 10px;
+  padding: 10px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-around;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 footer p {
@@ -610,9 +614,22 @@ footer .heart {
 }
 
 @media screen and (max-width: 768px) {
+  .popular-categories ul {
+    grid-column-gap: 10px;
+    margin: 10px;
+  }
+  .popular-categories a {
+    justify-content: center;
+  }
+  main{
+    margin-bottom: 0px;
+  }
   footer{
+    padding: 0px;
+    margin: 0px 2px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    position: static;
   }
   .popular-categories{
     display: flex;
