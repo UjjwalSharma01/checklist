@@ -30,47 +30,299 @@
   <section class="checklist">
     <h2>C++ Basics</h2>
     <ul>
-      <li class="checklist-item">
-        <div class="section">
-          <div class="section-box">
-            <label class="section-box-label">
-              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="section-title">
-            <label class="section-title-label">
-              Introduction to C++
-              <span class="dropdown-arrow"></span>
-            </label>
-          </div>
+     <!-- Example 1: Introduction to C++ -->
+     <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+          </label>
         </div>
-        <div class="hidden-text">
-          <!-- Hidden content for the drop-down menu -->
-          C++ is a powerful programming language. It is an extension of the C language and provides object-oriented features. This topic introduces you to the basics of C++ and its importance in modern programming.
+        <div class="section-title">
+          <label class="section-title-label">
+            Introduction to C++
+            <span class="dropdown-arrow"></span>
+          </label>
         </div>
-      </li>
-      <li class="checklist-item">
-        <div class="section">
-          <div class="section-box">
-            <label class="section-box-label">
-              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="section-title">
-            <label class="section-title-label">
-              Variables and Data Types
-              <span class="dropdown-arrow"></span>
-            </label>
-          </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="1">
+        <p>
+          C++ is one of the world's most popular programming language. It was developed by Bjarne Stroustrup, as an extension to the C language which provides 
+          object-oriented features and security to the data which was absent in C language. It is portable also and can be used to develop applications 
+          that can be adapted to multiple platforms.
+        </p>
+      </div>
+    </li>
+
+    <!-- Example 2: Variables and Data Types in C++-->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+          </label>
         </div>
-        <div class="hidden-text">
-          <!-- Hidden content for the drop-down menu -->
-          Learn about variables and different data types in C++. Variables are used to store values in memory. Understanding data types is essential for efficient memory management and creating robust programs.
+        <div class "section-title">
+          <label class="section-title-label">
+            Variables and Data Types 
+            <span class="dropdown-arrow"></span>
+          </label>
         </div>
-      </li>
-      <!-- Add more C++ basics topics here -->
+      </div>
+      <div class="hidden-text code-snippet" data-example="2">
+        <p>
+          Variables in C++ are used to store values in memory, while data types define the kind and size of data a variable can hold. Common data types include int, float, double, and String, among others.
+        </p>
+        <pre class="code-block">
+int age = 30;
+float marks = 45.90;
+double price = 19.99;
+String name = "Amit Aryan";
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(2)">Copy</button>
+      </div>
+    </li>
+
+    <!-- Example 3: Operators in C++-->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Operators 
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="3">
+        <p>
+          Operators are symbols that perform operations on variables and values. <br> Operators in C++ can be classified into 6 types: <br> 1. Arithematic 
+          Operators <br> 2. Assignment Operators <br> 3.Relational Operators <br> 4. Logical Operators <br> 5. Bitwise Operators <br>
+          6. Other Operators <br> These are essential for manipulating data and making decisions in your programs.
+        </p>
+        <pre class="code-block">
+int a = 10 + 20;
+int b = 5 - 1;
+int result = 6 * 2; 
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(3)">Copy</button>
+      </div>
+    </li>
+
+    <!-- Example 4: Control Structures in C++-->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist=cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Control Structures
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="4">
+        <p>
+          Control structures like if-else, switch, and loops (for, while, do-while) help in controlling the flow of your C++ programs, allowing you to make decisions and repeat actions as needed.
+        </p>
+        <pre class="code-block">
+if (condition) {
+// Code to execute when the condition is true
+} else {
+// Code to execute when the condition is false
+}
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(4)">Copy</button>
+      </div>
+    </li>
+
+    <!-- Example 5: Functions (Methods)-->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Functions (Methods) 
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="5">
+        <p>
+          Functions (methods) are reusable blocks of code that perform specific tasks. They improve code organization and make it easier to maintain and understand.
+        </p>
+        <pre class="code-block">
+          void myFunction(){
+            // code to be executed
+           }
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(5)">Copy</button>
+      </div>
+    </li>
+
+    <!-- Example 6: Arrays in C++ -->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Arrays 
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="6">
+        <p>
+          Arrays are used to store multiple values of the same type in C++. They are fundamental for working with collections of data.
+        </p>
+        <pre class="code-block">
+int[] numbers = {1, 2, 3, 4, 5};
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(6)">Copy</button>
+      </div>
+    </li>
+    <!-- Example 7: Object-Oriented Programming (OOP) in C++ -->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist=cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Object-Oriented Programming (OOP) 
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="7">
+        <p>
+          Object-Oriented Programming (OOP) is a paradigm in C++ that focuses on creating objects and classes. This concept helps in organizing and modeling real-world entities.
+        </p>
+        <pre class="code-block">
+          class MyClass {       
+            public:             
+              int myNum;       
+               string myString;  
+};
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(7)">Copy</button>
+      </div>
+    </li>
+
+    <!-- Example 8: Inheritance in C++ -->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist=cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Inheritance 
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="8">
+        <p>
+          Inheritance allows one class (subclass or derived class) to inherit attributes and methods from another class (superclass or base class). It facilitates code reuse and extensibility.
+        </p>
+        <pre class="code-block">
+          class Vehicle {  // Base class
+            public:
+                string brand = "Ford";
+                void honk() {
+                cout << "Tuut, tuut! \n" ;
+              }
+          };
+          
+          class Car: public Vehicle {  // Derived class
+            public:
+                string model = "Mustang";
+          };
+          
+          int main() {
+            Car myCar;
+            myCar.honk();
+            cout << myCar.brand + " " + myCar.model;
+            return 0;
+          }
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(8)">Copy</button>
+      </div>
+    </li>
+
+    <!-- Example 9: Polymorphism in C++ -->
+    <li class="checklist-item">
+      <div class="section">
+        <div class="section-box">
+          <label class="section-box-label">
+            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <div class="section-title">
+          <label class="section-title-label">
+            Polymorphism 
+            <span class="dropdown-arrow"></span>
+          </label>
+        </div>
+      </div>
+      <div class="hidden-text code-snippet" data-example="9">
+        <p>
+          Polymorphism enables objects of different classes to be treated as objects of a common superclass. This promotes flexibility and dynamic method invocation in C++ programs.
+        </p>
+        <pre class="code-block">
+          class Animal {  // Base class
+            public:
+              void animalSound() {
+                cout << "The animal makes a sound \n";
+              }
+          };
+          
+          class Pig : public Animal {  // Derived class
+            public:
+              void animalSound() {
+                cout << "The pig says: wee wee \n";
+              }
+          };
+          
+          class Dog : public Animal { // Derived class
+            public:
+              void animalSound() {
+                cout << "The dog says: bow wow \n";
+              }
+          };
+</pre>
+        <button class="copy-button" onclick="copyToClipboard(9)">Copy</button>
+      </div>
+    </li>
     </ul>
   </section>
 </main>

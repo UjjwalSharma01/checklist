@@ -210,7 +210,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-  background: #eabb95;
+  background: #1d5b79;
 }
 @keyframes glow {
   0% {
@@ -575,7 +575,7 @@ footer .heart {
   margin-bottom: 20px;
   font-size: 42px;
   font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   letter-spacing: 3px;
 }
 
