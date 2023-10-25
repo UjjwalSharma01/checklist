@@ -819,8 +819,8 @@ checkbox and section title are now separate */
 
 /* CSS for code snippets */
 .code-block {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 10px;
   border-radius: 5px;
   overflow: auto;

@@ -42,15 +42,15 @@
     text-decoration: none;
     margin-top: 20px;
     font-family: 'Bebas Neue', sans-serif;
-font-size: 30px;
-  background-color: #eabb95 !important;
-  color: #444 !important;
-  transition-duration: 300ms;
+    font-size: 30px;
+    background-color: #1d5b79 !important;
+    color: #444 !important;
+    transition-duration: 300ms;
 
   }
   
   .contribute-button:hover {
-    color: #eabb95 !important;
+    color: #1d5b79 !important;
   background-color: #444 !important;
     cursor: pointer;
   }
