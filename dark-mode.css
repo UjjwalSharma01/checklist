@@ -19,8 +19,14 @@
 .dark-mode-toggle:hover {
   background-color: #444;
 }
-
-
+.dark-mode .contribute-button{
+  color:#d9ed92;
+  background-color: #444;
+}
+.dark-mode .contribute-button:hover{
+  color:#444;
+  background-color: #d9ed92;
+}
 
 /* DARK MODE STYLES */
 body.dark-mode {
@@ -65,7 +71,6 @@ body.dark-mode {
   color: #eee;
   background-color: #d9ed92 !important;
 }
-
 
 .dark-mode .contact-section form label {
   color: #d9ed92;
@@ -225,7 +230,7 @@ body.dark-mode {
   /* background: #fff !important; */
   top: 5%;
   right: 3%;;
-   background-color: #d9ed92;
+  background-color: #d9ed92;
   color: #fff;
   border: none;
   padding: 10px;
