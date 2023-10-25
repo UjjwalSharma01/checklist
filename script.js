@@ -1,42 +1,47 @@
-// script.js
-const checkboxes = document.querySelectorAll('.checkbox');
-
-// Add event listeners to checkboxes
-checkboxes.forEach((checkbox) => {
-  checkbox.addEventListener('change', (event) => {
-    const checklistName = event.target.getAttribute('data-checklist');
-    const itemIndex = [...checkbox.parentElement.parentElement.children].indexOf(checkbox.parentElement);
-
-    // Save the completion status to local storage
-    localStorage.setItem(`${checklistName}_${itemIndex}`, event.target.checked);
-  });
-
-  // Retrieve the completion status from local storage
-  const checklistName = checkbox.getAttribute('data-checklist');
-  const itemIndex = [...checkbox.parentElement.parentElement.children].indexOf(checkbox.parentElement);
-  const isChecked = localStorage.getItem(`${checklistName}_${itemIndex}`);
-  if (isChecked === 'true') {
-    checkbox.checked = true;
+document.addEventListener("DOMContentLoaded", function () {
+  // Handle checkbox changes and adjust layout
+  function handleCheckboxChange(checkbox) {
+    const checklistItem = checkbox.closest(".checklist-item");
+    const hiddenText = checklistItem.querySelector(".hidden-text");
+    hiddenText.style.display = checkbox.checked ? "block" : "none";
+    checklistItem.style.marginBottom = checkbox.checked ? hiddenText.clientHeight + "px" : "0";
+    // ... (code to handle checkbox changes)
   }
-});
 
-// Hide the loading overlay when the page is fully loaded
-window.addEventListener("load", function () {
+  // Hide the loading overlay
   const loadingOverlay = document.querySelector(".loading-overlay");
   loadingOverlay.style.display = "none";
-});
 
-// Add click event listener to clicked-glow elements
-const clickedGlowElements = document.querySelectorAll(".clicked-glow");
-clickedGlowElements.forEach((element) => {
-  element.addEventListener("click", () => {
-    element.classList.add("clicked-glow");
-    setTimeout(() => {
-      element.classList.remove("clicked-glow");
-    }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
+  // Add event listener to handle checkbox changes and adjust layout
+  document.body.addEventListener('change', function (event) {
+    const target = event.target;
+    if (target.classList.contains('checkbox')) {
+      handleCheckboxChange(target);
+      // ... (code to retrieve checkbox state)
+    }
+  });
+
+  // Handle clicked-glow elements
+  document.body.addEventListener("click", function (event) {
+    const target = event.target;
+    if (target.classList.contains("clicked-glow")) {
+      target.classList.add("clicked-glow");
+      setTimeout(() => {
+        target.classList.remove("clicked-glow");
+      }, 500); // Remove the glow class after 0.5 seconds (duration of glow animation)
+    }
+  });
+
+  // Handle dropdown arrows
+  document.body.addEventListener("click", function (event) {
+    const target = event.target;
+    if (target.classList.contains("dropdown-arrow")) {
+      const listItem = target.closest("li");
+      listItem.querySelector(".hidden-text").classList.toggle("show");
+      target.classList.toggle("checked");
+    }
   });
 });
-
 
 // Code no longer user since clicking the section title does this action
 // and section title encompasses the arrow
