@@ -69,7 +69,6 @@ It's designed for simplicity, efficiency, and ease of use. <br>
             <div class="section-title">
               <label class="section-title-label">
                 Hello, World!
-
                 <span class="dropdown-arrow"></span>
               </label>
             </div>
@@ -77,7 +76,17 @@ It's designed for simplicity, efficiency, and ease of use. <br>
           <div class="hidden-text">
             <!-- Hidden content for the drop-down menu -->
             The classic "Hello, World!" program in Go is just a few lines of code. <br>
+            <hr>
+            <b>Code:</b>
             Use the 'fmt' package to print to the console. <br>
+            package main <br>
+
+import "fmt" <br>
+
+func main() { <br>
+    fmt.Println("Hello, World!")
+} <br>
+
           </div>
         </li>
   
@@ -106,6 +115,11 @@ It's designed for simplicity, efficiency, and ease of use. <br>
                 <!-- Hidden content for the drop-down menu -->
                 Go supports various data types, including integers, floats, strings, and booleans. <br>
                 Declare variables using var or short declaration :=. <br>
+                <hr>
+                <b>Code:</b>
+                var age int <br>
+name := "John" <br>
+
               </div>
             </li>
       
@@ -134,6 +148,12 @@ It's designed for simplicity, efficiency, and ease of use. <br>
                     <!-- Hidden content for the drop-down menu -->
                     Functions are defined using the func keyword. <br>
 The main function is the entry point for Go programs. <br>
+<hr>
+<b>Code:</b>
+func sayHello() { <br>
+  fmt.Println("Hello!") <br>
+} <br>
+
                   </div>
                 </li>
           
@@ -164,6 +184,18 @@ The main function is the entry point for Go programs. <br>
                         <!-- Hidden content for the drop-down menu -->
                         Go has standard control structures like if, for, and switch. <br>
 You can also use defer to schedule a function call. <br>
+<hr>
+<b>Code:</b>
+if x > 10 {
+  // do something <br>
+} <br>
+
+for i := 0; i < 5; i++ {
+  // loop   <br>
+} <br>
+
+defer cleanup()
+<br>
                     </li>
           
 
@@ -190,6 +222,12 @@ You can also use defer to schedule a function call. <br>
                           <!-- Hidden content for the drop-down menu -->
                           Arrays and slices are used for collections of elements. <br>
                           Maps store key-value pairs. <br>
+                          <hr>
+                          <b>Code:</b>
+                          var numbers [5]int <br>
+fruits := []string{"apple", "banana"} <br>
+studentScores := map[string]int{"Alice": 95, "Bob": 88} <br>
+<br>
                           
                         </div>
                       </li>
@@ -218,6 +256,12 @@ You can also use defer to schedule a function call. <br>
                           <!-- Hidden content for the drop-down menu -->
                           Pointers hold the memory address of a variable. <br>
 Use & to get a variable's address and * to access its value. <br>
+<hr>
+<b>Code:</b>
+var x int <br>
+y := &x <br>
+*y = 42 <br>
+
                         </div>
                       </li>
 
@@ -246,6 +290,13 @@ Use & to get a variable's address and * to access its value. <br>
                           <!-- Hidden content for the drop-down menu -->
                           Structs allow you to define custom data types with named fields. <br>
 They are often used for organizing related data. <br>
+<hr>
+<b>Code:</b>
+type Person struct { <br>
+  Name string <br>
+  Age  int <br>
+} <br>
+
                       </li>
 
 
@@ -272,6 +323,9 @@ They are often used for organizing related data. <br>
                           <!-- Hidden content for the drop-down menu -->
                           Go organizes code into packages, which contain related functions and data. <br>
 The import statement is used to bring in packages from the standard library or third-party sources. <br>
+<hr>
+<b>Code:</b>
+import "fmt" <br>
                       </li>
 
 
@@ -294,6 +348,10 @@ The import statement is used to bring in packages from the standard library or t
                           <!-- Hidden content for the drop-down menu -->
                           Go's built-in support for goroutines and channels simplifies concurrent programming. <br>
                           Goroutines are lightweight threads, and channels enable communication between them. <br>
+                          <hr>
+<b>Code:</b>
+go doSomething() <br>
+ch := make(chan int) <br>
                       </li>
 
 
@@ -317,6 +375,8 @@ The import statement is used to bring in packages from the standard library or t
                           <!-- Hidden content for the drop-down menu -->
                           Go encourages returning errors explicitly. <br>
 The error type is commonly used for this purpose. <br>
+
+
                       </li>
 
                       <li class="checklist-item">
