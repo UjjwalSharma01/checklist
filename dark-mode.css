@@ -3,7 +3,7 @@
 
 .dark-mode-toggle {
   position: absolute;
- top: 5%;
+  top: 5%;
   right: 3%;;
   z-index: 999;
   background-color: #333;
@@ -245,3 +245,20 @@ body.dark-mode .dark-mode-toggle::after {
   background-color: #666;
 }
 
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+  .dark-mode-toggle {
+    position: absolute;
+    top:3%;
+    right:1.8%;
+    font-size: 28px;  
+  }
+  .dark-mode-toggle::after {
+    position: absolute;
+    top:3%;
+    right:1.8%;
+    font-size: 28px;  
+  }
+}

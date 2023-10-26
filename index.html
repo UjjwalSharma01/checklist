@@ -1,57 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Checklist</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">   
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="dark-mode.css"> <!-- Add the dark mode CSS file -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Checklist</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
+    <!-- Add the dark mode CSS file -->
+  </head>
+  <body>
+    <!-- dark mode, feature - added here because I was finding it difficult to search it in the entire codebase -->
+    <button class="dark-mode-toggle">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </button>
 
-<!-- dark mode, feature - added here because I was finding it difficult to search it in the entire codebase -->
-<button class="dark-mode-toggle">
-  <i class="fas fa-sun"></i>
-  <i class="fas fa-moon"></i>
-</button>
+    <!-- Loading Animation -->
+    <div class="loading-overlay">
+      <div class="loading-spinner"></div>
+    </div>
 
-
-  <!-- Loading Animation -->
-  <div class="loading-overlay">
-    <div class="loading-spinner"></div>
-  </div>
-
-  <header>
-    <h1><a href="index.html" class="clicked-glow">The Checklist</a></h1>
-  </header>
-  <nav>
-    <ul class="contact-contribute">
-      <li><a href="contact.html" class="clicked-glow contact">Contact Us</a></li>
-      <li><a href="Contribute.html" class="clicked-glow contribute">Contribute</a></li>  
-    </ul>
-  </nav>  
-  <main>
-    <section class="quote">
-      <blockquote id="quoteContent">"The only limit to our realization of tomorrow will be our doubts of today."
-      </blockquote>
-      <cite id="quoteTitle">— Franklin D. Roosevelt</cite>
-    </section>
-    <section class="checklists">
-      <div>
-        <a href="C++_Basics.html" class="clicked-glow">C++ Basics</a>
+    <header>
+      <h1><a href="index.html" class="clicked-glow">The Checklist</a></h1>
+    </header>
+    <nav>
+      <ul class="contact-contribute">
+        <li>
+          <a href="contact.html" class="clicked-glow contact">Contact Us</a>
+        </li>
+        <li>
+          <a href="Contribute.html" class="clicked-glow contribute"
+            >Contribute</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <section class="quote">
+        <blockquote id="quoteContent">
+          "The only limit to our realization of tomorrow will be our doubts of
+          today."
+        </blockquote>
+        <cite id="quoteTitle">— Franklin D. Roosevelt</cite>
+      </section>
+      <section class="checklists">
+        <div>
+          <a href="C++_Basics.html" class="clicked-glow">C++ Basics</a>
+        </div>
+        <div>
+          <a href="python_Basics.html" class="clicked-glow">Python Basics</a>
+        </div>
+        <div>
+          <a href="OOP.html" class="clicked-glow"
+            >Object Oriented Programming (OOP)</a
+          >
+        </div>
+        <div>
+          <a href="STL.html" class="clicked-glow"
+            >Standard Template Library (STL)</a
+          >
+        </div>
+        <div>
+          <a href="WebApp.html" class="clicked-glow"
+            >Web Application Fundamentals</a
+          >
+        </div>
+        <div>
+          <a href="algorithm.html" class="clicked-glow"
+            >Algorithm Design Techniques</a
+          >
+        </div>
+        <div>
+          <a href="JavaBasic.html" class="clicked-glow">Java Basics</a>
+        </div>
+        <div>
+        <a href="linux.html" class="clicked-glow">Linux Basics</a>
       </div>
       <div>
-        <a href="OOP.html" class="clicked-glow">Object Oriented Programming (OOP)</a>
-      </div>
-      <div>
-        <a href="STL.html" class="clicked-glow">Standard Template Library (STL)</a>
-      </div>
-      <div>
-        <a href="WebApp.html" class="clicked-glow">Web Application Fundamentals</a>
-      </div>
-      <div>
-        <a href="algorithm.html" class="clicked-glow">Algorithm Design Techniques</a>
+        <a href="golang.html" class="clicked-glow">Golang Basics</a>
       </div>
     </section>
   </main>

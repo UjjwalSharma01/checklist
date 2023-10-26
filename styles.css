@@ -79,8 +79,9 @@ main {
   padding: 20px;
 }
 
-.checklist {
+.checklists {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .checkmark {
@@ -814,4 +815,40 @@ checkbox and section title are now separate */
 .section-title-label {
   overflow: hidden;
   height: 40px;
+}
+
+/* CSS for code snippets */
+.code-block {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.copy-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.copy-button:hover {
+  background-color: #444;
+}
+
+/* Responsive:Home Page */
+
+@media only screen and (max-width: 600px) {
+  header h1 a {
+   font-size: 40px;
+    }
+
+    nav li{
+     padding-bottom:10px;
+    }
+
 }

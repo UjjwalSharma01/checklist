@@ -133,3 +133,18 @@ async function logMovies() {
 }
 
 logMovies();
+
+// java basic
+function copyToClipboard(exampleNumber) {
+  const codeBlock = document.querySelector(`.code-snippet[data-example="${exampleNumber}"]`);
+  if (codeBlock) {
+    const codeText = codeBlock.textContent;
+    const textArea = document.createElement('textarea');
+    textArea.value = codeText;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    alert('Code copied to clipboard');
+  }
+}
