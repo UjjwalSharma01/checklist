@@ -124,15 +124,15 @@ sectionTitles.forEach((label) => {
 //     }
 // });
 
-async function logMovies() {
-  const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=happiness",
- { headers: { 'X-Api-Key': 'gv414CStL2w22HtsC4pp8A==fHW82xPwAxJPaUjU'},});
-  const movies = await response.json();
-  document.getElementById("quoteContent").textContent = movies[0].quote;
-  document.getElementById("quoteTitle").textContent = "- "+ movies[0].author;
-}
+// async function logMovies() {
+//   const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=happiness",
+//  { headers: { 'X-Api-Key': 'gv414CStL2w22HtsC4pp8A==fHW82xPwAxJPaUjU'},});
+//   const movies = await response.json();
+//   document.getElementById("quoteContent").textContent = movies[0].quote;
+//   document.getElementById("quoteTitle").textContent = "- "+ movies[0].author;
+// }
 
-logMovies();
+// logMovies();
 
 // java basic
 function copyToClipboard(exampleNumber) {

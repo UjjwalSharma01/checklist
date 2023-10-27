@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DSA Interview Questions - The Checklist</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">The Checklist</a></h1>
+    </header>
+    <nav>
+      <!-- may use this thing later -->
+      <!-- <ul>
+      <li><a href="checklist1.html">Checklist 1</a></li>
+      <li><a href="checklist2.html">Checklist 2</a></li>
+    </ul> -->
+      <!-- Add more checklists here -->
+
+      <!-- dark mode elements -->
+      <button class="dark-mode-toggle">
+        <i class="sun-icon"></i>
+        <i class="moon-icon"></i>
+      </button>
+    </nav>
+    <main>
+      <section class="checklist">
+        <h2>Data Structure and Algorithms (DSA) Interview Questions</h2>
+        <ul>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    What is a linked list in DSA?
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              A linked list is a linear data structure where elements are stored in nodes. Each node points to the next node in the sequence. It's used in various DSA algorithms.
+              <p>Code snippet in C++:</p>
+              <pre><code>
+#include <iostream>
+using namespace std;
+
+struct Node {
+int data;
+Node* next;
+};
+
+int main() {
+    Node* head = NULL; // Initialize an empty linked list
+    return 0;
+}
+             </code></pre>
+
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    Explain the concept of binary search.
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              Binary search is an efficient algorithm to search for a specific element in a sorted array. It repeatedly divides the search interval in half, eliminating half of the elements each time.
+              <p>Code snippet in C++ for binary search:</p>
+              <pre><code>
+#include <iostream>
+using namespace std;
+
+int binarySearch(int arr[], int left, int right, int target) {
+while (left <= right) {
+int mid = left + (right - left) / 2;
+if (arr[mid] == target)
+  return mid;
+if (arr[mid] < target)
+  left = mid + 1;
+else
+  right = mid - 1;
+}
+return -1; // Element not found
+}
+
+int main() {
+int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+int n = sizeof(arr) / sizeof(arr[0]);
+int target = 5;
+int result = binarySearch(arr, 0, n - 1, target);
+if (result == -1)
+cout << "Element not found";
+else
+cout << "Element found at index " << result;
+return 0;
+}
+              </code></pre>
+
+              
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    What is a stack data structure?
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              A stack is a linear data structure that follows the Last In, First Out (LIFO) principle. It's used for various applications, such as managing function calls and evaluating expressions.
+              <p>Code snippet in C++ for a basic stack:</p>
+              <pre><code>
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int main() {
+stack<int> s;
+s.push(1);
+s.push(2);
+s.push(3);
+
+while (!s.empty()) {
+cout << s.top() << " ";
+s.pop();
+}
+return 0;
+}
+              </code></pre>
+
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    What is a queue and how is it different from a stack?
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              A queue is a linear data structure that follows the First In, First Out (FIFO) principle, meaning the element added first is the one removed first. It's used for tasks like scheduling and managing resources. Unlike a stack, which follows the Last In, First Out (LIFO) principle, a queue processes elements in the order they were added.
+              <p>Code snippet in C++ for a basic queue:</p>
+              <pre><code>
+#include <iostream>
+#include <queue>
+using namespace std;
+
+int main() {
+queue<int> q;
+q.push(1);
+q.push(2);
+q.push(3);
+
+while (!q.empty()) {
+cout << q.front() << " ";
+q.pop();
+}
+return 0;
+}
+              </code></pre>
+
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    What are binary trees, and how do you traverse them?
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              Binary trees are hierarchical data structures with nodes linked by edges. Each node has at most two children, referred to as the left child and the right child. Common binary tree traversal methods are in-order, pre-order, and post-order.
+              <p>Code snippet in C++ for in-order traversal of a binary tree:</p>
+              <pre><code>
+#include <iostream>
+using namespace std;
+
+struct Node {
+int data;
+Node* left;
+Node* right;
+Node(int value) :
+data(value), left(nullptr), right(nullptr) {}
+};
+
+void inOrderTraversal(Node* node) {
+if (node == nullptr)
+return;
+inOrderTraversal(node->left);
+cout << node->data << " ";
+inOrderTraversal(node->right);
+}
+
+int main() {
+Node* root = new Node(1);
+root->left = new Node(2);
+root->right = new Node(3);
+root->left->left = new Node(4);
+root->left->right = new Node(5);
+
+cout << "In-order traversal: ";
+inOrderTraversal(root);
+return 0;
+}
+</code></pre>
+
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    How does the bubble sort algorithm work?
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they're in the wrong order. This process is repeated until the entire list is sorted.
+              <p>Code snippet in C++ for bubble sort:</p>
+              <pre><code>
+      #include <iostream>
+      using namespace std;
+      
+      void bubbleSort(int arr[], int n) {
+      for (int i = 0; i < n - 1; i++) {
+      for (int j = 0; j < n - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+      swap(arr[j], arr[j + 1]);
+      }
+      }
+      }
+      }
+      
+      int main() {
+      int arr[] = {64, 34, 25, 12, 22, 11, 90};
+      int n = sizeof(arr) / sizeof(arr[0]);
+      
+      cout << "Original array: ";
+      for (int i = 0; i < n; i++) {
+      cout << arr[i] << " ";
+      }
+      
+      bubbleSort(arr, n);
+      
+      cout << "\nSorted array: ";
+      for (int i = 0; i < n; i++) {
+      cout << arr[i] << " ";
+      }
+      
+      return 0;
+      }
+              </code></pre>
+      
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    Explain the concept of a breadth-first search (BFS) algorithm in graph traversal.
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              BFS is an algorithm for traversing or searching tree or graph data structures. It explores all neighbor nodes at the current depth before moving to the next level. BFS can be implemented using a queue data structure.
+              <p>Code snippet in C++ for BFS:</p>
+              <pre><code>
+                #include &lt;iostream&gt;
+                #include &lt;queue&gt;
+                #include &lt;vector&gt;
+                using namespace std;
+                
+                void bfs(vector&lt;vector&lt;int&gt;&gt; graph, int start) {
+                    int n = graph.size();
+                    vector&lt;bool&gt; visited(n, false);
+                    queue&lt;int&gt; q;
+                
+                    visited[start] = true;
+                    q.push(start);
+                
+                    while (!q.empty()) {
+                        int node = q.front();
+                        cout &lt;&lt; node &lt;&lt; " ";
+                        q.pop();
+                
+                        for (int neighbor : graph[node]) {
+                            if (!visited[neighbor]) {
+                                visited[neighbor] = true;
+                                q.push(neighbor);
+                            }
+                        }
+                    }
+                }
+                
+                int main() {
+                    vector&lt;vector&lt;int&gt;&gt; graph = {{1, 2}, {0, 3, 4}, {0, 4}, {1}, {1, 2}};
+                    int startNode = 0;
+                    bfs(graph, startNode); // Output: 0 1 2 3 4
+                    return 0;
+                }
+                            </code>
+                          </pre>      
+            </div>
+          </li>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                    Explain the concept of Dijkstra's algorithm for finding the shortest path in a weighted graph.
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text" style="text-align: start">
+              <!-- Hidden content for the drop-down menu -->
+              Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a weighted graph. It maintains a set of visited nodes and a set of tentative distances. It repeatedly selects the node with the smallest tentative distance, updates distances to its neighbors, and marks it as visited.
+              <p>Code snippet in C++ for Djikstra:</p>
+               <pre><code>
+                #include &lt;iostream&gt;
+#include &lt;vector&gt;
+#include &lt;queue&gt;
+#include &lt;climits&gt;
+using namespace std;
+
+const int INF = INT_MAX;
+
+int dijkstra(int from,int to) 
+{ 
+	vector <bool> visited(N,false); 
+	visited[from] = true; 
+	cost [from] = 0; 
+	pq.push(from); 
+	while(!pq.empty() && !visited[to]) 
+	{ 
+		int current = pq.top(); 
+		pq.pop(); 
+		if(visited[current]) //check comments for explanation 
+			continue; 
+		visited[current] = true; 
+		for(int i=0;i<graph[current].size();i++) 
+		{	 
+			if(!visited[graph[current][i]]) 
+			{ 
+				cost[graph[current][i]] = min( cost[graph[current][i]] ,cost[current] + weight[current][i]); 
+				pq.push(graph[current][i]); 
+			} 
+		} 
+	} 
+	return cost[to]; 
+}
+               </code></pre>
+            </div>
+          </li>
+          
+          
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+  </body>
+</html>
