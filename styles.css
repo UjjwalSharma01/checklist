@@ -822,6 +822,7 @@ checkbox and section title are now separate */
   color: white;
   padding: 10px;
   border-radius: 5px;
+  text-align: left;
   overflow: auto;
 }
 

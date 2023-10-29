@@ -281,7 +281,14 @@
                         </div>
                     </div>
                     <div class="hidden-text">
-                        <img src="C Program Assets/first c program.png" alt="">
+                        <!-- <img src="C Program Assets/first c program.png" alt=""> -->
+                        <pre class="code-block">
+                            #include< stdio.h >
+                                int main(){
+                                    printf("Hello, World!");
+                                    return 0;
+                                }
+                        </pre>
                         <p>This program prints "Hello, World!" on the console.</p>
 
                         <p>#include< stdio.h> :- This line includes the stdio.h file, which contains the printf()
@@ -388,7 +395,15 @@
                             screen. Syntax:</p>
                         <p>"printf(“%X”, variableOfXType);" = where %X is the format specifier in C. It is a way to tell
                             the compiler what type of data is in a variable and & is the address operator in C</p>
-                        <img src="C Program Assets/ipOpExample.png" alt="" style="height: 300px;" width="400px;">
+                        <p><b>Integer: </b></p>
+                        <p>Input: <i>scanf("%d", &intVariable);</i></p>
+                        <p>Output: <i>printf("%d", intVariable);</i></p>
+                        <p><b>Float: </b></p>
+                        <p>Input: <i>scanf("%f", &floatVariable);</i></p>
+                        <p>Output: <i>printf("%f", folatVariable);</i></p>
+                        <p><b>Character: </b></p>
+                        <p>Input: <i>scanf("%c", &charVariable);</i></p>
+                        <p>Output: <i>printf("%c", charVariable);</i></p>
                 </li>
                 <li class="checklist-item">
                     <div class="section">
@@ -451,18 +466,41 @@
                             different blocks of code based on whether a certain condition is true or false. The most
                             common types of conditional statements in C are the if, else if, and else statements.</p>
                         <p><u>The syntax for the if statement is: </u></p>
-                        <img src="C Program Assets/ifStatement.png" alt="">
+                        <pre class="code-block">
+                            if (condition) {
+                                // block of code to execute if condition is true
+                                }
+                        </pre>
 
                         <p>The else if statement is used to execute a block of code if a certain condition is true, and
                             another block of code if the condition is false. The syntax for the <u>else if statement</u>
                             is:</p>
-                        <img src="C Program Assets/elseIf statement.png" alt="">
+                        <pre class="code-block">
+                            if (condition1) {
+                                // block of code to execute if condition1 is true
+                                } else if (condition2) {
+                                // block of code to execute if condition2 is true
+                                } else {
+                                // block of code to execute if condition1 and condition2 are false
+                                }
+                        </pre>
 
                         <p><u>Switch Statement</u></p>
                         <p>The switch statement in C is a selection statement that allows you to transfer control to
                             different statements within the switch body depending on the value of the switch expression.
                         </p>
-                        <img src="C Program Assets/switch case.png" alt="">
+                        <pre class="code-block">
+                            switch (expression) {
+                                case value1:
+                                // code to be executed;
+                                break;
+                                }
+                                case value2:
+                                // code to be executed;
+                                break;
+                                default:
+                                // code to be executed if all cases are not matched;
+                        </pre>
                 </li>
                 <li class="checklist-item">
                     <div class="section">
@@ -488,7 +526,11 @@
                         <p>The for loop is a repetition control structure that allows you to efficiently write a loop
                             that needs to execute a specific number of times.</p>
                         <p>The syntax of a for loop in C programming language is:</p>
-                        <img src="C Program Assets/forloop syntax.png" alt="">
+                        <pre class="code-block">
+                            for (initialization; condition; increment) {
+                                // statement(s);
+                                }
+                        </pre>
                         <p>Here is the flow of control in a 'for' loop:</p>
                         <p>The initialization statement is executed once, before the loop begins.</p>
                         <p>The condition statement is evaluated. If it is true, the loop body is executed. If it is
@@ -498,7 +540,11 @@
                         <p>The loop goes back to step 2 and repeats the process until the condition statement becomes
                             false.</p>
                         <p>Here is an <u>example of a for loop</u> that prints the numbers from 1 to 10:</p>
-                        <img src="C Program Assets/forloop example.png" alt="">
+                        <pre class="code-block">
+                            for (int i = 0; i < 10; i++) {
+                                printf("%d\n", i);
+                            }
+                        </pre>
                         <p>This loop will print the numbers from 1 to 10, one per line.</p>
 
                         <!-- while loop in c -->
@@ -506,12 +552,22 @@
                         <p>The while loop in C is a programming construct that allows us to execute a block of code
                             repeatedly, as long as a specified condition remains true. The syntax for a while loop in C
                             is:</p>
-                        <img src="C Program Assets/while syntax.png" alt="">
+                        <pre class="code-block">
+                            while (condition) {
+                                // code block
+                                }
+                        </pre>
                         <p>The condition is a Boolean expression that is evaluated before each iteration of the loop. If
                             the expression evaluates to true, the code block is executed. If the expression evaluates to
                             false, the loop terminates.</p>
                         <p>Here is an example of a while loop in C that prints the numbers from 1 to 10:</p>
-                        <img src="C Program Assets/while example.png" alt="">
+                        <pre class="code-block">
+                            int i = 1;
+                            while (i <= 10) {
+                                printf("%d\n", i);
+                                i++;
+                            }
+                        </pre>
                         <p>In this example, the variable i is initialized to 1. The loop then iterates as long as i is
                             less than or equal to 10. On each iteration, the value of i is printed to the console, and
                             then i is incremented by 1. The loop terminates when i is greater than 10.</p>
@@ -522,12 +578,22 @@
                             repeatedly, until a specified condition is met. The syntax for a do-while loop in C is as
                             follows:
                         </p>
-                        <img src="C Program Assets/doWhile syntax.png" alt="">
+                        <pre class="code-block">
+                            do {
+                            // statements
+                            } while (condition);
+                        </pre>
                         <p>The do keyword is followed by a block of statements, which is executed repeatedly. The while
                             keyword is followed by a condition, which is evaluated after each iteration of the loop. If
                             the condition is true, the loop is executed again; otherwise, the loop terminates.</p>
                         <p>Here is an example of a do-while loop in C that prints the numbers from 1 to 10:</p>
-                        <img src="C Program Assets/doWhile example.png" alt="">
+                        <pre class="code-block">﻿
+                            int i = 1; 
+                            do {
+                            printf("%d\n", i);
+                            i++;
+                            } while (i <= 10);
+                        </pre>
                         <p>This loop will print the numbers from 1 to 10, inclusive</p>
                         <p>The do-while loop is a useful construct for situations where you need to execute a block of
                             code repeatedly, but you don't know how many times the loop should iterate. For example, you
@@ -557,17 +623,42 @@
                             loop to skip the current iteration and continue with the next iteration.</p>
                         <p><b><u>Break Statement</u></b></p>
                         <p>Here is an example of how to use the break statement:</p>
-                        <img src="C Program Assets/break example.png" alt="">
+                        <pre class="code-block">
+                            int i;
+                            for (i = 0; i < 10; i++) {
+                            if (i == 5) {
+                                break;
+                            }
+                            printf("%d\n", i);
+                            }
+                        </pre>
                         <p>This code will print the numbers from 0 to 4, and then the break statement will cause the
                             loop to terminate.</p>
                         <p><b><u>Continue Statement</u></b></p>
                         <p>Here is an example of how to use the continue statement:</p>
-                        <img src="C Program Assets/continue example1.png" alt="">
+                        <pre class="code-block">
+                            int i;
+                            for (i = 0; i < 10; i++) {
+                                if (i == 5) {
+                                    continue;
+                                }
+                                printf("%d\n", i);
+                            }
+                        </pre>
                         <p>This code will print the numbers from 0 to 9, skipping the number 5.</p>
                         <p>The break and continue statements can be used together to create more complex control flows.
                             For example, the following code will print the numbers from 0 to 9, but it will skip the
                             numbers 5 and 7:</p>
                         <img src="C Program Assets/continue example2.png" alt="">
+                        <pre class="code-block">
+                            int i;
+                            for (i = 0; i < 10; i++) {
+                                if (i == 5 || i == 7) {
+                                    continue;
+                                }
+                                printf("%d\n", i);
+                            }
+                        </pre>
                         <p>The break and continue statements are powerful tools that can be used to control the flow of
                             a program. However, they should be used with care, as they can easily lead to unexpected
                             results.</p>
@@ -600,10 +691,17 @@
                         <p><b><u>Example:</u></b></p>
                         <p>For example, the following code uses the ternary operator to print "hello world" if the value
                             of x is greater than 10, and "goodbye world" otherwise:</p>
-                        <img src="C Program Assets/ternary example 1.png" alt="">
+                        <pre class="code-block">
+                            int x = 15;
+                            printf("%s", x > 10 ? "hello world" : "goodbye world");
+                        </pre>
                         <p>For example, the following code uses the ternary operator to assign the value of x to y if x
                             is greater than 10, and the value of 0 otherwise:</p>
-                        <img src="C Program Assets/ternary example 2.png" alt="">
+                        <pre class="code-block">
+                            int x = 15;
+                            int y;
+                            y = x > 10 ? x : 0;
+                        </pre>
                 </li>
                 <br>
                 <h3>Chapter 4: Functions</h3>
@@ -637,14 +735,44 @@
 
                         <p><b><u>Defining a Function:</u></b></p>
                         <p>The general form of a function definition in C programming language is as follows −</p>
-                        <img src="C Program Assets/funcdefine.png" alt="">
+                        <pre class="code-block">
+                            return_type function_name( parameter list ) {
+                                //body of the function
+                            }
+                        </pre>
                         <p>A function definition in C programming consists of a function header and a function body.
                             Here are all the parts of a function −</p>
-                        <img src="C Program Assets/funcNotes.png" alt="">
+                        <pre class="code-block">
+• Return Type - A function may return a value. 
+  The return_type is the data type of the value the function returns.
+  Some functions perform the desired operations without returning a value. 
+  In this case, thereturn_type is the keyword void.
+
+• Function Name - This is the actual name of the function. 
+  The function name and the parameter list together constitute the function signature. 
+  Parameters - A parameter is like a placeholder. 
+  When a function is invoked, you pass a value to the parameter. 
+  This value is referred to as actual parameter or argument. 
+  The parameter list refers to the type, order, and number of the parameters of a function. 
+  Parameters are optional; that is, a function may contain no parameters.
+
+• Function Body - The function body contains a collection of statements 
+  that define what the function does.
+                        </pre>
                         <p><b>Example:</b></p>
                         <p>Given below is the source code for a function called max(). This function takes two
                             parameters num1 and num2 and returns the maximum value between the two −</p>
-                        <img src="C Program Assets/funcDefineExample.png" alt="">
+                        <pre class="code-block">
+/* function returning the max between two numbers */ int max(int num1, int num2) {
+    /* local variable declaration */
+    int result;
+    if (num1 > num2)
+        result = num1;
+    else
+        result = num2;
+    return result;
+    }
+                        </pre>
 
                         <!-- calling a function -->
                         <p><b><u>Calling a Function:</u></b></p>
@@ -657,7 +785,28 @@
                         <p>To call a function, you simply need to pass the required parameters along with the function
                             name, and if the function returns a value, then you can store the returned value. For
                             example −</p>
-                        <img src="C Program Assets/funcCallingExample.png" alt="">
+                        <pre class="code-block">
+/* function declaration */ int max(int num1, int num2);
+int main() {
+/* local variable definition */
+int a = 100;
+int b = 200;
+int ret;
+/* calling a function to get max value */ ret = max(a, b);
+printf("Max value is : %d\n", ret );
+return 0;
+}
+/* function returning the max between two numbers */
+int max(int num1, int num2) {
+/* local variable declaration */
+int result;
+if (num1> num2)
+result = num1;
+else
+result = num2;
+return result;
+}
+                        </pre>
                         <p><b>Output:</b> Max value is : 200</p>
                 </li>
                 <li class="checklist-item">
@@ -690,7 +839,6 @@
                         <p><b><u>Return Values in C functions</u></b></p>
                         <p>The return statement may or may not return a value depending upon the return type of the
                             function. For example, int returns an integer value, void returns nothing, etc.</p>
-                        <img src="C Program Assets/returnValues.png" alt="">
                 </li>
                 <li class="checklist-item">
                     <div class="section">
@@ -726,7 +874,16 @@
                             program. Automatic variables are declared without the static keyword, and they exist in
                             memory only for the duration of the function in which they are declared.</p>
                         <p>Here is an example of the scope and lifetime of variables in C:</p>
-                        <img src="C Program Assets/scope.png" alt="">
+                        <pre class="code-block">
+#include < stdio.h>
+    int main() {
+        int local_variable = 1; // Local variable 
+        static int global_variable = 2; // Global variable
+        printf("The local variable is %d\n", local_variable); 
+        printf("The global variable is %d\n", global_variable);
+        return 0;
+    }
+                        </pre>
                         <p>In this example, the local_variable is declared inside of the main() function, so it has a
                             local scope. The global_variable is declared outside of any function, so it has a global
                             scope.</p>
@@ -761,7 +918,6 @@
                             its return type, numbers and data types of its parameters. </p>
                         <p>By using this information, the compiler cross-checks function parameters and their data type
                             with function definition and function call.</p>
-                        <img src="C Program Assets/funcPrototype.jpg" alt="">
                 </li>
                 <li class="checklist-item">
                     <div class="section">
@@ -787,7 +943,7 @@
                             The process of recursion consists of multiple recursive calls. The function that calls
                             itself is called a recursive function.</p>
                         <p><b><i>What Recursion looks like: </i></b></p>
-                        <img src="C Program Assets/recursion-tree.png" alt="">
+                        <p>A ladder like structure.</p>
                         <p><b>Recursion can be used to solve many problems, such as:</b></p>
                         <p>1. Finding the factorial of a number</p>
                         <p>2. Generating the Fibonacci sequence</p>
@@ -795,7 +951,15 @@
                         <p>4. Sorting a list of numbers</p>
 
                         <p>For example, the following function calculates the factorial of a number:</p>
-                        <img src="C Program Assets/recursion example.png" alt="">
+                        <pre class="code-block">
+                            int factorial(int n) {
+                                if (n == 0) {
+                                    return 1;
+                                } else {
+                                    return n * factorial(n - 1);
+                                }
+                            }
+                        </pre>
                 </li>
                 <h3>Chapter 5: Arrays and Pointers</h3>
                 <li class="checklist-item">
@@ -822,21 +986,34 @@
                             contiguous memory locations. The data items in an array are accessed using an index, which
                             is an integer value that specifies the position of the item in the array.</p>
                         <p>To declare an array in C, you use the following syntax:</p>
-                        <img src="C Program Assets/arraySyntax.png" alt="">
+                        <pre class="code-block">
+                            data_type array_name [size];
+                        </pre>
                         <p>where data_type is the type of the data items in the array, array_name is the name of the
                             array, and size is the number of elements in the array.</p>
                         <p>For example, the following code declares an array of 10 integers:</p>
-                        <img src="C Program Assets/arrayExample.png" alt="">
+                        <pre class="code-block">
+                            int numbers [10];
+                        </pre>
                         <p>To access an element in an array, you use the following syntax:</p>
-                        <img src="C Program Assets/arrayAccess.png" alt="">
+                        <pre class="code-block">
+                            array_name [index]
+                        </pre>
                         <p>where array_name is the name of the array, and index is the index of the element you want to
                             access.</p>
                         <p>For example, the following code prints the value of the first element in the numbers array:
                         </p>
-                        <img src="C Program Assets/arrayNumbers.png" alt="">
+                        <pre class="code-block">
+                            printf("%d\n", numbers [0]);
+                        </pre>
                         <p>You can also use the for loop to iterate over the elements of an array. For example, the
                             following code prints the values of all elements in the numbers array:</p>
-                        <img src="C Program Assets/arraySnippet.png" alt="">
+                        <pre class="code-block">
+                            for (int i = 0; i < 10; i++)
+                            { 
+                                printf("%d\n", numbers [i]);
+                            }
+                        </pre>
                         <p>Arrays are a powerful tool for storing and manipulating data in C. They can be used to solve
                             a variety of problems, such as sorting, searching, and filtering data.</p>
                 </li>
@@ -880,7 +1057,20 @@
                         <p>Pointers are important in C, because they allow us to manipulate the data in the computer's
                             memory. This can reduce the code and improve the performance.</p>
                         <p>Here is an example of how to use a pointer in C:</p>
-                        <img src="C Program Assets/pointerExample.png" alt="">
+                        <pre class="code-block">
+                            int main() { 
+                                int x = 10;
+                                int* p = &x;
+                                
+                                printf("%p\n", p); // Prints the address of x
+                                
+                                *p = 20; // Changes the value of x to 20
+                            
+                                printf("%d\n", x); // Prints the value of x, which is now 20
+                            
+                                return 0;
+                            }
+                        </pre>
                         <p>In this example, the p pointer is used to store the memory address of the x variable. The *p
                             operator is used to dereference the pointer, which means that it is used to access the data
                             that is stored at the memory address that the pointer points to. In this case, the *p
@@ -914,13 +1104,35 @@
                             pointer will move it to the next char in memory.</p>
                         <p>Pointer arithmetic can be used to iterate over arrays and structures. For example, the
                             following code would iterate over the array arr of 5 integers:</p>
-                        <img src="C Program Assets/ptrArith.png" alt="">
+                        <pre class="code-block">
+                            int arr[] = {1, 2, 3, 4, 5};
+                            int *ptr = arr;
+
+                            for (int i = 0; i < 5; i++) {
+                            printf("%d\n", *ptr);
+                            ptr++;
+                            }
+                        </pre>
                         <p>The output of the code would be:</p>
-                        <img src="C Program Assets/ptrOutput.png" alt="">
+                        <pre class="code-block">
+                            1
+                            2
+                            3
+                            4
+                            5
+                        </pre>
                         <p>Pointer arithmetic can also be used to compare pointers. For example, the following code
                             would compare the pointers ptr1 and ptr2 to see if they point to the same memory location:
                         </p>
-                        <img src="C Program Assets/ptrExample1.png" alt="">
+                        <pre class="code-block">
+                            int *ptr1 = &arr[0]; 
+                            int *ptr2 = &arr[1];
+                            if (ptr1 == ptr2) {
+                                printf("The pointers are equal.\n");
+                            } else {
+                                printf("The pointers are not equal.\n");
+                            }
+                        </pre>
                         <p>The output of the code would be:</p>
                         <code>"The pointers are not equal."</code>
                 </li>
@@ -958,19 +1170,40 @@
                         <p>int i;</p>
 
                         <p>for (i = 0; i < 4; i++) <br> { <br> printf("%d\n", myNumbers[i]); <br> } <br> </p>
-                        <img src="C Program Assets/ptrArrayExample1.png" alt="">
+                        <pre class="code-block">
+                            25
+                            50
+                            75
+                            100
+                        </pre>
                         <p>Instead of printing the value of each array element, let's print the memory address of each
                             array element:
                         <p>
                         <p><b>Example</b></p>
-                        <img src="C Program Assets/ptrArrayEx2.png" alt="">
+                        <pre class="code-block">
+                            int myNumbers [4] = {25, 50, 75, 100};
+                            int i;
+                            for (i = 0; i < 4; i++) {
+                                printf("%p\n", &myNumbers[i]);
+                            }
+                        </pre>
                         <p><i>Output: </i></p>
                         <img src="C Program Assets/ptrArrayEx2Output.png" alt="">
+                        <pre class="code-block">
+                            0x7ffe70f9d8f0
+                            0x7ffe70f9d8f4
+                            0x7ffe70f9d8f8
+                            0x7ffe70f9d8fc
+                        </pre>
                         <p>So from the "memory address example" above, you can see that the compiler reserves 4 bytes of
                             memory for each array element, which means that the entire array takes up 16 bytes (4 * 4)
                             of memory storage:</p>
                         <p>Example</p>
-                        <img src="C Program Assets/ptrArrayEx3.png" alt="">
+                        <pre class="code-block">
+                            int myNumbers [4] = {25, 50, 75, 100};
+                            // Get the size of the myNumbers array 
+                            printf("%lu", sizeof(myNumbers));
+                        </pre>
                         <p><i>Output: </i></p>
                         <code>16</code>
                         <p><b><u>How Are Pointers Related to Arrays</u></b></p>
@@ -978,7 +1211,19 @@
                         </p>
                         <p>Let's try to understand this better, and use our "memory address example" above again.</p>
                         <p>The memory address of the first element is the same as the name of the array:</p>
-                        <img src="C Program Assets/ptrArrayEx4.png" alt="">
+                        <pre class="code-block">
+                            Example
+                            int myNumbers [4] = {25, 50, 75, 100};
+                            // Get the memory address of the myNumbers array 
+                            printf("%p\n", myNumbers);
+
+                            // Get the memory address of the first array element 
+                            printf("%p\n", &myNumbers[0]);
+
+                            Result:
+                            0x7ffe70f9d8f0
+                            0x7ffe70f9d8f0
+                        </pre>
                         <p>This way of working with arrays might seem a bit excessive. Especially with simple arrays
                             like in the examples above. However, for large arrays, it can be much more efficient to
                             access and manipulate arrays with pointers. </p>
@@ -1014,9 +1259,43 @@
                             free() present in <stdlib. h> header file that are used for Dynamic Memory Allocation in our
                                 system.</p>
                         <p>Here is an example of how to use malloc() to dynamically allocate memory in C:</p>
-                        <img src="C Program Assets/DMAexample.png" alt="">
+                        <pre class="code-block">
+                            #include < stdio.h> 
+                            #include < stdlib.h>
+                            int main() {
+                                int *ptr, n;
+                                printf("Enter number of elements: ");
+                                scanf("%d", &n);
+                                ptr = (int *)malloc(n * sizeof(int)); //memory allocated using malloc.
+                                if (ptr == NULL) {
+                                    printf("Memory could not be allocated.");
+                                    return 1;
+                                }
+                                for (int i = 0; i < n; i++) {
+                                    printf("Enter element %d: ", i + 1); 
+                                    scanf("%d", &ptr[i]);
+                                }
+                                for (int i = 0; i < n; i++) {
+                                    printf("Element %d: %d\n", i + 1, ptr[i]);
+                                }
+                                free(ptr); //memory deallocated using free() 
+                                return 0;
+                            }
+                        </pre>
                         <p><b>Output:</b></p>
-                        <img src="C Program Assets/DMAexOutput.png" alt="">
+                        <pre class="code-block">
+                            Enter number of elements: 5
+                            Enter element 1: 1
+                            Enter element 2: 2
+                            Enter element 3: 3
+                            Enter element 4: 4
+                            Enter element 5: 5
+                            Element 1: 1
+                            Element 2: 2
+                            Element 3: 3
+                            Element 4: 4
+                            Element 5: 5
+                        </pre>
                         <p>The malloc() function takes two arguments: the number of bytes to allocate and a pointer to a
                             variable that will be used to store the address of the allocated memory. The function
                             returns a pointer to the allocated memory, or NULL if the allocation fails.</p>
@@ -1057,7 +1336,26 @@
                             (file length, name, extension, physical address, etc.), or other mixed-type records (name,
                             address, telephone, balance, etc.).</p>
                         <p>Here is an example of how to define and use structures in C:</p>
-                        <img src="C Program Assets/structSnippet.png" alt="">
+                        <pre class="code-block">                           
+                            // Define a structure 
+                            struct employee { 
+                                int id;
+                                char name[20];
+                                float salary;
+                            };
+                            // Create a structure variable
+                            struct employee employee1;
+
+                            // Initialize the structure variable
+                            employee1.id = 1234;
+                            strcpy(employee1.name, "John Doe"); 
+                            employee1.salary = 100000.00;
+
+                            // Print the structure variable
+                            printf("Employee ID: %d\n", employee1.id);
+                            printf("Employee Name: %s\n", employee1.name);
+                            printf("Employee Salary: %.2f\n", employee1.salary);
+                        </pre>
                         <p>In this example, we define a structure named employee with three members: id, name, and
                             salary. We then create a structure variable named employee1 and initialize its members.
                             Finally, we print the values of the structure variable.</p>
@@ -1130,12 +1428,42 @@
                             management becomes easy and efficient.</p>
                         <p>The following example taken from GeeksforGeeks shows how bit fields can be used to conserve
                             memory -</p>
-                        <img src="C Program Assets/bitFieldsSnippet.png" alt="">
+                        <pre class="code-block">
+                            #include < stdio.h>
+                            // A simple representation of date
+                            struct date
+                            {
+                                unsigned int d;
+                                unsigned int m;
+                                unsigned int y;
+                            };
+                            int main(void)
+                            {
+                                printf("Size of date is %d bytes", sizeof(struct date));
+                                struct date dt = {31, 12, 2014};
+                                printf("Date is %d/%d/%d", dt.d, dt.m, dt.y);
+                            }
+                        </pre>
                         <p>The above representation of 'date' takes 12 bytes on a compiler where an unsigned int takes 4
                             bytes. Since we know that the value of d is always from 1 to 31, value of m is from 1 … 12,
                             and value of y is from 1900 to 2099, we can use bit fields to reduce the memory usage.</p>
                         <p>The following code shows how to use bit fields to represent the 'date' structure:</p>
-                        <img src="C Program Assets/bitFeildSnippet2.png" alt="">
+                        <pre class="code-block">                           
+                            #include <stdio.h>
+                                // A simple representation of date using bit fields 
+                                struct date
+                                {
+                                    unsigned int d : 5;
+                                    unsigned int m : 5;
+                                    unsigned int y : 16;
+                                };
+                                int main(void)
+                                {
+                                    printf("Size of date is %d bytes", sizeof(struct date));
+                                    struct date dt = {31, 12, 2014};
+                                    printf("Date is %d/%d/%d", dt.d, dt.m, dt.y);
+                                }
+                        </pre>
                         <p>The above code will print the following:</p>
                         <code>Size of date is 4 bytes <br>
                             Date is 31/12/2014</code>
@@ -1172,10 +1500,21 @@
                             the address of a structure variable.</p>
                         <p>To declare a structure, you use the struct keyword, followed by the name of the structure,
                             and then a list of members. For example:</p>
-                        <img src="C Program Assets/strPtrSnippet.png" alt="">
+                        <pre class="code-block">                           
+                            struct student { char name[20];
+                                int age;
+                                float grade;
+                            };
+                        </pre>
                         <p>To create a structure variable, you use the struct keyword, followed by the name of the
                             structure, and then a list of values for the members. For example:</p>
-                        <img src="C Program Assets/strPtrSnippet2.png" alt="">
+                        <pre class="code-block">                            
+                            struct student student1 = {
+                                "John Doe",
+                                20,
+                                3.5
+                            };
+                        </pre>
                         <p>To access a member of a structure, you use the -> operator. For example:</p>
                         <code>"printf("The student's name is %s.\n", student1.name);"</code>
                         <p>To declare a structure pointer, you use the struct keyword, followed by the name of the
@@ -1215,11 +1554,29 @@
                             real-world objects and relationships.</p>
                         <p>To define a nested structure, you can simply define one structure inside another structure.
                             For example:</p>
-                        <img src="C Program Assets/nestedStr.png" alt="">
+                        <pre class="code-block">                         
+                            struct employee { 
+                                int employee_id; 
+                                char *name;
+                                float salary;
+                            };
+                            struct organization { 
+                                char *organization_name; 
+                                int organization_number; 
+                                struct employee employee; 
+                            };
+                        </pre>
                         <p>In this example, the organization structure contains a member of type employee. This means
                             that an organization structure can contain an employee structure.</p>
                         <p>To access members of a nested structure, you use the dot operator (.). For example:</p>
-                        <img src="C Program Assets/nestedStr2.png" alt="">
+                        <pre class="code-block">                      
+                            struct organization organization; 
+                            struct employee employee;
+
+                            organization.employee.employee_id = 1234;
+                            organization.employee.name = "John Smith";
+                            organization.employee.salary = 100000.00;
+                        </pre>
                         <p>In this example, we are setting the employee_id, name, and salary members of the employee
                             structure that is a member of the organization structure.</p>
                         <p> Nested structures can be used to create complex data structures that can be used to
@@ -1227,13 +1584,35 @@
                             structure to represent a company, with the organization structure representing the company
                             and the employee structure representing an employee.</p>
                         <p>Here is an example of how you could use a nested structure to represent a company:</p>
-                        <img src="C Program Assets/nestedStr3.png" alt="">
+                        <pre class="code-block">                         
+                            struct company {
+                                char *company_name;
+                                int company_number; 
+                                struct employee *employees;
+                            };
+                            struct employee {
+                                int employee_id;
+                                char *name;
+                                float salary;
+                            };
+                        </pre>
                         <p>In this example, the company structure contains a member of type employee *, which is a
                             pointer to an array of employee structures. This means that a company structure can contain
                             an array of employee structures.</p>
                         <p>To access the members of an array of nested structures, you can use the [] operator. For
                             example:</p>
-                        <img src="C Program Assets/nestedStr4.png" alt="">
+                        <pre class="code-block">                           
+                            struct company company; 
+                            struct employee employee;
+
+                            company.employees[0].employee_id = 1234; 
+                            company.employees[0].name = "John Smith"; 
+                            company.employees[0].salary = 100000.00;
+
+                            company.employees[1]. employee_id = 5678; 
+                            company.employees[1].name = "Jane Doe"; 
+                            company.employees[1]. salary = 150000.00;
+                        </pre>
                         <p>In this example, we are setting the employee_id, name, and salary members of the first and
                             second employee structures that are members of the company structure.</p>
                         <p>Nested structures can be used to create complex data structures that can be used to represent
