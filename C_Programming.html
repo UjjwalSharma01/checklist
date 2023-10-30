@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming Fundamentals - The Checklist</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-mode.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">The Checklist</a></h1>
+    </header>
+    <nav>
+        <!-- may use this thing later -->
+        <!-- <ul>
+      <li><a href="checklist1.html">Checklist 1</a></li>
+      <li><a href="checklist2.html">Checklist 2</a></li>
+    </ul> -->
+        <!-- Add more checklists here -->
+
+        <!-- dark mode elements -->
+        <button class="dark-mode-toggle">
+            <i class="sun-icon"></i>
+            <i class="moon-icon"></i>
+        </button>
+    </nav>
+    <main>
+        <section class="checklist">
+            <h2>C Programming</h2>
+            <ul>
+                <h3>Chapter 1: Introduction to C Programming</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.1 What is C Programming?
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>C is a versatile, high-level programming language that finds its application in a wide array
+                            of software and application development, system programming, game development, web
+                            programming, and more. It was in 1972 when Dennis M. Ritchie, working at the Bell Telephone
+                            Laboratories, birthed this programming gem. Originally intended for programming the UNIX
+                            operating system, C has grown to become one of the most widely used and influential
+                            programming languages out there.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.2 History of C Programming
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <!-- Hidden content for the drop-down menu -->
+                        <p>1. Genesis of C: C had its beginnings in the early 1970s at Bell Telephone Laboratories.
+                            Dennis
+                            Ritchie was the brain behind this creation.</p>
+
+                        <p>2. B Language Predecessor: Before C, there was a programming language called B, which Ken
+                            Thompson
+                            developed. B was influenced by BCPL and was primarily used for the Multics operating system.
+                        </p>
+
+                        <p>3. Birth of C: Ritchie and his team wanted to enhance the capabilities and efficiency of B.
+                            Their
+                            efforts resulted in the birth of C, originally referred to as "NB" (New B). The work on C
+                            started in 1972 and continued into 1973.</p>
+
+                        <p>4. C for Unix: One of the primary goals of C was to provide a more efficient and versatile
+                            language
+                            for developing the Unix operating system. At the time, Unix was primarily written in
+                            assembly
+                            language, making it less portable across different computer architectures. C changed that.
+                        </p>
+
+                        <p>5. Portability: C's design for system programming allowed Unix to be easily ported to various
+                            hardware platforms. This portability became one of the key factors in Unix's widespread
+                            adoption.</p>
+
+                        <p>6. The C Book: In 1973, Dennis Ritchie and Brian Kernighan published "The C Programming
+                            Language,"
+                            often referred to as "K&R C." This book became the definitive reference for the language and
+                            played a significant role in popularizing C among programmers and institutions.</p>
+
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.3 Why Learn C Programming?
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <!-- Hidden content for the drop-down menu -->
+                        <p>1. Fundamental Understanding: C is often considered the "mother" of all programming
+                            languages. Learning C gives you a strong foundation in programming concepts, which can be
+                            applied to other languages.</p>
+
+                        <p>2. Efficiency: C is known for its efficiency. It allows you to write fast and optimized
+                            code, making it suitable for system programming and applications where speed and resource
+                            usage
+                            are critical.</p>
+
+                        <p>3. Portability: C code is highly portable across different platforms and operating systems.
+                            Programs written in C can run on various hardware and software environments with minimal
+                            modification.</p>
+
+                        <p>4. Versatility: C is a versatile language used in a wide range of applications, from
+                            embedded systems and game development to operating systems and high-performance computing.
+                        </p>
+
+                        <p>5. Low-Level Programming: Learning C allows you to work at a lower level of abstraction,
+                            enabling you to understand how the computer's memory and processor work. This knowledge is
+                            invaluable for system programming and debugging.</p>
+
+                        <p>6. Problem-Solving Skills: C challenges you to manage memory, pointers, and other low-level
+                            details. This hones your problem-solving skills and teaches you to write efficient code.</p>
+
+                        <p>7. Career Opportunities: Proficiency in C programming is highly sought after by employers,
+                            especially in industries like embedded systems, robotics, and game development.</p>
+
+                        <p>8. Open Source and Legacy Code: Many open-source projects and legacy systems are written in
+                            C. Learning C allows you to contribute to open-source software and maintain or modernize
+                            older
+                            codebases.</p>
+
+                        <p>9. C++ and Embedded Systems: C is a precursor to C++, and learning C makes it easier to
+                            transition to C++ for object-oriented programming. Additionally, C is commonly used in
+                            embedded
+                            systems, a growing field.</p>
+
+                        <p>10. Security Knowledge: C requires careful memory management. Learning C can help you
+                            understand and mitigate security vulnerabilities like buffer overflows and memory leaks.</p>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                1.4 Setting up the Development Environment
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <P>1. Choose an Operating System:
+
+                            You can develop C programs on various operating systems, including Windows, Linux, and
+                            macOS.
+                            Your choice depends on your preferences and the platform you intend to target.</P>
+
+                        <P>2. Select a Text Editor or Integrated Development Environment (IDE):
+
+                            You have several options for writing C code. You can choose a simple text editor or a
+                            specialized C programming IDE. Some popular choices include:
+
+                            - Text Editors:
+                            - Notepad (Windows)
+                            - Visual Studio Code
+                            - Sublime Text
+                            - Atom
+
+                            - C-Specific IDEs:
+                            - Code::Blocks
+                            - Dev-C++
+                            - CLion
+                            - Eclipse C/C++ IDE
+
+                            - Linux Development Tools:
+                            - On Linux, you can use text editors like Vim or Emacs along with GCC (GNU Compiler
+                            Collection)
+                            for compiling.</P>
+
+                        <P>3. Install a C Compiler:
+
+                            You need a C compiler to compile and execute your C programs. The most commonly used C
+                            compiler
+                            is GCC (GNU Compiler Collection). Here's how to install GCC on different platforms:
+
+                            - Linux: Most Linux distributions come with GCC pre-installed. If not, you can use your
+                            package manager to install it. For example, on Ubuntu, run `sudo apt-get install
+                            build-essential`.
+
+                            - Windows: You can use MinGW (Minimalist GNU for Windows) to install GCC on Windows.
+                            Download the MinGW installer and follow the installation instructions.
+
+                            - macOS: On macOS, you can use the Xcode Command Line Tools, which include GCC. Open a
+                            terminal and run `xcode-select --install` to install these tools.</P>
+
+                        <P>4. Write and Compile Your First C Program:
+
+                            Now that you have a text editor, C compiler, and development environment set up, you can
+                            write
+                            your first C program. Here's a simple "Hello, World!" example:
+
+                            ```c
+                            #include <stdio.h>
+
+                                int main() {
+                                printf("Hello, World!\n");
+                                return 0;
+                                }
+                                ```
+
+                                Save this code in a file with a `.c` extension, such as `hello.c`.</P>
+
+                        <P>5. Compile and Run Your Program:
+
+                            - On the command line, navigate to the directory where you saved your C file.
+                            - Compile the program using the C compiler. For GCC, you can use the following command: `gcc
+                            -o hello hello.c` (This compiles `hello.c` and produces an executable named `hello`.)
+                            - Run the program by entering `./hello` (on Linux/macOS) or `hello.exe` (on Windows).</P>
+
+                        <P>6. Debugging Tools (Optional):
+
+                            For debugging your C programs, consider using a debugger like GDB (GNU Debugger) or the
+                            built-in debugging tools provided by your chosen IDE.
+
+                            That's a basic overview of setting up a C programming development environment. As you gain
+                            more experience, you can explore additional tools and libraries to enhance your development
+                            process.</P>
+                    </div>
+                </li> <br>
+                <h3>Chapter 2: Getting Started with C</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.1 Your First C Program
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <!-- <img src="C Program Assets/first c program.png" alt=""> -->
+                        <pre class="code-block">
+                            #include< stdio.h >
+                                int main(){
+                                    printf("Hello, World!");
+                                    return 0;
+                                }
+                        </pre>
+                        <p>This program prints "Hello, World!" on the console.</p>
+
+                        <p>#include< stdio.h> :- This line includes the stdio.h file, which contains the printf()
+                                function.</p>
+
+                        <p>int main() { :- This line defines the main() function, which is the entry point for all
+                            C programs.</p>
+
+                        <p>printf("Hello, World!"); :- This line prints the string "Hello, World!" to the console.</p>
+
+                        <p>return 0; :- This line returns the value 0 to the operating system, indicating that the
+                            program terminated successfully.</p>
+
+                        }
+                        </p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.2 Basic Structure of a C Program
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>
+                            There are 6 sections in a C.
+                        </p>
+                        <p>
+                            // Documentation section
+
+                            // Link section
+
+                            // Definition section
+
+                            // Global declaration section
+
+                            // Main() function
+
+                            // Subprograms
+                        </p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.3 Variables and Data Types
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>In C, there are different types of variables (defined with different keywords), for example:
+                        </p>
+                        <p>int - stores integers (whole numbers), without decimals, such as 123 or -123.</p>
+                        <p>float - stores floating point numbers, with decimals, such as 19.99 or -19.99.</p>
+                        <p>char - stores single characters, such as 'a' or 'B'.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.4 Input and Output in C
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><u>scanf():</u></p>
+                        <p>The scanf() method, in C, reads the value from the console as per the type specified. Syntax:
+                        </p>
+                        <p>"scanf(“%X”, &variableOfXType);" = where %X is the format specifier in C. It is a way to tell
+                            the compiler what type of data is in a variable and & is the address operator in C</p>
+                        <p><u>printf():</u></p>
+                        <p>The printf() method, in C, prints the value passed as the parameter to it, on the console
+                            screen. Syntax:</p>
+                        <p>"printf(“%X”, variableOfXType);" = where %X is the format specifier in C. It is a way to tell
+                            the compiler what type of data is in a variable and & is the address operator in C</p>
+                        <p><b>Integer: </b></p>
+                        <p>Input: <i>scanf("%d", &intVariable);</i></p>
+                        <p>Output: <i>printf("%d", intVariable);</i></p>
+                        <p><b>Float: </b></p>
+                        <p>Input: <i>scanf("%f", &floatVariable);</i></p>
+                        <p>Output: <i>printf("%f", folatVariable);</i></p>
+                        <p><b>Character: </b></p>
+                        <p>Input: <i>scanf("%c", &charVariable);</i></p>
+                        <p>Output: <i>printf("%c", charVariable);</i></p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.5 Comments and Formatting
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Comments are used in C programming to provide information about the code, or to add notes for
+                            yourself or other developers. Comments are ignored by the compiler, so they do not affect
+                            the execution of the program.</p>
+                        <p>There are two types of comments in C: single-line and multi-line.</p>
+                        <p><u>Single-line comments</u> start with two forward slashes (//) and continue to the end of
+                            the line.</p>
+                        <p><u>Multi-line comments</u> start with a forward slash and an asterisk (/) and end with an
+                            asterisk and a forward slash (/).</p>
+                        <pre>/* This is a multi-line comment.
+                        <p>It can span multiple lines. */</pre>
+                        You can use comments to make your code more readable and understandable.</p>
+                        <p><b><u>Formatting:</u></b></p>
+                        <p>Formatting is also important in C programming. </p>
+                        <p>Formatting your code can make it easier to read and understand. For example, you can use
+                            spaces and tabs to indent your code, and you can use line breaks to separate different
+                            sections of code.</p>
+                </li>
+                <br>
+                <h3>Chapter 3: Control Structures</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.1 Conditional Statements (if, else if, switch)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Conditional statements in C are programming constructs that allow a program to execute
+                            different blocks of code based on whether a certain condition is true or false. The most
+                            common types of conditional statements in C are the if, else if, and else statements.</p>
+                        <p><u>The syntax for the if statement is: </u></p>
+                        <pre class="code-block">
+                            if (condition) {
+                                // block of code to execute if condition is true
+                                }
+                        </pre>
+
+                        <p>The else if statement is used to execute a block of code if a certain condition is true, and
+                            another block of code if the condition is false. The syntax for the <u>else if statement</u>
+                            is:</p>
+                        <pre class="code-block">
+                            if (condition1) {
+                                // block of code to execute if condition1 is true
+                                } else if (condition2) {
+                                // block of code to execute if condition2 is true
+                                } else {
+                                // block of code to execute if condition1 and condition2 are false
+                                }
+                        </pre>
+
+                        <p><u>Switch Statement</u></p>
+                        <p>The switch statement in C is a selection statement that allows you to transfer control to
+                            different statements within the switch body depending on the value of the switch expression.
+                        </p>
+                        <pre class="code-block">
+                            switch (expression) {
+                                case value1:
+                                // code to be executed;
+                                break;
+                                }
+                                case value2:
+                                // code to be executed;
+                                break;
+                                default:
+                                // code to be executed if all cases are not matched;
+                        </pre>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.2 Loops (for, while, do-while)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <!-- for loop -->
+                        <p><b><u>For Loop</u></b></p>
+                        <p>The for loop is a repetition control structure that allows you to efficiently write a loop
+                            that needs to execute a specific number of times.</p>
+                        <p>The syntax of a for loop in C programming language is:</p>
+                        <pre class="code-block">
+                            for (initialization; condition; increment) {
+                                // statement(s);
+                                }
+                        </pre>
+                        <p>Here is the flow of control in a 'for' loop:</p>
+                        <p>The initialization statement is executed once, before the loop begins.</p>
+                        <p>The condition statement is evaluated. If it is true, the loop body is executed. If it is
+                            false, the loop terminates.</p>
+                        <p>The increment statement is executed after the loop body is executed, before the condition
+                            statement is evaluated again.</p>
+                        <p>The loop goes back to step 2 and repeats the process until the condition statement becomes
+                            false.</p>
+                        <p>Here is an <u>example of a for loop</u> that prints the numbers from 1 to 10:</p>
+                        <pre class="code-block">
+                            for (int i = 0; i < 10; i++) {
+                                printf("%d\n", i);
+                            }
+                        </pre>
+                        <p>This loop will print the numbers from 1 to 10, one per line.</p>
+
+                        <!-- while loop in c -->
+                        <p><b><u>While Loop</u></b></p>
+                        <p>The while loop in C is a programming construct that allows us to execute a block of code
+                            repeatedly, as long as a specified condition remains true. The syntax for a while loop in C
+                            is:</p>
+                        <pre class="code-block">
+                            while (condition) {
+                                // code block
+                                }
+                        </pre>
+                        <p>The condition is a Boolean expression that is evaluated before each iteration of the loop. If
+                            the expression evaluates to true, the code block is executed. If the expression evaluates to
+                            false, the loop terminates.</p>
+                        <p>Here is an example of a while loop in C that prints the numbers from 1 to 10:</p>
+                        <pre class="code-block">
+                            int i = 1;
+                            while (i <= 10) {
+                                printf("%d\n", i);
+                                i++;
+                            }
+                        </pre>
+                        <p>In this example, the variable i is initialized to 1. The loop then iterates as long as i is
+                            less than or equal to 10. On each iteration, the value of i is printed to the console, and
+                            then i is incremented by 1. The loop terminates when i is greater than 10.</p>
+
+                        <!-- Do while loop in c -->
+                        <p><b><u>Do - While Loop</u></b></p>
+                        <p>The do-while loop is a programming construct that allows us to execute a block of code
+                            repeatedly, until a specified condition is met. The syntax for a do-while loop in C is as
+                            follows:
+                        </p>
+                        <pre class="code-block">
+                            do {
+                            // statements
+                            } while (condition);
+                        </pre>
+                        <p>The do keyword is followed by a block of statements, which is executed repeatedly. The while
+                            keyword is followed by a condition, which is evaluated after each iteration of the loop. If
+                            the condition is true, the loop is executed again; otherwise, the loop terminates.</p>
+                        <p>Here is an example of a do-while loop in C that prints the numbers from 1 to 10:</p>
+                        <pre class="code-block">﻿
+                            int i = 1; 
+                            do {
+                            printf("%d\n", i);
+                            i++;
+                            } while (i <= 10);
+                        </pre>
+                        <p>This loop will print the numbers from 1 to 10, inclusive</p>
+                        <p>The do-while loop is a useful construct for situations where you need to execute a block of
+                            code repeatedly, but you don't know how many times the loop should iterate. For example, you
+                            could use a do-while loop to read input from a user until they enter a valid value.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.3 Control Statements (break, continue)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>The break and continue statements in C are used to control the flow of a loop. The break
+                            statement causes the loop to terminate immediately, while the continue statement causes the
+                            loop to skip the current iteration and continue with the next iteration.</p>
+                        <p><b><u>Break Statement</u></b></p>
+                        <p>Here is an example of how to use the break statement:</p>
+                        <pre class="code-block">
+                            int i;
+                            for (i = 0; i < 10; i++) {
+                            if (i == 5) {
+                                break;
+                            }
+                            printf("%d\n", i);
+                            }
+                        </pre>
+                        <p>This code will print the numbers from 0 to 4, and then the break statement will cause the
+                            loop to terminate.</p>
+                        <p><b><u>Continue Statement</u></b></p>
+                        <p>Here is an example of how to use the continue statement:</p>
+                        <pre class="code-block">
+                            int i;
+                            for (i = 0; i < 10; i++) {
+                                if (i == 5) {
+                                    continue;
+                                }
+                                printf("%d\n", i);
+                            }
+                        </pre>
+                        <p>This code will print the numbers from 0 to 9, skipping the number 5.</p>
+                        <p>The break and continue statements can be used together to create more complex control flows.
+                            For example, the following code will print the numbers from 0 to 9, but it will skip the
+                            numbers 5 and 7:</p>
+                        <img src="C Program Assets/continue example2.png" alt="">
+                        <pre class="code-block">
+                            int i;
+                            for (i = 0; i < 10; i++) {
+                                if (i == 5 || i == 7) {
+                                    continue;
+                                }
+                                printf("%d\n", i);
+                            }
+                        </pre>
+                        <p>The break and continue statements are powerful tools that can be used to control the flow of
+                            a program. However, they should be used with care, as they can easily lead to unexpected
+                            results.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.4 Conditional Expressions (Ternary Operator)
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>The ternary operator in C is a conditional operator that can be used to replace an if-else
+                            statement.</p>
+                        <code>The syntax for the ternary operator is-
+                            ? :</code>
+                        <p>where ? is the conditional expression, :` is the separator, and expression1 and expression2
+                            are the expressions to be evaluated if the condition is true or false, respectively.</p>
+                        <p><b><u>Example:</u></b></p>
+                        <p>For example, the following code uses the ternary operator to print "hello world" if the value
+                            of x is greater than 10, and "goodbye world" otherwise:</p>
+                        <pre class="code-block">
+                            int x = 15;
+                            printf("%s", x > 10 ? "hello world" : "goodbye world");
+                        </pre>
+                        <p>For example, the following code uses the ternary operator to assign the value of x to y if x
+                            is greater than 10, and the value of 0 otherwise:</p>
+                        <pre class="code-block">
+                            int x = 15;
+                            int y;
+                            y = x > 10 ? x : 0;
+                        </pre>
+                </li>
+                <br>
+                <h3>Chapter 4: Functions</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                4.1 Defining and Calling Functions
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Functions?</u></b></p>
+                        <p>A function is a group of statements that together perform a task. Every C program has at
+                            least one function, which is main(), and all the most trivial programs can define additional
+                            functions.</p>
+                        <p>A function declaration tells the compiler about a function's name, return type, and
+                            parameters. A function definition provides the actual body of the function.</p>
+
+                        <!-- Defining a function -->
+
+                        <p><b><u>Defining a Function:</u></b></p>
+                        <p>The general form of a function definition in C programming language is as follows −</p>
+                        <pre class="code-block">
+                            return_type function_name( parameter list ) {
+                                //body of the function
+                            }
+                        </pre>
+                        <p>A function definition in C programming consists of a function header and a function body.
+                            Here are all the parts of a function −</p>
+                        <pre class="code-block">
+• Return Type - A function may return a value. 
+  The return_type is the data type of the value the function returns.
+  Some functions perform the desired operations without returning a value. 
+  In this case, thereturn_type is the keyword void.
+
+• Function Name - This is the actual name of the function. 
+  The function name and the parameter list together constitute the function signature. 
+  Parameters - A parameter is like a placeholder. 
+  When a function is invoked, you pass a value to the parameter. 
+  This value is referred to as actual parameter or argument. 
+  The parameter list refers to the type, order, and number of the parameters of a function. 
+  Parameters are optional; that is, a function may contain no parameters.
+
+• Function Body - The function body contains a collection of statements 
+  that define what the function does.
+                        </pre>
+                        <p><b>Example:</b></p>
+                        <p>Given below is the source code for a function called max(). This function takes two
+                            parameters num1 and num2 and returns the maximum value between the two −</p>
+                        <pre class="code-block">
+/* function returning the max between two numbers */ int max(int num1, int num2) {
+    /* local variable declaration */
+    int result;
+    if (num1 > num2)
+        result = num1;
+    else
+        result = num2;
+    return result;
+    }
+                        </pre>
+
+                        <!-- calling a function -->
+                        <p><b><u>Calling a Function:</u></b></p>
+                        <p>While creating a C function, you give a definition of what the function has to do. To use a
+                            function, you will have to call that function to perform the defined task.</p>
+                        <p>When a program calls a function, the program control is transferred to the called function. A
+                            called function performs a defined task and when its return statement is executed or when
+                            its function-ending closing brace is reached, it returns the program control back to the
+                            main program.</p>
+                        <p>To call a function, you simply need to pass the required parameters along with the function
+                            name, and if the function returns a value, then you can store the returned value. For
+                            example −</p>
+                        <pre class="code-block">
+/* function declaration */ int max(int num1, int num2);
+int main() {
+/* local variable definition */
+int a = 100;
+int b = 200;
+int ret;
+/* calling a function to get max value */ ret = max(a, b);
+printf("Max value is : %d\n", ret );
+return 0;
+}
+/* function returning the max between two numbers */
+int max(int num1, int num2) {
+/* local variable declaration */
+int result;
+if (num1> num2)
+result = num1;
+else
+result = num2;
+return result;
+}
+                        </pre>
+                        <p><b>Output:</b> Max value is : 200</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                4.2 Function Parameters and Return Values
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>Parameters in C functions</u></b></p>
+                        <p><u>Pass by Value.</u> Pass by Value, means that a copy of the data is made and stored by way
+                            of the
+                            name of the parameter. Any changes to the parameter have NO affect on data in the calling
+                            function.</p>
+                        <p><u>Pass by Reference.</u> A reference parameter "refers" to the original data in the calling
+                            function</p>
+
+                        <p><b><u>Return Values in C functions</u></b></p>
+                        <p>The return statement may or may not return a value depending upon the return type of the
+                            function. For example, int returns an integer value, void returns nothing, etc.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                4.3 Scope and Lifetime of Variables
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>The scope of a variable in C is the region of code where the variable can be accessed. The
+                            lifetime of a variable in C is the time period during which the variable exists in memory.
+                        </p>
+                        <p>There are two main types of scopes in C: global and local. Global variables are declared
+                            outside of any function, and they can be accessed from anywhere in the program. Local
+                            variables are declared inside of a function, and they can only be accessed from within that
+                            function.</p>
+                        <p>The lifetime of a variable is determined by its scope. Global variables have a lifetime that
+                            lasts for the entire program, while local variables have a lifetime that lasts only for the
+                            duration of the function in which they are declared.</p>
+                        <p>There are also two main types of lifetimes in C: static and automatic. Static variables are
+                            declared with the static keyword, and they exist in memory for the entire lifetime of the
+                            program. Automatic variables are declared without the static keyword, and they exist in
+                            memory only for the duration of the function in which they are declared.</p>
+                        <p>Here is an example of the scope and lifetime of variables in C:</p>
+                        <pre class="code-block">
+#include < stdio.h>
+    int main() {
+        int local_variable = 1; // Local variable 
+        static int global_variable = 2; // Global variable
+        printf("The local variable is %d\n", local_variable); 
+        printf("The global variable is %d\n", global_variable);
+        return 0;
+    }
+                        </pre>
+                        <p>In this example, the local_variable is declared inside of the main() function, so it has a
+                            local scope. The global_variable is declared outside of any function, so it has a global
+                            scope.</p>
+                        <p>The local_variable will exist in memory only for the duration of the main() function. The
+                            global_variable will exist in memory for the entire lifetime of the program.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                4.4 Function Prototypes
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Function Prototype in C?</u></b></p>
+                        <p>A function prototype in C is a function declaration specifying the function’s return type,
+                            name, and the number and types of its parameters. It acts as a contract between the function
+                            definition and its callers, providing information about the expected inputs and outputs of
+                            the function. </p>
+                        <p>The C function prototype is a statement that tells the compiler about the function's name,
+                            its return type, numbers and data types of its parameters. </p>
+                        <p>By using this information, the compiler cross-checks function parameters and their data type
+                            with function definition and function call.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                4.5 Recursion
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Recursion?</u></b></p>
+                        <p>Recursion is a programming technique in which a function calls itself directly or indirectly.
+                            The process of recursion consists of multiple recursive calls. The function that calls
+                            itself is called a recursive function.</p>
+                        <p><b><i>What Recursion looks like: </i></b></p>
+                        <p>A ladder like structure.</p>
+                        <p><b>Recursion can be used to solve many problems, such as:</b></p>
+                        <p>1. Finding the factorial of a number</p>
+                        <p>2. Generating the Fibonacci sequence</p>
+                        <p>3. Finding the longest common substring of two strings</p>
+                        <p>4. Sorting a list of numbers</p>
+
+                        <p>For example, the following function calculates the factorial of a number:</p>
+                        <pre class="code-block">
+                            int factorial(int n) {
+                                if (n == 0) {
+                                    return 1;
+                                } else {
+                                    return n * factorial(n - 1);
+                                }
+                            }
+                        </pre>
+                </li>
+                <h3>Chapter 5: Arrays and Pointers</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                5.1 Arrays in C
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Array?</u></b></p>
+                        <p>An array in C is a collection of data items of the same data type that are stored in
+                            contiguous memory locations. The data items in an array are accessed using an index, which
+                            is an integer value that specifies the position of the item in the array.</p>
+                        <p>To declare an array in C, you use the following syntax:</p>
+                        <pre class="code-block">
+                            data_type array_name [size];
+                        </pre>
+                        <p>where data_type is the type of the data items in the array, array_name is the name of the
+                            array, and size is the number of elements in the array.</p>
+                        <p>For example, the following code declares an array of 10 integers:</p>
+                        <pre class="code-block">
+                            int numbers [10];
+                        </pre>
+                        <p>To access an element in an array, you use the following syntax:</p>
+                        <pre class="code-block">
+                            array_name [index]
+                        </pre>
+                        <p>where array_name is the name of the array, and index is the index of the element you want to
+                            access.</p>
+                        <p>For example, the following code prints the value of the first element in the numbers array:
+                        </p>
+                        <pre class="code-block">
+                            printf("%d\n", numbers [0]);
+                        </pre>
+                        <p>You can also use the for loop to iterate over the elements of an array. For example, the
+                            following code prints the values of all elements in the numbers array:</p>
+                        <pre class="code-block">
+                            for (int i = 0; i < 10; i++)
+                            { 
+                                printf("%d\n", numbers [i]);
+                            }
+                        </pre>
+                        <p>Arrays are a powerful tool for storing and manipulating data in C. They can be used to solve
+                            a variety of problems, such as sorting, searching, and filtering data.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                5.2 Pointers and Memory Addresses
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Pointer?</u></b></p>
+                        <p>A pointer in C is a variable that stores the memory address of another variable. Pointers are
+                            used to access the memory of the said variable and then manipulate their addresses in a
+                            program.</p>
+                        <p><b><u>What is Memory Address?</u></b></p>
+                        <p>The memory address is the location of where the variable is stored on the computer. A pointer
+                            basically stores the memory address of a variable as its value. To print pointer values, we
+                            use the %p format specifier.</p>
+                        <p><b>In C, there are three types of pointers:</b></p>
+                        <p>
+                        <ul>Integer pointers: - These pointers store the memory address of an integer variable.</ul>
+                        </p>
+                        <p>
+                        <ul>Character pointers: - These pointers store the memory address of a character variable.</ul>
+                        </p>
+                        <p>
+                        <ul>Void pointers: - These pointers can store the memory address of any type of variable.</ul>
+                        </p>
+                        <p>Pointers are important in C, because they allow us to manipulate the data in the computer's
+                            memory. This can reduce the code and improve the performance.</p>
+                        <p>Here is an example of how to use a pointer in C:</p>
+                        <pre class="code-block">
+                            int main() { 
+                                int x = 10;
+                                int* p = &x;
+                                
+                                printf("%p\n", p); // Prints the address of x
+                                
+                                *p = 20; // Changes the value of x to 20
+                            
+                                printf("%d\n", x); // Prints the value of x, which is now 20
+                            
+                                return 0;
+                            }
+                        </pre>
+                        <p>In this example, the p pointer is used to store the memory address of the x variable. The *p
+                            operator is used to dereference the pointer, which means that it is used to access the data
+                            that is stored at the memory address that the pointer points to. In this case, the *p
+                            operator is used to change the value of the x variable to 20.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                5.3 Pointer Arithmetic
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Pointer arithmetic is a C programming concept that allows you to perform arithmetic
+                            operations on pointers, such as addition, subtraction, increment, and decrement. The size of
+                            the data type the pointer points to determines the size of the step taken during the
+                            arithmetic operation.</p>
+                        <p> For example, if you have a pointer to an int, then adding 1 to the pointer will move it to
+                            the next int in memory. Similarly, if you have a pointer to a char, then adding 1 to the
+                            pointer will move it to the next char in memory.</p>
+                        <p>Pointer arithmetic can be used to iterate over arrays and structures. For example, the
+                            following code would iterate over the array arr of 5 integers:</p>
+                        <pre class="code-block">
+                            int arr[] = {1, 2, 3, 4, 5};
+                            int *ptr = arr;
+
+                            for (int i = 0; i < 5; i++) {
+                            printf("%d\n", *ptr);
+                            ptr++;
+                            }
+                        </pre>
+                        <p>The output of the code would be:</p>
+                        <pre class="code-block">
+                            1
+                            2
+                            3
+                            4
+                            5
+                        </pre>
+                        <p>Pointer arithmetic can also be used to compare pointers. For example, the following code
+                            would compare the pointers ptr1 and ptr2 to see if they point to the same memory location:
+                        </p>
+                        <pre class="code-block">
+                            int *ptr1 = &arr[0]; 
+                            int *ptr2 = &arr[1];
+                            if (ptr1 == ptr2) {
+                                printf("The pointers are equal.\n");
+                            } else {
+                                printf("The pointers are not equal.\n");
+                            }
+                        </pre>
+                        <p>The output of the code would be:</p>
+                        <code>"The pointers are not equal."</code>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                5.4 Arrays and Pointers
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>Pointers & Arrays</u></b></p>
+                        <p>You can also use pointers to access arrays.</p>
+
+                        <p>Consider the following array of integers:</p>
+
+                        <p>Example</p>
+                        <p>int myNumbers[4] = {25, 50, 75, 100};</p>
+                        <p>You learned from the arrays chapter that you can loop through the array elements with a for
+                            loop:</p>
+
+                        <p>Example</p>
+                        <p>int myNumbers[4] = {25, 50, 75, 100};</p>
+                        <p>int i;</p>
+
+                        <p>for (i = 0; i < 4; i++) <br> { <br> printf("%d\n", myNumbers[i]); <br> } <br> </p>
+                        <pre class="code-block">
+                            25
+                            50
+                            75
+                            100
+                        </pre>
+                        <p>Instead of printing the value of each array element, let's print the memory address of each
+                            array element:
+                        <p>
+                        <p><b>Example</b></p>
+                        <pre class="code-block">
+                            int myNumbers [4] = {25, 50, 75, 100};
+                            int i;
+                            for (i = 0; i < 4; i++) {
+                                printf("%p\n", &myNumbers[i]);
+                            }
+                        </pre>
+                        <p><i>Output: </i></p>
+                        <img src="C Program Assets/ptrArrayEx2Output.png" alt="">
+                        <pre class="code-block">
+                            0x7ffe70f9d8f0
+                            0x7ffe70f9d8f4
+                            0x7ffe70f9d8f8
+                            0x7ffe70f9d8fc
+                        </pre>
+                        <p>So from the "memory address example" above, you can see that the compiler reserves 4 bytes of
+                            memory for each array element, which means that the entire array takes up 16 bytes (4 * 4)
+                            of memory storage:</p>
+                        <p>Example</p>
+                        <pre class="code-block">
+                            int myNumbers [4] = {25, 50, 75, 100};
+                            // Get the size of the myNumbers array 
+                            printf("%lu", sizeof(myNumbers));
+                        </pre>
+                        <p><i>Output: </i></p>
+                        <code>16</code>
+                        <p><b><u>How Are Pointers Related to Arrays</u></b></p>
+                        <p>Well, in C, the name of an array, is actually a pointer to the first element of the array.
+                        </p>
+                        <p>Let's try to understand this better, and use our "memory address example" above again.</p>
+                        <p>The memory address of the first element is the same as the name of the array:</p>
+                        <pre class="code-block">
+                            Example
+                            int myNumbers [4] = {25, 50, 75, 100};
+                            // Get the memory address of the myNumbers array 
+                            printf("%p\n", myNumbers);
+
+                            // Get the memory address of the first array element 
+                            printf("%p\n", &myNumbers[0]);
+
+                            Result:
+                            0x7ffe70f9d8f0
+                            0x7ffe70f9d8f0
+                        </pre>
+                        <p>This way of working with arrays might seem a bit excessive. Especially with simple arrays
+                            like in the examples above. However, for large arrays, it can be much more efficient to
+                            access and manipulate arrays with pointers. </p>
+                        <p>It is also considered faster and easier to access two-dimensional arrays with pointers.</p>
+                        <p>And since strings are actually arrays, you can also use pointers to access strings.</p>
+                        <p>For now, it's great that you know how this works. But like we specified in the previous
+                            chapter; pointers must be handled with care, since it is possible to overwrite other data
+                            stored in memory.</p>
+
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                5.5 Dynamic Memory Allocation
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Dynamic Memory Allocation?</u></b></p>
+                        <p>Dynamic memory allocation in C is a process in which memory is allocated or deallocated
+                            during the run-time of a program. There are four functions malloc(), calloc(), realloc() and
+                            free() present in <stdlib. h> header file that are used for Dynamic Memory Allocation in our
+                                system.</p>
+                        <p>Here is an example of how to use malloc() to dynamically allocate memory in C:</p>
+                        <pre class="code-block">
+                            #include < stdio.h> 
+                            #include < stdlib.h>
+                            int main() {
+                                int *ptr, n;
+                                printf("Enter number of elements: ");
+                                scanf("%d", &n);
+                                ptr = (int *)malloc(n * sizeof(int)); //memory allocated using malloc.
+                                if (ptr == NULL) {
+                                    printf("Memory could not be allocated.");
+                                    return 1;
+                                }
+                                for (int i = 0; i < n; i++) {
+                                    printf("Enter element %d: ", i + 1); 
+                                    scanf("%d", &ptr[i]);
+                                }
+                                for (int i = 0; i < n; i++) {
+                                    printf("Element %d: %d\n", i + 1, ptr[i]);
+                                }
+                                free(ptr); //memory deallocated using free() 
+                                return 0;
+                            }
+                        </pre>
+                        <p><b>Output:</b></p>
+                        <pre class="code-block">
+                            Enter number of elements: 5
+                            Enter element 1: 1
+                            Enter element 2: 2
+                            Enter element 3: 3
+                            Enter element 4: 4
+                            Enter element 5: 5
+                            Element 1: 1
+                            Element 2: 2
+                            Element 3: 3
+                            Element 4: 4
+                            Element 5: 5
+                        </pre>
+                        <p>The malloc() function takes two arguments: the number of bytes to allocate and a pointer to a
+                            variable that will be used to store the address of the allocated memory. The function
+                            returns a pointer to the allocated memory, or NULL if the allocation fails.</p>
+                        <p>In the example above, the malloc() function is used to allocate memory for an array of 5
+                            integers. The address of the allocated memory is stored in the pointer ptr. The elements of
+                            the array are then initialized using a for loop. Finally, the free() function is used to
+                            deallocate the memory that was allocated by malloc().</p>
+                        <p>Dynamic memory allocation is a powerful tool that can be used to improve the flexibility and
+                            efficiency of C programs. However, it is important to use dynamic memory allocation
+                            carefully to avoid memory leaks and other errors.</p>
+                </li>
+                <h3>Chapter 6: Structures and Unions</h3>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                6.1 Defining and Using Structures
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Structures in C?</u></b></p>
+                        <p>A struct in the C programming language (and many derivatives) is a composite data type (or
+                            record) declaration that defines a physically grouped list of variables under one name in a
+                            block of memory, allowing the different variables to be accessed via a single pointer or by
+                            the struct declared name which returns the same address. The struct data type can contain
+                            other data types so is used for mixed-data-type records such as a hard-drive directory entry
+                            (file length, name, extension, physical address, etc.), or other mixed-type records (name,
+                            address, telephone, balance, etc.).</p>
+                        <p>Here is an example of how to define and use structures in C:</p>
+                        <pre class="code-block">                           
+                            // Define a structure 
+                            struct employee { 
+                                int id;
+                                char name[20];
+                                float salary;
+                            };
+                            // Create a structure variable
+                            struct employee employee1;
+
+                            // Initialize the structure variable
+                            employee1.id = 1234;
+                            strcpy(employee1.name, "John Doe"); 
+                            employee1.salary = 100000.00;
+
+                            // Print the structure variable
+                            printf("Employee ID: %d\n", employee1.id);
+                            printf("Employee Name: %s\n", employee1.name);
+                            printf("Employee Salary: %.2f\n", employee1.salary);
+                        </pre>
+                        <p>In this example, we define a structure named employee with three members: id, name, and
+                            salary. We then create a structure variable named employee1 and initialize its members.
+                            Finally, we print the values of the structure variable.</p>
+                        <p><b>Here are some other things to keep in mind about structures in C:</b></p>
+                        <p>You can use the struct keyword to define a structure.</p>
+                        <p>You can use the sizeof() operator to determine the size of a structure.</p>
+                        <p>You can use the strcpy() function to copy a string to a structure member.</p>
+                        <p>You can use the printf() function to print the values of a structure member.</p>
+                        <p>You can pass a structure to a function as an argument.</p>
+                        <p>You can return a structure from a function.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                6.2 Unions and Bit-fields
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Unions in C?</u></b></p>
+                        <p>A union in C is a user-defined data type that allows different types of data to be stored in
+                            the same memory location. It provides a way to define a variable that may have different
+                            data types, but at any given time, only one member of the union can hold a value.</p>
+                        <p>The syntax for defining a union in C is:</p>
+                        <code>"union unionName { //member definitions };"</code>
+                        <p>For example, the following code defines a union with two members: an integer and a float:</p>
+                        <code>"union intFloatUnion <br> { <br>
+                            int intMember; <br>
+                            float floatMember; <br>
+                          };"<br> </code>
+                        <p>To use a union, you can declare a variable of the union type and then assign a value to one
+                            of the members. For example, the following code declares a variable of type
+                            unionIntFloatUnion and then assigns the value 10 to the intMember member:</p>
+                        <code>"unionIntFloatUnion myUnion; <br>
+                            myUnion.intMember = 10;"</code>
+                        <p>You can then access the value of the intMember member by using the . operator:</p>
+                        <code>"printf("%d\n", myUnion.intMember);"</code>
+                        <p>This will print the value 10 to the console.</p>
+                        <p>It is important to note that only one member of a union can contain a value at a time. For
+                            example, the following code will not compile:</p>
+                        <code>unionIntFloatUnion myUnion; <br>
+                            myUnion.intMember = 10; <br> 
+                            myUnion.floatMember = 3.14;</code>
+                        <p>This is because the floatMember member is already occupied by the value 10. To assign a value
+                            to the floatMember member, you must first clear the value of the intMember member: </p>
+                        <code>myUnion.intMember = 0; <br> 
+                                myUnion.floatMember = 3.14;</code>
+                        <p>This will print the value 3.14 to the console.</p>
+                        <p>Unions can be used to optimize memory usage. For example, if you need to store an integer and
+                            a float, you can use a union to store both values in the same memory location. This can be
+                            useful if you are short on memory or if you want to avoid having to allocate multiple memory
+                            locations for different data types.</p>
+
+                        <p><b><u>What is Bit Feidls in C?</u></b></p>
+                        <p>A bit field in C is a data structure that allows you to allocate memory to structures and
+                            unions in bits in order to use computer memory in an efficient manner.</p>
+                        <p>Since structures and unions are user-defined data types in C, the user has an idea of how
+                            much memory they will occupy. Accordingly, by the implementation of bit fields, memory
+                            management becomes easy and efficient.</p>
+                        <p>The following example taken from GeeksforGeeks shows how bit fields can be used to conserve
+                            memory -</p>
+                        <pre class="code-block">
+                            #include < stdio.h>
+                            // A simple representation of date
+                            struct date
+                            {
+                                unsigned int d;
+                                unsigned int m;
+                                unsigned int y;
+                            };
+                            int main(void)
+                            {
+                                printf("Size of date is %d bytes", sizeof(struct date));
+                                struct date dt = {31, 12, 2014};
+                                printf("Date is %d/%d/%d", dt.d, dt.m, dt.y);
+                            }
+                        </pre>
+                        <p>The above representation of 'date' takes 12 bytes on a compiler where an unsigned int takes 4
+                            bytes. Since we know that the value of d is always from 1 to 31, value of m is from 1 … 12,
+                            and value of y is from 1900 to 2099, we can use bit fields to reduce the memory usage.</p>
+                        <p>The following code shows how to use bit fields to represent the 'date' structure:</p>
+                        <pre class="code-block">                           
+                            #include <stdio.h>
+                                // A simple representation of date using bit fields 
+                                struct date
+                                {
+                                    unsigned int d : 5;
+                                    unsigned int m : 5;
+                                    unsigned int y : 16;
+                                };
+                                int main(void)
+                                {
+                                    printf("Size of date is %d bytes", sizeof(struct date));
+                                    struct date dt = {31, 12, 2014};
+                                    printf("Date is %d/%d/%d", dt.d, dt.m, dt.y);
+                                }
+                        </pre>
+                        <p>The above code will print the following:</p>
+                        <code>Size of date is 4 bytes <br>
+                            Date is 31/12/2014</code>
+                        <p>As you can see, the size of the 'date' structure has been reduced from 12 bytes to 4 bytes.
+                            This is because we are only using 5 bits to store the value of d, 5 bits to store the value
+                            of m, and 16 bits to store the value of y.</p>
+                        <p>Bit fields can be used to represent any data structure that has a limited number of possible
+                            values. For example, you could use bit fields to represent a 'color' structure, where the
+                            possible values are red, green, blue, and black.</p>
+
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                6.3 Structures and Pointers
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Structures & Pointers?</u></b></p>
+                        <p>In C, a structure is a user-defined data type that allows you to group together variables of
+                            different data types under a single name. A structure pointer is a pointer that points to
+                            the address of a structure variable.</p>
+                        <p>To declare a structure, you use the struct keyword, followed by the name of the structure,
+                            and then a list of members. For example:</p>
+                        <pre class="code-block">                           
+                            struct student { char name[20];
+                                int age;
+                                float grade;
+                            };
+                        </pre>
+                        <p>To create a structure variable, you use the struct keyword, followed by the name of the
+                            structure, and then a list of values for the members. For example:</p>
+                        <pre class="code-block">                            
+                            struct student student1 = {
+                                "John Doe",
+                                20,
+                                3.5
+                            };
+                        </pre>
+                        <p>To access a member of a structure, you use the -> operator. For example:</p>
+                        <code>"printf("The student's name is %s.\n", student1.name);"</code>
+                        <p>To declare a structure pointer, you use the struct keyword, followed by the name of the
+                            structure, and then a pointer to the structure. For example:</p>
+                        <code>"struct student *studentptr;"</code>
+                        <p>To assign a structure pointer to a structure variable, you use the =` operator. For example:
+                        </p>
+                        <code>"studentptr = &student1;"</code>
+                        <p>To access a member of a structure through a pointer, you use the -> operator. For example:
+                        </p>
+                        <code>"printf("The student's name is %s.\n", studentptr->name);"</code>
+                        <p>Structure pointers can be used to create complex data structures, such as linked lists,
+                            trees, and graphs.</p>
+                </li>
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                6.4 Nested Structures
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p><b><u>What is Nested Structures?</u></b></p>
+                        <p>A nested structure in C is a structure that contains one or more members that are themselves
+                            structures. This can be used to create complex data structures that can be used to represent
+                            real-world objects and relationships.</p>
+                        <p>To define a nested structure, you can simply define one structure inside another structure.
+                            For example:</p>
+                        <pre class="code-block">                         
+                            struct employee { 
+                                int employee_id; 
+                                char *name;
+                                float salary;
+                            };
+                            struct organization { 
+                                char *organization_name; 
+                                int organization_number; 
+                                struct employee employee; 
+                            };
+                        </pre>
+                        <p>In this example, the organization structure contains a member of type employee. This means
+                            that an organization structure can contain an employee structure.</p>
+                        <p>To access members of a nested structure, you use the dot operator (.). For example:</p>
+                        <pre class="code-block">                      
+                            struct organization organization; 
+                            struct employee employee;
+
+                            organization.employee.employee_id = 1234;
+                            organization.employee.name = "John Smith";
+                            organization.employee.salary = 100000.00;
+                        </pre>
+                        <p>In this example, we are setting the employee_id, name, and salary members of the employee
+                            structure that is a member of the organization structure.</p>
+                        <p> Nested structures can be used to create complex data structures that can be used to
+                            represent real-world objects and relationships. For example, you could use a nested
+                            structure to represent a company, with the organization structure representing the company
+                            and the employee structure representing an employee.</p>
+                        <p>Here is an example of how you could use a nested structure to represent a company:</p>
+                        <pre class="code-block">                         
+                            struct company {
+                                char *company_name;
+                                int company_number; 
+                                struct employee *employees;
+                            };
+                            struct employee {
+                                int employee_id;
+                                char *name;
+                                float salary;
+                            };
+                        </pre>
+                        <p>In this example, the company structure contains a member of type employee *, which is a
+                            pointer to an array of employee structures. This means that a company structure can contain
+                            an array of employee structures.</p>
+                        <p>To access the members of an array of nested structures, you can use the [] operator. For
+                            example:</p>
+                        <pre class="code-block">                           
+                            struct company company; 
+                            struct employee employee;
+
+                            company.employees[0].employee_id = 1234; 
+                            company.employees[0].name = "John Smith"; 
+                            company.employees[0].salary = 100000.00;
+
+                            company.employees[1]. employee_id = 5678; 
+                            company.employees[1].name = "Jane Doe"; 
+                            company.employees[1]. salary = 150000.00;
+                        </pre>
+                        <p>In this example, we are setting the employee_id, name, and salary members of the first and
+                            second employee structures that are members of the company structure.</p>
+                        <p>Nested structures can be used to create complex data structures that can be used to represent
+                            real-world objects and relationships. This is a powerful tool that can be used to create
+                            more realistic and sophisticated programs.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+</body>
+
+</html>
