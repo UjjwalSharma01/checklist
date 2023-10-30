@@ -19,13 +19,19 @@
 .dark-mode-toggle:hover {
   background-color: #444;
 }
-
-
+.dark-mode .contribute-button{
+  color:#d9ed92;
+  background-color: #444;
+}
+.dark-mode .contribute-button:hover{
+  color:#444;
+  background-color: #d9ed92;
+}
 
 /* DARK MODE STYLES */
 body.dark-mode {
   background-color: #333;
-  color: #eabb95;
+  color: #d9ed92;
 }
 
 .dark-mode header {
@@ -33,7 +39,7 @@ body.dark-mode {
 }
 
 .dark-mode header h1 a {
-  color: #eabb95!important;
+  color: #d9ed92 !important;
 }
 
 .dark-mode nav {
@@ -42,13 +48,13 @@ body.dark-mode {
 
 .dark-mode nav li a {
   background-color: #444;
-  color: #eabb95 !important;
+  color: #d9ed92 !important;
 }
 
 .dark-mode nav li a:hover {
   /* background-color: #555;   */
   color: #444 !important;
-  background-color: #eabb95 !important;
+  background-color: #d9ed92 !important;
 }
 
 .dark-mode .checklists a {
@@ -63,31 +69,30 @@ body.dark-mode {
 .dark-mode .quote blockquote {
   background-color: #444;
   color: #eee;
-  background-color: #eabb95 !important;
-
+  background-color: #d9ed92 !important;
 }
 
 .dark-mode .contact-section form label {
-  color: #eabb95;
+  color: #d9ed92;
 }
 
 .dark-mode .contact-section form input,
 .dark-mode .contact-section form textarea {
   background-color: #444;
-  color: #eabb95 !important;
+  color: #d9ed92 !important;
   border: 1px solid #666;
 }
 
 .dark-mode .contact-section form button {
   /* background-color: #444; */
     background-color: #444;
-  color: #eabb95;
+  color: #d9ed92;
 }
 
 .dark-mode .contact-section form button:hover {
   /* background-color: #555; */
     color: #444;
- background-color: #eabb95;
+ background-color: #d9ed92;
 }
 
 /* Dark mode styles for the footer */
@@ -127,6 +132,11 @@ body.dark-mode {
   border-radius: 4px;
   margin-right: 8px; /* Adjust the gap between the checkbox and the text */
   cursor: pointer;
+}
+
+.dark-mode #quoteTitle{
+  color:#444;
+  background-color: #d9ed92;
 }
 
 /* Show the block-style tick mark when the checkbox is checked */
@@ -220,7 +230,7 @@ body.dark-mode {
   /* background: #fff !important; */
   top: 5%;
   right: 3%;;
-   background-color: #eabb95;
+  background-color: #d9ed92;
   color: #fff;
   border: none;
   padding: 10px;

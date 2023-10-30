@@ -2,18 +2,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8; /* Light gray background */
-  background-color: #ffeddb;
+  background-color: #c7e3dcf9; /* Light gray background */
+  background-color: #CDF5FD;
 }
 
 ::selection {
-  background-color: #e9aa77;
+  background-color: #cdb4db;
   color: #fff;
 }
 
 header {
   background-color: #333;
-  background: #eabb95;
+  background: #A0E9FF;
 
   /* color: #fff; */
   color: #2c2f34d3 !important;
@@ -28,7 +28,7 @@ header {
 header h1 a {
   text-decoration: none;
   color: #fff;
-  color: #2c2f34da !important;
+  color: #1D5B79 !important;
 
   font-size: 64px;
   font-weight: bold;
@@ -37,7 +37,7 @@ header h1 a {
 
 nav {
   background-color: #fff;
-  background: #e9aa77;
+  background: #77cbe9;
 
   padding: 20px 10px;
   border-bottom-left-radius: 20px;
@@ -62,7 +62,7 @@ nav li a {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #f0f0f0; /* Light gray button background */
-  background: #eabb95;
+  background: #1D5B79;
   color: #2c2f34da !important;
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 4px;
@@ -72,7 +72,7 @@ nav li a {
 
 nav li a:hover {
   background-color: #33333340;
-  color: #eabb95 !important;
+  color: #1D5B79 !important;
 }
 
 main {
@@ -103,7 +103,7 @@ input[type="checkbox"]:checked + .checkmark {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background: #eabb95;
+  background: #AEDEFC;
 }
 
 blockquote {
@@ -113,7 +113,7 @@ blockquote {
   margin: 0;
   padding: 20px;
   border-left: 5px solid #333; /* Darker gray border on the left */
-  background: #eabb95;
+  background: #AEDEFC;
 
   /* color: #fff; */
   color: #2c2f34d3 !important;
@@ -188,7 +188,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-  background: #e6a976;
+  background: #1D5B79;
 }
 
 /* Hover Animation for Navigation Links */
@@ -210,7 +210,7 @@ nav li a:hover {
 /* Hover Animation for Motivational Quote */
 .quote blockquote:hover {
   background-color: #f0f0f0; /* Light gray background on hover */
-  background: #eabb95;
+  background: #1d5b79;
 }
 @keyframes glow {
   0% {
@@ -300,7 +300,7 @@ nav li {
   font-weight: bold;
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
-  background: #eabb95 !important;
+  background: #1D5B79 !important;
   color: #2c2f34da !important;
   font-family: "Bebas Neue", sans-serif;
 
@@ -313,7 +313,7 @@ nav li {
   /* background-color: #444;
   color: #fff; */
   background-color: #333333c6 !important;
-  color: #eabb95 !important;
+  color: #1D5B79 !important;
 }
 
 /* Hover Animation for Checklist Items */
@@ -434,7 +434,7 @@ nav li {
   border: 1px solid #ccc;
   border-radius: 13px;
   font-size: 16px;
-  background: #eabb95;
+  background: #90e0ef;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   color: #2c2f34dc !important;
@@ -456,14 +456,14 @@ nav li {
   border-radius: 18px;
   font-family: "Bebas Neue", sans-serif;
   color: #444;
-  background-color: #eabb95;
+  background-color: #90e0ef;
   transition-duration: 300ms;
 }
 
 .contact-section form button:hover {
   /* background-color: #333; */
-  background-color: #444;
-  color: #eabb95;
+  background-color: #90e0ef;
+  color: #1D5B79;
 }
 
 /* Media Query for screens larger than 768px */
@@ -573,9 +573,9 @@ footer .heart {
 .checklist h2 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: bold;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   letter-spacing: 3px;
 }
 
@@ -655,16 +655,17 @@ footer .heart {
 .hidden-text {
   display: none;
   margin: 10px !important;
-  font-size: 24px !important;
-  background-color: #eabb95 !important;
-
+  font-size: 18px !important;
+  background-color: #0096c7 !important;
   color: #444;
+  font-family: cursive;
+  line-height: 1.5rem;
 }
 
 /* Add a class for the drop-down arrow */
 .dropdown-arrow::after {
   content: "▼";
-  margin-left: 5px;
+  margin-left: 3rem;
 }
 
 /* Add a class for the checked drop-down arrow */
@@ -772,7 +773,7 @@ footer .heart {
   display: none;
   margin-top: 5px; /* Adjust the margin to create some spacing */
   font-size: 14px;
-  color: #333;
+  color: #d9ed92;
   background-color: #f0f0f0;
   padding: 5px;
   border-radius: 5px;
@@ -819,8 +820,8 @@ checkbox and section title are now separate */
 
 /* CSS for code snippets */
 .code-block {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 10px;
   border-radius: 5px;
   text-align: left;
