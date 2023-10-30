@@ -150,7 +150,15 @@ body.dark-mode {
   margin: 0;
 }
 
+.back-to-top-button {
+  background-color: #333;
+  color: #fcbe8b;
+}
 
+.back-to-top-button:hover {
+  background-color: #eabb95;
+  color: #333;
+}
 
 /* Animation for the toggle button */
 @keyframes sunToMoonAnimation {

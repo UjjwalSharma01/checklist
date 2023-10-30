@@ -7,6 +7,10 @@
     <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="dark-mode.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
+  />
   </head>
   <body>
     <header>
@@ -409,9 +413,946 @@
               <!-- Hidden content for the drop-down menu -->
               <p> A* is an extension of the branch and bound approach. In A*, we select the path with the shortest length from the start to the goal. The total length is estimated as the length traversed so far plus a heuristic estimate of the remaining distance from the goal. </p>
               <p> Branch-and-bound will always find an optimal solution, which is the shortest path. A* will also find an optimal solution if the heuristic is accurate. Choosing a good heuristic is the most crucial aspect of the A* algorithm. </p>
+            </div>
+            </li>
+            <li class="checklist-item">
+              <div class="section">
+                <div class="section-box">
+                  <label class="section-box-label">
+                    <input type="checkbox" class="checkbox" data-checklist="web-app">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <div class="section-title">
+                  <label class="section-title-label"> 0/1 Knapsack Problem<span class="dropdown-arrow"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="hidden-text">
+                <!-- Hidden content for the drop-down menu -->
+                <p> Given N items where each item has some weight and profit associated with it and also given a bag with capacity W, [i.e., the bag can hold at most W weight in it]. The task is to put the items into the bag such that the sum of profits associated with them is the maximum possible. 
+                  <br>
+                  <strong>Note</strong>: The constraint here is we can either put an item completely into the bag or cannot put it at all [It is not possible to put a part of an item into the bag].</p>
+
+                  <pre  style="text-align: left">
+                    <code>
+/* A Naive recursive implementation of 
+0-1 Knapsack problem */
+#include &lt;bits/stdc++.h&gt; 
+using namespace std; 
+
+// A utility function that returns 
+// maximum of two integers 
+int max(int a, int b) { return (a &gt; b) ? a : b; } 
+
+// Returns the maximum value that 
+// can be put in a knapsack of capacity W 
+int knapSack(int W, int wt[], int val[], int n) 
+{ 
+
+	// Base Case 
+	if (n == 0 || W == 0) 
+		return 0; 
+
+	// If weight of the nth item is more 
+	// than Knapsack capacity W, then 
+	// this item cannot be included 
+	// in the optimal solution 
+	if (wt[n - 1] &gt; W) 
+		return knapSack(W, wt, val, n - 1); 
+
+	// Return the maximum of two cases: 
+	// (1) nth item included 
+	// (2) not included 
+	else
+		return max( 
+			val[n - 1] 
+				+ knapSack(W - wt[n - 1], wt, val, n - 1), 
+			knapSack(W, wt, val, n - 1)); 
+} 
+
+// Driver code 
+int main() 
+{ 
+	int profit[] = { 60, 100, 120 }; 
+	int weight[] = { 10, 20, 30 }; 
+	int W = 50; 
+	int n = sizeof(profit) / sizeof(profit[0]); 
+	cout &lt;&lt; knapSack(W, weight, profit, n); 
+	return 0; 
+} 
+                    </code>
+                  </pre>
+              </div>
+              </li>
+              <li class="checklist-item">
+                <div class="section">
+                  <div class="section-box">
+                    <label class="section-box-label">
+                      <input type="checkbox" class="checkbox" data-checklist="web-app">
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                  <div class="section-title">
+                    <label class="section-title-label"> Knapsack fractional Problem<span class="dropdown-arrow"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="hidden-text">
+                  <!-- Hidden content for the drop-down menu -->
+                  <p> Given the weights and profits of N items, in the form of {profit, weight} put these items in a knapsack of capacity W to get the maximum total profit in the knapsack. In Fractional Knapsack, we can break items for maximizing the total value of the knapsack.
+                    <br>
+                    
+  
+                    <pre  style="text-align: left">
+                      <code>
+                        // C++ program to solve fractional Knapsack Problem
+ 
+                        #include &lt;bits/stdc++.h&gt;
+                        using namespace std;
+                         
+                        // Structure for an item which stores weight and
+                        // corresponding value of Item
+                        struct Item {
+                            int profit, weight;
+                         
+                            // Constructor
+                            Item(int profit, int weight)
+                            {
+                                this-&gt;profit = profit;
+                                this-&gt;weight = weight;
+                            }
+                        };
+                         
+                        // Comparison function to sort Item 
+                        // according to profit/weight ratio
+                        static bool cmp(struct Item a, struct Item b)
+                        {
+                            double r1 = (double)a.profit / (double)a.weight;
+                            double r2 = (double)b.profit / (double)b.weight;
+                            return r1 &gt; r2;
+                        }
+                         
+                        // Main greedy function to solve problem
+                        double fractionalKnapsack(int W, struct Item arr[], int N)
+                        {
+                            // Sorting Item on basis of ratio
+                            sort(arr, arr + N, cmp);
+                         
+                            double finalvalue = 0.0;
+                         
+                            // Looping through all items
+                            for (int i = 0; i &lt; N; i++) {
+                                 
+                                // If adding Item won't overflow, 
+                                // add it completely
+                                if (arr[i].weight &lt;= W) {
+                                    W -= arr[i].weight;
+                                    finalvalue += arr[i].profit;
+                                }
+                         
+                                // If we can't add current Item, 
+                                // add fractional part of it
+                                else {
+                                    finalvalue
+                                        += arr[i].profit
+                                           * ((double)W / (double)arr[i].weight);
+                                    break;
+                                }
+                            }
+                         
+                            // Returning final value
+                            return finalvalue;
+                        }
+                         
+                        // Driver code
+                        int main()
+                        {
+                            int W = 50;
+                            Item arr[] = { { 60, 10 }, { 100, 20 }, { 120, 30 } };
+                            int N = sizeof(arr) / sizeof(arr[0]);
+                         
+                            // Function call
+                            cout &lt;&lt; fractionalKnapsack(W, arr, N);
+                            return 0;
+                        }
+                      </code>
+                    </pre>
+                </div>
+                </li>
+                <li class="checklist-item">
+                  <div class="section">
+                    <div class="section-box">
+                      <label class="section-box-label">
+                        <input type="checkbox" class="checkbox" data-checklist="web-app">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="section-title">
+                      <label class="section-title-label"> Matrix Chain Multiplication<span class="dropdown-arrow"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="hidden-text">
+                    <!-- Hidden content for the drop-down menu -->
+                    <p> Given the dimension of a sequence of matrices in an array arr[], where the dimension of the ith matrix is (arr[i-1] * arr[i]), the task is to find the most efficient way to multiply these matrices together such that the total number of element multiplications is minimum.
+                      <br>
+                      
+    
+                      <pre  style="text-align: left">
+                        <code>
+                          #include &lt;bits/stdc++.h&gt;
+using namespace std;
+ 
+// Matrix Ai has dimension p[i-1] x p[i]
+// for i = 1 . . . n
+int MatrixChainOrder(int p[], int i, int j)
+{
+    if (i == j)
+        return 0;
+    int k;
+    int mini = INT_MAX;
+    int count;
+ 
+    // Place parenthesis at different places
+    // between first and last matrix, 
+    // recursively calculate count of multiplications 
+    // for each parenthesis placement 
+    // and return the minimum count
+    for (k = i; k &lt; j; k++) 
+    {
+        count = MatrixChainOrder(p, i, k)
+                + MatrixChainOrder(p, k + 1, j)
+                + p[i - 1] * p[k] * p[j];
+ 
+        mini = min(count, mini);
+    }
+ 
+    // Return minimum count
+    return mini;
+}
+ 
+// Driver Code
+int main()
+{
+    int arr[] = { 1, 2, 3, 4, 3 };
+    int N = sizeof(arr) / sizeof(arr[0]);
+ 
+    // Function call
+    cout &lt;&lt; &quot;Minimum number of multiplications is &quot;
+         &lt;&lt; MatrixChainOrder(arr, 1, N - 1);
+    return 0;
+}
+                        </code>
+                      </pre>
+                  </div>
+                  </li>
+                  <li class="checklist-item">
+                    <div class="section">
+                      <div class="section-box">
+                        <label class="section-box-label">
+                          <input type="checkbox" class="checkbox" data-checklist="web-app">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                      <div class="section-title">
+                        <label class="section-title-label">Fenwick Tree<span class="dropdown-arrow"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="hidden-text">
+                      <!-- Hidden content for the drop-down menu -->
+                      <p> A Fenwick Tree, also known as a Binary Indexed Tree (BIT), is a data structure used for efficiently performing two primary operations on an array of values: updating a value and calculating the prefix sum (cumulative sum) of a range of values. It was developed by Peter Fenwick in 1994 and is particularly useful when you need to frequently update elements in an array and calculate cumulative sums or ranges.
+                        <br>
+                        
+      
+                        <pre  style="text-align: left">
+                          <code>
+// C++ code to demonstrate operations of Binary Index Tree 
+#include &lt;iostream&gt; 
+
+using namespace std; 
+
+/*		 n --&gt; No. of elements present in input array. 
+	BITree[0..n] --&gt; Array that represents Binary Indexed Tree. 
+	arr[0..n-1] --&gt; Input array for which prefix sum is evaluated. */
+
+// Returns sum of arr[0..index]. This function assumes 
+// that the array is preprocessed and partial sums of 
+// array elements are stored in BITree[]. 
+int getSum(int BITree[], int index) 
+{ 
+	int sum = 0; // Initialize result 
+
+	// index in BITree[] is 1 more than the index in arr[] 
+	index = index + 1; 
+
+	// Traverse ancestors of BITree[index] 
+	while (index&gt;0) 
+	{ 
+		// Add current element of BITree to sum 
+		sum += BITree[index]; 
+
+		// Move index to parent node in getSum View 
+		index -= index &amp; (-index); 
+	} 
+	return sum; 
+} 
+
+// Updates a node in Binary Index Tree (BITree) at given index 
+// in BITree. The given value 'val' is added to BITree[i] and 
+// all of its ancestors in tree. 
+void updateBIT(int BITree[], int n, int index, int val) 
+{ 
+	// index in BITree[] is 1 more than the index in arr[] 
+	index = index + 1; 
+
+	// Traverse all ancestors and add 'val' 
+	while (index &lt;= n) 
+	{ 
+	// Add 'val' to current node of BI Tree 
+	BITree[index] += val; 
+
+	// Update index to that of parent in update View 
+	index += index &amp; (-index); 
+	} 
+} 
+
+// Constructs and returns a Binary Indexed Tree for given 
+// array of size n. 
+int *constructBITree(int arr[], int n) 
+{ 
+	// Create and initialize BITree[] as 0 
+	int *BITree = new int[n+1]; 
+	for (int i=1; i&lt;=n; i++) 
+		BITree[i] = 0; 
+
+	// Store the actual values in BITree[] using update() 
+	for (int i=0; i&lt;n; i++) 
+		updateBIT(BITree, n, i, arr[i]); 
+
+	// Uncomment below lines to see contents of BITree[] 
+	//for (int i=1; i&lt;=n; i++) 
+	//	 cout &lt;&lt; BITree[i] &lt;&lt; &quot; &quot;; 
+
+	return BITree; 
+} 
+
+
+// Driver program to test above functions 
+int main() 
+{ 
+	int freq[] = {2, 1, 1, 3, 2, 3, 4, 5, 6, 7, 8, 9}; 
+	int n = sizeof(freq)/sizeof(freq[0]); 
+	int *BITree = constructBITree(freq, n); 
+	cout &lt;&lt; &quot;Sum of elements in arr[0..5] is &quot;
+		&lt;&lt; getSum(BITree, 5); 
+
+	// Let use test the update operation 
+	freq[3] += 6; 
+	updateBIT(BITree, n, 3, 6); //Update BIT for above change in arr[] 
+
+	cout &lt;&lt; &quot;\nSum of elements in arr[0..5] after update is &quot;
+		&lt;&lt; getSum(BITree, 5); 
+
+	return 0; 
+} 
+
+                          </code>
+                        </pre>
+                    </div>
+                    </li>
+                    <li class="checklist-item">
+                      <div class="section">
+                        <div class="section-box">
+                          <label class="section-box-label">
+                            <input type="checkbox" class="checkbox" data-checklist="web-app">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                        <div class="section-title">
+                          <label class="section-title-label">Bellman ford Algorithm<span class="dropdown-arrow"></span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="hidden-text">
+                        <!-- Hidden content for the drop-down menu -->
+                        <p> The Bellman-Ford algorithm is a single-source shortest path algorithm used to find the shortest paths from a source vertex to all other vertices in a weighted, directed graph, including graphs with negative edge weights. It was developed by Richard Bellman and Lester Ford in the 1950s. This algorithm is more versatile than Dijkstra's algorithm since it can handle graphs with negative edge weights and detect the presence of negative cycles.
+                          <br>
+                          
+        
+                          <pre  style="text-align: left">
+                            <code>
+  // A C++ program for Bellman-Ford's single source
+  // shortest path algorithm.
+  #include &lt;bits/stdc++.h&gt;
+  using namespace std;
+   
+  // a structure to represent a weighted edge in graph
+  struct Edge {
+      int src, dest, weight;
+  };
+   
+  // a structure to represent a connected, directed and
+  // weighted graph
+  struct Graph {
+      // V-&gt; Number of vertices, E-&gt; Number of edges
+      int V, E;
+   
+      // graph is represented as an array of edges.
+      struct Edge* edge;
+  };
+   
+  // Creates a graph with V vertices and E edges
+  struct Graph* createGraph(int V, int E)
+  {
+      struct Graph* graph = new Graph;
+      graph-&gt;V = V;
+      graph-&gt;E = E;
+      graph-&gt;edge = new Edge[E];
+      return graph;
+  }
+   
+  // A utility function used to print the solution
+  void printArr(int dist[], int n)
+  {
+      printf(&quot;Vertex   Distance from Source\n&quot;);
+      for (int i = 0; i &lt; n; ++i)
+          printf(&quot;%d \t\t %d\n&quot;, i, dist[i]);
+  }
+   
+  // The main function that finds shortest distances from src
+  // to all other vertices using Bellman-Ford algorithm.  The
+  // function also detects negative weight cycle
+  void BellmanFord(struct Graph* graph, int src)
+  {
+      int V = graph-&gt;V;
+      int E = graph-&gt;E;
+      int dist[V];
+   
+      // Step 1: Initialize distances from src to all other
+      // vertices as INFINITE
+      for (int i = 0; i &lt; V; i++)
+          dist[i] = INT_MAX;
+      dist[src] = 0;
+   
+      // Step 2: Relax all edges |V| - 1 times. A simple
+      // shortest path from src to any other vertex can have
+      // at-most |V| - 1 edges
+      for (int i = 1; i &lt;= V - 1; i++) {
+          for (int j = 0; j &lt; E; j++) {
+              int u = graph-&gt;edge[j].src;
+              int v = graph-&gt;edge[j].dest;
+              int weight = graph-&gt;edge[j].weight;
+              if (dist[u] != INT_MAX
+                  &amp;&amp; dist[u] + weight &lt; dist[v])
+                  dist[v] = dist[u] + weight;
+          }
+      }
+   
+      // Step 3: check for negative-weight cycles.  The above
+      // step guarantees shortest distances if graph doesn't
+      // contain negative weight cycle.  If we get a shorter
+      // path, then there is a cycle.
+      for (int i = 0; i &lt; E; i++) {
+          int u = graph-&gt;edge[i].src;
+          int v = graph-&gt;edge[i].dest;
+          int weight = graph-&gt;edge[i].weight;
+          if (dist[u] != INT_MAX
+              &amp;&amp; dist[u] + weight &lt; dist[v]) {
+              printf(&quot;Graph contains negative weight cycle&quot;);
+              return; // If negative cycle is detected, simply
+                      // return
+          }
+      }
+   
+      printArr(dist, V);
+   
+      return;
+  }
+   
+  // Driver's code
+  int main()
+  {
+      /* Let us create the graph given in above example */
+      int V = 5; // Number of vertices in graph
+      int E = 8; // Number of edges in graph
+      struct Graph* graph = createGraph(V, E);
+   
+      // add edge 0-1 (or A-B in above figure)
+      graph-&gt;edge[0].src = 0;
+      graph-&gt;edge[0].dest = 1;
+      graph-&gt;edge[0].weight = -1;
+   
+      // add edge 0-2 (or A-C in above figure)
+      graph-&gt;edge[1].src = 0;
+      graph-&gt;edge[1].dest = 2;
+      graph-&gt;edge[1].weight = 4;
+   
+      // add edge 1-2 (or B-C in above figure)
+      graph-&gt;edge[2].src = 1;
+      graph-&gt;edge[2].dest = 2;
+      graph-&gt;edge[2].weight = 3;
+   
+      // add edge 1-3 (or B-D in above figure)
+      graph-&gt;edge[3].src = 1;
+      graph-&gt;edge[3].dest = 3;
+      graph-&gt;edge[3].weight = 2;
+   
+      // add edge 1-4 (or B-E in above figure)
+      graph-&gt;edge[4].src = 1;
+      graph-&gt;edge[4].dest = 4;
+      graph-&gt;edge[4].weight = 2;
+   
+      // add edge 3-2 (or D-C in above figure)
+      graph-&gt;edge[5].src = 3;
+      graph-&gt;edge[5].dest = 2;
+      graph-&gt;edge[5].weight = 5;
+   
+      // add edge 3-1 (or D-B in above figure)
+      graph-&gt;edge[6].src = 3;
+      graph-&gt;edge[6].dest = 1;
+      graph-&gt;edge[6].weight = 1;
+   
+      // add edge 4-3 (or E-D in above figure)
+      graph-&gt;edge[7].src = 4;
+      graph-&gt;edge[7].dest = 3;
+      graph-&gt;edge[7].weight = -3;
+       
+        // Function call
+      BellmanFord(graph, 0);
+   
+      return 0;
+  }
+  
+                            </code>
+                          </pre>
+                      </div>
+                      </li>
+                      <li class="checklist-item">
+                        <div class="section">
+                          <div class="section-box">
+                            <label class="section-box-label">
+                              <input type="checkbox" class="checkbox" data-checklist="web-app">
+                              <span class="checkmark"></span>
+                            </label>
+                          </div>
+                          <div class="section-title">
+                            <label class="section-title-label">Kruskal's Algorithm<span class="dropdown-arrow"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="hidden-text">
+                          <!-- Hidden content for the drop-down menu -->
+                          <p> Kruskal's algorithm is a popular greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected, undirected graph. A Minimum Spanning Tree is a subset of the edges of a graph that connects all vertices together with the minimum possible total edge weight, while ensuring that no cycles are formed. Kruskal's algorithm was developed by Joseph Kruskal in the 1950s.
+                            <br>
+                            
+          
+                            <pre  style="text-align: left">
+                              <code>
+                                // C++ program for the above approach 
+  
+                                #include &lt;bits/stdc++.h&gt; 
+                                using namespace std; 
+                                  
+                                // DSU data structure 
+                                // path compression + rank by union 
+                                class DSU { 
+                                    int* parent; 
+                                    int* rank; 
+                                  
+                                public: 
+                                    DSU(int n) 
+                                    { 
+                                        parent = new int[n]; 
+                                        rank = new int[n]; 
+                                  
+                                        for (int i = 0; i &lt; n; i++) { 
+                                            parent[i] = -1; 
+                                            rank[i] = 1; 
+                                        } 
+                                    } 
+                                  
+                                    // Find function 
+                                    int find(int i) 
+                                    { 
+                                        if (parent[i] == -1) 
+                                            return i; 
+                                  
+                                        return parent[i] = find(parent[i]); 
+                                    } 
+                                  
+                                    // Union function 
+                                    void unite(int x, int y) 
+                                    { 
+                                        int s1 = find(x); 
+                                        int s2 = find(y); 
+                                  
+                                        if (s1 != s2) { 
+                                            if (rank[s1] &lt; rank[s2]) { 
+                                                parent[s1] = s2; 
+                                            } 
+                                            else if (rank[s1] &gt; rank[s2]) { 
+                                                parent[s2] = s1; 
+                                            } 
+                                            else { 
+                                                parent[s2] = s1; 
+                                                rank[s1] += 1; 
+                                            } 
+                                        } 
+                                    } 
+                                }; 
+                                  
+                                class Graph { 
+                                    vector&lt;vector&lt;int&gt; &gt; edgelist; 
+                                    int V; 
+                                  
+                                public: 
+                                    Graph(int V) { this-&gt;V = V; } 
+                                  
+                                    // Function to add edge in a graph 
+                                    void addEdge(int x, int y, int w) 
+                                    { 
+                                        edgelist.push_back({ w, x, y }); 
+                                    } 
+                                  
+                                    void kruskals_mst() 
+                                    { 
+                                        // Sort all edges 
+                                        sort(edgelist.begin(), edgelist.end()); 
+                                  
+                                        // Initialize the DSU 
+                                        DSU s(V); 
+                                        int ans = 0; 
+                                        cout &lt;&lt; &quot;Following are the edges in the &quot;
+                                                &quot;constructed MST&quot;
+                                             &lt;&lt; endl; 
+                                        for (auto edge : edgelist) { 
+                                            int w = edge[0]; 
+                                            int x = edge[1]; 
+                                            int y = edge[2]; 
+                                  
+                                            // Take this edge in MST if it does 
+                                            // not forms a cycle 
+                                            if (s.find(x) != s.find(y)) { 
+                                                s.unite(x, y); 
+                                                ans += w; 
+                                                cout &lt;&lt; x &lt;&lt; &quot; -- &quot; &lt;&lt; y &lt;&lt; &quot; == &quot; &lt;&lt; w 
+                                                     &lt;&lt; endl; 
+                                            } 
+                                        } 
+                                        cout &lt;&lt; &quot;Minimum Cost Spanning Tree: &quot; &lt;&lt; ans; 
+                                    } 
+                                }; 
+                                  
+                                // Driver code 
+                                int main() 
+                                { 
+                                    Graph g(4); 
+                                    g.addEdge(0, 1, 10); 
+                                    g.addEdge(1, 3, 15); 
+                                    g.addEdge(2, 3, 4); 
+                                    g.addEdge(2, 0, 6); 
+                                    g.addEdge(0, 3, 5); 
+                                  
+                                    // Function call 
+                                    g.kruskals_mst(); 
+                                  
+                                    return 0; 
+                                }
+    
+                              </code>
+                            </pre>
+                        </div>
+                        </li>
+
+                        <li class="checklist-item">
+                          <div class="section">
+                            <div class="section-box">
+                              <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                              </label>
+                            </div>
+                            <div class="section-title">
+                              <label class="section-title-label">Knuth Pratt Morris Algorithm<span class="dropdown-arrow"></span>
+                              </label>
+                            </div>
+                          </div>
+                          <div class="hidden-text">
+                            <!-- Hidden content for the drop-down menu -->
+                            <p> The Knuth-Morris-Pratt (KMP) algorithm is a string searching algorithm used to find all occurrences of a pattern string within a longer text string efficiently. It was developed by Donald Knuth, Vaughan Pratt, and James H. Morris in 1977. The KMP algorithm is known for its linear time complexity, making it highly efficient for large text and pattern strings.
+                              <br>
+                              
+            
+                              <pre  style="text-align: left">
+                                <code>
+// C++ program for implementation of KMP pattern searching
+// algorithm
+ 
+#include &lt;bits/stdc++.h&gt;
+ 
+void computeLPSArray(char* pat, int M, int* lps);
+ 
+// Prints occurrences of txt[] in pat[]
+void KMPSearch(char* pat, char* txt)
+{
+    int M = strlen(pat);
+    int N = strlen(txt);
+ 
+    // create lps[] that will hold the longest prefix suffix
+    // values for pattern
+    int lps[M];
+ 
+    // Preprocess the pattern (calculate lps[] array)
+    computeLPSArray(pat, M, lps);
+ 
+    int i = 0; // index for txt[]
+    int j = 0; // index for pat[]
+    while ((N - i) &gt;= (M - j)) {
+        if (pat[j] == txt[i]) {
+            j++;
+            i++;
+        }
+ 
+        if (j == M) {
+            printf(&quot;Found pattern at index %d &quot;, i - j);
+            j = lps[j - 1];
+        }
+ 
+        // mismatch after j matches
+        else if (i &lt; N &amp;&amp; pat[j] != txt[i]) {
+            // Do not match lps[0..lps[j-1]] characters,
+            // they will match anyway
+            if (j != 0)
+                j = lps[j - 1];
+            else
+                i = i + 1;
+        }
+    }
+}
+ 
+// Fills lps[] for given pattern pat[0..M-1]
+void computeLPSArray(char* pat, int M, int* lps)
+{
+    // length of the previous longest prefix suffix
+    int len = 0;
+ 
+    lps[0] = 0; // lps[0] is always 0
+ 
+    // the loop calculates lps[i] for i = 1 to M-1
+    int i = 1;
+    while (i &lt; M) {
+        if (pat[i] == pat[len]) {
+            len++;
+            lps[i] = len;
+            i++;
+        }
+        else // (pat[i] != pat[len])
+        {
+            // This is tricky. Consider the example.
+            // AAACAAAA and i = 7. The idea is similar
+            // to search step.
+            if (len != 0) {
+                len = lps[len - 1];
+ 
+                // Also, note that we do not increment
+                // i here
+            }
+            else // if (len == 0)
+            {
+                lps[i] = 0;
+                i++;
+            }
+        }
+    }
+}
+ 
+// Driver code
+int main()
+{
+    char txt[] = &quot;ABABDABACDABABCABAB&quot;;
+    char pat[] = &quot;ABABCABAB&quot;;
+    KMPSearch(pat, txt);
+    return 0;
+}
+                                </code>
+                              </pre>
+                          </div>
+                          </li>
+                          <li class="checklist-item">
+                            <div class="section">
+                              <div class="section-box">
+                                <label class="section-box-label">
+                                  <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                  <span class="checkmark"></span>
+                                </label>
+                              </div>
+                              <div class="section-title">
+                                <label class="section-title-label">Boyer Moore Voting Algorithm<span class="dropdown-arrow"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="hidden-text">
+                              <!-- Hidden content for the drop-down menu -->
+                              <p> The Boyer-Moore algorithm is a powerful string searching algorithm that efficiently finds occurrences of a pattern string within a longer text string. It was developed by Robert S. Boyer and J Strother Moore in 1977. The Boyer-Moore algorithm is known for its practical speed and effectiveness in real-world applications.
+                                <br>
+                                
+              
+                                <pre  style="text-align: left">
+                                  <code>
+                                    /* C++ Program for Bad Character Heuristic of Boyer 
+                                    Moore String Matching Algorithm */
+                                    #include &lt;bits/stdc++.h&gt;
+                                    using namespace std;
+                                    # define NO_OF_CHARS 256 
+                                     
+                                    // The preprocessing function for Boyer Moore's 
+                                    // bad character heuristic 
+                                    void badCharHeuristic( string str, int size, 
+                                                            int badchar[NO_OF_CHARS]) 
+                                    { 
+                                        int i; 
+                                     
+                                        // Initialize all occurrences as -1 
+                                        for (i = 0; i &lt; NO_OF_CHARS; i++) 
+                                            badchar[i] = -1; 
+                                     
+                                        // Fill the actual value of last occurrence 
+                                        // of a character 
+                                        for (i = 0; i &lt; size; i++) 
+                                            badchar[(int) str[i]] = i; 
+                                    } 
+                                     
+                                    /* A pattern searching function that uses Bad 
+                                    Character Heuristic of Boyer Moore Algorithm */
+                                    void search( string txt, string pat) 
+                                    { 
+                                        int m = pat.size(); 
+                                        int n = txt.size(); 
+                                     
+                                        int badchar[NO_OF_CHARS]; 
+                                     
+                                        /* Fill the bad character array by calling 
+                                        the preprocessing function badCharHeuristic() 
+                                        for given pattern */
+                                        badCharHeuristic(pat, m, badchar); 
+                                     
+                                        int s = 0; // s is shift of the pattern with 
+                                                    // respect to text 
+                                        while(s &lt;= (n - m)) 
+                                        { 
+                                            int j = m - 1; 
+                                     
+                                            /* Keep reducing index j of pattern while 
+                                            characters of pattern and text are 
+                                            matching at this shift s */
+                                            while(j &gt;= 0 &amp;&amp; pat[j] == txt[s + j]) 
+                                                j--; 
+                                     
+                                            /* If the pattern is present at current 
+                                            shift, then index j will become -1 after 
+                                            the above loop */
+                                            if (j &lt; 0) 
+                                            { 
+                                                cout &lt;&lt; &quot;pattern occurs at shift = &quot; &lt;&lt;  s &lt;&lt; endl; 
+                                     
+                                                /* Shift the pattern so that the next 
+                                                character in text aligns with the last 
+                                                occurrence of it in pattern. 
+                                                The condition s+m &lt; n is necessary for 
+                                                the case when pattern occurs at the end 
+                                                of text */
+                                                s += (s + m &lt; n)? m-badchar[txt[s + m]] : 1; 
+                                     
+                                            } 
+                                     
+                                            else
+                                                /* Shift the pattern so that the bad character 
+                                                in text aligns with the last occurrence of 
+                                                it in pattern. The max function is used to 
+                                                make sure that we get a positive shift. 
+                                                We may get a negative shift if the last 
+                                                occurrence of bad character in pattern 
+                                                is on the right side of the current 
+                                                character. */
+                                                s += max(1, j - badchar[txt[s + j]]); 
+                                        } 
+                                    } 
+                                     
+                                    /* Driver code */
+                                    int main() 
+                                    { 
+                                        string txt= &quot;ABAAABCD&quot;; 
+                                        string pat = &quot;ABC&quot;; 
+                                        search(txt, pat); 
+                                        return 0; 
+                                    } 
+                                  </code>
+                                </pre>
+                            </div>
+                            </li>
+                            <li class="checklist-item">
+                              <div class="section">
+                                <div class="section-box">
+                                  <label class="section-box-label">
+                                    <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                </div>
+                                <div class="section-title">
+                                  <label class="section-title-label">Least Common Subsequence<span class="dropdown-arrow"></span>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="hidden-text">
+                                <!-- Hidden content for the drop-down menu -->
+                                <p> It seems like you're asking about the "Least Common Subsequence" (LCS) problem. The LCS problem is a classic algorithmic problem in computer science, and it is often confused with the "Longest Common Subsequence" problem (which is more common). The Least Common Subsequence problem is slightly different.
+                                  <br>
+                                  
+                
+                                  <pre  style="text-align: left">
+                                    <code>
+                                      // A Naive recursive implementation of LCS problem
+ 
+#include &lt;bits/stdc++.h&gt;
+using namespace std;
+ 
+// Returns length of LCS for X[0..m-1], Y[0..n-1]
+int lcs(string X, string Y, int m, int n)
+{
+    if (m == 0 || n == 0)
+        return 0;
+    if (X[m - 1] == Y[n - 1])
+        return 1 + lcs(X, Y, m - 1, n - 1);
+    else
+        return max(lcs(X, Y, m, n - 1),
+                   lcs(X, Y, m - 1, n));
+}
+ 
+// Driver code
+int main()
+{
+    string S1 = &quot;AGGTAB&quot;;
+    string S2 = &quot;GXTXAYB&quot;;
+    int m = S1.size();
+    int n = S2.size();
+ 
+    cout &lt;&lt; &quot;Length of LCS is &quot; &lt;&lt; lcs(S1, S2, m, n);
+ 
+    return 0;
+}
+                                    </code>
+                                  </pre>
+                              </div>
+                              </li>
       </section>
     </main>
     <script src="script.js"></script>
     <script src="dark-mode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>

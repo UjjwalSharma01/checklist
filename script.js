@@ -1,7 +1,21 @@
 // script.js
+window.onscroll = function() {
+  var buttons = document.getElementsByClassName("back-to-top-button");
+  for (var i = 0; i < buttons.length; i++) {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      buttons[i].style.display = "block";
+    } else {
+      buttons[i].style.display = "none";
+    }
+  }
+};
+
 function scrollToTop() {
-  window.scrollTo(0, 0);
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
 }
+
+
 
 const checkboxes = document.querySelectorAll('.checkbox');
 

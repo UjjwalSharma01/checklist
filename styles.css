@@ -77,7 +77,6 @@ nav li a:hover {
 
 main {
   padding: 20px;
-  margin-bottom: 230px;
 }
 
 .checklists {
@@ -504,9 +503,6 @@ footer {
   border-top-right-radius: 20px;
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
 }
 
 footer p {
@@ -526,6 +522,7 @@ footer .heart {
   align-items: start;
   margin-bottom: 8px;
   gap: 20px;
+  padding-bottom: 5px;
 }
 
 .popular-categories{
@@ -602,6 +599,8 @@ footer .heart {
   bottom: 80px;
   right: 20px;
   border: #000 2px solid;
+  display: none;
+  z-index: 999;
 }
 
 .back-to-top-button:hover {
@@ -827,6 +826,7 @@ footer .heart {
   padding: 10px;
   border-radius: 5px;
 }
+
 
 /* Add styles for the dropdown toggle */
 .dropdown-toggle {
