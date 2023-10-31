@@ -150,7 +150,6 @@ function copyToClipboard(exampleNumber) {
 }
 
 var toggleButton=document.querySelector(".toggle-button");
-console.log(toggleButton);
 var navbarLinks=document.querySelector(".hamburger");
 
 
