@@ -148,3 +148,13 @@ function copyToClipboard(exampleNumber) {
     alert('Code copied to clipboard');
   }
 }
+
+var toggleButton=document.querySelector(".toggle-button");
+console.log(toggleButton);
+var navbarLinks=document.querySelector(".hamburger");
+
+
+toggleButton.addEventListener('click', ()=>{
+    navbarLinks.classList.toggle('active');
+})
+

@@ -3,7 +3,7 @@
 
 .dark-mode-toggle {
   position: absolute;
-  top: 5%;
+  top: 3%;
   right: 3%;;
   z-index: 999;
   background-color: #333;
@@ -44,6 +44,16 @@ body.dark-mode {
 
 .dark-mode nav {
   background-color: #3a3a3a;
+}
+
+.dark-mode .bar{
+  background-color: #3a3a3a;
+  border:1px solid grey;
+}
+
+.dark-mode .bar a{
+  background-color: #444;
+  color: #d9ed92 !important;
 }
 
 .dark-mode nav li a {
