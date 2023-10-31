@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Projects</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dark-mode.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">The Checklist</a></h1>
+    </header>
+    <nav>
+      <!-- may use this thing later -->
+      <!-- <ul>
+      <li><a href="checklist1.html">Checklist 1</a></li>
+      <li><a href="checklist2.html">Checklist 2</a></li>
+    </ul> -->
+      <!-- Add more checklists here -->
+
+      <!-- dark mode elements -->
+      <button class="dark-mode-toggle">
+        <i class="sun-icon"></i>
+        <i class="moon-icon"></i>
+      </button>
+    </nav>
+    <main>
+      <section class="checklist">
+        <h2>Frontend Projects</h2>
+
+        <ul>
+          <li class="checklist-item">
+            <div class="section">
+              <div class="section-box">
+                <label class="section-box-label">
+                  <input
+                    type="checkbox"
+                    class="checkbox"
+                    data-checklist="cpp-basics"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="section-title">
+                <label class="section-title-label">
+                  Weather App
+                  <span class="dropdown-arrow"></span>
+                </label>
+              </div>
+            </div>
+            <div class="hidden-text">
+              <!-- Hidden content for the drop-down menu -->
+              The Weather App is a simple and user-friendly web application
+              designed to provide up-to-date weather information for users.
+              Developed using HTML, CSS, and JavaScript, this app allows users
+              to access current weather data for a location of their choice.
+              <br />
+              <span style="text-align: left"
+                ><strong>Techstack Used:</strong></span
+              > HTML,CSS & JS
+              <br />
+              <span style="text-align: left"
+                ><strong>Deployed Link:</strong></span
+              >
+              <a
+                style="text-align: left"
+                href="http://weather-app-nine-dusky.vercel.app/"
+                target="_blank"
+                >Weather Application</a
+              >
+              <br />
+              <span style="text-align: left"
+                ><strong>Github Repo:</strong></span
+              >
+              <a
+                style="text-align: left"
+                href="https://github.com/Vanraj8169/Weather-App"
+                target="_blank"
+                >Github Repo</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+  </body>
+</html>
