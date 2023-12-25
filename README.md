@@ -57,6 +57,11 @@ Checklist is open-source and available under the [MIT License](LICENSE).
   <img src="https://contrib.rocks/image?repo=UjjwalSharma01/checklist" />
 </a>
 
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=UjjwalSharma01/checklist&type=Timeline)](https://star-history.com/#UjjwalSharma01/checklist&Timeline)
+
+
 ---
 
 We hope Checklist helps you in your tech learning journey! If you have any questions or suggestions, feel free to reach out to us.
