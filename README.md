@@ -65,3 +65,9 @@ Checklist is open-source and available under the [MIT License](LICENSE).
 ---
 
 We hope Checklist helps you in your tech learning journey! If you have any questions or suggestions, feel free to reach out to us.
+
+<div align="right">
+<table><td>
+<a href="#start-of-content">👆 Scroll to top</a>
+</td></table>
+</div>
