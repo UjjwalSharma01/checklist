@@ -1,5 +1,5 @@
 # Checklist
-<img src="Images/hacktoberfest2023.png">
+
 Checklist is a website designed for engineering students and tech enthusiasts. We provide concise and easy-to-understand notes on various tech concepts, making it ideal for last-minute revisions, interview preparations, and exam studies.
 
 ### Prerequisites
@@ -15,13 +15,13 @@ To run **checklist** locally, run this command on your git bash:
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/UjjwalSharma01/checklist.git
+sudo git clone https://github.com/<your username>/checklist.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/UjjwalSharma01/checklist.git
+git clone https://github.com/<your username>/checklist.git
 ```
 
 ## Features
