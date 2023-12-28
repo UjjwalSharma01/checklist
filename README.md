@@ -2,6 +2,12 @@
 
 Checklist is a website designed for engineering students and tech enthusiasts. We provide concise and easy-to-understand notes on various tech concepts, making it ideal for last-minute revisions, interview preparations, and exam studies.
 
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![GitHub Stars](https://img.shields.io/github/stars/UjjwalSharma01/checklist)](https://github.com/UjjwalSharma01/checklist/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/UjjwalSharma01/checklist)](https://github.com/UjjwalSharma01/checklist/network/members)
+[![GitHub Issues](https://img.shields.io/github/issues/UjjwalSharma01/checklist)](https://github.com/UjjwalSharma01/checklist/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/UjjwalSharma01/checklist)](https://github.com/UjjwalSharma01/checklist/pulls)
+
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
@@ -10,18 +16,18 @@ Before you begin, ensure you have met the following requirements:
 
 ### Run Locally
 
-To run **checklist** locally, run this command on your git bash:
+To run the website **checklist** locally in your system, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/<your username>/checklist
+sudo git clone https://github.com/UjjwalSharma01/checklist
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/<your username>/checklist
+git clone https://github.com/UjjwalSharma01/checklist
 ```
 
 ## Features
