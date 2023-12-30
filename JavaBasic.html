@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="dark-mode.css">
   <link rel="stylesheet" href="code-snippet.css"> <!-- Add the code snippet CSS file -->
 </head>
+
 <body>
   <header>
     <h1><a href="index.html">The Checklist</a></h1>
@@ -41,7 +43,8 @@
           </div>
           <div class="hidden-text code-snippet" data-example="1">
             <p>
-              Java is a versatile and widely used programming language known for its portability and ease of use. It's widely used for developing web and mobile applications, enterprise software, and more.
+              Java is a versatile and widely used programming language known for its portability and ease of use. It's
+              widely used for developing web and mobile applications, enterprise software, and more.
             </p>
             <pre class="code-block">
 public class HelloWorld {
@@ -71,7 +74,8 @@ public class HelloWorld {
           </div>
           <div class="hidden-text code-snippet" data-example="2">
             <p>
-              Variables in Java store data, while data types define the kind of data a variable can hold. Common data types include int, double, and String, among others.
+              Variables in Java store data, while data types define the kind of data a variable can hold. Common data
+              types include int, double, and String, among others.
             </p>
             <pre class="code-block">
 int age = 30;
@@ -100,7 +104,8 @@ String name = "Amit Aryan";
           </div>
           <div class="hidden-text code-snippet" data-example="3">
             <p>
-              Operators in Java perform various operations, including arithmetic, comparison, and logical operations. These are essential for manipulating data and making decisions in your programs.
+              Operators in Java perform various operations, including arithmetic, comparison, and logical operations.
+              These are essential for manipulating data and making decisions in your programs.
             </p>
             <pre class="code-block">
 int a = 10;
@@ -129,7 +134,8 @@ int result = a + b; // result will be 15
           </div>
           <div class="hidden-text code-snippet" data-example="4">
             <p>
-              Control structures like if-else, switch, and loops (for, while, do-while) help in controlling the flow of your Java programs, allowing you to make decisions and repeat actions as needed.
+              Control structures like if-else, switch, and loops (for, while, do-while) help in controlling the flow of
+              your Java programs, allowing you to make decisions and repeat actions as needed.
             </p>
             <pre class="code-block">
 if (condition) {
@@ -160,7 +166,8 @@ if (condition) {
           </div>
           <div class="hidden-text code-snippet" data-example="5">
             <p>
-              Functions (methods) are reusable blocks of code that perform specific tasks. They improve code organization and make it easier to maintain and understand.
+              Functions (methods) are reusable blocks of code that perform specific tasks. They improve code
+              organization and make it easier to maintain and understand.
             </p>
             <pre class="code-block">
 public int add(int a, int b) {
@@ -189,7 +196,8 @@ public int add(int a, int b) {
           </div>
           <div class="hidden-text code-snippet" data-example="6">
             <p>
-              Arrays are used to store multiple values of the same type in Java. They are fundamental for working with collections of data.
+              Arrays are used to store multiple values of the same type in Java. They are fundamental for working with
+              collections of data.
             </p>
             <pre class="code-block">
 int[] numbers = {1, 2, 3, 4, 5};
@@ -216,7 +224,8 @@ int[] numbers = {1, 2, 3, 4, 5};
           </div>
           <div class="hidden-text code-snippet" data-example="7">
             <p>
-              Object-Oriented Programming (OOP) is a paradigm in Java that focuses on creating objects and classes. This concept helps in organizing and modeling real-world entities.
+              Object-Oriented Programming (OOP) is a paradigm in Java that focuses on creating objects and classes. This
+              concept helps in organizing and modeling real-world entities.
             </p>
             <pre class="code-block">
 class Person {
@@ -251,7 +260,8 @@ class Person {
           </div>
           <div class="hidden-text code-snippet" data-example="8">
             <p>
-              Inheritance allows one class (subclass or derived class) to inherit attributes and methods from another class (superclass or base class). It facilitates code reuse and extensibility.
+              Inheritance allows one class (subclass or derived class) to inherit attributes and methods from another
+              class (superclass or base class). It facilitates code reuse and extensibility.
             </p>
             <pre class="code-block">
 class Vehicle {
@@ -293,7 +303,8 @@ class Car extends Vehicle {
           </div>
           <div class="hidden-text code-snippet" data-example="9">
             <p>
-              Polymorphism enables objects of different classes to be treated as objects of a common superclass. This promotes flexibility and dynamic method invocation in Java programs.
+              Polymorphism enables objects of different classes to be treated as objects of a common superclass. This
+              promotes flexibility and dynamic method invocation in Java programs.
             </p>
             <pre class="code-block">
 class Animal {
@@ -316,6 +327,107 @@ class Cat extends Animal {
             <button class="copy-button" onclick="copyToClipboard(9)">Copy</button>
           </div>
         </li>
+        <!-- Example-10:exception handeling in java -->
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Exception Handeing in Java
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text code-snippet" data-example="9">
+            <p>
+              Sometimes, while executing programs, we get errors that influence the normal working of the program. Such
+              errors are called exceptions and the method used to deal with these exceptions is known as exception
+              handling.
+            <p>
+            <h2>Exception -Handeling types and their code-snippet </h2>
+            <pre class="code-block">
+                      //1.************ try..catch************
+                      public class TryCatch {
+                        public static void main(String[] args) {
+                            try {
+                                int result = 36/0;
+                            } catch(ArithmeticException e) {
+                                System.out.println("Error: " + e.getMessage());
+                            }
+                        }
+                    }
+        
+                    //2.*******Multiple catchpublic class MultipleCatch********
+                      public static void main(String[] args) {
+                          try {
+                              int result = 36/0;
+                          } catch(NullPointerException e1) {
+                              System.out.println("Error: " + e1.getMessage());
+                          } catch(ArithmeticException e2) {
+                              System.out.println("Error: " + e2.getMessage());
+                          }
+                      }
+        
+                   //3.********try... finally***********
+                    public class TryFinally {
+                      public static void main(String[] args) {
+                        try {
+                            int result = 36/0;
+                        } finally {
+                            int result = 36/6;
+                            System.out.println("Finally block result:" + result);
+                        }
+                    }
+                }
+        
+                   //4.********try.....catch....finally*********
+                     public class TryCatchFinally {
+                       public static void main(String[] args) {
+                        try {
+                            int result = 36/0;
+                        } catch(ArithmeticException e) {
+                            System.out.println("Error: " + e.getMessage());
+                        } finally {
+                            int result = 36/6;
+                            System.out.println("Finally block result:" + result);
+                        }
+                    }
+                }
+        
+                  //5.********throws***********
+                    public class Throws {
+                     public static void example() throws ArithmeticException {
+                        int result = 36/0;
+                    }
+                    public static void main(String[] args) {
+                        try {
+                            example();
+                        } catch (ArithmeticException e) {
+                            System.out.println(e);
+                        }
+                    }
+                }
+                  
+                //6.********throw**********
+                   public class Throw {
+                    public static void example() {
+                        throw new ArithmeticException("divide by 0");
+                      }
+                      public static void main(String[] args) {
+                        example();
+                      }
+                }
+                      
+        
+        </pre>
+            <button class="copy-button" onclick="copyToClipboard(9)">Copy</button>
+          </div>
+        </li>
       </ul>
     </section>
   </main>
@@ -323,4 +435,5 @@ class Cat extends Animal {
   <script src="dark-mode.js"></script>
   <script src="code-snippet.js"></script> <!-- Add the code snippet JavaScript file -->
 </body>
+
 </html>
