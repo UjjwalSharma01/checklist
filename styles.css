@@ -918,3 +918,135 @@ checkbox and section title are now separate */
     }
 
 }
+
+/* CSS For Footer style */
+.footer-panel1 {
+  background-color: #37475a;
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+.footer-panel2 {
+  background-color: #222f3d;
+  color: white;
+  justify-content: space-around;
+  display: flex;
+  padding: 50px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.navFooterlinkCol1 {
+  display: table-cell;
+  padding: 0 10px;
+  vertical-align: top;
+  color: #333;
+}
+
+.footerlinkcol {
+
+  font-weight: 700;
+  color: #FFF;
+  white-space: nowrap;
+}
+
+.navFooterlinkCol ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.navFooterlinkCol ul li {
+  list-style-type: none;
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+
+.navFooterlinkCol ul li a {
+  color: #DDD;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+}
+
+.navFooterlinkCol ul li a:hover {
+  text-decoration: underline;
+}
+.footer-panel1 > a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-panel3 {
+  background-color: #222f3d;
+  color: #DDDDDD;
+  border-top: 0.5px solid white;
+
+}
+
+.logo {
+  background-image: url(amazon_logo.png);
+  background-size: cover;
+  margin:auto;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.countries ul{
+  text-align: center;
+}
+.countries ul li{
+  display: inline-block;
+  list-style-type: none;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-size-adjust: 100%;
+  text-wrap: wrap;
+  white-space-collapse: collapse;
+}
+
+.countries ul li a{
+  color: #DDD;
+  text-decoration: none;
+  font-family: inherit;
+  
+}
+
+.countries ul li a:hover {
+  text-decoration: underline;
+}
+.footer-panel4 {
+  background-color: #0F1111;
+  color: white;
+  height: 80px;
+  font-size: 0.90rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyright {
+  color: #DDD
+}
+
+@media(max-width:762px) {
+  .footer-panel2 {
+      justify-content: space-between;
+      gap: 20px;
+  }
+}
+
+@media(max-width:380px) {
+  .footer-panel2 {
+      text-align: center;
+      justify-content: center;
+      gap: 20px;
+  }
+}
