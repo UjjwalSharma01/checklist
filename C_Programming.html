@@ -1568,7 +1568,134 @@ return result;
                             carefully to avoid memory leaks and other errors.</p>
                 </li>
 
-                
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                5.6 Practice Problem
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Question 1 : </p>
+                        <p>Write a C program to input n elements in array and find frequency of each</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+                                int n,x,y,c;
+                                printf("Enter array size\n");
+                                scanf("%d",&n);
+                                int a[n];
+                                for(x=0; x < n;x++)
+                                {
+                                    printf("Enter array elements: ");
+                                    scanf("%d",&a[x]);
+                                }
+                                for(x=0;x< n-1;x++)
+                                {
+                                    c=1;
+                                    for(y=x+1;y < n;y++)
+                                    {
+                                        if(a[x]==a[y])
+                                        {
+                                            a[y]=-1;
+                                            c++;
+                                        }
+                                    }
+                                    if(a[x]!=-1)
+                                    printf("Frequency of %d is: %d\n",a[x],c);
+                                }
+                                if(a[n-1]!=-1)
+                                    printf("Frequency of %d is: %d\n",a[n-1],c);
+                            }
+                        </pre>
+                        <p>Question 2 : </p>
+                        <p>Write a C program to input n elements in array and delete duplicates</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+                                int n,x,y,p=0;
+                                printf("Enter array size\n");
+                                scanf("%d",&n);
+                                int a[n],b[n];
+                                for(x=0;x< n;x++)
+                                {
+                                    printf("Enter array elements: ");
+                                    scanf("%d",&a[x]);
+                                }
+                                for(x=0;x< n-1;x++)
+                                {
+                                    for(y=x+1;y< n;y++)
+                                    {
+                                        if(a[x]==a[y])
+                                        {
+                                            a[y]=-1;
+                                        }
+                                    }
+                                    if(a[x]!=-1)
+                                        b[p++]=a[x];
+                                }
+                                if(a[n-1]!=-1)
+                                    b[p++]=a[n-1];
+                                printf("Array without duplicates is : \n");
+                                for(x=0;x< p;x++)
+                                {
+                                    printf("%d ",b[x]);
+                                }  
+                                printf("\n");
+                            }
+                        </pre>
+                        <p>Question 3 : </p>
+                        <p>Write a C program to merge 2 arrays using dynamic memory allocation</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            int main()
+                            {
+                                int n1, n2, i;
+                                int *arr1, *arr2, *arr3;
+                            
+                                printf("Enter size of first array: ");
+                                scanf("%d", &n1);
+                                arr1 = (int*) malloc(n1 * sizeof(int));
+                                printf("Enter elements of first array: ");
+                                for(i=0; i< n1; i++)
+                                    scanf("%d", arr1+i);
+                            
+                                printf("\nEnter size of second array: ");
+                                scanf("%d", &n2);
+                                arr2 = (int*) malloc(n2 * sizeof(int));
+                                printf("Enter elements of second array: ");
+                                for(i=0; i< n2; i++)
+                                    scanf("%d", arr2+i);
+                            
+                                arr3 = (int*) malloc((n1+n2) * sizeof(int));
+                            
+                                for(i=0; i< n1; i++)
+                                    *(arr3+i) = *(arr1+i);
+                            
+                                for(i=0; i< n2; i++)
+                                    *(arr3+n1+i) = *(arr2+i);
+                            
+                                printf("\nMerged array is :");
+                                for(i=0; i< n1+n2; i++)
+                                    printf("%d ", *(arr3+i));
+                                printf("\n");
+                                return 0;
+                            }
+                        </pre>
+                </li>
 
                 <h3>Chapter 6: Structures and Unions</h3>
                 <li class="checklist-item">
