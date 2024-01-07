@@ -441,6 +441,48 @@
                             spaces and tabs to indent your code, and you can use line breaks to separate different
                             sections of code.</p>
                 </li>
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                2.6 Practice Problem
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Question : </p>
+                        <p>Write a C program to swap 2 numbers without using third variable</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                                void main()
+                                {
+                                    int a,b;
+                                    printf("Enter two numbers \n");
+                                    scanf("%d%d",&a,&b);
+                                    printf("Value of a before swapping is : %d\n",a);
+                                    printf("Value of b before swapping is : %d\n",b);
+                                    a=a+b;
+                                    b=a-b;
+                                    a=a-b;
+                                    printf("\nValue of a after swapping is : %d\n",a);
+                                    printf("Value of b after swapping is : %d\n",b);
+                                }
+                        </pre>
+                </li>
+
+
+
                 <br>
                 <h3>Chapter 3: Control Structures</h3>
                 <li class="checklist-item">
@@ -703,6 +745,98 @@
                             y = x > 10 ? x : 0;
                         </pre>
                 </li>
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                3.6 Practice Problem
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Question 1 : </p>
+                        <p>Write a C program to check a number is odd or even </p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            int main()
+                            {
+                                int num;
+                                printf("Enter a number : ");
+                                scanf("%d",&num);
+                                if(num%2==0)
+                                    printf("Number is even \n");
+                                else 
+                                    printf("Number is odd \n");
+                                return 0;	
+                            }
+                        </pre>
+                        <p>Question 2 : </p>
+                        <p>Write a C program to find sum of series : 1+2+3....N</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+	                                int i,N,sum=0;
+	                                printf("Enter the value of N\n");
+	                                scanf("%d",&N);
+	                                for(i=1;i<=N;i++)
+	                                {
+	                                	sum=sum+i;
+	                                }
+	                                printf("Sum from 1 to %d is: %d\n",N,sum);
+                            }
+                        </pre>
+                        <p>Question 3 : </p>
+                        <p>Write a C program to find factorial of a number</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+	                            int n,i,f=1;
+	                            printf("Enter a number\n");
+	                            scanf("%d",&n);
+	                            for(i=1;i<=n;i++)
+	                            {
+		                            f=f*i;
+	                            }
+	                            if(n < 0)
+		                            printf("Factorial does not exist for negative number\n");
+	                            else
+		                            printf("Factorial is %d\n",f);
+                            }
+                        </pre>
+                        <p>Question 4 : </p>
+                        <p>Write a C program to find sum of digits of a number</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+	                            int n,d,sum=0,copy;
+	                            printf("Enter a number\n");
+	                            scanf("%d",&n);
+	                            copy=n;
+	                            while(copy!=0)
+	                            {
+		                            d=copy%10;
+		                            sum=sum+d;
+		                            copy/=10;
+	                            }
+	                            printf("Sum of digits is : %d\n",sum);
+                            }
+                        </pre>
+                </li>
+
                 <br>
                 <h3>Chapter 4: Functions</h3>
                 <li class="checklist-item">
@@ -961,6 +1095,132 @@ return result;
                             }
                         </pre>
                 </li>
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="web-app">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                        <!-- section start  -->
+
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                4.6 Practice Problem
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text">
+                        <p>Question 1 : </p>
+                        <p>Write a C program to implement fibonacci series</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                        void main()
+                        {
+                            int num;
+                            printf("Enter range\n");
+                            scanf("%d",&num);
+                            printf("Fibonacci series upto %d is :\n",num);
+                            fibo(num);
+                            printf("\n");
+                        }
+                        void fibo(int a)
+                        {
+                            int f=0,f1=1,f2=0,i;
+                            printf("%d %d ",f,f1);
+                            for(i=2;i < a ;i++)
+                            {
+                                f2 = f+f1;
+                                printf(" %d ",f2);
+                                f=f1;
+                                f1=f2;
+                            }
+                        }
+                        </pre>
+                        <p>Question 2 : </p>
+                        <p>Write a C program to find GCD & LCD using recursion</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+                                int num1,num2,gc,lc;
+                                printf("Enter two numbers\n");
+                                scanf("%d%d",&num1,&num2);
+                                gc=gcd(num1,num2);
+                                lc=lcm(num1,num2);
+                                printf("GCD of %d and %d is : %d",num1,num2,gc);
+                                printf("\nLCM of %d and %d is : %d\n",num1,num2,lc);
+                            }
+                            int lcm(int c, int d) 
+                            {
+                                static int temp = 1;    
+                                if(temp%c==0 && temp%d==0)
+                                {
+                                    return temp;
+                                }
+                                else
+                                {
+                                    temp++;
+                                    lcm(c,d);
+                                    return temp;
+                                }
+                            }
+                            int gcd(int a,int b)
+                            {
+                                if (b == 0)
+                                    return a;
+                                else
+                                    return gcd(b, a % b);
+                            }
+                        </pre>
+                        <p>Question 3 : </p>
+                        <p>Write a C program to find factorial of a number using recursion</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            void main()
+                            {
+                                int num,fa;
+                                printf("Enter a number\n");
+                                scanf("%d",&num);
+                                fa=fact(num);
+                                printf("Factorial of %d is : %d\n",num,fa);   
+                            }
+                            int fact(int n)
+                            {
+                                if(n==1)
+                                    return 1;
+                                else 
+                                    return n*fact(n-1);
+                            }
+                        </pre>
+                        <p>Question 4 : </p>
+                        <p>Write a C program to find : 1/1! + 1/2! +1/3!....+1/N!</p><br>
+                        <p>Solution : </p>
+                        <pre class="code-block">
+                            double sum_of_series(int n) {
+                                double sum = 0;
+                                double fact = 1;
+                                for (int i = 1; i <= n; i++) {
+                                    fact *= i;
+                                    sum += 1 / fact;
+                                }
+                                return sum;
+                            }
+                            
+                            int main() {
+                                int n;
+                                printf("Enter the value of n: \n");
+                                scanf("%d", &n);
+                                printf("Sum of the series is %lf\n", sum_of_series(n));
+                                return 0;
+                            }
+                        </pre>
+                </li>
+
                 <h3>Chapter 5: Arrays and Pointers</h3>
                 <li class="checklist-item">
                     <div class="section">
@@ -1307,6 +1567,9 @@ return result;
                             efficiency of C programs. However, it is important to use dynamic memory allocation
                             carefully to avoid memory leaks and other errors.</p>
                 </li>
+
+                
+
                 <h3>Chapter 6: Structures and Unions</h3>
                 <li class="checklist-item">
                     <div class="section">
@@ -1336,7 +1599,7 @@ return result;
                             (file length, name, extension, physical address, etc.), or other mixed-type records (name,
                             address, telephone, balance, etc.).</p>
                         <p>Here is an example of how to define and use structures in C:</p>
-                        <pre class="code-block">                           
+                        <pre class="code-block">
                             // Define a structure 
                             struct employee { 
                                 int id;
@@ -1448,7 +1711,7 @@ return result;
                             bytes. Since we know that the value of d is always from 1 to 31, value of m is from 1 … 12,
                             and value of y is from 1900 to 2099, we can use bit fields to reduce the memory usage.</p>
                         <p>The following code shows how to use bit fields to represent the 'date' structure:</p>
-                        <pre class="code-block">                           
+                        <pre class="code-block">
                             #include <stdio.h>
                                 // A simple representation of date using bit fields 
                                 struct date
@@ -1500,7 +1763,7 @@ return result;
                             the address of a structure variable.</p>
                         <p>To declare a structure, you use the struct keyword, followed by the name of the structure,
                             and then a list of members. For example:</p>
-                        <pre class="code-block">                           
+                        <pre class="code-block">
                             struct student { char name[20];
                                 int age;
                                 float grade;
@@ -1508,7 +1771,7 @@ return result;
                         </pre>
                         <p>To create a structure variable, you use the struct keyword, followed by the name of the
                             structure, and then a list of values for the members. For example:</p>
-                        <pre class="code-block">                            
+                        <pre class="code-block">
                             struct student student1 = {
                                 "John Doe",
                                 20,
@@ -1554,7 +1817,7 @@ return result;
                             real-world objects and relationships.</p>
                         <p>To define a nested structure, you can simply define one structure inside another structure.
                             For example:</p>
-                        <pre class="code-block">                         
+                        <pre class="code-block">
                             struct employee { 
                                 int employee_id; 
                                 char *name;
@@ -1569,7 +1832,7 @@ return result;
                         <p>In this example, the organization structure contains a member of type employee. This means
                             that an organization structure can contain an employee structure.</p>
                         <p>To access members of a nested structure, you use the dot operator (.). For example:</p>
-                        <pre class="code-block">                      
+                        <pre class="code-block">
                             struct organization organization; 
                             struct employee employee;
 
@@ -1584,7 +1847,7 @@ return result;
                             structure to represent a company, with the organization structure representing the company
                             and the employee structure representing an employee.</p>
                         <p>Here is an example of how you could use a nested structure to represent a company:</p>
-                        <pre class="code-block">                         
+                        <pre class="code-block">
                             struct company {
                                 char *company_name;
                                 int company_number; 
@@ -1601,7 +1864,7 @@ return result;
                             an array of employee structures.</p>
                         <p>To access the members of an array of nested structures, you can use the [] operator. For
                             example:</p>
-                        <pre class="code-block">                           
+                        <pre class="code-block">
                             struct company company; 
                             struct employee employee;
 
