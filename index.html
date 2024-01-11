@@ -1,99 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Checklist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="dark-mode.css" />
-    <!-- Add the dark mode CSS file -->
-  </head>
-  <body>
-    <!-- dark mode, feature - added here because I was finding it difficult to search it in the entire codebase -->
-    <button class="dark-mode-toggle">
-      <i class="fas fa-sun"></i>
-      <i class="fas fa-moon"></i>
-    </button>
 
-    <!-- Loading Animation -->
-    <div class="loading-overlay">
-      <div class="loading-spinner"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Checklist</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <!-- Add the dark mode CSS file -->
+</head>
+
+<body>
+  <!-- dark mode, feature - added here because I was finding it difficult to search it in the entire codebase -->
+  <button class="dark-mode-toggle">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Loading Animation -->
+  <div class="loading-overlay">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <nav>
+    <header>
+      <h1><a href="index.html" class="clicked-glow">The Checklist</a></h1>
+    </header>
+    <ul class="contact-contribute">
+      <li>
+        <a href="contact.html" class="clicked-glow contact">Contact Us</a>
+      </li>
+      <li>
+        <a href="Contribute.html" class="clicked-glow contribute">Contribute</a>
+      </li>
+    </ul>
+    <i class="fa-solid fa-bars toggle-button"></i>
+    <div class="hamburger">
+      <div class="bar"><a href="contact.html" class="clicked-glow contact">Contact Us</a></div>
+      <div class="bar"><a href="Contribute.html" class="clicked-glow contribute">Contribute</a></div>
     </div>
-
-    <nav>
-      <header>
-        <h1><a href="index.html" class="clicked-glow">The Checklist</a></h1>
-      </header>
-      <ul class="contact-contribute">
-        <li>
-          <a href="contact.html" class="clicked-glow contact">Contact Us</a>
-        </li>
-        <li>
-          <a href="Contribute.html" class="clicked-glow contribute">Contribute</a>
-        </li>
-      </ul>
-      <i class="fa-solid fa-bars toggle-button"></i>
-      <div class="hamburger">
-        <div class="bar"><a href="contact.html" class="clicked-glow contact">Contact Us</a></div>
-        <div class="bar"><a href="Contribute.html" class="clicked-glow contribute">Contribute</a></div>
-      </div>
-    </nav>
-    <main>
-      <section class="quote">
-        <blockquote id="quoteContent">
-          "The only limit to our realization of tomorrow will be our doubts of
-          today."
-        </blockquote>
-        <cite id="quoteTitle">— Franklin D. Roosevelt</cite>
-      </section>
-      <section class="checklists">
-        <div>
-          <a href="C_Programming.html" class="clicked-glow">C Programming</a>
-        </div>
-        <div>
-          <a href="C++_Basics.html" class="clicked-glow">C++ Basics</a>
-        </div>
-        <div>
-          <a href="python_Basics.html" class="clicked-glow">Python Basics</a>
-        </div>
-        <div>
-          <a href="OOP.html" class="clicked-glow">Object Oriented Programming (OOP)</a>
-        </div>
-        <div>
-          <a href="STL.html" class="clicked-glow"
-            >Standard Template Library (STL)</a
-          >
-        </div>
-        <div>
-          <a href="WebApp.html" class="clicked-glow"
-            >Web Application Fundamentals</a
-          >
-        </div>
-        <div>
-          <a href="algorithm.html" class="clicked-glow"
-            >Algorithm Design Techniques</a
-          >
-        </div>
-        <div>
-          <a href="JavaBasic.html" class="clicked-glow">Java Basics</a>
-        </div>
-        <div>
-        <a href="linux.html" class="clicked-glow">Linux Basics</a>
+  </nav>
+  <main>
+    <section class="quote">
+      <blockquote id="quoteContent">
+        "The only limit to our realization of tomorrow will be our doubts of
+        today."
+      </blockquote>
+      <cite id="quoteTitle">— Franklin D. Roosevelt</cite>
+    </section>
+    <section class="checklists">
+      <div>
+        <a href="C_Programming.html" class="clicked-glow"><img src="./Logo/C_Logo.png">C Programming</a>
       </div>
       <div>
-        <a href="golang.html" class="clicked-glow">Golang Basics</a>
+        <a href="C++_Basics.html" class="clicked-glow"><img src="./Logo/c--logo-icon-0.png">C++ Basics</a>
       </div>
       <div>
-        <a href="frontendProjects.html" class="clicked-glow">Frontend Projects</a>
+        <a href="python_Basics.html" class="clicked-glow"><img src="./Logo/pngegg.png">Python Basics</a>
+      </div>
+      <div>
+        <a href="OOP.html" class="clicked-glow"><img src="./Logo/1200px-OOP.svg.png" style="border-radius: 100%;">Object Oriented Programming
+          (OOP)</a>
+      </div>
+      <div>
+        <a href="STL.html" class="clicked-glow"><img src="./Logo/1lOZAtF1V7j9TeKjwbiv6UQ.jpg">Standard Template Library
+          (STL)</a>
+      </div>
+      <div>
+        <a href="WebApp.html" class="clicked-glow"><img src="./Logo/pngwing.com (1).png">Web Application
+          Fundamentals</a>
+      </div>
+      <div>
+        <a href="algorithm.html" class="clicked-glow"><img src="./Logo/design_algorithm_method_model_pr.png">Algorithm
+          Design Techniques</a>
+      </div>
+      <div>
+        <a href="JavaBasic.html" class="clicked-glow"><img src="./Logo/731_java.png" style="border-radius: 100%;">Java Basics</a>
+      </div>
+      <div>
+        <a href="linux.html" class="clicked-glow"><img src="./Logo/linux_PNG1.png">Linux Basics</a>
+      </div>
+      <div>
+        <a href="golang.html" class="clicked-glow"><img src="./Logo/png-clipart-go-computer-programm.png" style="border-radius: 100%;">Golang
+          Basics</a>
+      </div>
+      <div>
+        <a href="frontendProjects.html" class="clicked-glow"><img src="./Logo/pngwing.com (2).png">Frontend Projects</a>
       </div>
     </section>
   </main>
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer>
     <div class="footer-panel1">
       <a href=""> Back to top</a>
@@ -120,17 +118,17 @@
       <div class="navFooterlinkCol">
         <div class="footerlinkcol">Learn Subjects with Us</div>
         <ul>
-          <li  class="footlink-li"><a href="C_Programming.html">C Programming</a></li>
-          <li  class="footlink-li"><a href="C++_Basics.html">C++ Basics</a></li>
-          <li  class="footlink-li"><a href="python_Basics.html">Python Basics</a></li>
-          <li  class="footlink-li"><a href="OOP.html">Object Oriented Programming</a></li>
-          <li  class="footlink-li"><a href="STL.html">Standard Template Library</a></li>
-          <li  class="footlink-li"><a href="WebApp.html">Web Application Fundamentals</a></li>
-          <li  class="footlink-li"><a href="algorithm.html">Algorithm Design Techniques</a></li>
-          <li  class="footlink-li"><a href="JavaBasic.html">Java Basics</a></li>
-          <li  class="footlink-li"><a href="linux.html">Linux Basics</a></li>
-          <li  class="footlink-li"><a href="golang.html">Golang Basics</a></li>
-          <li  class="footlink-li"><a href="frontendProjects.html">Frontend Projects</a></li>
+          <li class="footlink-li"><a href="C_Programming.html">C Programming</a></li>
+          <li class="footlink-li"><a href="C++_Basics.html">C++ Basics</a></li>
+          <li class="footlink-li"><a href="python_Basics.html">Python Basics</a></li>
+          <li class="footlink-li"><a href="OOP.html">Object Oriented Programming</a></li>
+          <li class="footlink-li"><a href="STL.html">Standard Template Library</a></li>
+          <li class="footlink-li"><a href="WebApp.html">Web Application Fundamentals</a></li>
+          <li class="footlink-li"><a href="algorithm.html">Algorithm Design Techniques</a></li>
+          <li class="footlink-li"><a href="JavaBasic.html">Java Basics</a></li>
+          <li class="footlink-li"><a href="linux.html">Linux Basics</a></li>
+          <li class="footlink-li"><a href="golang.html">Golang Basics</a></li>
+          <li class="footlink-li"><a href="frontendProjects.html">Frontend Projects</a></li>
         </ul>
       </div>
     </div>
@@ -151,4 +149,5 @@
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
 </body>
+
 </html>
