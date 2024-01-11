@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java OOPs - The Checklist</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="stylesheet" href="code-snippet.css"> <!-- Add the code snippet CSS file -->
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">The Checklist</a></h1>
+    </header>
+    <nav>
+        <button class="dark-mode-toggle">
+            <i class="sun-icon"></i>
+            <i class="moon-icon"></i>
+        </button>
+    </nav>
+    <main>
+        <section class="checklist">
+            <h2>Java OOPs</h2>
+            <ul>
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Introduction to Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="1">
+                        <p>
+                            Java is a versatile and widely used programming language known for its portability and ease
+                            of use. It's
+                            widely used for developing web and mobile applications, enterprise software, and more.
+                        </p>
+                        <pre class="code-block">
+public class HelloWorld {
+    public static main(String[] args) {
+        System.out.println("Hello, Java!");
+    }}
+</pre>
+                        <button class="copy-button" onclick="copyToClipboard(1)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Object-Oriented Programming (OOP) in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="7">
+                        <p>
+                            Object-Oriented Programming (OOP) is a paradigm in Java that focuses on creating objects and
+                            classes. This
+                            concept helps in organizing and modeling real-world entities.
+                        </p>
+                        <pre class="code-block">
+  class Person {
+      String name;
+      int age;
+  
+      public Person(String name, int age) {
+          this.name = name;
+          this.age = age;
+      }
+  }
+  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(7)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Inheritance in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="8">
+                        <p>
+                            Inheritance is a mechanism in Java that allows one class to inherit attributes and methods
+                            from another class.
+                            The subclass (derived class) can reuse and extend the functionality of the superclass (base
+                            class).
+                        </p>
+                        <pre class="code-block">
+                  // Base class
+                  class Animal {
+                      void eat() {
+                          System.out.println("Animal is eating");
+                      }
+                  }
+                  
+                  // Derived class inheriting from Animal
+                  class Dog extends Animal {
+                      void bark() {
+                          System.out.println("Dog is barking");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(8)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Polymorphism in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="9">
+                        <p>
+                            Polymorphism allows objects of different classes to be treated as objects of a common
+                            superclass. It promotes
+                            flexibility and dynamic method invocation in Java programs.
+                        </p>
+                        <pre class="code-block">
+                  // Base class
+                  class Animal {
+                      void makeSound() {
+                          System.out.println("Animal makes a sound");
+                      }
+                  }
+                  
+                  // Derived classes
+                  class Dog extends Animal {
+                      void makeSound() {
+                          System.out.println("Dog barks");
+                      }
+                  }
+                  
+                  class Cat extends Animal {
+                      void makeSound() {
+                          System.out.println("Cat meows");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(9)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Exception Handeing in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="9">
+                        <p>
+                            Sometimes, while executing programs, we get errors that influence the normal working of the
+                            program. Such
+                            errors are called exceptions and the method used to deal with these exceptions is known as
+                            exception
+                            handling.
+                        <p>
+                        <h2>Exception -Handeling types and their code-snippet </h2>
+                        <pre class="code-block">
+                        //1.************ try..catch************
+                        public class TryCatch {
+                          public static void main(String[] args) {
+                              try {
+                                  int result = 36/0;
+                              } catch(ArithmeticException e) {
+                                  System.out.println("Error: " + e.getMessage());
+                              }
+                          }
+                      }
+          
+                      //2.*******Multiple catchpublic class MultipleCatch********
+                        public static void main(String[] args) {
+                            try {
+                                int result = 36/0;
+                            } catch(NullPointerException e1) {
+                                System.out.println("Error: " + e1.getMessage());
+                            } catch(ArithmeticException e2) {
+                                System.out.println("Error: " + e2.getMessage());
+                            }
+                        }
+          
+                     //3.********try... finally***********
+                      public class TryFinally {
+                        public static void main(String[] args) {
+                          try {
+                              int result = 36/0;
+                          } finally {
+                              int result = 36/6;
+                              System.out.println("Finally block result:" + result);
+                          }
+                      }
+                  }
+          
+                     //4.********try.....catch....finally*********
+                       public class TryCatchFinally {
+                         public static void main(String[] args) {
+                          try {
+                              int result = 36/0;
+                          } catch(ArithmeticException e) {
+                              System.out.println("Error: " + e.getMessage());
+                          } finally {
+                              int result = 36/6;
+                              System.out.println("Finally block result:" + result);
+                          }
+                      }
+                  }
+          
+                    //5.********throws***********
+                      public class Throws {
+                       public static void example() throws ArithmeticException {
+                          int result = 36/0;
+                      }
+                      public static void main(String[] args) {
+                          try {
+                              example();
+                          } catch (ArithmeticException e) {
+                              System.out.println(e);
+                          }
+                      }
+                  }
+                    
+                  //6.********throw**********
+                     public class Throw {
+                      public static void example() {
+                          throw new ArithmeticException("divide by 0");
+                        }
+                        public static void main(String[] args) {
+                          example();
+                        }
+                  }
+                        
+          
+          </pre>
+                        <button class="copy-button" onclick="copyToClipboard(9)">Copy</button>
+                    </div>
+                </li>
+
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Encapsulation in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="6">
+                        <p>
+                            Encapsulation is one of the four fundamental OOP concepts. It involves bundling the data
+                            (attributes) and methods
+                            that operate on the data into a single unit known as a class. Access to the data is
+                            restricted through getter and
+                            setter methods.
+                        </p>
+                        <pre class="code-block">
+                  public class Person {
+                      private String name;
+                      private int age;
+                  
+                      public Person(String name, int age) {
+                          this.name = name;
+                          this.age = age;
+                      }
+                  
+                      // Getter methods
+                      public String getName() {
+                          return name;
+                      }
+                  
+                      public int getAge() {
+                          return age;
+                      }
+                  
+                      // Setter methods
+                      public void setName(String name) {
+                          this.name = name;
+                      }
+                  
+                      public void setAge(int age) {
+                          this.age = age;
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(6)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Abstraction in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="7">
+                        <p>
+                            Abstraction is the process of hiding the implementation details and showing only the
+                            essential features of an
+                            object. In Java, abstraction is achieved through abstract classes and interfaces.
+                        </p>
+                        <pre class="code-block">
+                  // Abstract class
+                  abstract class Shape {
+                      abstract void draw();
+                  }
+                  
+                  // Concrete class implementing the abstract class
+                  class Circle extends Shape {
+                      void draw() {
+                          System.out.println("Drawing a circle");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(7)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Composition in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="10">
+                        <p>
+                            Composition is a design principle in Java where a class contains objects of other classes,
+                            allowing for code
+                            reuse and flexibility. It's an alternative to inheritance and promotes a "has-a"
+                            relationship between classes.
+                        </p>
+                        <pre class="code-block">
+                  // Component class
+                  class Engine {
+                      void start() {
+                          System.out.println("Engine starting...");
+                      }
+                  }
+                  
+                  // Composition using Engine class
+                  class Car {
+                      private Engine engine;
+                  
+                      public Car() {
+                          this.engine = new Engine();
+                      }
+                  
+                      void start() {
+                          engine.start();
+                          System.out.println("Car is ready to go!");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(10)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Interface in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="11">
+                        <p>
+                            An interface in Java is a collection of abstract methods. Classes implement interfaces to
+                            provide specific
+                            implementations for those methods. It helps achieve multiple inheritance and defines a
+                            contract for implementing
+                            classes.
+                        </p>
+                        <pre class="code-block">
+                  // Interface
+                  interface Shape {
+                      void draw();
+                  }
+                  
+                  // Classes implementing the Shape interface
+                  class Circle implements Shape {
+                      public void draw() {
+                          System.out.println("Drawing a circle");
+                      }
+                  }
+                  
+                  class Square implements Shape {
+                      public void draw() {
+                          System.out.println("Drawing a square");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(11)">Copy</button>
+                    </div>
+                </li>
+
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Overriding Methods in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="12">
+                        <p>
+                            Overriding is a feature in Java that allows a subclass to provide a specific implementation
+                            of a method already
+                            defined in its superclass. It is a key aspect of polymorphism and dynamic method dispatch.
+                        </p>
+                        <pre class="code-block">
+                  // Base class
+                  class Animal {
+                      void makeSound() {
+                          System.out.println("Generic animal sound");
+                      }
+                  }
+                  
+                  // Derived class overriding the makeSound method
+                  class Cat extends Animal {
+                      void makeSound() {
+                          System.out.println("Cat meows");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(12)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Abstract Classes in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="13">
+                        <p>
+                            An abstract class in Java is a class that cannot be instantiated and may contain abstract
+                            methods. Abstract
+                            classes are used to provide a common base for related classes and can have both abstract and
+                            concrete methods.
+                        </p>
+                        <pre class="code-block">
+                  // Abstract class
+                  abstract class Shape {
+                      // Abstract method
+                      abstract void draw();
+                  
+                      // Concrete method
+                      void display() {
+                          System.out.println("Displaying the shape");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(13)">Copy</button>
+                    </div>
+                </li>
+
+
+                <!-- ============================================================ -->
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Abstract Classes in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="13">
+                        <p>
+                            An abstract class in Java is a class that cannot be instantiated and may contain abstract
+                            methods. Abstract
+                            classes are used to provide a common base for related classes and can have both abstract and
+                            concrete methods.
+                        </p>
+                        <pre class="code-block">
+                  // Abstract class
+                  abstract class Shape {
+                      // Abstract method
+                      abstract void draw();
+                  
+                      // Concrete method
+                      void display() {
+                          System.out.println("Displaying the shape");
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(13)">Copy</button>
+                    </div>
+                </li>
+
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Enumerations (Enums) in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="15">
+                        <p>
+                            Enums in Java are special data types that define a set of constant values. They are often
+                            used to represent
+                            fixed sets of values such as days of the week, months, or other related constants.
+                        </p>
+                        <pre class="code-block">
+                  // Enum declaration
+                  enum Day {
+                      SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(15)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Interface Inheritance in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="16">
+                        <p>
+                            In Java, interfaces can extend other interfaces, allowing for the creation of a hierarchy of
+                            interfaces. This
+                            enables a class to implement multiple interfaces, promoting flexibility in designing class
+                            contracts.
+                        </p>
+                        <pre class="code-block">
+                  // Base interface
+                  interface Shape {
+                      void draw();
+                  }
+                  
+                  // Extended interface
+                  interface Colorable extends Shape {
+                      void setColor(String color);
+                  }
+                  
+                  // Class implementing interfaces
+                  class ColoredCircle implements Colorable {
+                      private String color;
+                  
+                      public void draw() {
+                          System.out.println("Drawing a colored circle");
+                      }
+                  
+                      public void setColor(String color) {
+                          this.color = color;
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(16)">Copy</button>
+                    </div>
+                </li>
+
+
+                <!-- ============================================================ -->
+
+                <li class="checklist-item">
+                    <div class="section">
+                        <div class="section-box">
+                            <label class="section-box-label">
+                                <input type="checkbox" class="checkbox" data-checklist="java-basics">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="section-title">
+                            <label class="section-title-label">
+                                Nested Classes in Java
+                                <span class="dropdown-arrow"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hidden-text code-snippet" data-example="17">
+                        <p>
+                            In Java, you can define a class inside another class. These are called nested classes. There
+                            are two types of
+                            nested classes: static nested classes and inner classes.
+                        </p>
+                        <pre class="code-block">
+                  // Outer class
+                  class Outer {
+                      private int outerField;
+                  
+                      // Static nested class
+                      static class StaticNested {
+                          void display() {
+                              System.out.println("Static Nested Class");
+                          }
+                      }
+                  
+                      // Inner class
+                      class Inner {
+                          void display() {
+                              System.out.println("Inner Class");
+                          }
+                      }
+                  }
+                  </pre>
+                        <button class="copy-button" onclick="copyToClipboard(17)">Copy</button>
+                    </div>
+                </li>
+
+                <!-- ============================================================ -->
+
+
+
+
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="dark-mode.js"></script>
+    <script src="code-snippet.js"></script> <!-- Add the code snippet JavaScript file -->
+</body>
+
+</html>
