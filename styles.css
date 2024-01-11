@@ -267,7 +267,7 @@ nav li a:hover {
 
 /* Hover Animation for Navigation Links */
 nav li a {
-  transition: background-color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 nav li a:hover {
@@ -275,6 +275,22 @@ nav li a:hover {
   /* Darker background on hover */
   color: #fff;
   /* Text color on hover */
+}
+
+.checklists div{
+  transition: all 0.3s ease-in-out;
+}
+
+.checklists div a{
+  transition: all 0.3s ease-in-out;
+}
+
+.checklists div:hover{
+  transform: scale(0.95);
+}
+
+.checklists div a:hover{
+  color: white;
 }
 
 /* Hover Animation for Checklist Items */
