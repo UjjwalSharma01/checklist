@@ -987,10 +987,6 @@ checkbox and section title are now separate */
   font-size: 0.85rem;
 }
 
-.navFooterlinkCol ul li a:hover {
-  text-decoration: underline;
-}
-
 .footer-panel1>a {
   text-decoration: none;
   color: inherit;
@@ -1068,6 +1064,10 @@ checkbox and section title are now separate */
     padding-left: 7px;
   }
 
+  .checklist li {
+    margin: 0;
+  }
+
   .hidden-text.show {
     width: -webkit-fill-available;
 
@@ -1081,7 +1081,7 @@ checkbox and section title are now separate */
     margin-left: unset;
   }
 
-  
+
 
   .section:hover {
     background: #666;
@@ -1095,4 +1095,15 @@ checkbox and section title are now separate */
     justify-content: center;
     gap: 20px;
   }
+}
+
+.footlink-li {
+  transition: all.2s ease-in-out;
+  color: #c1c1c1;
+  cursor: pointer;
+}
+
+.footlink-li:hover {
+  color: #ffffff;
+  transform: translateX(10px);
 }
