@@ -919,6 +919,7 @@ checkbox and section title are now separate */
   background-color: #444;
 }
 
+
 /* Responsive:Home Page */
 
 @media only screen and (max-width: 600px) {
@@ -928,6 +929,13 @@ checkbox and section title are now separate */
 
   nav li {
     padding-bottom: 10px;
+  }
+
+  .checklists>div>a {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    text-align: start;
   }
 
 }
@@ -1106,4 +1114,30 @@ checkbox and section title are now separate */
 .footlink-li:hover {
   color: #ffffff;
   transform: translateX(10px);
+}
+
+.checklists>div>a {
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.checklists>div>a>img {
+
+  height: 2rem;
+  margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .checklists>div>a {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    text-align: start;
+  }
+
 }
