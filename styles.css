@@ -64,11 +64,16 @@ nav ul {
 nav li {
   display: inline-block;
   /* margin-right: 10px; */
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+nav li:hover {
+  transform: scale(1.05);
 }
 
 nav li a {
   text-decoration: none;
-  color: #333;
   padding: 5px 10px;
   border-radius: 5px;
   background-color: #f0f0f0;
@@ -78,12 +83,14 @@ nav li a {
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
   font-size: 20px;
+  transition: all 0.25s ease-in-out;
 }
 
 nav li a:hover {
-  background-color: #33333340;
-  color: #1D5B79 !important;
+  background-color: #21212140;
+  color: #ffffff !important;
 }
+
 
 .toggle-button {
   font-size: 50px;
@@ -415,23 +422,29 @@ nav li {
   font-size: 30px;
 }
 
+.checklists a{
+  transition: all 0.25s ease-in-out;
+}
 .checklists a:hover {
   /* background-color: #444;
   color: #fff; */
-  background-color: #333333c6 !important;
-  color: #1D5B79 !important;
+  background-color: #1e1e1ec6 !important;
+  color: #ffffff !important;
 }
 
 /* Hover Animation for Checklist Items */
-.checklists li a:hover {
+/* .checklists li a:hover {
   cursor: pointer;
   background-color: #eee;
-  /* Light gray background on hover */
-}
+} */
 
-/* Glow Animation for Clicked Links */
-.checklists .clicked-glow {
-  animation: glow 0.5s ease-in-out;
+/* hover effects for Clicked Links */
+.checklists-div{
+ transition: all 0.25s ease-in-out;
+ cursor: pointer;
+}
+.checklists-div:hover{
+  transform: scale(0.95);
 }
 
 /* change the alignment */
