@@ -802,6 +802,7 @@ nav li {
   transform: translateY(50%);
   /* Adjust the vertical alignment */
   cursor: pointer;
+
   /* Add pointer cursor to indicate clickability */
 }
 
@@ -931,6 +932,7 @@ checkbox and section title are now separate */
   background-color: #444;
 }
 
+
 /* Responsive:Home Page */
 
 @media only screen and (max-width: 600px) {
@@ -940,6 +942,13 @@ checkbox and section title are now separate */
 
   nav li {
     padding-bottom: 10px;
+  }
+
+  .checklists>div>a {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    text-align: start;
   }
 
 }
@@ -999,7 +1008,7 @@ checkbox and section title are now separate */
   font-size: 0.85rem;
 }
 
-.footer-panel1 > a{
+.footer-panel1>a {
   text-decoration: none;
   color: inherit;
 }
@@ -1014,15 +1023,17 @@ checkbox and section title are now separate */
 .logo {
   background-image: url(amazon_logo.png);
   background-size: cover;
-  margin:auto;
+  margin: auto;
   height: 50px;
   width: 100px;
   margin-bottom: 20px;
 }
-.countries ul{
+
+.countries ul {
   text-align: center;
 }
-.countries ul li{
+
+.countries ul li {
   display: inline-block;
   list-style-type: none;
   white-space: nowrap;
@@ -1034,16 +1045,17 @@ checkbox and section title are now separate */
   white-space-collapse: collapse;
 }
 
-.countries ul li a{
+.countries ul li a {
   color: #DDD;
   text-decoration: none;
   font-family: inherit;
-  
+
 }
 
 .countries ul li a:hover {
   text-decoration: underline;
 }
+
 .footer-panel4 {
   background-color: #0F1111;
   color: white;
@@ -1054,31 +1066,91 @@ checkbox and section title are now separate */
   align-items: center;
   justify-content: center;
 }
+
 .copyright {
   color: #DDD
 }
 
 @media(max-width:762px) {
   .footer-panel2 {
-      justify-content: space-between;
-      gap: 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .checklist-item label {
+    height: 100%;
+    text-align: start;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 7px;
+  }
+
+  .checklist li {
+    margin: 0;
+  }
+
+  .hidden-text.show {
+    width: -webkit-fill-available;
+
+  }
+
+  .dropdown-arrow {
+    position: relative;
+  }
+
+  .dropdown-arrow::after {
+    margin-left: unset;
+  }
+
+
+
+  .section:hover {
+    background: #666;
+    border-radius: 10px;
   }
 }
 
 @media(max-width:380px) {
   .footer-panel2 {
-      text-align: center;
-      justify-content: center;
-      gap: 20px;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
   }
 }
 
-.footlink-li{
+.footlink-li {
   transition: all.2s ease-in-out;
   color: #c1c1c1;
   cursor: pointer;
 }
-.footlink-li:hover{
+
+.footlink-li:hover {
   color: #ffffff;
   transform: translateX(10px);
+}
+
+.checklists>div>a {
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.checklists>div>a>img {
+
+  height: 2rem;
+  margin-right: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+  .checklists>div>a {
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    text-align: start;
+  }
+
 }
