@@ -941,6 +941,11 @@ checkbox and section title are now separate */
 }
 
 /* CSS For Footer  */
+footer {
+  width: 100%;
+  margin-top: auto;
+}
+
 .footer-panel1 {
   background-color: #37475a;
   color: white;

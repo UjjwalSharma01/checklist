@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Golang Basics - The Checklist</title>
-   <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">   
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="dark-mode.css">
 </head>
+
 <body>
   <header>
     <h1><a href="index.html">The Checklist</a></h1>
@@ -26,38 +28,38 @@
       <i class="moon-icon"></i>
     </button>
   </nav>
-<main>
-  <section class="checklist">
-    <h2>Golang Basics</h2>
+  <main>
+    <section class="checklist">
+      <h2>Golang Basics</h2>
 
 
-    <ul>
-      <li class="checklist-item">
-        <div class="section">
-          <div class="section-box">
-            <label class="section-box-label">
-              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-              <span class="checkmark"></span>
-            </label>
-          </div>
-          <div class="section-title">
-            <label class="section-title-label">
+      <ul>
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
                 What is Go?
                 <span class="dropdown-arrow"></span>
-            </label>
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="hidden-text">
-          <!-- Hidden content for the drop-down menu -->
-          Go, also known as Golang, is a statically typed and compiled programming language developed by Google. <br>
-It's designed for simplicity, efficiency, and ease of use. <br>
-   </div>
-      </li>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go, also known as Golang, is a statically typed and compiled programming language developed by Google. <br>
+            It's designed for simplicity, efficiency, and ease of use. <br>
+          </div>
+        </li>
 
 
 
 
-      
+
         <li class="checklist-item">
           <div class="section">
             <div class="section-box">
@@ -81,375 +83,429 @@ It's designed for simplicity, efficiency, and ease of use. <br>
             Use the 'fmt' package to print to the console. <br>
             package main <br>
 
-import "fmt" <br>
+            import "fmt" <br>
 
-func main() { <br>
-    fmt.Println("Hello, World!")
-} <br>
+            func main() { <br>
+            fmt.Println("Hello, World!")
+            } <br>
 
           </div>
         </li>
-  
 
 
 
 
-            <li class="checklist-item">
-              <div class="section">
-                <div class="section-box">
-                  <label class="section-box-label">
-                    <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                    <span class="checkmark"></span>
-                  </label>
-                </div>
-                <div class="section-title">
-                  <label class="section-title-label">
-                    Variables and Types
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Variables and Types
 
 
-                    <span class="dropdown-arrow"></span>
-                  </label>
-                </div>
-              </div>
-              <div class="hidden-text">
-                <!-- Hidden content for the drop-down menu -->
-                Go supports various data types, including integers, floats, strings, and booleans. <br>
-                Declare variables using var or short declaration :=. <br>
-                <hr>
-                <b>Code:</b>
-                var age int <br>
-name := "John" <br>
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go supports various data types, including integers, floats, strings, and booleans. <br>
+            Declare variables using var or short declaration :=. <br>
+            <hr>
+            <b>Code:</b>
+            var age int <br>
+            name := "John" <br>
 
-              </div>
-            </li>
-      
-    
-        
-
-        
-
-                <li class="checklist-item">
-                  <div class="section">
-                    <div class="section-box">
-                      <label class="section-box-label">
-                        <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                        <span class="checkmark"></span>
-                      </label>
-                    </div>
-                    <div class="section-title">
-                      <label class="section-title-label">
-                        Functions
-    
-                        <span class="dropdown-arrow"></span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="hidden-text">
-                    <!-- Hidden content for the drop-down menu -->
-                    Functions are defined using the func keyword. <br>
-The main function is the entry point for Go programs. <br>
-<hr>
-<b>Code:</b>
-func sayHello() { <br>
-  fmt.Println("Hello!") <br>
-} <br>
-
-                  </div>
-                </li>
-          
-
-
-
-              
-                    <li class="checklist-item">
-                      <div class="section">
-                        <div class="section-box">
-                          <label class="section-box-label">
-                            <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                            <span class="checkmark"></span>
-                          </label>
-                        </div>
-                        <div class="section-title">
-                          <label class="section-title-label">
-                            Control Structures
-
-
-    
-        
-                            <span class="dropdown-arrow"></span>
-                          </label>
-                        </div>
-                      </div>
-                      <div class="hidden-text">
-                        <!-- Hidden content for the drop-down menu -->
-                        Go has standard control structures like if, for, and switch. <br>
-You can also use defer to schedule a function call. <br>
-<hr>
-<b>Code:</b>
-if x > 10 {
-  // do something <br>
-} <br>
-
-for i := 0; i < 5; i++ {
-  // loop   <br>
-} <br>
-
-defer cleanup()
-<br>
-                    </li>
-          
-
-
-                    <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Data Structures
-
-
-          
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Arrays and slices are used for collections of elements. <br>
-                          Maps store key-value pairs. <br>
-                          <hr>
-                          <b>Code:</b>
-                          var numbers [5]int <br>
-fruits := []string{"apple", "banana"} <br>
-studentScores := map[string]int{"Alice": 95, "Bob": 88} <br>
-<br>
-                          
-                        </div>
-                      </li>
-
-
-
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Pointers
-
-
-
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Pointers hold the memory address of a variable. <br>
-Use & to get a variable's address and * to access its value. <br>
-<hr>
-<b>Code:</b>
-var x int <br>
-y := &x <br>
-*y = 42 <br>
-
-                        </div>
-                      </li>
-
-
-
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Structs
+          </div>
+        </li>
 
 
 
 
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Structs allow you to define custom data types with named fields. <br>
-They are often used for organizing related data. <br>
-<hr>
-<b>Code:</b>
-type Person struct { <br>
-  Name string <br>
-  Age  int <br>
-} <br>
-
-                      </li>
 
 
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Functions
 
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Packages
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Functions are defined using the func keyword. <br>
+            The main function is the entry point for Go programs. <br>
+            <hr>
+            <b>Code:</b>
+            func sayHello() { <br>
+            fmt.Println("Hello!") <br>
+            } <br>
 
-
-
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Go organizes code into packages, which contain related functions and data. <br>
-The import statement is used to bring in packages from the standard library or third-party sources. <br>
-<hr>
-<b>Code:</b>
-import "fmt" <br>
-                      </li>
-
-
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Concurrency
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Go's built-in support for goroutines and channels simplifies concurrent programming. <br>
-                          Goroutines are lightweight threads, and channels enable communication between them. <br>
-                          <hr>
-<b>Code:</b>
-go doSomething() <br>
-ch := make(chan int) <br>
-                      </li>
+          </div>
+        </li>
 
 
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Error Handling
-
-                                <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Go encourages returning errors explicitly. <br>
-The error type is commonly used for this purpose. <br>
 
 
-                      </li>
 
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Interfaces
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Go uses interfaces to define sets of methods that types can implement. <br>
-                          This allows for polymorphism and code reusability. <br>
-                      </li>
-
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Testing
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          The testing package is used to create unit tests for Go code. <br>
-                          Test functions start with "Test" and can be run using the go test command. <br>
-                      </li>
-
-                      <li class="checklist-item">
-                        <div class="section">
-                          <div class="section-box">
-                            <label class="section-box-label">
-                              <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                          <div class="section-title">
-                            <label class="section-title-label">
-                                Documentation
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Control Structures
 
 
-                              <span class="dropdown-arrow"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="hidden-text">
-                          <!-- Hidden content for the drop-down menu -->
-                          Documentation in Go is created using comments and the godoc tool. <br>
-Write clear, concise comments to make your code more understandable. <br>
-                      </li>
 
 
-      
-    </ul>
-  </section>
-</main>
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go has standard control structures like if, for, and switch. <br>
+            You can also use defer to schedule a function call. <br>
+            <hr>
+            <b>Code:</b>
+            if x > 10 {
+            // do something <br>
+            } <br>
+
+            for i := 0; i < 5; i++ { // loop <br>
+              } <br>
+
+              defer cleanup()
+              <br>
+        </li>
+
+
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Data Structures
+
+
+
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Arrays and slices are used for collections of elements. <br>
+            Maps store key-value pairs. <br>
+            <hr>
+            <b>Code:</b>
+            var numbers [5]int <br>
+            fruits := []string{"apple", "banana"} <br>
+            studentScores := map[string]int{"Alice": 95, "Bob": 88} <br>
+            <br>
+
+          </div>
+        </li>
+
+
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Pointers
+
+
+
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Pointers hold the memory address of a variable. <br>
+            Use & to get a variable's address and * to access its value. <br>
+            <hr>
+            <b>Code:</b>
+            var x int <br>
+            y := &x <br>
+            *y = 42 <br>
+
+          </div>
+        </li>
+
+
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Structs
+
+
+
+
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Structs allow you to define custom data types with named fields. <br>
+            They are often used for organizing related data. <br>
+            <hr>
+            <b>Code:</b>
+            type Person struct { <br>
+            Name string <br>
+            Age int <br>
+            } <br>
+
+        </li>
+
+
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Packages
+
+
+
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go organizes code into packages, which contain related functions and data. <br>
+            The import statement is used to bring in packages from the standard library or third-party sources. <br>
+            <hr>
+            <b>Code:</b>
+            import "fmt" <br>
+        </li>
+
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Concurrency
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go's built-in support for goroutines and channels simplifies concurrent programming. <br>
+            Goroutines are lightweight threads, and channels enable communication between them. <br>
+            <hr>
+            <b>Code:</b>
+            go doSomething() <br>
+            ch := make(chan int) <br>
+        </li>
+
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Error Handling
+
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go encourages returning errors explicitly. <br>
+            The error type is commonly used for this purpose. <br>
+
+
+        </li>
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Interfaces
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Go uses interfaces to define sets of methods that types can implement. <br>
+            This allows for polymorphism and code reusability. <br>
+        </li>
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Testing
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            The testing package is used to create unit tests for Go code. <br>
+            Test functions start with "Test" and can be run using the go test command. <br>
+        </li>
+
+        <li class="checklist-item">
+          <div class="section">
+            <div class="section-box">
+              <label class="section-box-label">
+                <input type="checkbox" class="checkbox" data-checklist="cpp-basics">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="section-title">
+              <label class="section-title-label">
+                Documentation
+
+
+                <span class="dropdown-arrow"></span>
+              </label>
+            </div>
+          </div>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Documentation in Go is created using comments and the godoc tool. <br>
+            Write clear, concise comments to make your code more understandable. <br>
+        </li>
+
+
+
+      </ul>
+    </section>
+  </main>
+  <!-- Footer section -->
+  <footer>
+    <div class="footer-panel1">
+      <a href=""> Back to top</a>
+    </div>
+    <div class="footer-panel2">
+      <div class="navFooterlinkCol">
+        <div class="footerlinkcol">Get to Know Us</div>
+        <ul>
+          <li class="footlink-li"><a href="#"> About</a></li>
+          <li class="footlink-li"><a href="#">Careers</a></li>
+          <li class="footlink-li"><a href="#">Documentation</a></li>
+          <li class="footlink-li"><a href="#">Computer Science</a></li>
+        </ul>
+      </div>
+
+      <div class="navFooterlinkCol">
+        <div class="footerlinkcol">Connect with Us</div>
+        <ul>
+          <li class="footlink-li"><a href="#">Facebook</a></li>
+          <li class="footlink-li"><a href="#">Twitter</a></li>
+          <li class="footlink-li"><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="navFooterlinkCol">
+        <div class="footerlinkcol">Learn Subjects with Us</div>
+        <ul>
+          <li class="footlink-li"><a href="C_Programming.html">C Programming</a></li>
+          <li class="footlink-li"><a href="C++_Basics.html">C++ Basics</a></li>
+          <li class="footlink-li"><a href="python_Basics.html">Python Basics</a></li>
+          <li class="footlink-li"><a href="OOP.html">Object Oriented Programming</a></li>
+          <li class="footlink-li"><a href="STL.html">Standard Template Library</a></li>
+          <li class="footlink-li"><a href="WebApp.html">Web Application Fundamentals</a></li>
+          <li class="footlink-li"><a href="algorithm.html">Algorithm Design Techniques</a></li>
+          <li class="footlink-li"><a href="JavaBasic.html">Java Basics</a></li>
+          <li class="footlink-li"><a href="linux.html">Linux Basics</a></li>
+          <li class="footlink-li"><a href="golang.html">Golang Basics</a></li>
+          <li class="footlink-li"><a href="frontendProjects.html">Frontend Projects</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-panel4">
+      <div class="pages">
+        <div class="copyright">
+          Copyright © <span id="year"></span>, Ujjwal Sharma All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer section -->
+  <!-- Javascript -->
+  <script>
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+  </script>
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
 </body>
+
 </html>

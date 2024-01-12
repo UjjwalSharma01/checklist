@@ -1,149 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OOP in C++ - The Checklist</title>
-    <link
-      href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="dark-mode.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <h1><a href="index.html">The Checklist</a></h1>
-    </header>
-    <nav>
-      <!-- may use this thing later -->
-      <!-- <ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OOP in C++ - The Checklist</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="dark-mode.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css" />
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html">The Checklist</a></h1>
+  </header>
+  <nav>
+    <!-- may use this thing later -->
+    <!-- <ul>
         <li><a href="checklist1.html">Checklist 1</a></li>
         <li><a href="checklist2.html">Checklist 2</a></li>
         </ul> -->
-      <!-- Add more checklists here -->
+    <!-- Add more checklists here -->
 
-      <!-- dark mode elements -->
-      <button class="dark-mode-toggle">
-        <i class="sun-icon"></i>
-        <i class="moon-icon"></i>
-      </button>
-    </nav>
-    <main>
-      <section class="checklist">
-        <h2>Object-Oriented Programming (OOP) in C++</h2>
-        <ul>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              What is OOP?
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              Object-Oriented Programming (OOP) is a programming paradigm that
-              focuses on organizing code into objects, which are instances of
-              classes. It emphasizes concepts such as encapsulation,
-              inheritance, and polymorphism to create modular and reusable code.
-            </div>
-          </li>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Classes and Objects
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              Classes are user-defined data types in C++ that encapsulate data
-              and functions. Objects are instances of classes. Learn how to
-              create classes, define member functions, and access class members
-              using objects.
-            </div>
-          </li>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Constructors and Destructors
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              Constructors are special member functions that initialize objects
-              when they are created. Destructors are used to release resources
-              when objects are destroyed. Learn about different types of
-              constructors and destructors in C++.
-            </div>
-          </li>
-          <!-- Add more OOP in C++ topics here -->
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Encapsulation
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              Encapsulation in C++ is defined as the wrapping up of data and
-              information in a single unit. In Object-Oriented Programming,
-              Encapsulation is defined as binding together the data and the
-              functions that manipulate them.
+    <!-- dark mode elements -->
+    <button class="dark-mode-toggle">
+      <i class="sun-icon"></i>
+      <i class="moon-icon"></i>
+    </button>
+  </nav>
+  <main>
+    <section class="checklist">
+      <h2>Object-Oriented Programming (OOP) in C++</h2>
+      <ul>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            What is OOP?
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Object-Oriented Programming (OOP) is a programming paradigm that
+            focuses on organizing code into objects, which are instances of
+            classes. It emphasizes concepts such as encapsulation,
+            inheritance, and polymorphism to create modular and reusable code.
+          </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Classes and Objects
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Classes are user-defined data types in C++ that encapsulate data
+            and functions. Objects are instances of classes. Learn how to
+            create classes, define member functions, and access class members
+            using objects.
+          </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Constructors and Destructors
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Constructors are special member functions that initialize objects
+            when they are created. Destructors are used to release resources
+            when objects are destroyed. Learn about different types of
+            constructors and destructors in C++.
+          </div>
+        </li>
+        <!-- Add more OOP in C++ topics here -->
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Encapsulation
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Encapsulation in C++ is defined as the wrapping up of data and
+            information in a single unit. In Object-Oriented Programming,
+            Encapsulation is defined as binding together the data and the
+            functions that manipulate them.
 
-              <p style="text-align: left"></p>
-              <h1 style="text-align: left">
-                Two Important property of Encapsulation
-              </h1>
+            <p style="text-align: left"></p>
+            <h1 style="text-align: left">
+              Two Important property of Encapsulation
+            </h1>
 
-              <ul style="text-align: left">
-                <li>
-                  <strong>Data Protection</strong> - Encapsulation protects the
-                  internal state of an object by keeping its data members
-                  private. Access to and modification of these data members is
-                  restricted to the class’s public methods, ensuring controlled
-                  and secure data manipulation.
-                </li>
+            <ul style="text-align: left">
+              <li>
+                <strong>Data Protection</strong> - Encapsulation protects the
+                internal state of an object by keeping its data members
+                private. Access to and modification of these data members is
+                restricted to the class’s public methods, ensuring controlled
+                and secure data manipulation.
+              </li>
 
-                <li>
-                  <strong>Information Hiding</strong> - Encapsulation hides the
-                  internal implementation details of a class from external code.
-                  Only the public interface of the class is accessible,
-                  providing abstraction and simplifying the usage of the class
-                  while allowing the internal implementation to be modified
-                  without impacting external code.
-                </li>
-              </ul>
+              <li>
+                <strong>Information Hiding</strong> - Encapsulation hides the
+                internal implementation details of a class from external code.
+                Only the public interface of the class is accessible,
+                providing abstraction and simplifying the usage of the class
+                while allowing the internal implementation to be modified
+                without impacting external code.
+              </li>
+            </ul>
 
-              <p style="text-align: left"><strong>Example</strong></p>
+            <p style="text-align: left"><strong>Example</strong></p>
 
-              <pre style="text-align: left">
+            <pre style="text-align: left">
                 <code>
 #include &lt;iostream&gt;
 using namespace std;
@@ -166,44 +147,40 @@ cout&lt;&lt;ans&lt;&lt;endl;
 }         
                                 </code>
                             </pre>
-            </div>
-          </li>
-          <!-- Add more OOP in C++ topics here  -->
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Abstraction
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              Data abstraction is one of the most essential and important
-              features of object-oriented programming in C++. Abstraction means
-              displaying only essential information and hiding the details. Data
-              abstraction refers to providing only essential information about
-              the data to the outside world, hiding the background details or
-              implementation.
-              <h1 style="text-align: left">Types of Abstraction</h1>
-              <ul style="text-align: left">
-                <li>
-                  <strong>Data abstraction</strong> – This type only shows the
-                  required information about the data and hides the unnecessary
-                  data.
-                </li>
-                <li>
-                  <strong>Control Abstraction</strong> – This type only shows
-                  the required information about the implementation and hides
-                  unnecessary information.
-                </li>
-              </ul>
-              <p style="text-align: left"><strong>Example</strong></p>
-              <pre style="text-align: left">
+          </div>
+        </li>
+        <!-- Add more OOP in C++ topics here  -->
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Abstraction
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Data abstraction is one of the most essential and important
+            features of object-oriented programming in C++. Abstraction means
+            displaying only essential information and hiding the details. Data
+            abstraction refers to providing only essential information about
+            the data to the outside world, hiding the background details or
+            implementation.
+            <h1 style="text-align: left">Types of Abstraction</h1>
+            <ul style="text-align: left">
+              <li>
+                <strong>Data abstraction</strong> – This type only shows the
+                required information about the data and hides the unnecessary
+                data.
+              </li>
+              <li>
+                <strong>Control Abstraction</strong> – This type only shows
+                the required information about the implementation and hides
+                unnecessary information.
+              </li>
+            </ul>
+            <p style="text-align: left"><strong>Example</strong></p>
+            <pre style="text-align: left">
                 <code>
 // working of Abstraction
 #include &lt;iostream&gt;
@@ -239,33 +216,40 @@ int main()
 
                 </code>
             </pre>
-            </div>
-          </li>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Polymorphism
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. A person at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person possesses different behavior in different situations. This is called polymorphism.
-              <h1 style="text-align: left">Types of Polymorphism</h1>
-              <ul style="text-align: left">
-                <li>
-                  <strong>Compile Time Polymorphism</strong> – This type of polymorphism is achieved by function overloading or operator overloading.
-                  <ol>
-                    <li>
-                      <strong>Function Overloading</strong> - When there are multiple functions with the same name but different parameters, then the functions are said to be overloaded, hence this is known as Function Overloading. Functions can be overloaded by changing the number of arguments or/and changing the type of arguments. In simple terms, it is a feature of object-oriented programming providing many functions that have the same name but distinct parameters when numerous tasks are listed under one function name. There are certain Rules of Function Overloading that should be followed while overloading a function.
-                      <p style="text-align: left;">
-                      <strong>Example</strong></p>
-                      <pre>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Polymorphism
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of
+            a message to be displayed in more than one form. A person at the same time can have different
+            characteristics. A man at the same time is a father, a husband, and an employee. So the same person
+            possesses different behavior in different situations. This is called polymorphism.
+            <h1 style="text-align: left">Types of Polymorphism</h1>
+            <ul style="text-align: left">
+              <li>
+                <strong>Compile Time Polymorphism</strong> – This type of polymorphism is achieved by function
+                overloading or operator overloading.
+                <ol>
+                  <li>
+                    <strong>Function Overloading</strong> - When there are multiple functions with the same name but
+                    different parameters, then the functions are said to be overloaded, hence this is known as Function
+                    Overloading. Functions can be overloaded by changing the number of arguments or/and changing the
+                    type of arguments. In simple terms, it is a feature of object-oriented programming providing many
+                    functions that have the same name but distinct parameters when numerous tasks are listed under one
+                    function name. There are certain Rules of Function Overloading that should be followed while
+                    overloading a function.
+                    <p style="text-align: left;">
+                      <strong>Example</strong>
+                    </p>
+                    <pre>
                         <code>
 // C++ program to demonstrate
 // function overloading or
@@ -317,10 +301,14 @@ int main()
 
                         </code>
                       </pre>
-                    </li>
-                    <li>
-                      <strong>Operator Overloading </strong> - C++ has the ability to provide the operators with a special meaning for a data type, this ability is known as operator overloading. For example, we can make use of the addition operator (+) for string class to concatenate two strings. We know that the task of this operator is to add two operands. So a single operator ‘+’, when placed between integer operands, adds them and when placed between string operands, concatenates them. 
-                      <pre>
+                  </li>
+                  <li>
+                    <strong>Operator Overloading </strong> - C++ has the ability to provide the operators with a special
+                    meaning for a data type, this ability is known as operator overloading. For example, we can make use
+                    of the addition operator (+) for string class to concatenate two strings. We know that the task of
+                    this operator is to add two operands. So a single operator ‘+’, when placed between integer
+                    operands, adds them and when placed between string operands, concatenates them.
+                    <pre>
                         <code>
 // C++ program to demonstrate
 // Operator Overloading or
@@ -363,16 +351,18 @@ int main()
 }
                         </code>
                       </pre>
-                    </li>
-                  </ol>
-                </li>
-                <li>
-                  <strong>Runtime Polymorphism</strong> – This type only shows
-                  the required information about the implementation and hides
-                  unnecessary information.
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <strong>Runtime Polymorphism</strong> – This type only shows
+                the required information about the implementation and hides
+                unnecessary information.
                 <ol>
                   <li>
-                    <strong>Function Overriding </strong> - Function Overriding occurs when a derived class has a definition for one of the member functions of the base class. That base function is said to be overridden.
+                    <strong>Function Overriding </strong> - Function Overriding occurs when a derived class has a
+                    definition for one of the member functions of the base class. That base function is said to be
+                    overridden.
 
                     <pre>
                       <code>
@@ -404,7 +394,8 @@ int main(void)
                     </pre>
                   </li>
                   <li>
-                    <strong>Virtual Function </strong> - A virtual function is a member function that is declared in the base class using the keyword virtual and is re-defined (Overridden) in the derived class.
+                    <strong>Virtual Function </strong> - A virtual function is a member function that is declared in the
+                    base class using the keyword virtual and is re-defined (Overridden) in the derived class.
 
                     <pre><code>
 // C++ Program to demonstrate
@@ -467,38 +458,40 @@ int main()
                     </code></pre>
                   </li>
                 </ol>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Inheritance
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Inheritance
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            The capability of a class to derive properties and characteristics from another class is called Inheritance.
+            Inheritance is one of the most important features of Object-Oriented Programming.
 
-              <ol style="text-align: left;">
-                <li >
-                  <strong>Sub Class</strong>: The class that inherits properties from another class is called Sub class or Derived Class.
-                  </li>
-                  <li>
-                    <strong>Super Class</strong>: The class whose properties are inherited by a sub-class is called Base Class or Superclass.
-                  </li>
-                  <li><strong>Reusability</strong>: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.</li>
-                </li>
-              </ol>
-              <p style="text-align: left;"><strong>Example</strong></p>
-              <pre style="text-align: left;">
+            <ol style="text-align: left;">
+              <li>
+                <strong>Sub Class</strong>: The class that inherits properties from another class is called Sub class or
+                Derived Class.
+              </li>
+              <li>
+                <strong>Super Class</strong>: The class whose properties are inherited by a sub-class is called Base
+                Class or Superclass.
+              </li>
+              <li><strong>Reusability</strong>: Inheritance supports the concept of “reusability”, i.e. when we want to
+                create a new class and there is already a class that includes some of the code that we want, we can
+                derive our new class from the existing class. By doing this, we are reusing the fields and methods of
+                the existing class.</li>
+        </li>
+        </ol>
+        <p style="text-align: left;"><strong>Example</strong></p>
+        <pre style="text-align: left;">
                 <code>
 // Example: define member function without argument within 
 // the class 
@@ -556,26 +549,24 @@ int main()
 
                 </code>
               </pre>
-            </div>
-          </li>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Dynamic Binding 
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              In dynamic binding, the code to be executed in response to the function call is decided at runtime. C++ has virtual functions to support this. Because dynamic binding is flexible, it avoids the drawbacks of static binding, which connected the function call and definition at build time.
+        </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Dynamic Binding
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            In dynamic binding, the code to be executed in response to the function call is decided at runtime. C++ has
+            virtual functions to support this. Because dynamic binding is flexible, it avoids the drawbacks of static
+            binding, which connected the function call and definition at build time.
 
-              <p style="text-align: left;"><strong>Example</strong></p>
-              <pre style="text-align: left;">
+            <p style="text-align: left;"><strong>Example</strong></p>
+            <pre style="text-align: left;">
                 <code>
 // C++ Program to Demonstrate the Concept of Dynamic binding
 // with the help of virtual function
@@ -614,33 +605,87 @@ int main()
 
                 </code>
               </pre>
-            </div>
-          </li>
-          <li class="checklist-item">
-            <label>
-              <input
-                type="checkbox"
-                class="checkbox"
-                data-checklist="oop-cpp"
-              />
-              <span class="checkmark"></span>
-              Message Passing
-              <span class="dropdown-arrow"></span>
-              <!-- Add the drop-down arrow icon -->
-            </label>
-            <div class="hidden-text">
-              <!-- Hidden content for the drop-down menu -->
-              Objects communicate with one another by sending and receiving information. A message for an object is a request for the execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function, and the information to be sent.
-            </div>
-          </li>
+          </div>
+        </li>
+        <li class="checklist-item">
+          <label>
+            <input type="checkbox" class="checkbox" data-checklist="oop-cpp" />
+            <span class="checkmark"></span>
+            Message Passing
+            <span class="dropdown-arrow"></span>
+            <!-- Add the drop-down arrow icon -->
+          </label>
+          <div class="hidden-text">
+            <!-- Hidden content for the drop-down menu -->
+            Objects communicate with one another by sending and receiving information. A message for an object is a
+            request for the execution of a procedure and therefore will invoke a function in the receiving object that
+            generates the desired results. Message passing involves specifying the name of the object, the name of the
+            function, and the information to be sent.
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <!-- Footer section -->
+  <footer>
+    <div class="footer-panel1">
+      <a href=""> Back to top</a>
+    </div>
+    <div class="footer-panel2">
+      <div class="navFooterlinkCol">
+        <div class="footerlinkcol">Get to Know Us</div>
+        <ul>
+          <li class="footlink-li"><a href="#"> About</a></li>
+          <li class="footlink-li"><a href="#">Careers</a></li>
+          <li class="footlink-li"><a href="#">Documentation</a></li>
+          <li class="footlink-li"><a href="#">Computer Science</a></li>
         </ul>
-      </section>
-    </main>
-    <script src="script.js"></script>
-    <script src="dark-mode.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-    <script>
-      hljs.highlightAll();
-    </script>
-  </body>
+      </div>
+
+      <div class="navFooterlinkCol">
+        <div class="footerlinkcol">Connect with Us</div>
+        <ul>
+          <li class="footlink-li"><a href="#">Facebook</a></li>
+          <li class="footlink-li"><a href="#">Twitter</a></li>
+          <li class="footlink-li"><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="navFooterlinkCol">
+        <div class="footerlinkcol">Learn Subjects with Us</div>
+        <ul>
+          <li class="footlink-li"><a href="C_Programming.html">C Programming</a></li>
+          <li class="footlink-li"><a href="C++_Basics.html">C++ Basics</a></li>
+          <li class="footlink-li"><a href="python_Basics.html">Python Basics</a></li>
+          <li class="footlink-li"><a href="OOP.html">Object Oriented Programming</a></li>
+          <li class="footlink-li"><a href="STL.html">Standard Template Library</a></li>
+          <li class="footlink-li"><a href="WebApp.html">Web Application Fundamentals</a></li>
+          <li class="footlink-li"><a href="algorithm.html">Algorithm Design Techniques</a></li>
+          <li class="footlink-li"><a href="JavaBasic.html">Java Basics</a></li>
+          <li class="footlink-li"><a href="linux.html">Linux Basics</a></li>
+          <li class="footlink-li"><a href="golang.html">Golang Basics</a></li>
+          <li class="footlink-li"><a href="frontendProjects.html">Frontend Projects</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-panel4">
+      <div class="pages">
+        <div class="copyright">
+          Copyright © <span id="year"></span>, Ujjwal Sharma All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer section -->
+  <!-- Javascript -->
+  <script>
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+  <script src="dark-mode.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
 </html>
