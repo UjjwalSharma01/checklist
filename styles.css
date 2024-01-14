@@ -1237,6 +1237,7 @@ nav li a {
   background: #081229;
   color: #a78bfa;
 }
+
 .checklist .checklist-item:hover label {
   background-color: #666;
   background: rgba(102, 102, 102, 0.29);
@@ -1246,11 +1247,13 @@ nav li a {
   -webkit-backdrop-filter: blur(5.6px);
   border: 1px solid rgba(102, 102, 102, 0.62);
 }
+
 .checklist-item label {
   padding-top: 20px;
   padding: 20px;
 }
-.checklist li{
-  
+
+.checklist li {
+
   padding-top: 20px;
 }

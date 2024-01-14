@@ -126,10 +126,10 @@ sectionTitles.forEach((label) => {
 
 async function logMovies() {
   const response = await fetch("https://api.api-ninjas.com/v1/quotes?category=happiness",
- { headers: { 'X-Api-Key': 'gv414CStL2w22HtsC4pp8A==fHW82xPwAxJPaUjU'},});
+    { headers: { 'X-Api-Key': 'gv414CStL2w22HtsC4pp8A==fHW82xPwAxJPaUjU' }, });
   const movies = await response.json();
   document.getElementById("quoteContent").textContent = movies[0].quote;
-  document.getElementById("quoteTitle").textContent = "- "+ movies[0].author;
+  document.getElementById("quoteTitle").textContent = "- " + movies[0].author;
 }
 
 logMovies();
@@ -149,11 +149,11 @@ function copyToClipboard(exampleNumber) {
   }
 }
 
-var toggleButton=document.querySelector(".toggle-button");
-var navbarLinks=document.querySelector(".hamburger");
+var toggleButton = document.querySelector(".toggle-button");
+var navbarLinks = document.querySelector(".hamburger");
 
 
-toggleButton.addEventListener('click', ()=>{
-    navbarLinks.classList.toggle('active');
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
 })
 
