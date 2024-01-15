@@ -262,7 +262,7 @@ body.dark-mode .dark-mode-toggle::after {
 
 /* hover effect on checklist items */
 .checklist .checklist-item:hover label {
-  background-color: #666;
+  /* background-color: #666; */
 }
 
 
@@ -281,4 +281,23 @@ body.dark-mode .dark-mode-toggle::after {
     right:1.8%;
     font-size: 28px;  
   }
+}
+
+main.dark,body.dark-mode{
+  background: rgb(65,65,65);
+background: linear-gradient(312deg, rgba(65,65,65,1) 0%, rgba(0,0,0,1) 100%);
+}
+.dark .quote{
+  background: rgb(65,65,65);
+background: linear-gradient(312deg, rgba(65,65,65,1) 0%, rgba(0,0,0,1) 100%);
+}
+.dark-mode #quoteTitle {
+  color: #fff;
+  /* background-color: #d9ed92; */
+}
+.dark-mode .quote blockquote {
+  background-color: unset !important
+}
+.dark-mode #quoteTitle {
+  background-color: unset;
 }

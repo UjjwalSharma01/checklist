@@ -79,7 +79,7 @@ nav li a {
   background-color: #f0f0f0;
   /* Light gray button background */
   background: #1D5B79;
-  color: #2c2f34da !important;
+  /* color: #2c2f34da !important; */
   font-family: "Bebas Neue", sans-serif;
   letter-spacing: 2px;
   font-size: 20px;
@@ -184,7 +184,7 @@ blockquote {
   background: #AEDEFC;
 
   /* color: #fff; */
-  color: #2c2f34d3 !important;
+  /* color: #2c2f34d3 !important; */
 
   padding: 10px;
   text-align: center;
@@ -271,7 +271,7 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #444;
+  /* background-color: #444; */
   /* Darker background on hover */
   color: #fff;
   /* Text color on hover */
@@ -413,8 +413,8 @@ nav li {
   font-weight: bold;
   letter-spacing: 1px;
   transition: background-color 0.3s ease-in-out;
-  background: #1D5B79 !important;
-  color: #2c2f34da !important;
+  /* background: #1D5B79 !important; */
+  /* color: #2c2f34da !important; */
   font-family: "Bebas Neue", sans-serif;
 
   letter-spacing: 2px !important;
@@ -428,8 +428,9 @@ nav li {
 .checklists a:hover {
   /* background-color: #444;
   color: #fff; */
-  background-color: #1e1e1ec6 !important;
-  color: #ffffff !important;
+
+  background-color: #333333c6 !important;
+  /* color: #1D5B79 !important; */
 }
 
 /* Hover Animation for Checklist Items */
@@ -731,7 +732,7 @@ nav li {
   display: none;
   margin: 10px !important;
   font-size: 18px !important;
-  background-color: #0096c7 !important;
+  /* background-color: #0096c7 !important; */
   color: #444;
   font-family: cursive;
   line-height: 1.5rem;
@@ -882,7 +883,7 @@ input[type="checkbox"].checkbox:checked~.checkmark~.hidden-text {
 }
 
 .checklist-item label {
-  padding-top: 20px;
+  padding: 20px;
 }
 
 /* Used to line up the checkbox next to the section title since the checklist's
@@ -954,6 +955,11 @@ checkbox and section title are now separate */
 }
 
 /* CSS For Footer  */
+footer {
+  width: 100%;
+  margin-top: auto;
+}
+
 .footer-panel1 {
   background-color: #37475a;
   color: white;
@@ -1153,4 +1159,112 @@ checkbox and section title are now separate */
     text-align: start;
   }
 
+}
+
+.checklists div a {
+  background: rgba(37, 59, 112, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  text-shadow: 0 0 15px white;
+  position: relative;
+
+}
+
+.checklists div {
+  position: relative;
+  overflow: hidden;
+  background: rgb(30, 66, 153);
+  background: linear-gradient(197deg, rgba(30, 66, 153, 1) 0%, rgba(5, 20, 55, 1) 100%);
+  border-radius: 30px;
+}
+
+
+
+main {
+  background: rgb(37, 59, 112);
+  background: linear-gradient(63deg, rgba(37, 59, 112, 1) 0%, rgba(15, 23, 42, 1) 100%);
+}
+
+
+
+body {
+  z-index: -10;
+  position: relative;
+}
+
+.quote {
+
+  border-radius: 30px 0;
+  background: rgb(21, 149, 230);
+  background: linear-gradient(312deg, rgba(21, 149, 230, 1) 0%, rgba(5, 20, 55, 1) 100%);
+}
+
+#quoteContent {
+  color: white;
+  background: unset;
+  border-radius: 30px 0;
+}
+
+nav {
+  background: rgba(37, 59, 112, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+body {
+  background: rgb(21, 149, 230);
+  background: linear-gradient(312deg, rgba(21, 149, 230, 1) 0%, rgba(5, 20, 55, 1) 100%);
+}
+
+nav li a {
+  color: white;
+  text-shadow: 0 0 7px white;
+}
+
+.checklist {
+  color: white;
+}
+
+.checklist .checkbox+.checkmark {
+  border: 2px solid white;
+}
+
+.hidden-text {
+  /* From https://css.glass */
+  background: rgba(0, 124, 228, 0.2);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 124, 228, 0.3);
+}
+
+.code-block {
+
+  background: #081229;
+  color: #a78bfa;
+}
+.checklist .checklist-item:hover label {
+  background-color: #666;
+  background: rgba(102, 102, 102, 0.29);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(5.6px);
+  border: 1px solid rgba(102, 102, 102, 0.62);
+}
+.checklist-item label {
+  padding-top: 20px;
+  padding: 20px;
+}
+.checklist li{
+  
+  padding-top: 20px;
 }
