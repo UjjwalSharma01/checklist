@@ -544,7 +544,7 @@ nav li {
 
 .contact-section form input,
 .contact-section form textarea {
-  width: 95%;
+  width: 100%;
   padding: 10px 20px;
   margin-bottom: 10px;
   /* Add some spacing between form elements */
@@ -557,6 +557,7 @@ nav li {
   color: #2c2f34dc !important;
   letter-spacing: 1px;
   outline: none;
+
 }
 
 .contact-section form textarea {
@@ -576,12 +577,20 @@ nav li {
   color: #444;
   background-color: #90e0ef;
   transition-duration: 300ms;
+  width: 100%;
 }
 
 .contact-section form button:hover {
   /* background-color: #333; */
   background-color: #90e0ef;
   color: #1D5B79;
+}
+
+
+.errormsg {
+  width: 100%;
+  margin-bottom: 10px;
+  color: red;
 }
 
 /* Media Query for screens larger than 768px */
@@ -600,11 +609,11 @@ nav li {
     /* Add some spacing between labels and form elements */
   }
 
-  .contact-section form input,
-  .contact-section form textarea {
-    flex: 2 0 calc(50% - 15px);
-    /* Make form elements take half width on larger screens */
-  }
+  /* .contact-section form input,
+  .contact-section form textarea { */
+  /* flex: 2 0 calc(50% - 15px); */
+  /* Make form elements take half width on larger screens */
+  /* } */
 
   .contact-section form textarea {
     resize: none;
@@ -1237,6 +1246,7 @@ nav li a {
   background: #081229;
   color: #a78bfa;
 }
+
 .checklist .checklist-item:hover label {
   background-color: #666;
   background: rgba(102, 102, 102, 0.29);
@@ -1246,11 +1256,13 @@ nav li a {
   -webkit-backdrop-filter: blur(5.6px);
   border: 1px solid rgba(102, 102, 102, 0.62);
 }
+
 .checklist-item label {
   padding-top: 20px;
   padding: 20px;
 }
-.checklist li{
-  
+
+.checklist li {
+
   padding-top: 20px;
 }
