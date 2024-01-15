@@ -16,7 +16,7 @@ function seterror(id, error) {
 function validateForm() {
   var returnval = true;
   clearErrors();
-  let regex = /^[a-zA-Z]+$/;
+  let regex = /^[a-zA-Z ]*$/
   let regex2 = /^\d+$/;
   //perform validation and if validation fails, set the value of returnval to false
   var name = document.getElementById("name").value;
@@ -45,7 +45,7 @@ function validateForm() {
     seterror("errormsg2", "*Please enter valid email");
     returnval = false;
   }
-  if (name.charAt((name.length - 4) != '.')) {
+  if (email.charAt((email.length - 4)) != '.') {
     seterror("errormsg2", "*Please enter valid email");
     returnval = false;
   }
