@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="aos/aos.css" />
+    <script src="aos/aos.js"></script>
   <link rel="stylesheet" href="dark-mode.css" />
   <!-- Add the dark mode CSS file -->
 </head>
@@ -43,7 +45,9 @@
     </div>
   </nav>
   <main>
-    <section class="quote">
+    <section class="quote" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">>
       <blockquote id="quoteContent">
         "The only limit to our realization of tomorrow will be our doubts of
         today."
@@ -51,42 +55,42 @@
       <cite id="quoteTitle">— Franklin D. Roosevelt</cite>
     </section>
     <section class="checklists">
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
         <a href="C_Programming.html" class="clicked-glow"><img src="./Logo/C_Logo.png">C Programming</a>
       </div>
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
         <a href="C++_Basics.html" class="clicked-glow"><img src="./Logo/c--logo-icon-0.png">C++ Basics</a>
       </div>
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
         <a href="python_Basics.html" class="clicked-glow"><img src="./Logo/pngegg.png">Python Basics</a>
       </div>
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
         <a href="OOP.html" class="clicked-glow"><img src="./Logo/1200px-OOP.svg.png" style="border-radius: 100%;">Object Oriented Programming
           (OOP)</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="200">
         <a href="STL.html" class="clicked-glow"><img src="./Logo/1lOZAtF1V7j9TeKjwbiv6UQ.jpg">Standard Template Library
           (STL)</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="400">
         <a href="WebApp.html" class="clicked-glow"><img src="./Logo/pngwing.com (1).png">Web Application
           Fundamentals</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600">
         <a href="algorithm.html" class="clicked-glow"><img src="./Logo/design_algorithm_method_model_pr.png">Algorithm
           Design Techniques</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800">
         <a href="JavaBasic.html" class="clicked-glow"><img src="./Logo/731_java.png" style="border-radius: 100%;">Java Basics</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1000">
         <a href="linux.html" class="clicked-glow"><img src="./Logo/linux_PNG1.png">Linux Basics</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1200">
         <a href="golang.html" class="clicked-glow"><img src="./Logo/png-clipart-go-computer-programm.png" style="border-radius: 100%;">Golang
           Basics</a>
       </div>
-      <div>
+      <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="1400">
         <a href="frontendProjects.html" class="clicked-glow"><img src="./Logo/pngwing.com (2).png">Frontend Projects</a>
       </div>
     </section>
@@ -149,5 +153,7 @@
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
 </body>
-
+<script>
+  AOS.init();
+</script>
 </html>
