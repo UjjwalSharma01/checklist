@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+label {
+  color: #fff;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.Formcontainer {
+  border-radius: 5px;
+  background-color: #333;
+  /* background-color: #f2f2f2; */
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.darkformcontainer {
+  background-color: black;
+}
+
+.errormsg {
+  width: 100%;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.dark-form-container {
+  background-color: #333;
+  color: #d9ed92;
+}
+
+.heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.heading h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  text-align: center;
+}

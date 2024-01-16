@@ -1,4 +1,5 @@
 const darkModeToggle = document.querySelector('.dark-mode-toggle');
+let Formcontainer = document.querySelector('.Formcontainer');
 
 darkModeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
@@ -9,10 +10,12 @@ darkModeToggle.addEventListener('click', () => {
     // Dark mode is enabled, hide the sun and show the moon
     darkModeToggle.innerHTML = '<i class="moon-icon"></i>';
     localStorage.setItem('darkMode', 'enabled');
+    Formcontainer.classList.add('dark-form-container'); // Add dark-form-container class to Formcontainer
   } else {
     // Dark mode is disabled, hide the moon and show the sun
     darkModeToggle.innerHTML = '<i class="sun-icon"></i>';
     localStorage.setItem('darkMode', 'disabled');
+    Formcontainer.classList.remove('dark-form-container'); // Remove dark-form-container class from Formcontainer
   }
 
   // Add animation class for the flipping effect
@@ -29,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const darkModePreference = localStorage.getItem('darkMode');
   if (darkModePreference === 'enabled') {
     document.body.classList.add('dark-mode');
-
+    Formcontainer.classList.add('dark-form-container'); // Add dark-form-container class to Formcontainer
     document.querySelector("main").classList.add("dark")
     darkModeToggle.innerHTML = '<i class="moon-icon"></i>';
   } else {
     document.body.classList.remove('dark-mode'); // Set the default theme to normal (light mode)
-
+    Formcontainer.classList.remove('dark-form-container'); // Remove dark-form-container class from Formcontainer
     document.querySelector("main").classList.remove("dark")
     darkModeToggle.innerHTML = '<i class="sun-icon"></i>';
   }

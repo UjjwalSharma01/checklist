@@ -7,6 +7,7 @@
   <title>Contact Us - The Checklist</title>
   <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="dark-mode.css">
 </head>
 
@@ -30,33 +31,35 @@
       <!-- Add more checklists here -->
     </ul>
   </nav>
-  <main>
-    <section class="contact-section">
-      <h2>Contact Us</h2>
-      <p>If you have any questions, feedback, or suggestions, feel free to reach out to us using the contact form below:
-      </p>
+  <!-- <main> -->
+  <!-- <section class="contact-section"> -->
+  <div class="heading">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback, or suggestions, feel free to reach out to us using the contact form below:
+    </p>
+  </div>
 
-      <!-- Contact Form -->
-      <form id="contact-form" method="post" onsubmit="return validateForm()" action="https://formspree.io/f/xwkdveyv"
-        name="myform">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><!-- Mark as required -->
-        <p id="errormsg1" class="errormsg"></p>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required> <!-- Mark as required -->
-        <p id="errormsg2" class="errormsg"></p>
-        <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required>
-        <p id="errormsg3" class="errormsg"></p>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea> <!-- Mark as required -->
-        <p id="errormsg4" class="errormsg"></p>
-        <!-- Use the action attribute to specify the Formspree endpoint -->
-        <!-- <button type="submit" formaction="https://formspree.io/f/xwkdveyv" id="btn">Submit</button> -->
-        <input type="submit" name="" id="btn" value="submit">
-      </form>
-    </section>
-  </main>
+  <div class="Formcontainer">
+
+    <form id="contact-form" method="post" onsubmit="return validateForm()" action="https://formspree.io/f/xwkdveyv"
+      name="myform">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <p id="errormsg1" class="errormsg"></p>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <p id="errormsg2" class="errormsg"></p>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+      <p id="errormsg3" class="errormsg"></p>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <p id="errormsg4" class="errormsg"></p>
+      <input type="submit" name="" id="btn" value="submit">
+    </form>
+  </div>
+  <!-- </section> -->
+  <!-- </main> -->
 
   <!-- Loading Animation Script -->
   <script>
