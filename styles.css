@@ -1266,3 +1266,6 @@ nav li a {
 
   padding-top: 20px;
 }
+.hidden-text a{
+  color: white;
+}
