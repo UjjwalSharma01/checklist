@@ -144,19 +144,19 @@ main {
   text-align: center;
 }
 
-.checklists div{
+.checklists div {
   transition: all 0.3s ease-in-out;
 }
 
-.checklists div:hover{
+.checklists div:hover {
   transform: scale(0.95);
 }
 
-.contact-contribute li{
+.contact-contribute li {
   transition: all 0.3s ease-in-out;
 }
 
-.contact-contribute li:hover{
+.contact-contribute li:hover {
   transform: scale(1.04);
 }
 
@@ -1282,6 +1282,7 @@ nav li a {
 
   padding-top: 20px;
 }
-.hidden-text a{
+
+.hidden-text a {
   color: white;
 }

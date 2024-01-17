@@ -9,10 +9,12 @@ darkModeToggle.addEventListener('click', () => {
     // Dark mode is enabled, hide the sun and show the moon
     darkModeToggle.innerHTML = '<i class="moon-icon"></i>';
     localStorage.setItem('darkMode', 'enabled');
+    Formcontainer.classList.add('dark-form-container'); // Add dark-form-container class to Formcontainer
   } else {
     // Dark mode is disabled, hide the moon and show the sun
     darkModeToggle.innerHTML = '<i class="sun-icon"></i>';
     localStorage.setItem('darkMode', 'disabled');
+    Formcontainer.classList.remove('dark-form-container'); // Remove dark-form-container class from Formcontainer
   }
 
   // Add animation class for the flipping effect
