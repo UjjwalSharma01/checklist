@@ -31,11 +31,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const darkModePreference = localStorage.getItem('darkMode');
   if (darkModePreference === 'enabled') {
     document.body.classList.add('dark-mode');
+
     document.querySelector("main").classList.add("dark")
     darkModeToggle.innerHTML = '<i class="moon-icon"></i>';
   } else {
     document.body.classList.remove('dark-mode'); // Set the default theme to normal (light mode)
-    document.querySelector("main").classList.remove("dark");
+
+    document.querySelector("main").classList.remove("dark")
     darkModeToggle.innerHTML = '<i class="sun-icon"></i>';
   }
 });
