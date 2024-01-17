@@ -144,6 +144,22 @@ main {
   text-align: center;
 }
 
+.checklists div {
+  transition: all 0.3s ease-in-out;
+}
+
+.checklists div:hover {
+  transform: scale(0.95);
+}
+
+.contact-contribute li {
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-contribute li:hover {
+  transform: scale(1.04);
+}
+
 .checkmark {
   display: inline-block;
   width: 20px;

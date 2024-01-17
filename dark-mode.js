@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const darkModePreference = localStorage.getItem('darkMode');
   if (darkModePreference === 'enabled') {
     document.body.classList.add('dark-mode');
-    Formcontainer.classList.add('dark-form-container'); // Add dark-form-container class to Formcontainer
+
     document.querySelector("main").classList.add("dark")
     darkModeToggle.innerHTML = '<i class="moon-icon"></i>';
   } else {
     document.body.classList.remove('dark-mode'); // Set the default theme to normal (light mode)
-    Formcontainer.classList.remove('dark-form-container'); // Remove dark-form-container class from Formcontainer
+
     document.querySelector("main").classList.remove("dark")
     darkModeToggle.innerHTML = '<i class="sun-icon"></i>';
   }
