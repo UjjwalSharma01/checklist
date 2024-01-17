@@ -352,7 +352,7 @@ nav li {
   margin-bottom: 20px;
 }
 
-.container1 {
+.cardcontainer {
   max-width: 400px;
   display: flex;
   flex-direction: column;
