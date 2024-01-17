@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="aos/aos.css" />
+    <script src="aos/aos.js"></script>
   <link rel="stylesheet" href="dark-mode.css" />
   <!-- Add the dark mode CSS file -->
 </head>
@@ -43,24 +45,26 @@
     </div>
   </nav>
   <main>
-    <section class="quote">
+    <section class="quote" data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500">
       <blockquote id="quoteContent">
         "The only limit to our realization of tomorrow will be our doubts of
         today."
       </blockquote>
       <cite id="quoteTitle">— Franklin D. Roosevelt</cite>
     </section>
-    <section class="checklists">
-      <div>
+    <section class="checklists" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+      <div >
         <a href="C_Programming.html" class="clicked-glow"><img src="./Logo/C_Logo.png">C Programming</a>
       </div>
-      <div>
+      <div >
         <a href="C++_Basics.html" class="clicked-glow"><img src="./Logo/c--logo-icon-0.png">C++ Basics</a>
       </div>
-      <div>
+      <div >
         <a href="python_Basics.html" class="clicked-glow"><img src="./Logo/pngegg.png">Python Basics</a>
       </div>
-      <div>
+      <div >
         <a href="OOP.html" class="clicked-glow"><img src="./Logo/1200px-OOP.svg.png" style="border-radius: 100%;">Object Oriented Programming
           (OOP)</a>
       </div>
@@ -149,5 +153,7 @@
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
 </body>
-
+<script>
+  AOS.init();
+</script>
 </html>
