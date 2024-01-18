@@ -1043,16 +1043,32 @@ footer {
   width: 100%;
   margin-top: auto;
 }
+html{
+  scroll-behavior: smooth;
+}
+.to-top{
+background-color: white;
+position: fixed;
+bottom: 20px;
+right: 32px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+align-items: center;
+display: flex;
+opacity: 0;
+justify-content: center;
+transition: all .4s; 
+ font-size: 32px;
+color: #02437c;
+text-decoration: none;
+pointer-events: none;
 
-.footer-panel1 {
-  background-color: #37475a;
-  color: white;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.85rem;
-  margin-top: 15px;
+}
+.to-top.active{
+bottom: 32px;
+pointer-events: auto;
+opacity: 1;
 }
 
 .footer-panel2 {
