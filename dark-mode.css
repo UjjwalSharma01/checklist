@@ -1,10 +1,9 @@
 /* BUTTON */
-
-
 .dark-mode-toggle {
   position: absolute;
   top: 3%;
-  right: 3%;;
+  right: 3%;
+  ;
   z-index: 999;
   background-color: #333;
   color: #fff;
@@ -19,12 +18,14 @@
 .dark-mode-toggle:hover {
   background-color: #444;
 }
-.dark-mode .contribute-button{
-  color:#d9ed92;
+
+.dark-mode .contribute-button {
+  color: #d9ed92;
   background-color: #444;
 }
-.dark-mode .contribute-button:hover{
-  color:#444;
+
+.dark-mode .contribute-button:hover {
+  color: #444;
   background-color: #d9ed92;
 }
 
@@ -46,12 +47,12 @@ body.dark-mode {
   background-color: #3a3a3a;
 }
 
-.dark-mode .bar{
+.dark-mode .bar {
   background-color: #3a3a3a;
-  border:1px solid grey;
+  border: 1px solid grey;
 }
 
-.dark-mode .bar a{
+.dark-mode .bar a {
   background-color: #444;
   color: #d9ed92 !important;
 }
@@ -95,14 +96,14 @@ body.dark-mode {
 
 .dark-mode .contact-section form button {
   /* background-color: #444; */
-    background-color: #444;
+  background-color: #444;
   color: #d9ed92;
 }
 
 .dark-mode .contact-section form button:hover {
   /* background-color: #555; */
-    color: #444;
- background-color: #d9ed92;
+  color: #444;
+  background-color: #d9ed92;
 }
 
 /* Dark mode styles for the footer */
@@ -130,27 +131,29 @@ body.dark-mode {
 
 /* Dark mode styles for the checkboxes */
 .dark-mode .checklist .checkbox {
-  display: none; /* Hide the default checkbox */
+  display: none;
+  /* Hide the default checkbox */
 }
 
 /* Create a custom checkbox appearance */
-.dark-mode .checklist .checkbox + .checkmark {
+.dark-mode .checklist .checkbox+.checkmark {
   position: relative;
   width: 20px;
   height: 20px;
   border: 2px solid #fff;
   border-radius: 4px;
-  margin-right: 8px; /* Adjust the gap between the checkbox and the text */
+  margin-right: 8px;
+  /* Adjust the gap between the checkbox and the text */
   cursor: pointer;
 }
 
-.dark-mode #quoteTitle{
-  color:#444;
+.dark-mode #quoteTitle {
+  color: #444;
   background-color: #d9ed92;
 }
 
 /* Show the block-style tick mark when the checkbox is checked */
-.dark-mode .checklist .checkbox:checked + .checkmark:after {
+.dark-mode .checklist .checkbox:checked+.checkmark:after {
   content: "";
   position: absolute;
   top: 4px;
@@ -177,9 +180,11 @@ body.dark-mode {
   0% {
     transform: rotateY(0);
   }
+
   50% {
     transform: rotateY(90deg);
   }
+
   100% {
     transform: rotateY(180deg);
   }
@@ -189,9 +194,11 @@ body.dark-mode {
   0% {
     transform: rotateY(180deg);
   }
+
   50% {
     transform: rotateY(90deg);
   }
+
   100% {
     transform: rotateY(0);
   }
@@ -199,8 +206,8 @@ body.dark-mode {
 
 .dark-mode-toggle {
   position: absolute;
- top: 5%;
-  right: 3%;
+  top: 30px;
+  right: 20px;
   z-index: 999;
   background-color: #333333d0;
   color: #fff;
@@ -211,8 +218,10 @@ body.dark-mode {
   cursor: pointer;
   font-size: 35px;
   transition: background-color 0.3s ease-in-out;
-  animation-duration: 0.5s; /* Duration of the animation */
-  animation-timing-function: linear; /* Linear timing function for consistent speed */
+  animation-duration: 0.5s;
+  /* Duration of the animation */
+  animation-timing-function: linear;
+  /* Linear timing function for consistent speed */
 }
 
 /* Flipping animation for sun to moon */
@@ -234,12 +243,13 @@ body.dark-mode {
 .dark-mode-toggle::after {
   content: '🌙';
   position: absolute;
-  opacity: 0; /* Hide the moon initially */
+  opacity: 0;
+  /* Hide the moon initially */
   /* left: 50%; */
   /* transform: translateX(-50%); */
   /* background: #fff !important; */
   top: 5%;
-  right: 3%;;
+  right: 3%;
   background-color: #d9ed92;
   color: #fff;
   border: none;
@@ -271,33 +281,39 @@ body.dark-mode .dark-mode-toggle::after {
 @media only screen and (max-width: 600px) {
   .dark-mode-toggle {
     position: absolute;
-    top:3%;
-    right:1.8%;
-    font-size: 28px;  
+    /* top: 3%; */
+    right: 1.8%;
+    font-size: 28px;
   }
+
   .dark-mode-toggle::after {
     position: absolute;
-    top:3%;
-    right:1.8%;
-    font-size: 28px;  
+    top: 3%;
+    right: 1.8%;
+    font-size: 28px;
   }
 }
 
-main.dark,body.dark-mode{
-  background: rgb(65,65,65);
-background: linear-gradient(312deg, rgba(65,65,65,1) 0%, rgba(0,0,0,1) 100%);
+main.dark,
+body.dark-mode {
+  background: rgb(65, 65, 65);
+  background: linear-gradient(312deg, rgba(65, 65, 65, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
-.dark .quote{
-  background: rgb(65,65,65);
-background: linear-gradient(312deg, rgba(65,65,65,1) 0%, rgba(0,0,0,1) 100%);
+
+.dark .quote {
+  background: rgb(65, 65, 65);
+  background: linear-gradient(312deg, rgba(65, 65, 65, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
 .dark-mode #quoteTitle {
   color: #fff;
   /* background-color: #d9ed92; */
 }
+
 .dark-mode .quote blockquote {
   background-color: unset !important
 }
+
 .dark-mode #quoteTitle {
   background-color: unset;
 }
