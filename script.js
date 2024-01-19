@@ -166,3 +166,8 @@ const totop=document.querySelector('.to-top');
       totop.classList.remove("active");
     }
   })
+
+function f1(){
+  document.body.scrollTop = 0; 
+  document.documentElement.scrollTop = 0; 
+}
