@@ -359,8 +359,12 @@ nav li {
   align-items: center;
   border-radius: 10px;
   gap: 15px;
-  box-shadow: 0 0 20px rgba(14, 244, 2, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   margin-bottom: 25px;
+  transition: ease-in-out 0.4s;
+}
+.cardcontainer:hover{
+  box-shadow: 0 0 20px rgba(65, 165, 199, 0.9);
 }
 
 .img1 {
@@ -1072,7 +1076,7 @@ opacity: 1;
 }
 
 .footer-panel2 {
-  background-color: #222f3d;
+  background-color: #000000;
   color: white;
   justify-content: space-around;
   display: flex;
@@ -1325,7 +1329,10 @@ body {
 
 nav li a {
   color: white;
-  text-shadow: 0 0 7px white;
+  /* text-shadow: 0 0 7px rgb(225, 23, 23); */
+} 
+nav li a:hover{
+  /* scale: 1.2; */
 }
 
 .checklist {

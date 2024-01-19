@@ -54,11 +54,12 @@ header a {
 
   transition-duration: 300ms;
   margin-bottom: 20px;
+  transition: ease-in-out 0.4s;
 }
 
 .contribute-button:hover {
-  color: #1d5b79;
-  background-color: #444;
+  color: #343232;
+  background-color: #6f95bb;
   cursor: pointer;
 }
 
@@ -185,6 +186,11 @@ header a {
   width: 90%;
   height: auto;
   border-radius: 10px;
+  transition: ease-in-out 0.4s;
+}
+.hero-img img:hover{
+  scale: 1.03;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
 }
 
 
