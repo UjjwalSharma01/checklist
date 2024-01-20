@@ -23,6 +23,7 @@ textarea {
   background: unset;
   border-radius: 15px;
   border: 1px solid #cccccc54;
+  color: white;
 }
 .heading{
   color: white;

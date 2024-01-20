@@ -359,7 +359,8 @@ nav li {
   align-items: center;
   border-radius: 10px;
   gap: 15px;
-  box-shadow: 0 0 20px rgba(14, 244, 2, 0.9);
+  /* box-shadow: 0 0 20px rgba(14, 244, 2, 0.9); */
+  box-shadow: 0 0 20px 4px rgb(14 98 160);
   margin-bottom: 25px;
 }
 
@@ -1399,4 +1400,7 @@ nav li a {
     z-index: -1;
     position: relative;
   }
+}
+.dark-mode .cardcontainer{
+  box-shadow: 0 0 20px 4px rgb(48 48 48);
 }
