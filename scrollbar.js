@@ -20,3 +20,16 @@ function topFunction() {
     behavior: "smooth"
   });
 }
+
+// Polyfill for smooth scrolling in browsers that do not support scroll-behavior
+if (window.getComputedStyle(document.body).scrollBehavior === undefined) {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+}
