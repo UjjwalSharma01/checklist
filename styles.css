@@ -1385,3 +1385,6 @@ backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
 border: 1px solid rgba(58, 58, 58, 0.3);
 }
+.cardcontainer{
+  text-decoration: none;
+}
