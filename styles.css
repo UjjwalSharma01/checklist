@@ -1375,3 +1375,13 @@ nav li a {
 .hidden-text a {
   color: white;
 }
+
+.dark-mode .quote{
+  /* From https://css.glass */
+background: rgba(58, 58, 58, 0.61);
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(58, 58, 58, 0.3);
+}

@@ -317,3 +317,7 @@ body.dark-mode {
 .dark-mode #quoteTitle {
   background-color: unset;
 }
+
+.dark-mode .to-top svg{
+  color: #525252 !important;
+}
