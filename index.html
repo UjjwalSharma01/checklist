@@ -15,7 +15,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
     integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Add the dark mode CSS file -->
+  <style>
+    @media(max-width:881px) {}
+  </style>
 </head>
 
 <body>
@@ -57,8 +61,8 @@
   </section>
   <main>
 
-    <div class="maincontainer">
-      <div class="cardcontainer">
+    <div class="maincontainer odd" data-aos="slide-up">
+      <div class="cardcontainer" data-aos="slide-up">
         <img src="/Logo/C_Logo.png" alt="C_Logo" class="img1">
         <h1 class="heading1">C PROGRAMMING</h1>
         <p class="para1">Meet C, the trailblazing programming language by Dennis Ritchie. Birthed in the '70s, C is a
@@ -68,7 +72,7 @@
       </div>
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer even" data-aos="slide-up">
         <img src="/Logo/c--logo-icon-0.png" alt="C_Logo" class="img1">
         <h1 class="heading1">C++ PROGRAMMING</h1>
         <p class="para1">C++ is a versatile, object-oriented programming language. Developed as an extension of the C
@@ -78,7 +82,7 @@
       </div>
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer odd" data-aos="slide-up">
         <img src="/Logo/pngegg.png" alt="C_Logo" class="img1">
         <h1 class="heading1">PYTHON BASICS</h1>
         <p class="para1">Python, a high-level programming language, is celebrated for its readability and simplicity.
@@ -89,7 +93,7 @@
 
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer even" data-aos="slide-up">
         <img src="/Logo/1200px-OOP.svg.png" alt="C_Logo" class="img1">
         <h1 class="heading1">OBJECT ORIENTED PROGRAMMING [OOP]</h1>
         <p class="para1">Object-Oriented Programming is a paradigm that organizes Objects represent real-world entities
@@ -100,7 +104,7 @@
 
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer odd" data-aos="slide-up">
         <img src="/Logo/1lOZAtF1V7j9TeKjwbiv6UQ.jpg" alt="C_Logo" class="img1">
         <h1 class="heading1">STANDARD TEMPLATE LIBRARY [STL]</h1>
         <p class="para1">The Standard Template Library (STL) in C++ is a powerful set of template classes and functions.
@@ -112,7 +116,7 @@
 
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer even" data-aos="slide-up">
         <img src="./Logo/pngwing.com (1).png" alt="C_Logo" class="img1">
         <h1 class="heading1">WEB APPLICATION FUNDAMENTALS</h1>
         <p class="para1">Web technology encompasses a broad range of tools and protocols for creating, transmitting, and
@@ -123,7 +127,7 @@
       </div>
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer odd" data-aos="slide-up">
         <img src="./Logo/design_algorithm_method_model_pr.png" alt="C_Logo" class="img1">
         <h1 class="heading1">ALGORITHM DESIGN TECHNIQUES</h1>
         <p class="para1">Algorithm design techniques involve crafting efficient, logical sequences to solve
@@ -135,7 +139,7 @@
       </div>
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer even" data-aos="slide-up">
         <img src="./Logo/731_java.png" alt="C_Logo" class="img1">
         <h1 class="heading1">JAVA BASICS</h1>
         <p class="para1">Java, a versatile programming language, emphasizes portability and platform independence. Key
@@ -147,7 +151,7 @@
         <a href="JavaBasic.html" class="link1"><button class="btn1">Click Here</button></a>
       </div>
 
-      <div class="cardcontainer">
+      <div class="cardcontainer odd" data-aos="slide-up">
         <img src="./Logo/linux_PNG1.png" alt="C_Logo" class="img1">
         <h1 class="heading1">LINUX BASICS</h1>
         <p class="para1">Linux, an open-source operating system, offers a robust, secure environment for computing. It
@@ -158,7 +162,7 @@
       </div>
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer even" data-aos="slide-up">
         <img src="./Logo/png-clipart-go-computer-programm.png" alt="C_Logo" class="img1">
         <h1 class="heading1">GOLANG BASICS</h1>
         <p class="para1">Go, also known as Golang, is a statically typed, compiled programming language developed by
@@ -169,7 +173,7 @@
         <a href="golang.html" class="link1"><button class="btn1">Click Here</button></a>
       </div>
 
-      <div class="cardcontainer">
+      <div class="cardcontainer odd" data-aos="slide-up">
         <img src="./Logo/pngwing.com (2).png" alt="C_Logo" class="img1">
         <h1 class="heading1">FRONTEND PROJECTS</h1>
         <p class="para1">Frontend technology focuses on the user interface and user experience of websites and
@@ -181,7 +185,7 @@
       </div>
 
 
-      <div class="cardcontainer">
+      <div class="cardcontainer even" data-aos="slide-up">
         <img src="./Logo/vector.jpeg" alt="C_Logo" class="img1">
         <h1 class="heading1">VECTOR DATA STRUCTURE</h1>
         <p class="para1">A vector is a dynamic data structure that stores elements in contiguous memory locations,
@@ -263,11 +267,19 @@
           });
         });
       });
-
-
-
     }
   </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+    });
+  </script>
+  <script src="Animation.js"></script>
+
+
 </body>
 
 </html>
