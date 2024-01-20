@@ -255,6 +255,23 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
+  <script>
+    // Polyfill for smooth scrolling in browsers that do not support scroll-behavior
+    if (window.getComputedStyle(document.body).scrollBehavior === undefined) {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+
+
+
+    }
+  </script>
 </body>
 
 </html>
