@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Lato', 'Montserrat', 'Noto Sans', 'Roboto Slab', 'Source Sans Pro', 'PT Sans', 'Droid Sans', 'Cabin', 'Quicksand', 'Merriweather', sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   margin: 0;
   padding: 0;
   background-color: #c7e3dcf9;
