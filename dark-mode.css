@@ -40,7 +40,7 @@ body.dark-mode {
 }
 
 .dark-mode header h1 a {
-  color: #d9ed92 !important;
+  color: #ffffff !important;;
 }
 
 .dark-mode nav {
@@ -59,7 +59,7 @@ body.dark-mode {
 
 .dark-mode nav li a {
   background-color: #444;
-  color: #d9ed92 !important;
+  color: #b6bbfe !important;
 }
 
 .dark-mode nav li a:hover {
@@ -250,7 +250,7 @@ body.dark-mode {
   /* background: #fff !important; */
   top: 5%;
   right: 3%;
-  background-color: #d9ed92;
+  background-color: #818181;
   color: #fff;
   border: none;
   padding: 10px;

@@ -69,11 +69,11 @@ input[type=submit]:hover {
   margin-bottom: 30px;
 }
 
-.heading h2 {
+.heading h1 {
   text-align: center;
   margin-bottom: 10px;
 }
 
-.heading p {
+.heading h2 {
   text-align: center;
 }
