@@ -149,12 +149,13 @@ function copyToClipboard(exampleNumber) {
   }
 }
 
-var toggleButton = document.querySelector(".toggle-button");
+// var toggleButton = document.querySelector(".toggle-button");
+let toggleButton = document.querySelector(".ham-mob");
 var navbarLinks = document.querySelector(".hamburger");
-
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
+  console.log(1)
 })
 
 const totop = document.querySelector('.to-top');
@@ -171,3 +172,4 @@ function f1() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
