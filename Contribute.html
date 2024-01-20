@@ -97,7 +97,7 @@
         </div>
       </div>
 
-      <div class="cntribute-container">
+      <div class="cntribute-container" data-aos="slide-up">
         <h2 class="contribute">Ready to Contribute?</h2>
         <p>Start contributing to The Checklist today! Together, we can make this app even more valuable for developers
           and
@@ -114,8 +114,115 @@
       style='font-size:36px'></i></button>
   <!-- End of scroll back btton -->
 
+
+  <!-- Footer start -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="spt-logo">
+        <img src="./covers/Spotify-White-Logo.png" alt="">
+      </div>
+      <div class="panel2">
+        <div class="foot">
+          <div class="company">
+            <ul>
+              <div class="main-head">Company</div>
+              <a href="index.html" style="text-decoration: none; color: #fff;">
+                <li>Home</li>
+              </a>
+              <li>About</li>
+              <li>Jobs</li>
+              <li>For the Record</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <ul>
+              <div class="main-head">Communities</div>
+              <li>For Artists</li>
+              <li>Developers</li>
+              <li>Advertising</li>
+              <li>Investors</li>
+              <li>Vendors</li>
+            </ul>
+          </div>
+
+          <div class="company">
+            <ul>
+              <div class="main-head">Useful links</div>
+              <a href="C_Programming.html" style="text-decoration: none; color: #fff;">
+                <li>C Programming</li>
+              </a>
+              <a href="C++_Basics.html" style="text-decoration: none; color: #fff;">
+                <li>C++ Programming</li>
+              </a>
+
+              <a href="python_Basics.html" style="text-decoration: none; color: #fff;">
+                <li>Python Basics</li>
+              </a>
+
+              <a href="OOP.html" style="text-decoration: none; color: #fff;">
+                <li>Object Oriented Programming</li>
+              </a>
+
+              <a href="STL.html" style="text-decoration: none; color: #fff;">
+                <li>Standard Template Library</li>
+              </a>
+
+
+              <a href="WebApp.html" style="text-decoration: none; color: #fff;">
+                <li>Web Application Fundamentals</li>
+              </a>
+
+
+              <a href="algorithm.html" style="text-decoration: none; color: #fff;">
+                <li>Algorithm Design Techniques</li>
+              </a>
+
+
+              <a href="JavaBasic.html" style="text-decoration: none; color: #fff;">
+                <li>Java Basics</li>
+              </a>
+
+
+              <a href="linux.html" style="text-decoration: none; color: #fff;">
+                <li>Linux Basics</li>
+              </a>
+
+
+              <a href="golang.html" style="text-decoration: none; color: #fff;">
+                <li>Golang Basics</li>
+              </a>
+
+
+              <a href="frontendProjects.html" style="text-decoration: none; color: #fff;">
+                <li>Frontend Projects</li>
+              </a>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="social-icons">
+          <div class="icon_border"><img src="./Logo/fb.png" alt=""></div>
+          <div class="icon_border"><img src="./Logo/ig.png" alt=""></div>
+          <div class="icon_border"><img src="./Logo/twt.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <hr>
+    <br><br>
+    <div class="panel3">
+      <p>&copy; <span id="year"></span> Checklist Ujjwal Sharma </p>
+    </div>
+    <br><br>
+  </footer>
+
+  <!-- Footer End -->
   <!-- Loading Animation Script -->
   <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
     // Hide the loading overlay when the page is fully loaded
     window.addEventListener("load", function () {
       const loadingOverlay = document.querySelector(".loading-overlay");
