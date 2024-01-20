@@ -32,12 +32,18 @@ header {
 
 header h1 a {
   text-decoration: none;
-  color: #fff;
-  color: #1D5B79 !important;
-
+  color: #ffffff;
+  color: #a8cfe3 !important;
+  /* border: 4px solid #e1ebf1;  */
+  /* border-radius: 5vw; */
+  padding: 7px;
   font-size: 50px;
   font-weight: bold;
   letter-spacing: 4px;
+  transition: ease-in-out 0.4s;
+}
+.header h1 a:hover{
+  /* scale: 1.1%; */
 }
 
 nav {
@@ -81,8 +87,9 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #33333340;
-  color: #1D5B79 !important;
+  /* background-color: #000000; */
+  color: #3ce8ff;
+  
 }
 
 .toggle-button {
@@ -254,9 +261,10 @@ nav li a {
 }
 
 nav li a:hover {
-  background-color: #444;
+  background-color: #57a6cd;
   /* Darker background on hover */
   color: #fff;
+  /* box-shadow: 0 0 8px white; */
   /* Text color on hover */
 }
 
@@ -359,8 +367,13 @@ nav li {
   align-items: center;
   border-radius: 10px;
   gap: 15px;
-  box-shadow: 0 0 20px rgba(14, 244, 2, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
   margin-bottom: 25px;
+  transition: ease-in-out 0.4s;
+  
+}
+.cardcontainer:hover{
+  box-shadow: 0 0 20px rgba(65, 165, 199, 0.9);
 }
 
 .img1 {
@@ -397,9 +410,9 @@ nav li {
   text-decoration: none;
 }
 
-.btn1 {
+/* .btn1 {
   border: none;
-  padding: 15px;
+  padding: ;
   border-radius: 5px;
   background-color: rgb(10, 177, 10);
   color: #fff;
@@ -408,12 +421,53 @@ nav li {
   margin-bottom: 10px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
+} */
+.btn1 {
+  background: rgb(21, 20, 20);
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  align-items:center;
+  width:max(10vw,10vh);
+  height: max(3vw,3vh);
+  font-size: 20px;
+  font-weight:500;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.8s;
+  z-index: 10;
+  color:white;
+  
 }
 
-.btn1:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px #4CAF50;
+.btn1:hover{
+  color:rgb(30, 29, 29);
+  font-weight:700;
+  /* text-shadow: 0 0 5px black; */
 }
+
+.btn1::before{
+  content:"";
+  position:absolute;
+  width:0%;
+  height:0%;
+  right:50%;
+  background: #04d5ff;
+  z-index: -1;
+  transition: 0.8s;
+  bottom:50%;
+  border-radius: 50%;
+}
+
+.btn1:hover::before{
+  width: 400%;
+  height: 400%;
+  scale:200%;
+  
+}
+
 
 /* Media Query for screens between 601px to 1024px */
 @media screen and (max-width: 880px) {
@@ -1043,39 +1097,36 @@ footer {
   width: 100%;
   margin-top: auto;
 }
-
-html {
+html{
   scroll-behavior: smooth;
 }
-
-.to-top {
-  background-color: white;
-  position: fixed;
-  bottom: 20px;
-  right: 32px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  display: flex;
-  opacity: 0;
-  justify-content: center;
-  transition: all .4s;
-  font-size: 32px;
-  color: #02437c;
-  text-decoration: none;
-  pointer-events: none;
+.to-top{
+background-color: white;
+position: fixed;
+bottom: 20px;
+right: 32px;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+align-items: center;
+display: flex;
+opacity: 0;
+justify-content: center;
+transition: all .4s; 
+ font-size: 32px;
+color: #02437c;
+text-decoration: none;
+pointer-events: none;
 
 }
-
-.to-top.active {
-  bottom: 32px;
-  pointer-events: auto;
-  opacity: 1;
+.to-top.active{
+bottom: 32px;
+pointer-events: auto;
+opacity: 1;
 }
 
 .footer-panel2 {
-  background-color: #222f3d;
+  background-color: #000000;
   color: white;
   justify-content: space-around;
   display: flex;
@@ -1328,7 +1379,10 @@ body {
 
 nav li a {
   color: white;
-  text-shadow: 0 0 7px white;
+  /* text-shadow: 0 0 7px rgb(225, 23, 23); */
+} 
+nav li a:hover{
+  /* scale: 1.2; */
 }
 
 .checklist {
@@ -1377,26 +1431,4 @@ nav li a {
 
 .hidden-text a {
   color: white;
-}
-
-.dark-mode .quote {
-  /* From https://css.glass */
-  background: rgba(58, 58, 58, 0.61);
-  /* border-radius: 16px; */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(58, 58, 58, 0.3);
-}
-
-.cardcontainer {
-  text-decoration: none;
-}
-
-@media screen and (max-width: 880px) {
-
-  .quote {
-    z-index: -1;
-    position: relative;
-  }
 }
