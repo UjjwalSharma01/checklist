@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="dark-mode.css">
   <link rel="stylesheet" href="contribute.css">
   <link rel="stylesheet" href="scrollbar.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -43,7 +44,7 @@
       <div class="heading">
         <h1>About The Checklist</h1>
       </div>
-      <div class="container1">
+      <div class="container1" data-aos="slide-up">
         <div class="hero-content">
           <h2>Welcome To Our Website </h2>
           <p>The Checklist is a web application that serves as a comprehensive collection of topics from different
@@ -56,7 +57,7 @@
         </div>
       </div>
 
-      <div class="container1 container2">
+      <div class="container1 container2" data-aos="slide-up">
         <div class="hero-img">
           <img src="Images/contribute.jpeg" alt="About Us">
         </div>
@@ -75,7 +76,7 @@
         </div>
       </div>
 
-      <div class="container1">
+      <div class="container1" data-aos="slide-up">
         <div class="hero-content">
           <h2>Getting Started </h2>
           <p>If you are new to contributing to open-source projects, don't worry! We have a friendly and supportive
@@ -141,6 +142,13 @@
   <script src="script.js"></script>
   <script src="dark-mode.js"></script>
   <script src="scrollbar.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300, // offset (in px) from the original trigger point
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>
