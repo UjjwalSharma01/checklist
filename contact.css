@@ -7,6 +7,25 @@ body {
   box-sizing: border-box;
 }
 
+
+#contact-form input {
+  font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
+  /* Font family */
+  font-size: 16px;
+  /* Font size */
+  color: #fff !important;
+  /* Text color */
+}
+
+#contact-form textarea {
+  font-family: 'Roboto', 'Arial', 'Helvetica', 'sans-serif';
+  /* Font family */
+  font-size: 16px;
+  /* Font size */
+  color: #fff !important;
+  /* Text color */
+}
+
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -25,10 +44,12 @@ textarea {
   border: 1px solid #cccccc54;
   color: white;
 }
-.heading{
+
+.heading {
   color: white;
 }
-.dark-mode .heading{
+
+.dark-mode .heading {
   color: #d9ed92;
 }
 
@@ -110,10 +131,11 @@ input[type=submit]:hover {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(47, 47, 47, 0.3);
 }
-#particles-js{
+
+#particles-js {
   height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
