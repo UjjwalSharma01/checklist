@@ -157,17 +157,17 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 })
 
-const totop=document.querySelector('.to-top');
+const totop = document.querySelector('.to-top');
 
-  window.addEventListener("scroll",() => {
-    if(window.pageYOffset>100){
-      totop.classList.add("active");
-    }else{
-      totop.classList.remove("active");
-    }
-  })
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    totop.classList.add("active");
+  } else {
+    totop.classList.remove("active");
+  }
+})
 
-function f1(){
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
+function f1() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
