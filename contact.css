@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
 * {
@@ -19,6 +20,15 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+  background: unset;
+  border-radius: 15px;
+  border: 1px solid #cccccc54;
+}
+.heading{
+  color: white;
+}
+.dark-mode .heading{
+  color: #d9ed92;
 }
 
 input[type=submit] {
@@ -29,6 +39,10 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #12ff00, #0fe600);
+  box-shadow: 20px 20px 60px #0ed900,
+    -20px -20px 60px #14ff00;
 
 }
 
@@ -47,7 +61,15 @@ input[type=submit]:hover {
   padding: 20px;
   max-width: 700px;
   margin: auto;
+  /* From https://css.glass */
+  background: rgba(32, 170, 240, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(32, 170, 240, 0.3);
 }
+
 
 .darkformcontainer {
   background-color: black;
@@ -76,4 +98,21 @@ input[type=submit]:hover {
 
 .heading p {
   text-align: center;
+}
+
+.dark-mode .Formcontainer {
+  /* From https://css.glass */
+  background: rgba(47, 47, 47, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(47, 47, 47, 0.3);
+}
+#particles-js{
+  height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
